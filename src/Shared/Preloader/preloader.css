@@ -22,7 +22,7 @@
   position: absolute;
   height: 100%;
   width: 50%;
-  background-color: #017eff;
+  background: #2a1454;
 }
 
 .loading-screen .top-bar {
@@ -74,7 +74,7 @@
 .loading-screen .animation-preloader .txt-loading .letters-loading:before {
   -webkit-animation: letters-loading 4s infinite;
   animation: letters-loading 4s infinite;
-  color: #02c0bc;
+  color: #8750f7;
   content: attr(data-text-preloader);
   left: 0;
   opacity: 0;
@@ -213,7 +213,7 @@
 
 .loader {
   position: absolute;
-  top: -20px;
+  top: -14px;
   left: 50%;
   transform: translate(-35%, 77px);
 }
@@ -221,7 +221,7 @@
 .loader {
   --w: 10ch;
   font-weight: 400;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 1.4em;
   letter-spacing: var(--w);
   width: var(--w);
