@@ -21,11 +21,11 @@ const Banner = () => {
             </h1>
           </div>
           <div className='grid grid-cols-2 items-center'>
-            <div className='sm:gap-5'>
+            <div>
               <h3 className='font-Sora text-4xl font-bold text-TextColor-0 pb-2'>
                 I am Gerold
               </h3>
-              <h1 className='font-Sora text-[65px] leading-[78px] font-bold bg-gradient-to-r from-purple-500 to-white bg-clip-text text-transparent'>
+              <h1 className='font-Sora text-[65px] leading-[78px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
                 Web Developer + <br /> UX Designer
               </h1>
               <p className='font-Sora text-xl font-light text-TextColor-0 max-w-[550px] w-full pt-4 pb-[50px]'>

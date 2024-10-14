@@ -1,55 +1,52 @@
-
-import ServiceCard from './ServiceCard';
+import SkillCard from './SkillCard';
 import { LuArrowUpRight } from 'react-icons/lu';
 
-const ServiceData = [
+const SkillData = [
   {
     id: 1,
-    serviceDesc:
+    skillDesc:
       'I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people',
-    serviceNumber: '01',
-    serviceTitle: 'Branding Design',
-    serviceUrl: '/',
+    skillNumber: '01',
+    skillTitle: 'Branding Design',
+    skillUrl: '/',
     btnIcon: <LuArrowUpRight />,
   },
   {
     id: 2,
-    serviceDesc:
+    skillDesc:
       'I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people',
-    serviceNumber: '02',
-    serviceTitle: 'Web Design',
-    serviceUrl: '/',
+    skillNumber: '02',
+    skillTitle: 'Web Design',
+    skillUrl: '/',
     btnIcon: <LuArrowUpRight />,
   },
   {
     id: 3,
-    serviceDesc:
+    skillDesc:
       'I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people',
-    serviceNumber: '03',
-    serviceTitle: 'UI/UX Design',
-    serviceUrl: '/',
+    skillNumber: '03',
+    skillTitle: 'UI/UX Design',
+    skillUrl: '/',
     btnIcon: <LuArrowUpRight />,
   },
   {
     id: 4,
-    serviceDesc:
+    skillDesc:
       'I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people',
-    serviceNumber: '04',
-    serviceTitle: 'Graphic Design',
-    serviceUrl: '/',
+    skillNumber: '04',
+    skillTitle: 'Graphic Design',
+    skillUrl: '/',
     btnIcon: <LuArrowUpRight />,
   },
 ];
 
-const Service = () => {
-
-
+const Skill = () => {
   return (
     <section className=' bg-BodyBg2-0 py-[120px] relative'>
       <div className='Container'>
         <div className='text-center'>
           <h1 className='font-Sora text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
-            My Quality Services
+            My Quality skills
           </h1>
           <p className='font-Sora text-TextColor-0 mt-4'>
             We put your ideas and thus your wishes in the form of a unique web
@@ -57,22 +54,15 @@ const Service = () => {
           </p>
         </div>
         <div className='relative z-10 mt-[60px]'>
-          {ServiceData.map(
-            ({
-              id,
-              serviceDesc,
-              serviceNumber,
-              serviceTitle,
-              serviceUrl,
-              btnIcon,
-            }) => {
+          {SkillData.map(
+            ({ id, skillDesc, skillNumber, skillTitle, skillUrl, btnIcon }) => {
               return (
                 <div key={id}>
-                  <ServiceCard
-                    serviceDesc={serviceDesc}
-                    serviceNumber={serviceNumber}
-                    serviceTitle={serviceTitle}
-                    serviceUrl={serviceUrl}
+                  <SkillCard
+                    skillDesc={skillDesc}
+                    skillNumber={skillNumber}
+                    skillTitle={skillTitle}
+                    skillUrl={skillUrl}
                     btnIcon={btnIcon}
                   />
                 </div>
@@ -85,4 +75,4 @@ const Service = () => {
   );
 };
 
-export default Service;
+export default Skill;
