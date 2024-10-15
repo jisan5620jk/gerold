@@ -31,14 +31,14 @@
 .menu-bar span {
   display: block;
   height: 2px;
-  background: #002570;
+  background: #fff;
   margin: 5px;
   transition: all 0.5s ease;
   border-radius: 30px;
 }
 
 .menu-bar:hover span {
-  background: #8750f7;
+  background: #fff;
 }
 
 .menu-bar:hover span:nth-child(1),
@@ -412,7 +412,8 @@ nav.main-menu-content > ul > li > a:hover {
   color: #8750f7;
 }
 
-.header-btn a {
+.header-btn a ,
+.header-btn button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -458,7 +459,8 @@ nav.main-menu-content > ul > li > a:hover {
   transition: 0.4s;
 }
 
-.header-btn a:hover {
+.header-btn a:hover ,
+.header-btn button:hover {
   background-position: -100%;
 }
 
@@ -541,7 +543,7 @@ nav.main-menu-content > ul > li > a:hover {
 }
 
 .header-main-menu nav ul li .submenu > li:hover > a,
-.header-main-menu nav ul li .submenu > li:hover > a {
+.header-main-menu nav ul li .child-submenu > li:hover > a {
   color: #8750f7;
 }
 

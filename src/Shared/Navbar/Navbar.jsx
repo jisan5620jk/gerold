@@ -226,8 +226,8 @@ const Navbar = () => {
                 </ul>
               </div>
             </div>
-            <div className='col-span-9 hidden lg:flex lg:items-center lg:gap-[32px] lg:justify-end'>
-              <div className='header-main-menu text-center'>
+            <div className='col-span-9 lg:flex lg:items-center lg:gap-[32px] lg:justify-end'>
+              <div className='header-main-menu text-center hidden lg:block'>
                 <nav className='main-menu-content'>
                   <ul>
                     <li className='has-dropdown -mr-[26px]'>
