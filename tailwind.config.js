@@ -132,6 +132,10 @@ export default {
       mixBlendMode: {
         difference: 'difference',
       },
+      letterSpacing: {
+        custom: '1px',
+        custom2: '1',
+      },
       lineHeight: {},
     },
   },

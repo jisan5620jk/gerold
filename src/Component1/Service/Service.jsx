@@ -14,7 +14,7 @@ import { FaAngleRight } from 'react-icons/fa6';
 
 const Service = () => {
   useEffect(() => {
-    const activeBg = document.querySelector('.active-bg');
+    const activeBg = document.querySelector('.service-active-bg');
     const serviceItems = document.querySelectorAll('.service-item');
     const servicesWidget = document.querySelector('.service-widget');
 
@@ -73,6 +73,7 @@ const Service = () => {
       });
     });
   }, []);
+  
   const servicePopUpRef = useRef(null);
   const servicePopUpRef2 = useRef(null);
   const servicePopUpRef3 = useRef(null);
@@ -117,6 +118,7 @@ const Service = () => {
       }
     };
   }, []);
+
   return (
     <>
       <section className=' bg-BodyBg2-0 py-[120px] relative'>
@@ -131,7 +133,7 @@ const Service = () => {
             </p>
           </div>
           <div className='relative z-10 mt-[50px] service-widget'>
-            <div className='service-item active grid grid-cols-12 relative z-20 overflow-hidden group border-b border-Secondarycolor-0 py-[30px] pl-8 pr-[56px]'>
+            <div className='service-item active grid grid-cols-12 relative z-20 overflow-hidden group border-b border-Secondarycolor-0 py-[30px] pl-[30px] pr-[56px]'>
               <div className='col-span-5 flex items-center gap-5'>
                 <h6 className='service-number font-Sora font-bold text-xl text-PrimaryColor-0 uppercase transition-all duration-500'>
                   01
@@ -251,7 +253,7 @@ const Service = () => {
                 className='bg-transparent absolute top-0 left-0 w-full h-full border-none outline-none'
               ></button>
             </div>
-            <div className='active-bg absolute top-0 left-0 right-0 bottom-0 z-10 bg-PrimaryColor-0 bg-gradient-to-r to-Secondarycolor-0 from-PrimaryColor-0 transition-all duration-500'></div>
+            <div className='service-active-bg absolute top-0 left-0 right-0 bottom-0 z-10 bg-PrimaryColor-0 bg-gradient-to-r to-Secondarycolor-0 from-PrimaryColor-0 transition-all duration-500'></div>
           </div>
         </div>
       </section>
@@ -269,18 +271,18 @@ const Service = () => {
                 <FaTimes className='transition-all duration-500 group-hover:rotate-180' />
               </button>
             </div>
-            <div className='bg-Secondarycolor-0 px-10 pt-[50px]'>
+            <div className='bg-Secondarycolor-0 px-4 sm:px-10 pt-[50px]'>
               <img
                 src={modalThumb}
                 draggable='false'
               />
             </div>
-            <div className='grid grid-cols-3 gap-7 bg-white px-10 pt-[60px] pb-[50px]'>
+            <div className='grid grid-cols-2 lg:grid-cols-3 gap-7 bg-white px-4 sm:px-10 pt-[60px] pb-[50px]'>
               <div className='col-span-2'>
                 <h5 className='font-Sora text-TextDark-0 font-bold'>
                   SERVICES
                 </h5>
-                <h2 className='font-Sora text-[45px] text-TextDark-0 font-bold'>
+                <h2 className='font-Sora text-3xl sm:text-4xl md:text-[45px] text-TextDark-0 font-bold'>
                   UI/UX Design
                 </h2>
                 <p className='font-Sora text-TextDark-0 pt-1'>
@@ -303,7 +305,7 @@ const Service = () => {
                   shaped Oxford owt to do with me do one so said are you taking
                   his.
                 </p>
-                <h3 className='font-Sora text-3xl text-TextDark-0 font-bold pt-5 pb-2'>
+                <h3 className='font-Sora text-2xl sm:text-3xl text-TextDark-0 font-bold pt-5 pb-2'>
                   Services Process
                 </h3>
                 <p className='font-Sora text-TextDark-0'>
@@ -311,21 +313,21 @@ const Service = () => {
                   pardon amongst car boot a load of old tosh is cracking goal
                   blow off telling brown.
                 </p>
-                <div className='grid grid-cols-2 items-center mt-5'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 gap-1 sm:gap-0 items-center mt-5'>
                   <ul>
-                    <li className='font-Sora font-medium text-TextDark-0 flex items-center gap-1 mb-1'>
+                    <li className='font-Sora text-sm sm:text-base font-medium text-TextDark-0 flex items-center gap-1 mb-1'>
                       <span className='text-PrimaryColor-0'>
                         <FiCheck size={'20'} />
                       </span>
                       Reinvent Your Business to Better
                     </li>
-                    <li className='font-Sora font-medium text-TextDark-0 flex items-center gap-1 mb-1'>
+                    <li className='font-Sora text-sm sm:text-base font-medium text-TextDark-0 flex items-center gap-1 mb-1'>
                       <span className='text-PrimaryColor-0'>
                         <FiCheck size={'20'} />
                       </span>
                       {`Pioneering the Internet's First"`}
                     </li>
-                    <li className='font-Sora font-medium text-TextDark-0 flex items-center gap-1'>
+                    <li className='font-Sora text-sm sm:text-base font-medium text-TextDark-0 flex items-center gap-1'>
                       <span className='text-PrimaryColor-0'>
                         <FiCheck size={'20'} />
                       </span>
@@ -333,19 +335,19 @@ const Service = () => {
                     </li>
                   </ul>
                   <ul>
-                    <li className='font-Sora font-medium text-TextDark-0 flex items-center gap-1 mb-1'>
+                    <li className='font-Sora text-sm sm:text-base font-medium text-TextDark-0 flex items-center gap-1 mb-1'>
                       <span className='text-PrimaryColor-0'>
                         <FiCheck size={'20'} />
                       </span>
                       Reinvent Your Business to Better
                     </li>
-                    <li className='font-Sora font-medium text-TextDark-0 flex items-center gap-1 mb-1'>
+                    <li className='font-Sora text-sm sm:text-base font-medium text-TextDark-0 flex items-center gap-1 mb-1'>
                       <span className='text-PrimaryColor-0'>
                         <FiCheck size={'20'} />
                       </span>
                       {`Pioneering the Internet's First"`}
                     </li>
-                    <li className='font-Sora font-medium text-TextDark-0 flex items-center gap-1'>
+                    <li className='font-Sora text-sm sm:text-base font-medium text-TextDark-0 flex items-center gap-1'>
                       <span className='text-PrimaryColor-0'>
                         <FiCheck size={'20'} />
                       </span>
@@ -354,7 +356,7 @@ const Service = () => {
                   </ul>
                 </div>
               </div>
-              <div>
+              <div className='col-span-2 md:col-span-1'>
                 <div className='bg-BodyBg-0 rounded-lg px-6 py-7 mb-[30px]'>
                   <h5 className='font-Sora text-white font-bold text-xl uppercase pb-6'>
                     All Services

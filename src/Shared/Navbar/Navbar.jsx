@@ -15,7 +15,6 @@ import { IoMdPaperPlane } from 'react-icons/io';
 import { HiMinusSm, HiPlusSm } from 'react-icons/hi';
 
 const Navbar = () => {
-
   //Menu Bar
   const menuBarRef = useRef(null);
   const offcanvasRef = useRef(null);
@@ -122,7 +121,10 @@ const Navbar = () => {
             </button>
           </div>
           <div className='offcanvas_logo inline-block'>
-            <Link to={'/'} title='Gerold'>
+            <Link
+              to={'/'}
+              title='Gerold'
+            >
               <img
                 src={Logo}
                 draggable='false'
@@ -207,9 +209,12 @@ const Navbar = () => {
           <div className='flex items-center justify-between lg:grid lg:grid-cols-12'>
             <div className='col-span-3'>
               <div className='header-logo inline-block'>
-                <ul className='flex items-center gap-9'>
+                <ul className='flex items-center gap-[35px]'>
                   <li>
-                    <Link to={'/'} title='Gerold'>
+                    <Link
+                      to={'/'}
+                      title='Gerold'
+                    >
                       <img
                         src={Logo}
                         draggable='false'
@@ -218,7 +223,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <Link to={'/'}>
-                      <button className='font-Sora font-medium text-[15px] text-white transition-all duration-500 hover:text-PrimaryColor-0'>
+                      <button className='font-Sora font-medium text-[15px] text-white transition-all duration-500 hover:text-PrimaryColor-0 relative bottom-[1px]'>
                         mail@gerolddesign.com
                       </button>
                     </Link>
@@ -230,7 +235,7 @@ const Navbar = () => {
               <div className='header-main-menu text-center hidden lg:block'>
                 <nav className='main-menu-content'>
                   <ul>
-                    <li className='has-dropdown -mr-[26px]'>
+                    <li className='has-dropdown -mr-[30px]'>
                       <Link
                         to={'/'}
                         className='group'
@@ -245,9 +250,7 @@ const Navbar = () => {
                       </Link>
                       <ul className='submenu'>
                         <li className='has-child-dropdown group'>
-                          <Link
-                            to={'/'}
-                          >
+                          <Link to={'/'}>
                             Home Page Dark Mode
                             <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 group-hover:opacity-0'>
                               <HiPlusSm />
@@ -266,9 +269,7 @@ const Navbar = () => {
                           </ul>
                         </li>
                         <li className='has-child-dropdown group'>
-                          <Link
-                            to={'/'}
-                          >
+                          <Link to={'/'}>
                             Home Page Light Mode
                             <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 group-hover:opacity-0'>
                               <HiPlusSm />
@@ -292,12 +293,12 @@ const Navbar = () => {
                       <Link to={'/about'}>About</Link>
                     </li>
                     <li>
-                      <Link to={'/'}>Service</Link>
+                      <Link to={'/'}>Services</Link>
                     </li>
                     <li>
-                      <Link to={'/'}>Portfolio</Link>
+                      <Link to={'/'}>Portfolios</Link>
                     </li>
-                    <li className='has-dropdown -mr-[26px]'>
+                    <li className='has-dropdown -mr-[30px]'>
                       <Link
                         to={'/'}
                         className='group'

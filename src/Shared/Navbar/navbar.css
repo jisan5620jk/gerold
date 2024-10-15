@@ -379,7 +379,7 @@
 }
 
 .header-logo {
-  padding: 32px 0;
+  padding: 31px 0;
 }
 
 .header-logo img {
@@ -387,10 +387,16 @@
   width: 60px;
 }
 
+nav.main-menu-content > ul {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  margin-right: 23px;
+}
+
 nav.main-menu-content > ul > li {
   display: inline-block;
   position: relative;
-  padding: 0 22px;
 }
 
 nav.main-menu-content > ul > li > a {
@@ -405,7 +411,7 @@ nav.main-menu-content > ul > li > a {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 5px;
 }
 
 nav.main-menu-content > ul > li > a:hover {

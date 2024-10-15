@@ -17,54 +17,14 @@ body {
 /*Common Tailwind CSS Start Here*/
 
 .Container {
-  @apply w-full sm:w-[540px] md:w-[720px] lg:w-[960px] xl:w-[1140px] 2xl:w-[1320px] px-2 md:px-3 lg:px-4 xl:px-5 mx-auto;
+  @apply w-full sm:w-[540px] md:w-[720px] lg:w-[960px] xl:w-[1140px] 2xl:w-[1320px] px-2 md:px-3 lg:px-3 mx-auto;
 }
+
+
+
 
 .primary-btn {
-  padding: 17px 35px;
-  font-size: 15px;
-  color: #8750f7;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-weight: 500;
-  font-family: 'Sora';
-  border-radius: 32px;
-  position: relative;
-  z-index: 1;
-  transition: 1s;
-  overflow: hidden;
-  border: 1px solid #8750f7;
-  background-color: #8750f7;
-}
-
-.primary-btn:hover {
-  color: #fff;
-}
-
-.primary-btn:after {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  position: absolute;
-  content: attr(data-text);
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-color: #8750f7;
-  background-image: url(../images/mask-btn.png);
-  -webkit-mask: url(../images/mask-btn.png);
-  mask: url(../images/mask-btn.png);
-  -webkit-mask-size: 2300% 100%;
-  mask-size: 2300% 100%;
-  animation: mask_animation_2 0.7s steps(22) forwards;
-  z-index: -1;
-}
-
-.primary-btn:hover:after {
-  animation: mask_animation 0.7s steps(22) forwards;
+  @apply font-Sora font-medium rounded-full text-[15px] tracking-custom text-PrimaryColor-0 border border-PrimaryColor-0 flex items-center gap-[8px] px-[35px] py-[16px] transition-all duration-500 hover:text-white hover:bg-PrimaryColor-0;
 }
 
 .primary-btn2 {
