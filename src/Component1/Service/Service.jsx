@@ -111,7 +111,15 @@ const Service = () => {
     }
 
     return () => {
-      if (servicePopUp && popUpContent && bodyOverlay && closeBtn) {
+      if (
+        servicePopUp &&
+        servicePopUp2 &&
+        servicePopUp3 &&
+        servicePopUp4 &&
+        popUpContent &&
+        bodyOverlay &&
+        closeBtn
+      ) {
         servicePopUp.removeEventListener('click', addClasses);
         closeBtn.removeEventListener('click', removeClasses);
         bodyOverlay.removeEventListener('click', removeClasses);
