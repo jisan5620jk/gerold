@@ -1,34 +1,19 @@
 /* eslint-disable react/prop-types */
-import { Link } from 'react-router-dom';
 
 const SkillCard = ({
-  skillNumber,
+  skillSubTilte,
   skillTitle,
   skillDesc,
-  skillUrl,
-  btnIcon,
 }) => {
   return (
-    <div className='grid grid-cols-12 relative z-10 overflow-hidden group border-b border-Secondarycolor-0 py-8'>
-      <div className='col-span-5 flex items-center gap-5'>
-        <h6 className='font-Sora font-bold text-xl text-PrimaryColor-0 uppercase'>
-          {skillNumber}
+    <div className='bg-BodyBg-0 py-5 rounded-[20px] px-[30px] group relative z-10 overflow-hidden before:absolute before:left-0 before:top-0 before:bg-gradient-to-l before:to-PrimaryColor-0 before:-z-10 before:from-Secondarycolor-0 before:transition-all before:duration-500 before:w-full before:h-full before:opacity-0 hover:before:opacity-100'>
+        <h6 className='font-Sora font-bold text-xl text-PrimaryColor-0 capitalize transition-all duration-500 group-hover:text-white'>
+          {skillSubTilte}
         </h6>
-        <h4 className='font-Sora font-bold text-xl sm:text-2xl lg:text-3xl text-white mt-1'>
+        <h4 className='font-Sora font-bold text-xl sm:text-[25px] text-white mt-[10px] mb-[9px] uppercase'>
           {skillTitle}
         </h4>
-      </div>
-      <div className='col-span-7 flex items-center justify-between max-w-[490px] w-full'>
         <p className='font-Sora text-TextColor-0'>{skillDesc}</p>
-      </div>
-      <div className='absolute top-1/2 -translate-y-1/2 right-8 inline-block'>
-        <Link
-          to={skillUrl}
-          className='inline-block relative'
-        >
-          <button className='text-2xl text-PrimaryColor-0'>{btnIcon}</button>
-        </Link>
-      </div>
     </div>
   );
 };

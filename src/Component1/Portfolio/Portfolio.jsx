@@ -1,14 +1,23 @@
 import { useEffect, useRef } from 'react';
 import Isotope from 'isotope-layout';
-import porfolioImg from '/images/portfolio/1.jpg'
-import porfolioImg2 from '/images/portfolio/2.jpg'
-import porfolioImg3 from '/images/portfolio/3.jpg'
-import porfolioImg4 from '/images/portfolio/4.jpg'
+import imagesLoaded from 'imagesloaded';
+import porfolioImg from '/images/portfolio/1.jpg';
+import porfolioImg2 from '/images/portfolio/2.jpg';
+import porfolioImg3 from '/images/portfolio/3.jpg';
+import porfolioImg4 from '/images/portfolio/4.jpg';
+import popUpSliderThumb from '/images/portfolio-gallery/p-gallery-1.jpg';
+import popUpSliderThumb2 from '/images/portfolio-gallery/p-gallery-2.jpg';
+import popUpSliderThumb3 from '/images/portfolio-gallery/p-gallery-3.jpg';
+import popUpSliderThumb4 from '/images/portfolio-gallery/p-gallery-4.jpg';
 import modalThumb from '/images/portfolio/modal-img.jpg';
 import { HiArrowUpRight } from 'react-icons/hi2';
-import './portfolio.css'
+import './portfolio.css';
 import { FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
 
 const Portfolio = () => {
   useEffect(() => {
@@ -19,6 +28,11 @@ const Portfolio = () => {
       },
       itemSelector: '.portfolio-item',
       percentPosition: true,
+    });
+
+    // Ensure all images are loaded before initializing Isotope
+    imagesLoaded('.portfolio-box', () => {
+      $grid.layout();
     });
 
     // Filter items on button click
@@ -73,70 +87,100 @@ const Portfolio = () => {
     };
   }, []);
 
-
   //Pop Up
 
-   const portfolioPopUpRef = useRef(null);
-   const portfolioPopUpRef2 = useRef(null);
-   const portfolioPopUpRef3 = useRef(null);
-   const portfolioPopUpRef4 = useRef(null);
-   const portfolioPopUpContentRef = useRef(null);
-   const portfolioBodyOverlayRef = useRef(null);
-   const portfolioCloseBtnRef = useRef(null);
+  const portfolioPopUpRef = useRef(null);
+  const portfolioPopUpRef2 = useRef(null);
+  const portfolioPopUpRef3 = useRef(null);
+  const portfolioPopUpRef4 = useRef(null);
+  const portfolioPopUpContentRef = useRef(null);
+  const portfolioBodyOverlayRef = useRef(null);
+  const portfolioCloseBtnRef = useRef(null);
 
-   useEffect(() => {
-     const portfolioPopUp = portfolioPopUpRef.current;
-     const portfolioPopUp2 = portfolioPopUpRef2.current;
-     const portfolioPopUp3 = portfolioPopUpRef3.current;
-     const portfolioPopUp4 = portfolioPopUpRef4.current;
-     const portfolioPopUpContent = portfolioPopUpContentRef.current;
-     const portfolioBodyOverlay = portfolioBodyOverlayRef.current;
-     const closeBtn = portfolioCloseBtnRef.current;
+  useEffect(() => {
+    const portfolioPopUp = portfolioPopUpRef.current;
+    const portfolioPopUp2 = portfolioPopUpRef2.current;
+    const portfolioPopUp3 = portfolioPopUpRef3.current;
+    const portfolioPopUp4 = portfolioPopUpRef4.current;
+    const portfolioPopUpContent = portfolioPopUpContentRef.current;
+    const portfolioBodyOverlay = portfolioBodyOverlayRef.current;
+    const closeBtn = portfolioCloseBtnRef.current;
 
-     const addClasses = () => {
-       portfolioPopUpContent.classList.add('opened');
-       portfolioBodyOverlay.classList.add('apply');
-     };
+    const addClasses = () => {
+      portfolioPopUpContent.classList.add('opened');
+      portfolioBodyOverlay.classList.add('apply');
+    };
 
-     const removeClasses = () => {
-       portfolioPopUpContent.classList.remove('opened');
-       portfolioBodyOverlay.classList.remove('apply');
-     };
+    const removeClasses = () => {
+      portfolioPopUpContent.classList.remove('opened');
+      portfolioBodyOverlay.classList.remove('apply');
+    };
 
-     if (
-       portfolioPopUp &&
-       portfolioPopUp2 &&
-       portfolioPopUp3 &&
-       portfolioPopUp4 &&
-       portfolioPopUpContent &&
-       portfolioBodyOverlay &&
-       closeBtn
-     ) {
-       portfolioPopUp.addEventListener('click', addClasses);
-       portfolioPopUp2.addEventListener('click', addClasses);
-       portfolioPopUp3.addEventListener('click', addClasses);
-       portfolioPopUp4.addEventListener('click', addClasses);
-       closeBtn.addEventListener('click', removeClasses);
-       portfolioBodyOverlay.addEventListener('click', removeClasses);
-     }
+    if (
+      portfolioPopUp &&
+      portfolioPopUp2 &&
+      portfolioPopUp3 &&
+      portfolioPopUp4 &&
+      portfolioPopUpContent &&
+      portfolioBodyOverlay &&
+      closeBtn
+    ) {
+      portfolioPopUp.addEventListener('click', addClasses);
+      portfolioPopUp2.addEventListener('click', addClasses);
+      portfolioPopUp3.addEventListener('click', addClasses);
+      portfolioPopUp4.addEventListener('click', addClasses);
+      closeBtn.addEventListener('click', removeClasses);
+      portfolioBodyOverlay.addEventListener('click', removeClasses);
+    }
 
-     return () => {
-       if (
-         portfolioPopUp &&
-         portfolioPopUp2 &&
-         portfolioPopUp3 &&
-         portfolioPopUp4 &&
-         portfolioPopUpContent &&
-         portfolioBodyOverlay &&
-         closeBtn
-       ) {
-         portfolioPopUp.removeEventListener('click', addClasses);
-         closeBtn.removeEventListener('click', removeClasses);
-         portfolioBodyOverlay.removeEventListener('click', removeClasses);
-       }
-     };
-   }, []);
+    return () => {
+      if (
+        portfolioPopUp &&
+        portfolioPopUp2 &&
+        portfolioPopUp3 &&
+        portfolioPopUp4 &&
+        portfolioPopUpContent &&
+        portfolioBodyOverlay &&
+        closeBtn
+      ) {
+        portfolioPopUp.removeEventListener('click', addClasses);
+        closeBtn.removeEventListener('click', removeClasses);
+        portfolioBodyOverlay.removeEventListener('click', removeClasses);
+      }
+    };
+  }, []);
 
+  // Pop up Image Slider
+
+  const settings = {
+    loop: true,
+    spaceBetween: 30,
+    speed: 1000,
+    initialSlide: 1,
+    centeredSlides: true,
+    autoplay: true,
+    effect: 'ease',
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 2,
+      },
+      1400: {
+        slidesPerView: 2,
+      },
+    },
+  };
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + ' pagination-bullet"></span>';
+    },
+  };
   return (
     <>
       <div className='portfolio-filter text-center bg-BodyBg-0 py-28'>
@@ -295,66 +339,180 @@ const Portfolio = () => {
                 draggable='false'
               />
             </div>
-            <div className='bg-white px-4 sm:px-10 pt-[60px] pb-[50px]'>
-              <div className='grid grid-cols-1 md:grid-cols-2 items-start gap-7'>
-                <div>
-                  <h2 className='font-Sora font-bold text-TextDark-0 text-4xl pt-1'>
-                    DStudio
-                  </h2>
-                  <p className='font-Sora text-TextDark-0 pt-[14px] pb-5'>
-                    {`They are was greater open above shelter lets itself under appear
-                sixth open gathering made upon can't own above midst gathering
-                gathered he one us saying can't divide.`}
-                  </p>
-                  <div className='inline-block'>
-                    <Link
-                      to={'/'}
-                      className='header-btn group'
-                    >
-                      <button>
-                        Live Preview
-                        <span className='transition-all duration-500 group-hover:rotate-45'>
-                          <HiArrowUpRight />
-                        </span>
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-                <div className='grid grid-cols-2 items-center gap-y-[6px]'>
+            <div className='bg-white'>
+              <div className='px-4 sm:px-10 pt-[60px] pb-[50px]'>
+                <div className='grid grid-cols-1 md:grid-cols-2 items-start gap-7'>
                   <div>
-                    <p className='font-Sora text-TextDark-0 tracking-wide'>
-                      Category
+                    <h2 className='font-Sora font-bold text-TextDark-0 text-[45px] leading-[52px]'>
+                      DStudio
+                    </h2>
+                    <p className='font-Sora text-TextDark-0 pt-[14px] pb-5'>
+                      {`They are was greater open above shelter lets itself under appear
+                      sixth open gathering made upon can't own above midst gathering
+                      gathered he one us saying can't divide.`}
                     </p>
-                    <h6 className='font-Sora text-TextDark-0 font-medium pt-[6px]'>
-                      Web Design
-                    </h6>
+                    <div className='inline-block'>
+                      <Link
+                        to={'/'}
+                        className='header-btn group'
+                      >
+                        <button>
+                          Live Preview
+                          <span className='transition-all duration-500 group-hover:rotate-45'>
+                            <HiArrowUpRight />
+                          </span>
+                        </button>
+                      </Link>
+                    </div>
                   </div>
-                  <div>
-                    <p className='font-Sora text-TextDark-0 tracking-wide'>
-                      Start Date
-                    </p>
-                    <h6 className='font-Sora text-TextDark-0 font-medium pt-[6px]'>
-                      August 20, 2024
-                    </h6>
-                  </div>
-                  <div>
-                    <p className='font-Sora text-TextDark-0 tracking-wide'>
-                      Client
-                    </p>
-                    <h6 className='font-Sora text-TextDark-0 font-medium pt-[6px]'>
-                      Artboard Studio
-                    </h6>
-                  </div>
-                  <div>
-                    <p className='font-Sora text-TextDark-0 tracking-wide'>
-                      Designer
-                    </p>
-                    <h6 className='font-Sora text-TextDark-0 font-medium pt-[6px]'>
-                      Theme Junction
-                    </h6>
+                  <div className='grid grid-cols-2 items-center gap-y-[6px]'>
+                    <div>
+                      <p className='font-Sora text-TextDark-0 tracking-wide'>
+                        Category
+                      </p>
+                      <h6 className='font-Sora text-TextDark-0 font-medium pt-[6px]'>
+                        Web Design
+                      </h6>
+                    </div>
+                    <div>
+                      <p className='font-Sora text-TextDark-0 tracking-wide'>
+                        Start Date
+                      </p>
+                      <h6 className='font-Sora text-TextDark-0 font-medium pt-[6px]'>
+                        August 20, 2024
+                      </h6>
+                    </div>
+                    <div>
+                      <p className='font-Sora text-TextDark-0 tracking-wide'>
+                        Client
+                      </p>
+                      <h6 className='font-Sora text-TextDark-0 font-medium pt-[6px]'>
+                        Artboard Studio
+                      </h6>
+                    </div>
+                    <div>
+                      <p className='font-Sora text-TextDark-0 tracking-wide'>
+                        Designer
+                      </p>
+                      <h6 className='font-Sora text-TextDark-0 font-medium pt-[6px]'>
+                        Theme Junction
+                      </h6>
+                    </div>
                   </div>
                 </div>
               </div>
+              <div>
+                <Swiper
+                  {...settings}
+                  pagination={pagination}
+                  modules={[Pagination]}
+                >
+                  <SwiperSlide>
+                    <div className='pb-9'>
+                      <img src={popUpSliderThumb} />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className='pb-9'>
+                      <img src={popUpSliderThumb2} />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className='pb-9'>
+                      <img src={popUpSliderThumb3} />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className='pb-9'>
+                      <img src={popUpSliderThumb4} />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className='pb-9'>
+                      <img src={popUpSliderThumb3} />
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
+              </div>
+              <div className='px-4 sm:px-10 pt-[41px]'>
+                <h2 className='font-Sora font-bold text-TextDark-0 text-[45px]'>
+                  Project Description
+                </h2>
+                <p className='font-Sora text-TextDark-0 pt-1 pb-4'>
+                  {`The goal is there are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable`}
+                </p>
+                <p className='font-Sora text-TextDark-0 pb-5'>
+                  {`There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.`}
+                </p>
+                <div className='grid grid-cols-3 pt-4'>
+                  <div className='col-span-1 pt-3'>
+                    <h5 className='font-Sora font-bold text-xl text-TextDark-0 uppercase'>
+                      The story
+                    </h5>
+                  </div>
+                  <div className='col-span-2'>
+                    <p className='font-Sora text-TextDark-0 pt-[14px] pb-5 2xl:mr-24 pr-[6px]'>
+                      {`There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.`}
+                    </p>
+                  </div>
+                </div>
+                <div className='grid grid-cols-3 pt-4'>
+                  <div className='col-span-1 pt-3'>
+                    <h5 className='font-Sora font-bold text-xl text-TextDark-0 uppercase'>
+                      OUR APPROACH
+                    </h5>
+                  </div>
+                  <div className='col-span-2'>
+                    <p className='font-Sora text-TextDark-0 pt-[14px] pb-5 2xl:mr-24 pr-[6px]'>
+                      {`There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.`}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className='flex justify-between items-center bg-PrimaryColor-0 px-[52px] py-[38px] mt-7'>
+                  <div>
+                    <Link
+                      to={'/'}
+                      className='flex items-end gap-4 group'
+                    >
+                      <span className='text-white pb-2'>
+                        <HiArrowUpRight
+                          size={'28'}
+                          className='-rotate-90 transition-all duration-500 group-hover:-rotate-[135deg]'
+                        />
+                      </span>
+                      <span className='flex flex-col'>
+                        <span className='font-Sora text-white tracking-wide font-light'>
+                          Previous Project
+                        </span>
+                        <span className='font-Sora font-bold text-white text-[45px] leading-10 pt-2'>
+                          Sebastian
+                        </span>
+                      </span>
+                    </Link>
+                  </div>
+                  <div>
+                    <Link
+                      to={'/'}
+                      className='flex items-end gap-4 group'
+                    >
+                      <span className='flex flex-col text-end'>
+                        <span className='font-Sora text-white tracking-wide font-light'>
+                          Next Project
+                        </span>
+                        <span className='font-Sora font-bold text-white text-[45px] leading-10 pt-2'>
+                          Qwillo
+                        </span>
+                      </span>
+                      <span className='text-white pb-2'>
+                        <HiArrowUpRight
+                          size={'28'}
+                          className='rotate-0 transition-all duration-500 group-hover:rotate-45'
+                        />
+                      </span>
+                    </Link>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
