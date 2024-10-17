@@ -1,37 +1,42 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { EffectFlip } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 import TestimonialCard from './TestimonialCard';
-import testThumb from '/images/testi.jpg';
-import testiProfile from '/images/people.png';
-import testiShape from '/images/circle2.png';
-import testiQuote from '/images/quote.png';
-import { Link } from 'react-router-dom';
-import { GoArrowRight } from 'react-icons/go';
+import testiLogo from '/images/testimonials/logo/1.png';
+import testiLogo2 from '/images/testimonials/logo/2.png';
+import testiProfile from '/images/testimonials/user/1.jpg';
+import testiProfile2 from '/images/testimonials/user/2.jpg';
+import { BsFillCaretLeftFill, BsFillCaretRightFill } from 'react-icons/bs';
 
 const testiData = [
   {
     id: 1,
-    testiQuote: testiQuote,
-    testiDesc: `Quickly fashion backend strategic theme areas with
-                virtual growth strategies. Authoritatively
-                formulate competitive experiences rather than
-                granular manufactured products granular intelle
-                capital without equity invested`,
-    testiName: 'Jisan Khan',
-    testiDesignation: 'Satisfied Patient',
+    testiLogo: testiLogo,
+    testiIconLeft: <BsFillCaretLeftFill />,
+    testiIconRight: <BsFillCaretRightFill />,
+    testiDesc: `“Taylor is a professional Designer he really helps my business by providing value to my business.`,
+    testiName: 'Brandon Fraser',
+    testiDesignation: 'Senior Software Dev, Cosmic Sport',
     testiProfile: testiProfile,
   },
   {
     id: 2,
-    testiQuote: testiQuote,
-    testiDesc: `Quickly fashion backend strategic theme areas with
-                virtual growth strategies. Authoritatively
-                formulate competitive experiences rather than
-                granular manufactured products granular intelle
-                capital without equity invested`,
-    testiName: 'Jisan Khan',
-    testiDesignation: 'Satisfied Patient',
+    testiLogo: testiLogo2,
+    testiIconLeft: <BsFillCaretLeftFill />,
+    testiIconRight: <BsFillCaretRightFill />,
+    testiDesc: `“Taylor is a professional Designer he really helps my business by providing value to my business.`,
+    testiName: 'Tim Bailey',
+    testiDesignation: 'SEO Specialist, Theme Junction',
+    testiProfile: testiProfile2,
+  },
+  {
+    id: 3,
+    testiLogo: testiLogo,
+    testiIconLeft: <BsFillCaretLeftFill />,
+    testiIconRight: <BsFillCaretRightFill />,
+    testiDesc: `“Taylor is a professional Designer he really helps my business by providing value to my business.`,
+    testiName: 'Brandon Fraser',
+    testiDesignation: 'Senior Software Dev, Cosmic Sport',
     testiProfile: testiProfile,
   },
 ];
@@ -40,85 +45,68 @@ const Testimonial = () => {
   const settings = {
     loop: true,
     spaceBetween: 30,
+    speed: 1000,
     initialSlide: 1,
     autoplay: true,
-    effect: 'flip',
-    grabCursor: true,
-    flipEffect: {
-      slideShadows: false,
-    },
+    effect: 'ease',
     breakpoints: {
       320: {
         slidesPerView: 1,
       },
       768: {
-        slidesPerView: 1,
+        slidesPerView: 2,
       },
       992: {
-        slidesPerView: 1,
+        slidesPerView: 2,
       },
       1400: {
-        slidesPerView: 1,
+        slidesPerView: 2,
       },
     },
   };
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + ' pagination-bullet"></span>';
+    },
+  };
   return (
-    <section className='bg-Secondarycolor-0 py-28 relative z-10 overflow-hidden'>
-      <div className='absolute top-0 right-0 -z-10'>
-        <img
-          src={testiShape}
-          draggable='false'
-        />
-      </div>
-      <div className='text-center pb-11'>
-        <h1 className='font-Sora font-bold uppercase text-white text-xl leading-[30px] sm:text-3xl sm:leading-[40px] md:text-[40px] md:leading-[50px] lg:text-[50px] lg:leading-[60px] xl:text-[52px] xl:leading-[62px] 2xl:text-[60px] 2xl:leading-[70px]'>
-          Testimonials
-        </h1>
-      </div>
-      <div className='px-2 xl:px-5 2xl:px-20'>
-        <div className='grid gap-[30px] grid-cols-6 lg:grid-cols-12 lg:items-center'>
-          <div className='col-span-6 lg:col-span-8 relative rounded-[30px] overflow-hidden'>
-            <div className='relative z-10'>
-              <img
-                src={testThumb}
-                draggable='false'
-                className='lg:max-w-[inherit] lg:w-[inherit] 2xl:max-w-full'
-              />
-              <div className='hidden sm:block absolute top-7 left-7 px-8 pb-10 pt-7 border-2 border-white bg-white bg-opacity-15 backdrop-filter backdrop-blur-md rounded-2xl'>
-                <h4 className='font-Sora font-semibold text-2xl text-HeadingColor-0 pb-5'>
-                  Get Free Consultation
-                </h4>
-                <Link to={'/appointment'}>
-                  <button className='primary-btn'>
-                    Appointment
-                    <GoArrowRight
-                      size={'22'}
-                      className='-rotate-45'
-                    />
-                  </button>
-                </Link>
-              </div>
-            </div>
+    <section className='testimonial bg-BodyBg2-0 pt-[120px] pb-[130px] relative z-10 overflow-hidden'>
+      <span className='absolute left-[11%] bottom-[20%] size-[16%] rounded-full bg-gradient-to-t to-PrimaryColor-0 from-Secondarycolor-0 blur-[150px]'></span>
+      <div className='Container'>
+        <div className='grid gap-[30px] grid-cols-1 lg:grid-cols-2 lg:items-start'>
+          <div className='relative overflow-hidden'>
+            <h1 className='font-Sora text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
+              {`My Client's Stories`}
+            </h1>
+            <p className='font-Sora text-TextColor-0 mt-2 max-w-[470px] w-full'>
+              Empowering people in new a digital journey with my super services
+            </p>
           </div>
-          <div className='col-span-6 lg:col-span-4'>
+          <div className=''>
             <Swiper
               {...settings}
-              modules={[EffectFlip]}
+              pagination={pagination}
+              modules={[Pagination]}
             >
               <div>
                 {testiData.map(
                   ({
                     id,
-                    testiQuote,
+                    testiLogo,
+                    testiIconLeft,
+                    testiIconRight,
                     testiName,
                     testiProfile,
                     testiDesignation,
                     testiDesc,
                   }) => {
                     return (
-                      <SwiperSlide key={id}>
+                      <SwiperSlide key={id} className='pb-[42px]'>
                         <TestimonialCard
-                          testiQuote={testiQuote}
+                          testiLogo={testiLogo}
+                          testiIconLeft={testiIconLeft}
+                          testiIconRight={testiIconRight}
                           testiName={testiName}
                           testiDesignation={testiDesignation}
                           testiProfile={testiProfile}

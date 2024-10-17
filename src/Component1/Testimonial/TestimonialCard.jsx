@@ -1,42 +1,34 @@
 /* eslint-disable react/prop-types */
 const TestimonialCard = ({
-  testiQuote,
-  testiRatingIcon,
+  testiLogo,
+  testiIconLeft,
+  testiIconRight,
   testiProfile,
   testiName,
   testiDesignation,
   testiDesc,
 }) => {
   return (
-    <div className='relative px-2 sm:px-[50px] lg:px-2 xl:px-8 2xl:px-[50px] bg-Secondarycolor-0 bg-[url(/images/test.png)] bg-no-repeat bg-cover bg-center border-2 border-BorderColor2-0 rounded-[30px]'>
+    <div className='relative px-2 sm:px-[26px] lg:px-2 xl:px-[26px] pt-[26px] pb-7 bg-BodyBg3-0 rounded-2xl'>
       <img
-        src={testiQuote}
+        src={testiLogo}
         draggable='false'
-        className='pt-14'
+        className='absolute top-[25px] left-[26px]'
       />
-      <ul className='flex gap-1 items-center mb-5 mt-9'>
-        <li className='text-[#ffb609] text-2xl'>{testiRatingIcon}</li>
-        <li className='text-[#ffb609] text-2xl'>{testiRatingIcon}</li>
-        <li className='text-[#ffb609] text-2xl'>{testiRatingIcon}</li>
-        <li className='text-[#ffb609] text-2xl'>{testiRatingIcon}</li>
-        <li className='text-[#ffb609] text-2xl'>{testiRatingIcon}</li>
-      </ul>
-      <p className='font-Sora sm:text-xl lg:text-lg xl:text-xl text-white'>
-        {testiDesc}
-      </p>
-      <div className='flex items-center gap-5 mt-12 lg:mt-[104px] 2xl:mt-[165px] pb-14'>
-        <div>
-          <img src={testiProfile} />
-        </div>
-        <div>
-          <h5 className='font-Sora font-semibold inline-block text-white text-2xl mb-1'>
-            {testiName}
-          </h5>
-          <p className='font-DMSans text-[17px] lg:text-base xl:text-[17px] text-TextColor-0'>
-            {testiDesignation}
-          </p>
-        </div>
+      <div className="flex items-center justify-end">
+        <img src={testiProfile} className="max-w-[120px] w-[40%] rounded-md rounded-es-[125px]"/>
       </div>
+      <div className="flex items-center mt-4">
+        <span className="text-4xl text-PrimaryColor-0 -ml-2">{testiIconLeft}</span>
+        <span className="text-4xl text-PrimaryColor-0 -ml-[18px]">{testiIconRight}</span>
+      </div>
+      <p className="font-Sora text-white font-light pt-[18px]">{testiDesc}</p>
+      <h5 className='font-Sora font-bold inline-block text-white text-lg mt-[46px]'>
+        {testiName}
+      </h5>
+      <p className='font-Sora text-sm text-white font-light mt-[3px]'>
+        {testiDesignation}
+      </p>
     </div>
   );
 };
