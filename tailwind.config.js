@@ -16,7 +16,7 @@ export default {
         TextColor2: ['#65677a'],
         BodyBg: ['#0f0715'],
         BodyBg2: ['#050709'],
-        BodyBg3: ['#0c6d6d'],
+        BodyBg3: ['#140c1c'],
         BodyBg4: ['#f4f8f9'],
         BorderColor: ['#22272c'],
         BorderColor2: ['#ffffff33'],

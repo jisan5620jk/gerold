@@ -1,112 +1,85 @@
 import SkillCard from './SkillCard';
-import icon from '/images/skill/skill-icon.png';
-import icon2 from '/images/skill/skill-icon2.png';
+import icon from '/images/icons/figma.svg';
+import icon2 from '/images/icons/sketch.svg';
+import icon3 from '/images/icons/xd.svg';
+import icon4 from '/images/icons/wp.svg';
+import icon5 from '/images/icons/react.svg';
+import icon6 from '/images/icons/js.svg';
 
 const SkillData = [
   {
     id: 1,
-    skillSubTilte: '2022 - Present',
-    skillTitle: 'Lead Developer',
-    skillDesc: 'Blockdots, London',
+    skillIcon: icon,
+    skillPercent: 92,
+    skillSuffix: '%',
+    skillTitle: 'Figma',
   },
   {
     id: 2,
-    skillSubTilte: '2021 - 2022',
-    skillTitle: 'Full Stack Web Developer',
-    skillDesc: 'Parsons, The New School',
+    skillIcon: icon2,
+    skillPercent: 80,
+    skillSuffix: '%',
+    skillTitle: 'Sketch',
   },
   {
     id: 3,
-    skillSubTilte: '2020 - 2021',
-    skillTitle: 'UI Designer',
-    skillDesc: 'House of Life, Leeds',
+    skillIcon: icon3,
+    skillPercent: 85,
+    skillSuffix: '%',
+    skillTitle: 'XD',
   },
   {
     id: 4,
-    skillSubTilte: '2018 - 2020',
-    skillTitle: 'Junior Graphics Designer',
-    skillDesc: 'Theme Junction, Bursa',
+    skillIcon: icon4,
+    skillPercent: 99,
+    skillSuffix: '%',
+    skillTitle: 'Wordpress',
+  },
+  {
+    id: 5,
+    skillIcon: icon5,
+    skillPercent: 89,
+    skillSuffix: '%',
+    skillTitle: 'React',
+  },
+  {
+    id: 6,
+    skillIcon: icon6,
+    skillPercent: 93,
+    skillSuffix: '%',
+    skillTitle: 'JavaScript',
   },
 ];
 
-const SkillData2 = [
-  {
-    id: 1,
-    skillSubTilte: '2020 - 2023',
-    skillTitle: 'Programming course',
-    skillDesc: 'Harverd University',
-  },
-  {
-    id: 2,
-    skillSubTilte: '2016 - 2020',
-    skillTitle: 'Graphic design course',
-    skillDesc: 'University of Denmark',
-  },
-  {
-    id: 3,
-    skillSubTilte: '2012 - 2015',
-    skillTitle: 'Web design course',
-    skillDesc: 'University of California',
-  },
-  {
-    id: 4,
-    skillSubTilte: '2010 - 2011',
-    skillTitle: 'Design & Technology',
-    skillDesc: 'Parsons, The New School',
-  },
-];
 
 const Skill = () => {
   return (
-    <section className=' bg-BodyBg2-0 pt-[106px] pb-[120px] relative'>
+    <section className=' bg-BodyBg-0 pt-[106px] pb-[120px] relative'>
       <div className='Container'>
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-y-[30px] gap-x-[120px] items-center'>
-          <div>
-            <h1 className='font-Sora text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent flex items-center gap-5'>
-              <img
-                src={icon}
-                draggable='false'
-              />
-              My Experience
-            </h1>
-            <div className='relative z-10 mt-[45px] grid grid-cols-1 gap-y-[30px]'>
-              {SkillData.map(({ id, skillDesc, skillSubTilte, skillTitle }) => {
-                return (
-                  <div key={id}>
-                    <SkillCard
-                      skillDesc={skillDesc}
-                      skillSubTilte={skillSubTilte}
-                      skillTitle={skillTitle}
-                    />
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-          <div>
-            <h1 className='font-Sora text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent flex items-center gap-5'>
-              <img
-                src={icon2}
-                draggable='false'
-              />
-              My Education
-            </h1>
-            <div className='relative z-10 mt-[45px] grid grid-cols-1 gap-y-[30px]'>
-              {SkillData2.map(
-                ({ id, skillDesc, skillSubTilte, skillTitle }) => {
-                  return (
-                    <div key={id}>
-                      <SkillCard
-                        skillDesc={skillDesc}
-                        skillSubTilte={skillSubTilte}
-                        skillTitle={skillTitle}
-                      />
-                    </div>
-                  );
-                }
-              )}
-            </div>
-          </div>
+        <div className='text-center'>
+          <h1 className='font-Sora text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
+            My Skills
+          </h1>
+          <p className='font-Sora text-TextColor-0 mt-2 mx-auto max-w-[640px] w-full'>
+            We put your ideas and thus your wishes in the form of a unique web
+            project that inspires you and you customers.
+          </p>
+        </div>
+        <div className='relative z-10 mt-[50px] flex gap-5 items-center justify-center flex-wrap'>
+          {SkillData.map(
+            ({ id, skillIcon, skillPercent, skillSuffix, skillTitle }) => {
+              return (
+                <div key={id}>
+                  <SkillCard
+                    skillIcon={skillIcon}
+                    skillPercent={skillPercent}
+                    skillSuffix={skillSuffix}
+                    skillTitle={skillTitle}
+                  />
+                </div>
+              );
+            }
+          )}
         </div>
       </div>
     </section>

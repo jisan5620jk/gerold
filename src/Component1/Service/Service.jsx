@@ -135,9 +135,9 @@ const Service = () => {
             <h1 className='font-Sora text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
               My Quality Services
             </h1>
-            <p className='font-Sora text-TextColor-0 mt-2'>
+            <p className='font-Sora text-TextColor-0 mt-2 mx-auto max-w-[640px] w-full'>
               We put your ideas and thus your wishes in the form of a unique web
-              project that <br /> inspires you and you customers.
+              project that inspires you and you customers.
             </p>
           </div>
           <div className='relative z-10 mt-[50px] service-widget'>

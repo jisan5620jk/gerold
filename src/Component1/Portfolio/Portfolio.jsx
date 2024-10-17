@@ -188,9 +188,9 @@ const Portfolio = () => {
           <h1 className='font-Sora text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
             My Recent Works
           </h1>
-          <p className='font-Sora text-TextColor-0 mt-2'>
+          <p className='font-Sora text-TextColor-0 mt-2 mx-auto max-w-[640px] w-full'>
             We put your ideas and thus your wishes in the form of a unique web
-            project that <br /> inspires you and you customers.
+            project that inspires you and you customers.
           </p>
         </div>
         <div className='Container'>
@@ -470,49 +470,49 @@ const Portfolio = () => {
                 </div>
               </div>
               <div className='flex justify-between items-center bg-PrimaryColor-0 px-[52px] py-[38px] mt-7'>
-                  <div>
-                    <Link
-                      to={'/'}
-                      className='flex items-end gap-4 group'
-                    >
-                      <span className='text-white pb-2'>
-                        <HiArrowUpRight
-                          size={'28'}
-                          className='-rotate-90 transition-all duration-500 group-hover:-rotate-[135deg]'
-                        />
+                <div>
+                  <Link
+                    to={'/'}
+                    className='flex items-end gap-4 group'
+                  >
+                    <span className='text-white pb-2'>
+                      <HiArrowUpRight
+                        size={'28'}
+                        className='-rotate-90 transition-all duration-500 group-hover:-rotate-[135deg]'
+                      />
+                    </span>
+                    <span className='flex flex-col'>
+                      <span className='font-Sora text-white tracking-wide font-light'>
+                        Previous Project
                       </span>
-                      <span className='flex flex-col'>
-                        <span className='font-Sora text-white tracking-wide font-light'>
-                          Previous Project
-                        </span>
-                        <span className='font-Sora font-bold text-white text-[45px] leading-10 pt-2'>
-                          Sebastian
-                        </span>
+                      <span className='font-Sora font-bold text-white text-[45px] leading-10 pt-2'>
+                        Sebastian
                       </span>
-                    </Link>
-                  </div>
-                  <div>
-                    <Link
-                      to={'/'}
-                      className='flex items-end gap-4 group'
-                    >
-                      <span className='flex flex-col text-end'>
-                        <span className='font-Sora text-white tracking-wide font-light'>
-                          Next Project
-                        </span>
-                        <span className='font-Sora font-bold text-white text-[45px] leading-10 pt-2'>
-                          Qwillo
-                        </span>
-                      </span>
-                      <span className='text-white pb-2'>
-                        <HiArrowUpRight
-                          size={'28'}
-                          className='rotate-0 transition-all duration-500 group-hover:rotate-45'
-                        />
-                      </span>
-                    </Link>
-                  </div>
+                    </span>
+                  </Link>
                 </div>
+                <div>
+                  <Link
+                    to={'/'}
+                    className='flex items-end gap-4 group'
+                  >
+                    <span className='flex flex-col text-end'>
+                      <span className='font-Sora text-white tracking-wide font-light'>
+                        Next Project
+                      </span>
+                      <span className='font-Sora font-bold text-white text-[45px] leading-10 pt-2'>
+                        Qwillo
+                      </span>
+                    </span>
+                    <span className='text-white pb-2'>
+                      <HiArrowUpRight
+                        size={'28'}
+                        className='rotate-0 transition-all duration-500 group-hover:rotate-45'
+                      />
+                    </span>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
