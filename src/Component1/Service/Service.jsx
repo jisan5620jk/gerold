@@ -132,7 +132,7 @@ const Service = () => {
       <section className=' bg-BodyBg2-0 py-[120px] relative'>
         <div className='Container'>
           <div className='text-center'>
-            <h1 className='font-Sora text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
+            <h1 className='font-Sora text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-white from-35% bg-clip-text text-transparent'>
               My Quality Services
             </h1>
             <p className='font-Sora text-TextColor-0 mt-2 mx-auto max-w-[640px] w-full'>

@@ -1,141 +1,156 @@
-import { FaUser } from 'react-icons/fa6';
-import { GoArrowRight } from 'react-icons/go';
-import { HiOutlineMailOpen } from 'react-icons/hi';
-import { MdCall } from 'react-icons/md';
-import Heart from '/images/banner-heart.png';
-import circleShape from '/images/crcle-bg.png';
+import { FiPhoneCall } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const Appoinment = () => {
   return (
-    <section className='px-5 2xl:px-20 bg-BodyBg-0 pt-[106px] relative z-10 overflow-hidden'>
-      <div className='absolute -z-10 -top-1/2 left-1/2 -translate-x-1/2'>
-        <img
-          src={circleShape}
-          draggable='false'
-          className='max-w-[inherit] w-[inherit]'
-        />
-      </div>
-      <div className='text-center mb-12'>
-        <h1 className='font-Sora font-bold uppercase text-HeadingColor-0 text-xl leading-[30px] sm:text-3xl sm:leading-[40px] md:text-[40px] md:leading-[50px] lg:text-[50px] lg:leading-[60px] xl:text-[52px] xl:leading-[62px] 2xl:text-[60px] 2xl:leading-[70px]'>
-          Make Appionment
-        </h1>
-      </div>
-      <div className='bg-[url(/images/appoinment.png)] bg-cover bg-no-repeat bg-center grid grid-cols-1 lg:grid-cols-2 pt-[110px] pb-[118px] lg:border-x-2 2xl:border-x-0 border-white rounded-[30px] relative z-10'>
-        <div></div>
-        <div className='relative z-10 pr-5 2xl:pr-[230px] pl-5 lg:pl-0'>
-          <div className='absolute -top-2 -left-[190px] xl:-left-40 2xl:-left-40'>
-            <img
-              src={Heart}
-              draggable='false'
-              className='animate-rotateX'
-            />
-          </div>
-          <h5 className='font-Sora font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-4'>
-            FINANCE CONSULTING
-          </h5>
-          <h1 className='font-Sora font-bold text-HeadingColor-0 text-[16px] leading-[23px] sm:text-[22px] sm:leading-[35px] md:text-[30px] md:leading-[35px] lg:text-[28px] lg:leading-[35px] xl:text-[32px] xl:leading-[39px] 2xl:text-[32px] 2xl:leading-[39px]'>
-            Make an Online Appoinemnt <br /> Booking For Treatment Patients
-          </h1>
-          <form
-            action='#'
-            method='post'
-            className='flex flex-col gap-y-5 mt-9'
-          >
-            <div className='grid grid-cols-1 sm:grid-cols-2 gap-5'>
-              <div className='relative inline-block'>
+    <section className='bg-BodyBg2-0 py-28 relative z-10 overflow-hidden'>
+      <div className='Container'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 items-center gap-[22px] relative z-10'>
+          <div className='px-10 pt-9 pb-10 bg-BodyBg3-0 rounded-2xl'>
+            <h1 className='font-Sora text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
+              Let’s work together!
+            </h1>
+            <p className='font-Sora text-white font-light pt-2'>
+              I design and code beautifully simple things and i love what i do.
+              Just simple like that!
+            </p>
+            <form
+              action='#'
+              method='post'
+              className='flex flex-col gap-y-5 mt-6'
+            >
+              <div className='grid grid-cols-1 sm:grid-cols-2 gap-5'>
                 <input
                   type='text'
-                  name='name'
-                  id='name'
-                  placeholder='Enter Name*'
+                  name='first-name'
+                  id='first-name'
+                  placeholder='First Name*'
                   required
-                  className='font-Sora text-HeadingColor-0 placeholder:text-HeadingColor-0 font-light bg-transparent border border-Secondarycolor-0 border-opacity-45 rounded-xl py-2 px-6 h-[60px] w-full focus:outline-PrimaryColor-0'
+                  className='font-Sora text-white bg-BodyBg2-0 placeholder:text-white placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
                 />
-                <FaUser
-                  size={'14'}
-                  className='absolute text-PrimaryColor-0 top-1/2 -translate-y-1/2 right-5'
+                <input
+                  type='text'
+                  name='last-name'
+                  id='last-name'
+                  placeholder='Last Name*'
+                  required
+                  className='font-Sora text-white bg-BodyBg2-0 placeholder:text-white placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
                 />
               </div>
-              <div className='relative inline-block'>
+              <div className='grid grid-cols-1 sm:grid-cols-2 gap-5'>
                 <input
                   type='email'
                   name='email'
                   id='email'
                   placeholder='Enter E-Mail*'
                   required
-                  className='font-Sora text-HeadingColor-0 placeholder:text-HeadingColor-0 font-light bg-transparent border border-Secondarycolor-0 border-opacity-45 rounded-xl py-2 px-6 h-[60px] w-full focus:outline-PrimaryColor-0'
+                  className='font-Sora text-white bg-BodyBg2-0 placeholder:text-white placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
                 />
-                <HiOutlineMailOpen
-                  size={'16'}
-                  className='absolute text-PrimaryColor-0 top-1/2 -translate-y-1/2 right-5'
-                />
-              </div>
-            </div>
-            <div className='grid grid-cols-1 sm:grid-cols-2 gap-5'>
-              <select
-                name='select'
-                id='select'
-                className='font-Sora text-HeadingColor-0 placeholder:text-HeadingColor-0 font-light bg-transparent border border-Secondarycolor-0 border-opacity-45 rounded-xl py-2 px-6 h-[60px] w-full focus:outline-PrimaryColor-0'
-              >
-                <option
-                  value='subject'
-                  className='text-HeadingColor-0'
-                >
-                  Your Subject
-                </option>
-                <option
-                  value='subject2'
-                  className='text-HeadingColor-0'
-                >
-                  Bangla
-                </option>
-                <option
-                  value='subject3'
-                  className='text-HeadingColor-0'
-                >
-                  Arabic
-                </option>
-                <option
-                  value='subject4'
-                  className='text-HeadingColor-0'
-                >
-                  China
-                </option>
-              </select>
-              <div className='relative inline-block'>
                 <input
                   type='text'
                   name='number'
                   id='number'
                   placeholder='Enter Number*'
                   required
-                  className='font-Sora text-HeadingColor-0 placeholder:text-HeadingColor-0 font-light bg-transparent border border-Secondarycolor-0 border-opacity-45 rounded-xl py-2 px-6 h-[60px] w-full focus:outline-PrimaryColor-0'
-                />
-                <MdCall
-                  size={'16'}
-                  className='absolute text-PrimaryColor-0 top-1/2 -translate-y-1/2 right-5'
+                  className='font-Sora text-white bg-BodyBg2-0 placeholder:text-white placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
                 />
               </div>
-            </div>
-            <textarea
-              name='message'
-              id='message'
-              placeholder='Write a short meassage...'
-              className='font-Sora text-HeadingColor-0 placeholder:text-HeadingColor-0 font-light bg-transparent border border-Secondarycolor-0 border-opacity-45 rounded-2xl py-2 px-6 h-[150px] w-full focus:outline-PrimaryColor-0 resize-none'
-            ></textarea>
-            <div className='inline-block mt-2'>
-              <button
-                type='submit'
-                className='primary-btn'
+              <select
+                name='select'
+                id='select'
+                className='font-Sora text-white bg-BodyBg2-0 placeholder:text-white placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
               >
-                Send Now
-                <GoArrowRight
-                  size={'22'}
-                  className='-rotate-45'
-                />
-              </button>
+                <option
+                  value='subject'
+                  className='text-HeadingColor-0 bg-BodyBg2-0'
+                >
+                  Your Subject
+                </option>
+                <option
+                  value='subject2'
+                  className='text-HeadingColor-0 bg-BodyBg2-0'
+                >
+                  Bangla
+                </option>
+                <option
+                  value='subject3'
+                  className='text-HeadingColor-0 bg-BodyBg2-0'
+                >
+                  Arabic
+                </option>
+                <option
+                  value='subject4'
+                  className='text-HeadingColor-0 bg-BodyBg2-0'
+                >
+                  China
+                </option>
+              </select>
+              <textarea
+                name='message'
+                id='message'
+                placeholder='Write a short meassage...'
+                className='font-Sora text-white bg-BodyBg2-0 placeholder:text-white placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[198px] w-full focus:border-PrimaryColor-0 focus:outline-none resize-none'
+              ></textarea>
+              <div className='inline-block header-btn'>
+                <button
+                  type='submit'
+                  className='!py-5'
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+          <div className='relative z-10 pl-28'>
+            <div className='flex items-start gap-[26px] mb-[38px]'>
+              <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-white flex items-center justify-center'>
+                <FiPhoneCall size={'22'} />
+              </div>
+              <div className='inline-block'>
+                <h6 className='font-Sora font-extralight text-white pb-[5px]'>
+                  Phone
+                </h6>
+                <Link
+                  to={'/'}
+                  className='font-Sora font-medium text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0'
+                >
+                  +01 123 654 8096
+                </Link>
+              </div>
             </div>
-          </form>
+            <div className='flex items-start gap-[26px] mb-[38px]'>
+              <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-white flex items-center justify-center'>
+                <FiPhoneCall size={'22'} />
+              </div>
+              <div className='inline-block'>
+                <h6 className='font-Sora font-extralight text-white pb-[5px]'>
+                  Email
+                </h6>
+                <Link
+                  to={'/'}
+                  className='font-Sora font-medium text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0'
+                >
+                  gerolddesign@mail.com
+                </Link>
+              </div>
+            </div>
+            <div className='flex items-start gap-[26px]'>
+              <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-white flex items-center justify-center'>
+                <FiPhoneCall size={'22'} />
+              </div>
+              <div className='inline-block'>
+                <h6 className='font-Sora font-extralight text-white pb-[5px]'>
+                  Address
+                </h6>
+                <Link
+                  to={'/'}
+                  className='font-Sora font-medium text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0'
+                >
+                  Warne Park Street Pine, <br /> FL 33157, New York
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

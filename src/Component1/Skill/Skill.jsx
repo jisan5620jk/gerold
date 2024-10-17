@@ -57,7 +57,7 @@ const Skill = () => {
     <section className=' bg-BodyBg-0 pt-[106px] pb-[120px] relative'>
       <div className='Container'>
         <div className='text-center'>
-          <h1 className='font-Sora text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
+          <h1 className='font-Sora text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-white from-25% bg-clip-text text-transparent'>
             My Skills
           </h1>
           <p className='font-Sora text-TextColor-0 mt-2 mx-auto max-w-[640px] w-full'>
