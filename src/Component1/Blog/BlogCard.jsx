@@ -24,9 +24,9 @@ const BlogCard = ({
         to={blogUrl}
         className='absolute top-[15px] left-[15px]'
       >
-        <h6 className='font-Sora font-medium text-[13px] px-[10px] py-[3px] rounded-full text-white uppercase bg-PrimaryColor-0 relative z-10 before:absolute before:left-0 before:top-0 before:bg-gradient-to-l before:to-PrimaryColor-0 before:to-90% before:from-10% before:from-Secondarycolor-0 before:opacity-0 before:w-full before:h-full before:-z-10 before:[transition:opacity_0.5s_linear] group-hover:before:opacity-100 overflow-hidden'>
+        <span className='font-Sora font-medium text-[13px] px-[10px] py-[3px] rounded-full text-white uppercase bg-PrimaryColor-0 relative z-10 before:absolute before:left-0 before:top-0 before:bg-gradient-to-l before:to-PrimaryColor-0 before:to-90% before:from-10% before:from-Secondarycolor-0 before:opacity-0 before:w-full before:h-full before:-z-10 before:[transition:opacity_0.5s_linear] group-hover:before:opacity-100 overflow-hidden'>
           {thumbTitle}
-        </h6>
+        </span>
       </Link>
       <div className='absolute left-5 right-5 bottom-[15px] z-20'>
         <div className='relative z-10 rounded-2xl px-[15px] pt-3 pb-[18px] bg-Secondarycolor-0 w-full before:absolute before:left-0 before:top-0 before:bg-gradient-to-l before:to-PrimaryColor-0 before:from-Secondarycolor-0 before:opacity-0 before:w-full before:h-full before:-z-10 before:[transition:opacity_0.5s_linear] group-hover:before:opacity-100 overflow-hidden'>
@@ -48,11 +48,9 @@ const BlogCard = ({
             </Link>
           </div>
           <Link to={blogUrl}>
-            <button>
               <button className='font-Sora text-left font-semibold text-xl sm:text-[22px] md:text-[22px] lg:text-xl xl:text-[23px] 2xl:text-[23px] text-white'>
                 {blogTitle}
               </button>
-            </button>
           </Link>
         </div>
       </div>

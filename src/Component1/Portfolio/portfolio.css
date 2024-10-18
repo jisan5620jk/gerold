@@ -22,10 +22,6 @@
   visibility: visible;
 }
 
-.portfolio-body-overlay:hover {
-  cursor: url(/public/images/cross.png), pointer;
-}
-
 .portfolio-popup {
  position: fixed;  
     top: 50%;  

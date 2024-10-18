@@ -20,19 +20,19 @@ const Banner = () => {
               HI
             </h1>
           </div>
-          <div className='grid grid-cols-2 items-center'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 lg:items-center'>
             <div>
-              <h3 className='font-Sora text-4xl font-bold text-TextColor-0 pb-[17px]'>
+              <h3 className='font-Sora text-2xl sm:text-4xl font-bold text-TextColor-0 pb-[17px]'>
                 I am Gerold
               </h3>
-              <h1 className='font-Sora text-[65px] leading-[78px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
+              <h1 className='font-Sora text-3xl md:text-[65px] md:leading-[78px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
                 Web Developer + <br /> UX Designer
               </h1>
-              <p className='font-Sora text-xl font-light leading-[30px] text-TextColor-0 max-w-[550px] w-full pt-[15px] pb-[50px]'>
+              <p className='font-Sora text-base sm:text-xl font-light sm:leading-[30px] text-TextColor-0 max-w-[550px] w-full pt-[15px] pb-[50px]'>
                 I break down complex user experinece problems to create
                 integritiy focussed solutions that connect billions of people
               </p>
-              <div className='flex items-center gap-[26px]'>
+              <div className='flex flex-col sm:flex-row sm:items-center gap-[26px]'>
                 <div className='inline-block'>
                   <Link to={'/'}>
                     <button className='primary-btn'>
@@ -73,12 +73,12 @@ const Banner = () => {
                   </ul>
               </div>
             </div>
-            <div className='flex justify-center relative'>
+            <div className='flex justify-center relative mt-12'>
               <span className='absolute -z-10 -left-[5%] -bottom-[5%] size-[220px] rounded-full bg-gradient-to-r to-PrimaryColor-0 from-transparent blur-[150px]'></span>
               <img
                 src={bannerThumb}
                 draggable='false'
-                className='max-w-[inherit] border-2 border-Secondarycolor-0 rounded-[38px] rotate-[5deg] transition-all duration-500 hover:rotate-0 hover:border-PrimaryColor-0'
+                className='w-11/12 sm:max-w-[inherit] border-2 border-Secondarycolor-0 rounded-[38px] rotate-[5deg] transition-all duration-500 hover:rotate-0 hover:border-PrimaryColor-0'
               />
             </div>
           </div>

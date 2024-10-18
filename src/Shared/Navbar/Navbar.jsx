@@ -2,17 +2,8 @@ import { Link } from 'react-router-dom';
 import Logo from '/images/logo/logo.png';
 import './navbar.css';
 import { useEffect, useRef } from 'react';
-import {
-  FaEnvelope,
-  FaFacebookF,
-  FaLinkedinIn,
-  FaPinterestP,
-  FaXTwitter,
-} from 'react-icons/fa6';
-import { FaPhoneAlt, FaTimes } from 'react-icons/fa';
-import { MdLocationPin } from 'react-icons/md';
-import { IoMdPaperPlane } from 'react-icons/io';
 import { HiMinusSm, HiPlusSm } from 'react-icons/hi';
+import { IoCloseOutline } from 'react-icons/io5';
 
 const Navbar = () => {
   //Menu Bar
@@ -117,7 +108,7 @@ const Navbar = () => {
               ref={closeBtnRef}
               className='close-btn'
             >
-              <FaTimes />
+              <IoCloseOutline />
             </button>
           </div>
           <div className='offcanvas_logo inline-block'>
@@ -131,70 +122,7 @@ const Navbar = () => {
               />
             </Link>
           </div>
-          <div className='offcanvas_title'>
-            <p>
-              Stay healthy with a balanced diet, regular exercise, and enough
-              sleep. Manage stress and get regular check-ups.
-            </p>
-          </div>
           <div className='main-menu-mobile lg:none'></div>
-          <div className='offcanvas_contact-info'>
-            <div className='offcanvas_contact-title'>
-              <h5>Contact Us</h5>
-            </div>
-            <ul>
-              <li>
-                <MdLocationPin />
-                <Link to={'/'}>Melbone st, Australia, Ny 12099</Link>
-              </li>
-              <li>
-                <FaEnvelope />
-                <Link to={'/'}>needhelp@company.com</Link>
-              </li>
-              <li>
-                <FaPhoneAlt />
-                <Link to={'/'}>+48 555 223 224</Link>
-              </li>
-            </ul>
-          </div>
-          <div className='offcanvas_input'>
-            <div className='offcanvas_input-title'>
-              <h4>Get Update</h4>
-            </div>
-            <form
-              action='#'
-              method='post'
-            >
-              <div className='relative'>
-                <input
-                  type='email'
-                  name='email'
-                  placeholder='Enter E-Mail'
-                  required
-                />
-                <button type='submit'>
-                  <IoMdPaperPlane />
-                </button>
-              </div>
-            </form>
-            <div className='status'></div>
-          </div>
-          <div className='offcanvas_social'>
-            <div className='social-icon'>
-              <Link to={'/'}>
-                <FaFacebookF />
-              </Link>
-              <Link to={'/'}>
-                <FaXTwitter />
-              </Link>
-              <Link to={'/'}>
-                <FaPinterestP />
-              </Link>
-              <Link to={'/'}>
-                <FaLinkedinIn />
-              </Link>
-            </div>
-          </div>
         </div>
       </div>
       <div
@@ -223,7 +151,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <Link to={'/'}>
-                      <button className='font-Sora font-medium text-[15px] text-white transition-all duration-500 hover:text-PrimaryColor-0 relative bottom-[1px]'>
+                      <button className='hidden sm:block font-Sora font-medium text-[15px] text-white transition-all duration-500 hover:text-PrimaryColor-0 relative bottom-[1px]'>
                         mail@gerolddesign.com
                       </button>
                     </Link>
@@ -235,32 +163,32 @@ const Navbar = () => {
               <div className='header-main-menu text-center hidden lg:block'>
                 <nav className='main-menu-content'>
                   <ul>
-                    <li className='has-dropdown -mr-[30px]'>
+                    <li className='has-dropdown group current'>
                       <Link
                         to={'/'}
-                        className='group'
+                        className='!pr-5'
                       >
                         Home{' '}
-                        <span className='relative top-0 text-xl transition-all duration-500 group-hover:opacity-0'>
+                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 group-hover:opacity-0'>
                           <HiPlusSm />
                         </span>
-                        <span className='relative top-0 right-6 text-xl transition-all duration-500 opacity-0 group-hover:opacity-100'>
+                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 opacity-0 group-hover:opacity-100'>
                           <HiMinusSm />
                         </span>
                       </Link>
                       <ul className='submenu'>
-                        <li className='has-child-dropdown group'>
+                        <li className='has-dropdown current'>
                           <Link to={'/'}>
-                            Home Page Dark Mode
-                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 group-hover:opacity-0'>
+                            Dark Mode
+                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500'>
                               <HiPlusSm />
                             </span>
-                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 opacity-0 group-hover:opacity-100'>
+                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 opacity-0'>
                               <HiMinusSm />
                             </span>
                           </Link>
-                          <ul className='child-submenu'>
-                            <li>
+                          <ul className='submenu'>
+                            <li className='current'>
                               <Link to={'/'}>Home One</Link>
                             </li>
                             <li>
@@ -268,17 +196,17 @@ const Navbar = () => {
                             </li>
                           </ul>
                         </li>
-                        <li className='has-child-dropdown group'>
+                        <li className='has-dropdown'>
                           <Link to={'/'}>
-                            Home Page Light Mode
-                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 group-hover:opacity-0'>
+                            Light Mode
+                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500'>
                               <HiPlusSm />
                             </span>
-                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 opacity-0 group-hover:opacity-100'>
+                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 opacity-0'>
                               <HiMinusSm />
                             </span>
                           </Link>
-                          <ul className='child-submenu'>
+                          <ul className='submenu !top-[58px]'>
                             <li>
                               <Link to={'/'}>Home One</Link>
                             </li>
@@ -298,16 +226,16 @@ const Navbar = () => {
                     <li>
                       <Link to={'/'}>Portfolios</Link>
                     </li>
-                    <li className='has-dropdown -mr-[30px]'>
+                    <li className='has-dropdown'>
                       <Link
                         to={'/'}
-                        className='group'
+                        className='!pr-5'
                       >
                         Blog
-                        <span className='relative top-0 text-xl transition-all duration-500 group-hover:opacity-0'>
+                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 group-hover:opacity-0'>
                           <HiPlusSm />
                         </span>
-                        <span className='relative top-0 right-6 text-xl transition-all duration-500 opacity-0 group-hover:opacity-100'>
+                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 opacity-0 group-hover:opacity-100'>
                           <HiMinusSm />
                         </span>
                       </Link>
@@ -327,7 +255,7 @@ const Navbar = () => {
                 </nav>
               </div>
               <div className='header-right-box flex justify-end'>
-                <div className='header-btn hidden lg:block'>
+                <div className='header-btn !mb-2 !mr-2 sm:!mr-8 lg:!mb-0 lg:!mr-0'>
                   <Link to={'/'}>Hire Me!</Link>
                 </div>
                 <div className='header-bar lg:hidden'>
