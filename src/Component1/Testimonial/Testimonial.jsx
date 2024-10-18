@@ -76,7 +76,7 @@ const Testimonial = () => {
       <div className='Container'>
         <div className='grid gap-[30px] grid-cols-1 lg:grid-cols-2 lg:items-start'>
           <div className='relative overflow-hidden'>
-            <h1 className='font-Sora text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
+            <h1 className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
               {`My Client's Stories`}
             </h1>
             <p className='font-Sora text-TextColor-0 mt-2 max-w-[470px] w-full'>
@@ -102,7 +102,10 @@ const Testimonial = () => {
                     testiDesc,
                   }) => {
                     return (
-                      <SwiperSlide key={id} className='pb-[42px]'>
+                      <SwiperSlide
+                        key={id}
+                        className='pb-[42px]'
+                      >
                         <TestimonialCard
                           testiLogo={testiLogo}
                           testiIconLeft={testiIconLeft}

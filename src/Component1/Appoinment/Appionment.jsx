@@ -6,8 +6,8 @@ const Appoinment = () => {
     <section className='bg-BodyBg2-0 py-28 relative z-10 overflow-hidden'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 items-center gap-[22px] relative z-10'>
-          <div className='px-10 pt-9 pb-10 bg-BodyBg3-0 rounded-2xl'>
-            <h1 className='font-Sora text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
+          <div className='px-4 sm:px-10 pt-9 pb-10 bg-BodyBg3-0 rounded-2xl'>
+            <h1 className='font-Sora text-[25px] sm:text-[34px] md:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
               Let’s work together!
             </h1>
             <p className='font-Sora text-white font-light pt-2'>
@@ -101,18 +101,18 @@ const Appoinment = () => {
               </div>
             </form>
           </div>
-          <div className='relative z-10 pl-28'>
+          <div className='relative z-10 lg:pl-28'>
             <div className='flex items-start gap-[26px] mb-[38px]'>
               <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-white flex items-center justify-center'>
                 <FiPhoneCall size={'22'} />
               </div>
-              <div className='inline-block'>
+              <div className='flex-1 inline-block'>
                 <h6 className='font-Sora font-extralight text-white pb-[5px]'>
                   Phone
                 </h6>
                 <Link
                   to={'/'}
-                  className='font-Sora font-medium text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0'
+                  className='font-Sora font-medium text-base sm:text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0'
                 >
                   +01 123 654 8096
                 </Link>
@@ -122,13 +122,13 @@ const Appoinment = () => {
               <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-white flex items-center justify-center'>
                 <FiPhoneCall size={'22'} />
               </div>
-              <div className='inline-block'>
+              <div className='flex-1 inline-block'>
                 <h6 className='font-Sora font-extralight text-white pb-[5px]'>
                   Email
                 </h6>
                 <Link
                   to={'/'}
-                  className='font-Sora font-medium text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0'
+                  className='font-Sora font-medium text-base sm:text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0'
                 >
                   gerolddesign@mail.com
                 </Link>
@@ -138,13 +138,13 @@ const Appoinment = () => {
               <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-white flex items-center justify-center'>
                 <FiPhoneCall size={'22'} />
               </div>
-              <div className='inline-block'>
+              <div className='flex-1 inline-block'>
                 <h6 className='font-Sora font-extralight text-white pb-[5px]'>
                   Address
                 </h6>
                 <Link
                   to={'/'}
-                  className='font-Sora font-medium text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0'
+                  className='font-Sora font-medium text-base sm:text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0'
                 >
                   Warne Park Street Pine, <br /> FL 33157, New York
                 </Link>

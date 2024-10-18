@@ -25,7 +25,7 @@ const Footer = () => {
               />
             </Link>
           </div>
-          <ul className='flex items-center justify-center gap-[35px] my-7'>
+          <ul className='flex items-center justify-center gap-2 sm:gap-[35px] my-7'>
             <li>
               <Link
                 to={'/about'}
@@ -59,7 +59,7 @@ const Footer = () => {
               </Link>
             </li>
           </ul>
-          <p className='font-Sora font-light flex gap-1 items-center justify-center text-PrimaryColor-0'>
+          <p className='font-Sora font-light inline-block sm:flex gap-1 items-center justify-center text-PrimaryColor-0'>
             <span>&copy;</span> <span ref={yearRef}></span> All rights reserved
             by <Link to={'/'} className='font-medium'>ThemeJunction</Link>
           </p>

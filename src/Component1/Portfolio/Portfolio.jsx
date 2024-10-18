@@ -185,7 +185,7 @@ const Portfolio = () => {
     <>
       <div className='portfolio-filter text-center bg-BodyBg-0 py-28'>
         <div className='text-center mb-[60px]'>
-          <h1 className='font-Sora text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-white from-30% bg-clip-text text-transparent'>
+          <h1 className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-white from-30% bg-clip-text text-transparent'>
             My Recent Works
           </h1>
           <p className='font-Sora text-TextColor-0 mt-2 mx-auto max-w-[640px] w-full'>
@@ -194,28 +194,28 @@ const Portfolio = () => {
           </p>
         </div>
         <div className='Container'>
-          <div className='button-group filter-button-group relative z-10 inline-block px-2 py-[6px] rounded-full bg-BodyBg2-0'>
+          <div className='button-group filter-button-group relative z-10 inline-block sm:px-2 py-1 sm:py-[6px] rounded-full bg-BodyBg2-0'>
             <button
               data-filter='*'
-              className='active py-2 px-[25px] rounded-full relative z-10 font-Sora text-[15px] text-white bg-transparent capitalize tracking-custom2'
+              className='active py-2 px-3 sm:px-[25px] rounded-full relative z-10 font-Sora text-[15px] text-white bg-transparent capitalize tracking-custom2'
             >
               All
             </button>
             <button
               data-filter='.uxui'
-              className='py-2 px-[25px] rounded-full relative z-10 font-Sora text-[15px] text-white bg-transparent capitalize tracking-custom2'
+              className='py-2 px-3 sm:px-[25px] rounded-full relative z-10 font-Sora text-[15px] text-white bg-transparent capitalize tracking-custom2'
             >
               UX/UI
             </button>
             <button
               data-filter='.branding'
-              className='py-2 px-[25px] rounded-full relative z-10 font-Sora text-[15px] text-white bg-transparent capitalize tracking-custom2'
+              className='py-2 px-3 sm:px-[25px] rounded-full relative z-10 font-Sora text-[15px] text-white bg-transparent capitalize tracking-custom2'
             >
               Branding
             </button>
             <button
               data-filter='.mobile-app'
-              className='py-2 px-[25px] rounded-full relative z-10 font-Sora text-[15px] text-white bg-transparent capitalize tracking-custom2'
+              className='py-2 px-3 sm:px-[25px] rounded-full relative z-10 font-Sora text-[15px] text-white bg-transparent capitalize tracking-custom2'
             >
               Apps
             </button>
@@ -224,21 +224,21 @@ const Portfolio = () => {
           <div className='portfolio-box text-center pt-[50px] bg-contain bg-no-repeat bg-center relative z-10 before:absolute before:top-1/2 before:left-1/2 before:w-[35%] before:h-[35%] before:-z-10 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:bg-PrimaryColor-0 before:bg-gradient-to-r before:to-PrimaryColor-0 before:from-Secondarycolor-0 before:blur-[150px]'>
             <div className='portfolio-sizer w-[98%] md:w-[48%]'></div>
             <div className='gutter-sizer w-[4%]'></div>
-            <div className='portfolio-item branding group bg-BodyBg2-0 mb-[4%] px-9 pt-9 rounded-[10px] w-[98%] md:w-[48%]'>
+            <div className='portfolio-item branding group bg-BodyBg2-0 mb-[4%] px-5 lg:px-9 pt-5 lg:pt-9 rounded-[10px] w-[98%] md:w-[48%]'>
               <div className='image-box text-center'>
                 <img
                   src={porfolioImg}
                   draggable='false'
                 />
               </div>
-              <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0 w-[calc(100%-40px)] rounded-2xl m-auto p-5 pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
-                <h3 className='portfolio-title font-Sora text-3xl font-bold text-white'>
+              <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0 w-[calc(100%-40px)] rounded-2xl m-auto p-5 pr-5 sm:pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
+                <h3 className='portfolio-title font-Sora text-2xl sm:text-3xl font-bold text-white'>
                   Deloitte
                 </h3>
                 <p className='font-Sora font-light text-white pt-4'>
                   Project was about precision and information.
                 </p>
-                <span className='text-3xl tracking-custom2 absolute top-1/2 right-[25px] -translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
+                <span className='text-3xl tracking-custom2 absolute top-1/2 right-[25px] md:right-4 lg:right-[25px] -translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
                   <HiArrowUpRight />
                 </span>
                 <button
@@ -247,21 +247,21 @@ const Portfolio = () => {
                 ></button>
               </div>
             </div>
-            <div className='portfolio-item uxui group bg-BodyBg2-0 mb-[4%] px-9 pt-9 rounded-[10px] w-[98%] md:w-[48%]'>
+            <div className='portfolio-item uxui group bg-BodyBg2-0 mb-[4%] px-5 lg:px-9 pt-5 lg:pt-9 rounded-[10px] w-[98%] md:w-[48%]'>
               <div className='image-box text-center'>
                 <img
                   src={porfolioImg2}
                   draggable='false'
                 />
               </div>
-              <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0 w-[calc(100%-40px)] rounded-2xl m-auto p-5 pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
-                <h3 className='portfolio-title font-Sora text-3xl font-bold text-white'>
+              <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0 w-[calc(100%-40px)] rounded-2xl m-auto p-5 pr-5 sm:pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
+                <h3 className='portfolio-title font-Sora text-2xl sm:text-3xl font-bold text-white'>
                   Deloitte
                 </h3>
                 <p className='font-Sora font-light text-white pt-4'>
                   Project was about precision and information.
                 </p>
-                <span className='text-3xl tracking-custom2 absolute top-1/2 right-[25px] -translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
+                <span className='text-3xl tracking-custom2 absolute top-1/2 right-[25px] md:right-4 lg:right-[25px] -translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
                   <HiArrowUpRight />
                 </span>
                 <button
@@ -270,21 +270,21 @@ const Portfolio = () => {
                 ></button>
               </div>
             </div>
-            <div className='portfolio-item mobile-app group bg-BodyBg2-0 mb-[4%] px-9 pt-9 rounded-[10px] w-[98%] md:w-[48%]'>
+            <div className='portfolio-item mobile-app group bg-BodyBg2-0 mb-[4%] px-5 lg:px-9 pt-5 lg:pt-9 rounded-[10px] w-[98%] md:w-[48%]'>
               <div className='image-box text-center'>
                 <img
                   src={porfolioImg3}
                   draggable='false'
                 />
               </div>
-              <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0 w-[calc(100%-40px)] rounded-2xl m-auto p-5 pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
-                <h3 className='portfolio-title font-Sora text-3xl font-bold text-white'>
+              <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0 w-[calc(100%-40px)] rounded-2xl m-auto p-5 pr-5 sm:pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
+                <h3 className='portfolio-title font-Sora text-2xl sm:text-3xl font-bold text-white'>
                   Deloitte
                 </h3>
                 <p className='font-Sora font-light text-white pt-4'>
                   Project was about precision and information.
                 </p>
-                <span className='text-3xl tracking-custom2 absolute top-1/2 right-[25px] -translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
+                <span className='text-3xl tracking-custom2 absolute top-1/2 right-[25px] md:right-4 lg:right-[25px] -translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
                   <HiArrowUpRight />
                 </span>
                 <button
@@ -293,21 +293,21 @@ const Portfolio = () => {
                 ></button>
               </div>
             </div>
-            <div className='portfolio-item branding group bg-BodyBg2-0 mb-[4%] px-9 pt-9 rounded-[10px] w-[98%] md:w-[48%]'>
+            <div className='portfolio-item branding group bg-BodyBg2-0 mb-[4%] px-5 lg:px-9 pt-5 lg:pt-9 rounded-[10px] w-[98%] md:w-[48%]'>
               <div className='image-box text-center'>
                 <img
                   src={porfolioImg4}
                   draggable='false'
                 />
               </div>
-              <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0 w-[calc(100%-40px)] rounded-2xl m-auto p-5 pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
-                <h3 className='portfolio-title font-Sora text-3xl font-bold text-white'>
+              <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0 w-[calc(100%-40px)] rounded-2xl m-auto p-5 pr-5 sm:pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
+                <h3 className='portfolio-title font-Sora text-2xl sm:text-3xl font-bold text-white'>
                   Deloitte
                 </h3>
                 <p className='font-Sora font-light text-white pt-4'>
                   Project was about precision and information.
                 </p>
-                <span className='text-3xl tracking-custom2 absolute top-1/2 right-[25px] -translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
+                <span className='text-3xl tracking-custom2 absolute top-1/2 right-[25px] md:right-4 lg:right-[25px] -translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
                   <HiArrowUpRight />
                 </span>
                 <button
@@ -328,7 +328,7 @@ const Portfolio = () => {
             <div>
               <button
                 ref={portfolioCloseBtnRef}
-                className='absolute top-[100px] right-6 size-[46px] rounded-full bg-gradient-to-tl to-PrimaryColor-0 to-100% from-BodyBg-0 from-10% flex items-center justify-center text-white text-xl group'
+                className='absolute top-20 right-2 sm:top-[100px] sm:right-6 size-[46px] rounded-full bg-gradient-to-tl to-PrimaryColor-0 to-100% from-BodyBg-0 from-10% flex items-center justify-center text-white text-xl group'
               >
                 <FaTimes className='transition-all duration-500 group-hover:rotate-180' />
               </button>
@@ -343,7 +343,7 @@ const Portfolio = () => {
               <div className='px-4 sm:px-10 pt-[60px] pb-[50px]'>
                 <div className='grid grid-cols-1 md:grid-cols-2 items-start gap-7'>
                   <div>
-                    <h2 className='font-Sora font-bold text-TextDark-0 text-[45px] leading-[52px]'>
+                    <h2 className='font-Sora font-bold text-TextDark-0 text-3xl sm:text-4xl md:text-[45px] leading-[52px]'>
                       DStudio
                     </h2>
                     <p className='font-Sora text-TextDark-0 pt-[14px] pb-5'>
@@ -365,7 +365,7 @@ const Portfolio = () => {
                       </Link>
                     </div>
                   </div>
-                  <div className='grid grid-cols-2 items-center gap-y-[6px]'>
+                  <div className='grid grid-cols-2 items-center gap-y-5 md:gap-y-[6px]'>
                     <div>
                       <p className='font-Sora text-TextDark-0 tracking-wide'>
                         Category
@@ -435,7 +435,7 @@ const Portfolio = () => {
                 </Swiper>
               </div>
               <div className='px-4 sm:px-10 pt-[41px]'>
-                <h2 className='font-Sora font-bold text-TextDark-0 text-[45px]'>
+                <h2 className='font-Sora font-bold text-TextDark-0 text-2xl sm:text-4xl md:text-[45px]'>
                   Project Description
                 </h2>
                 <p className='font-Sora text-TextDark-0 pt-1 pb-4'>
@@ -444,32 +444,32 @@ const Portfolio = () => {
                 <p className='font-Sora text-TextDark-0 pb-5'>
                   {`There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.`}
                 </p>
-                <div className='grid grid-cols-3 pt-4'>
+                <div className='grid grid-cols-1 md:grid-cols-3 pt-4'>
                   <div className='col-span-1 pt-3'>
                     <h5 className='font-Sora font-bold text-xl text-TextDark-0 uppercase'>
                       The story
                     </h5>
                   </div>
-                  <div className='col-span-2'>
+                  <div className='col-span-1 md:col-span-2'>
                     <p className='font-Sora text-TextDark-0 pt-[14px] pb-5 2xl:mr-24 pr-[6px]'>
                       {`There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.`}
                     </p>
                   </div>
                 </div>
-                <div className='grid grid-cols-3 pt-4'>
+                <div className='grid grid-cols-1 md:grid-cols-3 pt-4'>
                   <div className='col-span-1 pt-3'>
                     <h5 className='font-Sora font-bold text-xl text-TextDark-0 uppercase'>
                       OUR APPROACH
                     </h5>
                   </div>
-                  <div className='col-span-2'>
+                  <div className='col-span-1 md:col-span-2'>
                     <p className='font-Sora text-TextDark-0 pt-[14px] pb-5 2xl:mr-24 pr-[6px]'>
                       {`There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.`}
                     </p>
                   </div>
                 </div>
               </div>
-              <div className='flex justify-between items-center bg-PrimaryColor-0 px-[52px] py-[38px] mt-7'>
+              <div className='flex flex-col sm:flex-row justify-between sm:items-center gap-6 bg-PrimaryColor-0 px-4 sm:px-[52px] py-[38px] mt-7'>
                 <div>
                   <Link
                     to={'/'}
@@ -485,13 +485,13 @@ const Portfolio = () => {
                       <span className='font-Sora text-white tracking-wide font-light'>
                         Previous Project
                       </span>
-                      <span className='font-Sora font-bold text-white text-[45px] leading-10 pt-2'>
+                      <span className='font-Sora font-bold text-white text-3xl sm:text-4xl md:text-[45px] leading-10 pt-2'>
                         Sebastian
                       </span>
                     </span>
                   </Link>
                 </div>
-                <div>
+                <div className='flex justify-end'>
                   <Link
                     to={'/'}
                     className='flex items-end gap-4 group'
@@ -500,7 +500,7 @@ const Portfolio = () => {
                       <span className='font-Sora text-white tracking-wide font-light'>
                         Next Project
                       </span>
-                      <span className='font-Sora font-bold text-white text-[45px] leading-10 pt-2'>
+                      <span className='font-Sora font-bold text-white text-3xl sm:text-4xl md:text-[45px] leading-10 pt-2'>
                         Qwillo
                       </span>
                     </span>

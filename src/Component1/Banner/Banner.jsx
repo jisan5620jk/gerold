@@ -15,7 +15,7 @@ const Banner = () => {
       <span className='absolute -z-10 -top-[10%] -right-[5%] w-[322px] h-[308px] rounded-full bg-gradient-to-r to-PrimaryColor-0 from-transparent blur-[150px]'></span>
       <div className='Container'>
         <div className='relative z-10'>
-          <div className='absolute -z-10 top-1/2 -translate-x-2/3 -translate-y-2/3 left-1/2'>
+          <div className='absolute -z-10 top-1/2 -translate-x-2/3 -translate-y-2/3 left-1/2 hidden md:block'>
             <h1 className='font-Russo text-[270px] text-transparent text-stroke opacity-70 animate-zoomInOut2'>
               HI
             </h1>
@@ -25,7 +25,7 @@ const Banner = () => {
               <h3 className='font-Sora text-2xl sm:text-4xl font-bold text-TextColor-0 pb-[17px]'>
                 I am Gerold
               </h3>
-              <h1 className='font-Sora text-3xl md:text-[65px] md:leading-[78px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
+              <h1 className='font-Sora text-3xl sm:text-5xl sm:leading-[60px] md:text-[65px] md:leading-[78px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
                 Web Developer + <br /> UX Designer
               </h1>
               <p className='font-Sora text-base sm:text-xl font-light sm:leading-[30px] text-TextColor-0 max-w-[550px] w-full pt-[15px] pb-[50px]'>
@@ -78,19 +78,19 @@ const Banner = () => {
               <img
                 src={bannerThumb}
                 draggable='false'
-                className='w-11/12 sm:max-w-[inherit] border-2 border-Secondarycolor-0 rounded-[38px] rotate-[5deg] transition-all duration-500 hover:rotate-0 hover:border-PrimaryColor-0'
+                className='w-11/12 md:w-[inherit] sm:max-w-[inherit] border-2 border-Secondarycolor-0 rounded-[38px] rotate-[5deg] transition-all duration-500 hover:rotate-0 hover:border-PrimaryColor-0'
               />
             </div>
           </div>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 xl:gap-20 pt-[138px]'>
-          <div className='flex items-center gap-3'>
+        <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7 sm:gap-10 xl:gap-20 pt-16 sm:pt-20 md:pt-[138px]'>
+          <div className='flex flex-col sm:flex-row sm:items-center gap-3'>
             <div>
               <CountUp
                 start={-11}
                 end={'14'}
                 suffix={''}
-                className='font-Sora text-3xl sm:text-4xl md:text-[64px] text-TextColor-0 font-bold'
+                className='font-Sora text-4xl sm:text-6xl md:text-[64px] text-TextColor-0 font-bold'
               />
             </div>
             <p className='font-Sora text-TextColor-0 -mt-2'>
@@ -98,13 +98,13 @@ const Banner = () => {
               Experience
             </p>
           </div>
-          <div className='flex items-center gap-3'>
+          <div className='flex flex-col sm:flex-row sm:items-center gap-3'>
             <div>
               <CountUp
                 start={-11}
                 end={'50'}
                 suffix={'+'}
-                className='font-Sora text-3xl sm:text-4xl md:text-[64px] text-TextColor-0 font-bold'
+                className='font-Sora text-4xl sm:text-6xl md:text-[64px] text-TextColor-0 font-bold'
               />
             </div>
             <p className='font-Sora text-TextColor-0 -mt-2'>
@@ -112,14 +112,14 @@ const Banner = () => {
               Completed
             </p>
           </div>
-          <div className='flex items-center gap-3'>
+          <div className='flex flex-col sm:flex-row sm:items-center gap-3'>
             <div>
               <CountUp
                 start={-11}
                 prefix='1.'
                 end={'5'}
                 suffix='k+'
-                className='font-Sora text-3xl sm:text-4xl md:text-[64px] text-TextColor-0 font-bold'
+                className='font-Sora text-4xl sm:text-6xl md:text-[64px] text-TextColor-0 font-bold'
               />
             </div>
             <p className='font-Sora text-TextColor-0 -mt-2'>
@@ -127,13 +127,13 @@ const Banner = () => {
               Clients
             </p>
           </div>
-          <div className='flex items-center gap-3'>
+          <div className='flex flex-col sm:flex-row sm:items-center gap-3'>
             <div>
               <CountUp
                 start={-11}
                 end={'12'}
                 suffix={''}
-                className='font-Sora text-3xl sm:text-4xl md:text-[64px] text-TextColor-0 font-bold'
+                className='font-Sora text-4xl sm:text-6xl md:text-[64px] text-TextColor-0 font-bold'
               />
             </div>
             <p className='font-Sora text-TextColor-0 -mt-2'>

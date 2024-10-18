@@ -46,7 +46,7 @@ const Blog = () => {
     <section className='py-28 bg-BodyBg-0'>
       <div className='Container'>
         <div className='text-center'>
-          <h1 className='font-Sora text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-white from-30% bg-clip-text text-transparent'>
+          <h1 className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-white from-30% bg-clip-text text-transparent'>
             Recent Blogs
           </h1>
           <p className='font-Sora text-TextColor-0 mt-2 mx-auto max-w-[640px] w-full'>

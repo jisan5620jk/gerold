@@ -135,7 +135,7 @@ const Navbar = () => {
       >
         <div className='Container'>
           <div className='flex items-center justify-between lg:grid lg:grid-cols-12'>
-            <div className='col-span-3'>
+            <div className='col-span-4'>
               <div className='header-logo inline-block'>
                 <ul className='flex items-center gap-[35px]'>
                   <li>
@@ -159,7 +159,7 @@ const Navbar = () => {
                 </ul>
               </div>
             </div>
-            <div className='col-span-9 lg:flex lg:items-center lg:gap-[32px] lg:justify-end'>
+            <div className='col-span-8 lg:flex lg:items-center lg:gap-[32px] lg:justify-end'>
               <div className='header-main-menu text-center hidden lg:block'>
                 <nav className='main-menu-content'>
                   <ul>
