@@ -1,29 +1,23 @@
-import About from '../../Component2/About/About';
-import Banner from '../../Component2/Banner/Banner';
-import Blog from '../../Component2/Blog/Blog';
-import Brand from '../../Component2/Brand/Brand';
-import ContentSlider from '../../Component2/ContentSlider/ContentSlider';
-import Service from '../../Component2/Service/Service';
-import Skill from '../../Component2/Skill/Skill';
-import Subscribe from '../../Component2/Subscribe/Subscribe';
-import TeamMember from '../../Component2/TeamMember/TeamMember';
-import Testimonial from '../../Component2/Testimonial/Testimonial';
-import WhyChoose from '../../Component2/WhyChoose/WhyChoose';
+import Appoinment from '../../Component2DarkDark/Appoinment/Appionment';
+import Banner from '../../Component2DarkDark/Banner/Banner';
+import Blog from '../../Component2DarkDark/Blog/Blog';
+import Portfolio from '../../Component2DarkDark/Portfolio/Portfolio';
+import Resume from '../../Component2DarkDark/Resume/Resume';
+import Service from '../../Component2DarkDark/Service/Service';
+import Skill from '../../Component2DarkDark/Skill/Skill';
+import Testimonial from '../../Component2DarkDark/Testimonial/Testimonial';
 
 const Home2 = () => {
   return (
     <>
       <Banner />
-      <Skill />
-      <About />
       <Service />
-      <WhyChoose />
-      <ContentSlider />
-      <TeamMember />
+      <Portfolio />
+      <Resume />
+      <Skill />
       <Testimonial />
-      <Brand />
       <Blog />
-      <Subscribe />
+      <Appoinment />
     </>
   );
 };
