@@ -1,3 +1,19 @@
+
+.service-light .service-item2.active2 .service-number ,
+.service-light .service-item2:hover .service-number ,
+.service-light .service-item2.active2 .service-title ,
+.service-light .service-item2:hover .service-title ,
+.service-light .service-item2.active2 .service-desc ,
+.service-light .service-item2:hover .service-desc {
+  color: #fff;
+}
+
+.service-light .service-item2.active2 .service-icon ,
+.service-light .service-item2:hover .service-icon {
+  transform: rotate(0deg);
+  color: #fff;
+}
+
 .popup-body-overlay {
   position: fixed;
   top: 0;

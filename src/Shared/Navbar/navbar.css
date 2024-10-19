@@ -765,6 +765,32 @@ nav.main-menu-content > ul > li.current > a::before {
   transition: none !important;
 }
 
+/* Header Light */
+
+.header-area.light nav.main-menu-content > ul > li > a {
+    color: #2a1454;
+}
+
+.header-area.light .header-main-menu nav ul li .submenu,.header-area.light .header-main-menu nav ul li .submenu li .submenu {
+    background-color: #fff;
+    box-shadow: 0 30px 30px rgba(135, 80, 247, 0.2);
+}
+
+.header-area.light .header-main-menu nav ul li .submenu li a,.header-area.light .header-main-menu nav ul li .submenu li .submenu li a {
+    color: #2a1454;
+}
+
+.header-area.light .header-main-menu nav ul li .submenu li:hover a,
+.header-area.light .header-main-menu nav ul li .submenu li.current a,
+.header-area.light .header-main-menu nav ul li .submenu li .submenu li:hover a ,
+.header-area.light .header-main-menu nav ul li .submenu li .submenu li.current a {
+    color: #8750f7;
+}
+
+.header-area.light .header-main-menu nav ul li .submenu li,.header-area.light .header-main-menu nav ul li .submenu li .submenu li {
+    border-color: #d9d9d9;
+}
+
 /* Header Style Two */
 
 .header-area2 {

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Logo from '/images/logo/logo.png';
+import Logo from '/images/logo/logo-dark.png';
 import './navbar.css';
 import { useEffect, useRef } from 'react';
 import { HiMinusSm, HiPlusSm } from 'react-icons/hi';
@@ -131,7 +131,7 @@ const NavbarLight = () => {
       ></div>
       <div
         id='header-sticky'
-        className='header-area py-5 lg:py-0'
+        className='header-area light py-5 lg:py-0'
       >
         <div className='Container'>
           <div className='flex items-center justify-between lg:grid lg:grid-cols-12'>
@@ -151,7 +151,7 @@ const NavbarLight = () => {
                   </li>
                   <li>
                     <Link to={'/'}>
-                      <button className='hidden sm:block font-Sora font-medium text-[15px] text-white transition-all duration-500 hover:text-PrimaryColor-0 relative bottom-[1px]'>
+                      <button className='hidden sm:block font-Sora font-medium text-[15px] text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0 relative bottom-[1px]'>
                         mail@gerolddesign.com
                       </button>
                     </Link>
@@ -177,7 +177,7 @@ const NavbarLight = () => {
                         </span>
                       </Link>
                       <ul className='submenu'>
-                        <li className='has-dropdown current'>
+                        <li className='has-dropdown'>
                           <Link to={'/'}>
                             Dark Mode
                             <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500'>
@@ -188,7 +188,7 @@ const NavbarLight = () => {
                             </span>
                           </Link>
                           <ul className='submenu'>
-                            <li className='current'>
+                            <li>
                               <Link to={'/'}>Home One</Link>
                             </li>
                             <li>
@@ -196,7 +196,7 @@ const NavbarLight = () => {
                             </li>
                           </ul>
                         </li>
-                        <li className='has-dropdown'>
+                        <li className='has-dropdown current'>
                           <Link to={'/'}>
                             Light Mode
                             <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500'>
@@ -207,8 +207,8 @@ const NavbarLight = () => {
                             </span>
                           </Link>
                           <ul className='submenu !top-[58px]'>
-                            <li>
-                              <Link to={'/'}>Home One</Link>
+                            <li className='current'>
+                              <Link to={'/home_light'}>Home One</Link>
                             </li>
                             <li>
                               <Link to={'/home2'}>Home Two</Link>

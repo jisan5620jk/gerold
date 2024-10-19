@@ -11,24 +11,24 @@ import { BsDownload } from 'react-icons/bs';
 
 const Banner = () => {
   return (
-    <section className='bg-BodyBg-0 relative z-10 overflow-hidden pt-[204px] pb-[57px]'>
+    <section className='bg-white relative z-10 overflow-hidden pt-[204px] pb-[57px]'>
       <span className='absolute -z-10 -top-[10%] -right-[5%] w-[322px] h-[308px] rounded-full bg-gradient-to-r to-PrimaryColor-0 from-transparent blur-[150px]'></span>
       <div className='Container'>
         <div className='relative z-10'>
           <div className='absolute -z-10 top-1/2 -translate-x-2/3 -translate-y-2/3 left-1/2 hidden md:block'>
-            <h1 className='font-Russo text-[270px] text-transparent text-stroke opacity-70 animate-zoomInOut2'>
+            <h1 className='font-Russo text-[270px] text-transparent text-stroke opacity-15 animate-zoomInOut2'>
               HI
             </h1>
           </div>
           <div className='grid grid-cols-1 lg:grid-cols-2 lg:items-center'>
             <div>
-              <h3 className='font-Sora text-2xl sm:text-4xl font-bold text-TextColor-0 pb-[17px]'>
+              <h3 className='font-Sora text-2xl sm:text-4xl font-bold text-Secondarycolor-0 pb-[17px]'>
                 I am Gerold
               </h3>
-              <h1 className='font-Sora text-3xl sm:text-5xl sm:leading-[60px] md:text-[65px] md:leading-[78px] lg:text-[52px] lg:leading-[70px] xl:text-[62px] xl:leading-[75px] 2xl:text-[65px] 2xl:leading-[78px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
+              <h1 className='font-Sora text-3xl sm:text-5xl sm:leading-[60px] md:text-[65px] md:leading-[78px] lg:text-[52px] lg:leading-[70px] xl:text-[62px] xl:leading-[75px] 2xl:text-[65px] 2xl:leading-[78px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-Secondarycolor-0 bg-clip-text text-transparent'>
                 Web Developer + <br /> UX Designer
               </h1>
-              <p className='font-Sora text-base sm:text-xl font-light sm:leading-[30px] text-TextColor-0 max-w-[550px] w-full pt-[15px] pb-[50px]'>
+              <p className='font-Sora text-base sm:text-xl font-light sm:leading-[30px] text-TextLight-0 max-w-[550px] w-full pt-[15px] pb-[50px]'>
                 I break down complex user experinece problems to create
                 integritiy focussed solutions that connect billions of people
               </p>
@@ -89,10 +89,10 @@ const Banner = () => {
                 start={-11}
                 end={'14'}
                 suffix={''}
-                className='font-Sora text-4xl sm:text-6xl md:text-[64px] text-TextColor-0 font-bold'
+                className='font-Sora text-4xl sm:text-6xl md:text-[64px] text-PrimaryColor-0 font-bold'
               />
             </div>
-            <p className='font-Sora text-TextColor-0 -mt-2'>
+            <p className='font-Sora text-PrimaryColor-0 -mt-2'>
               Years of <br />
               Experience
             </p>
@@ -103,10 +103,10 @@ const Banner = () => {
                 start={-11}
                 end={'50'}
                 suffix={'+'}
-                className='font-Sora text-4xl sm:text-6xl md:text-[64px] text-TextColor-0 font-bold'
+                className='font-Sora text-4xl sm:text-6xl md:text-[64px] text-PrimaryColor-0 font-bold'
               />
             </div>
-            <p className='font-Sora text-TextColor-0 -mt-2'>
+            <p className='font-Sora text-PrimaryColor-0 -mt-2'>
               Project <br />
               Completed
             </p>
@@ -118,10 +118,10 @@ const Banner = () => {
                 prefix='1.'
                 end={'5'}
                 suffix='k+'
-                className='font-Sora text-4xl sm:text-6xl md:text-[64px] text-TextColor-0 font-bold'
+                className='font-Sora text-4xl sm:text-6xl md:text-[64px] text-PrimaryColor-0 font-bold'
               />
             </div>
-            <p className='font-Sora text-TextColor-0 -mt-2'>
+            <p className='font-Sora text-PrimaryColor-0 -mt-2'>
               Happy <br />
               Clients
             </p>
@@ -132,10 +132,10 @@ const Banner = () => {
                 start={-11}
                 end={'12'}
                 suffix={''}
-                className='font-Sora text-4xl sm:text-6xl md:text-[64px] text-TextColor-0 font-bold'
+                className='font-Sora text-4xl sm:text-6xl md:text-[64px] text-PrimaryColor-0 font-bold'
               />
             </div>
-            <p className='font-Sora text-TextColor-0 -mt-2'>
+            <p className='font-Sora text-PrimaryColor-0 -mt-2'>
               Creativity <br /> Award
             </p>
           </div>

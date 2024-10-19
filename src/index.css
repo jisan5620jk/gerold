@@ -114,19 +114,6 @@ body {
   }
 }
 
-/* Service Section */
-
-.service-item.active .service-number ,
-.service-item:hover .service-number {
-  color: #fff;
-}
-
-.service-item.active .service-icon ,
-.service-item:hover .service-icon {
-  transform: rotate(0deg);
-  color: #fff;
-}
-
 /* Progress Bar */
 
 .progress-bar-rect-wrap-container {

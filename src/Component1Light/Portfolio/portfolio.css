@@ -1,3 +1,7 @@
+.portfolio-filter.light .button-group button.active{
+  color: white;
+}
+
 .portfolio-box {
 	scrollbar-width: none;
 	overflow: auto;

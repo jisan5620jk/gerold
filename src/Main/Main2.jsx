@@ -1,19 +1,17 @@
 import { Outlet } from 'react-router-dom';
-import Navbar2 from '../Shared/Navbar/Navbar2';
 import ScrollToTop from '../Shared/ScrollToTop/ScrollToTop';
-import Footer from '../Shared/Footer/Footer';
-import Cursor from '../Shared/Cursor/Cursor';
+import NavbarLight from '../Shared/Navbar/NavbarLight';
+import FooterLight from '../Shared/Footer/FooterLight';
 
 const Main2 = () => {
   return (
     <>
-      <Navbar2 />
-      <Cursor />
+      <NavbarLight />
       <ScrollToTop />
       <div>
         <Outlet />
       </div>
-      <Footer />
+      <FooterLight />
     </>
   );
 };

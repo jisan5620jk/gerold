@@ -1,11 +1,11 @@
-import Appoinment from '../../Component2DarkDark/Appoinment/Appionment';
-import Banner from '../../Component2DarkDark/Banner/Banner';
-import Blog from '../../Component2DarkDark/Blog/Blog';
-import Portfolio from '../../Component2DarkDark/Portfolio/Portfolio';
-import Resume from '../../Component2DarkDark/Resume/Resume';
-import Service from '../../Component2DarkDark/Service/Service';
-import Skill from '../../Component2DarkDark/Skill/Skill';
-import Testimonial from '../../Component2DarkDark/Testimonial/Testimonial';
+import Appoinment from '../../Component1Light/Appoinment/Appionment';
+import Banner from '../../Component1Light/Banner/Banner';
+import Blog from '../../Component1Light/Blog/Blog';
+import Portfolio from '../../Component1Light/Portfolio/Portfolio';
+import Resume from '../../Component1Light/Resume/Resume';
+import Service from '../../Component1Light/Service/Service';
+import Skill from '../../Component1Light/Skill/Skill';
+import Testimonial from '../../Component1Light/Testimonial/Testimonial';
 
 const Home2 = () => {
   return (

@@ -208,7 +208,7 @@ const NavbarDark = () => {
                           </Link>
                           <ul className='submenu !top-[58px]'>
                             <li>
-                              <Link to={'/'}>Home One</Link>
+                              <Link to={'/home_light'}>Home One</Link>
                             </li>
                             <li>
                               <Link to={'/home2'}>Home Two</Link>

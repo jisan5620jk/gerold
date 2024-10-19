@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import footerLogo from '/images/logo/logo.png';
+import footerLogo from '/images/logo/logo-dark.png';
 import { useEffect, useRef } from 'react';
 
 const FooterLight = () => {
@@ -10,7 +10,7 @@ const FooterLight = () => {
   }, []);
 
   return (
-    <footer className='bg-BodyBg-0 relative z-10 pt-[50px] overflow-hidden pb-5'>
+    <footer className='bg-Secondarycolor-0 relative z-10 pt-[50px] overflow-hidden pb-5'>
       <div className='Container'>
         <div className='text-center'>
           <div className='inline-block'>

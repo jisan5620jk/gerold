@@ -58,11 +58,11 @@ const resumeData2 = [
 
 const Resume = () => {
   return (
-    <section className=' bg-BodyBg2-0 pt-[106px] pb-[120px] relative'>
+    <section className=' bg-BodyBgLight-0 pt-[106px] pb-[120px] relative'>
       <div className='Container'>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-y-[30px] gap-x-[30px] xl:gap-x-[120px] items-center'>
           <div>
-            <h1 className='font-Sora text-[27px] sm:text-[34px] md:text-[36px] lg:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent flex items-center gap-5'>
+            <h1 className='font-Sora text-[27px] sm:text-[34px] md:text-[36px] lg:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-Secondarycolor-0 bg-clip-text text-transparent flex items-center gap-5'>
               <img
                 src={icon}
                 draggable='false'
@@ -87,7 +87,7 @@ const Resume = () => {
             </div>
           </div>
           <div>
-            <h1 className='font-Sora text-[27px] sm:text-[34px] md:text-[36px] lg:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent flex items-center gap-5'>
+            <h1 className='font-Sora text-[27px] sm:text-[34px] md:text-[36px] lg:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-Secondarycolor-0 bg-clip-text text-transparent flex items-center gap-5'>
               <img
                 src={icon2}
                 draggable='false'

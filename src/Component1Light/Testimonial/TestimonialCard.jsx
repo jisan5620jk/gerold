@@ -9,7 +9,7 @@ const TestimonialCard = ({
   testiDesc,
 }) => {
   return (
-    <div className='relative px-2 sm:px-[26px] lg:px-2 xl:px-[26px] pt-[26px] pb-7 bg-BodyBg3-0 rounded-2xl'>
+    <div className='relative px-2 sm:px-[26px] lg:px-2 xl:px-[26px] pt-[26px] pb-7 bg-white rounded-2xl'>
       <img
         src={testiLogo}
         draggable='false'
@@ -22,11 +22,11 @@ const TestimonialCard = ({
         <span className="text-4xl text-PrimaryColor-0 -ml-2">{testiIconLeft}</span>
         <span className="text-4xl text-PrimaryColor-0 -ml-[18px]">{testiIconRight}</span>
       </div>
-      <p className="font-Sora text-white font-light pt-[18px]">{testiDesc}</p>
-      <h5 className='font-Sora font-bold inline-block text-white text-lg mt-[46px]'>
+      <p className="font-Sora text-TextLight-0 font-light pt-[18px]">{testiDesc}</p>
+      <h5 className='font-Sora font-bold inline-block text-Secondarycolor-0 text-lg mt-[46px]'>
         {testiName}
       </h5>
-      <p className='font-Sora text-sm lg:text-[13px] xl:text-sm text-white font-light mt-[3px]'>
+      <p className='font-Sora text-sm lg:text-[13px] xl:text-sm text-TextLight-0 font-light mt-[3px]'>
         {testiDesignation}
       </p>
     </div>
