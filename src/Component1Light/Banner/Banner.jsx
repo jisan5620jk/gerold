@@ -77,7 +77,7 @@ const Banner = () => {
               <img
                 src={bannerThumb}
                 draggable='false'
-                className='w-11/12 md:w-[inherit] lg:w-10/12 xl:w-[inherit] sm:max-w-[inherit] border-2 border-Secondarycolor-0 rounded-[38px] rotate-[5deg] transition-all duration-500 hover:rotate-0 hover:border-PrimaryColor-0'
+                className='w-11/12 md:w-[inherit] lg:w-10/12 xl:w-[inherit] sm:max-w-[inherit] border-2 border-transparent rounded-[38px] rotate-[5deg] transition-all duration-500 hover:rotate-0 hover:border-PrimaryColor-0'
               />
             </div>
           </div>
