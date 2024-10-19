@@ -6,8 +6,8 @@ const Appoinment = () => {
     <section className='bg-BodyBg2-0 py-28 relative z-10 overflow-hidden'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 items-center gap-[22px] relative z-10'>
-          <div className='px-4 sm:px-10 pt-9 pb-10 bg-BodyBg3-0 rounded-2xl'>
-            <h1 className='font-Sora text-[25px] sm:text-[34px] md:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
+          <div className='px-4 sm:px-10 lg:px-6 xl:px-10 pt-9 pb-10 bg-BodyBg3-0 rounded-2xl'>
+            <h1 className='font-Sora text-[25px] sm:text-[34px] md:text-[45px] lg:text-[38px] xl:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
               Let’s work together!
             </h1>
             <p className='font-Sora text-white font-light pt-2'>

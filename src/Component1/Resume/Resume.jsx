@@ -60,7 +60,7 @@ const Resume = () => {
   return (
     <section className=' bg-BodyBg2-0 pt-[106px] pb-[120px] relative'>
       <div className='Container'>
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-y-[30px] gap-x-[30px] lg:gap-x-[120px] items-center'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-y-[30px] gap-x-[30px] xl:gap-x-[120px] items-center'>
           <div>
             <h1 className='font-Sora text-[27px] sm:text-[34px] md:text-[36px] lg:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent flex items-center gap-5'>
               <img

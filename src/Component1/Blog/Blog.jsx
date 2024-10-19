@@ -54,7 +54,7 @@ const Blog = () => {
             project that inspires you and you customers.
           </p>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-10 mt-[48px]'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-10 lg:gap-5 xl:gap-7 2xl:gap-10 mt-[48px]'>
           {BlogData.map(
             ({
               id,

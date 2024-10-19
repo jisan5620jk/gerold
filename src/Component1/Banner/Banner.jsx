@@ -25,7 +25,7 @@ const Banner = () => {
               <h3 className='font-Sora text-2xl sm:text-4xl font-bold text-TextColor-0 pb-[17px]'>
                 I am Gerold
               </h3>
-              <h1 className='font-Sora text-3xl sm:text-5xl sm:leading-[60px] md:text-[65px] md:leading-[78px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
+              <h1 className='font-Sora text-3xl sm:text-5xl sm:leading-[60px] md:text-[65px] md:leading-[78px] lg:text-[52px] lg:leading-[70px] xl:text-[62px] xl:leading-[75px] 2xl:text-[65px] 2xl:leading-[78px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
                 Web Developer + <br /> UX Designer
               </h1>
               <p className='font-Sora text-base sm:text-xl font-light sm:leading-[30px] text-TextColor-0 max-w-[550px] w-full pt-[15px] pb-[50px]'>
@@ -36,41 +36,40 @@ const Banner = () => {
                 <div className='inline-block'>
                   <Link to={'/'}>
                     <button className='primary-btn'>
-                      Download CV{' '}
-                      <BsDownload className='relative -top-[2px]' />
+                      Download CV <BsDownload className='relative -top-[2px]' />
                     </button>
                   </Link>
                 </div>
-                  <ul className='flex items-center gap-5'>
-                    <li>
-                      <Link to={'/'}>
-                        <button className='size-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-transparent border border-PrimaryColor-0 transition-all duration-500 text-PrimaryColor-0 hover:text-white z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:rotate-180 before:-z-10 before:transition-all before:duration-500 before:scale-0 group-hover:before:scale-100 group-hover:before:rotate-0'>
-                          <FaXTwitter />
-                        </button>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to={'/'}>
-                        <button className='size-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-transparent border border-PrimaryColor-0 transition-all duration-500 text-PrimaryColor-0 hover:text-white z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:rotate-180 before:-z-10 before:transition-all before:duration-500 before:scale-0 group-hover:before:scale-100 group-hover:before:rotate-0'>
-                          <FaDribbble />
-                        </button>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to={'/'}>
-                        <button className='size-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-transparent border border-PrimaryColor-0 transition-all duration-500 text-PrimaryColor-0 hover:text-white z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:rotate-180 before:-z-10 before:transition-all before:duration-500 before:scale-0 group-hover:before:scale-100 group-hover:before:rotate-0'>
-                          <FaLinkedinIn />
-                        </button>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to={'/'}>
-                        <button className='size-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-transparent border border-PrimaryColor-0 transition-all duration-500 text-PrimaryColor-0 hover:text-white z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:rotate-180 before:-z-10 before:transition-all before:duration-500 before:scale-0 group-hover:before:scale-100 group-hover:before:rotate-0'>
-                          <FaGithub />
-                        </button>
-                      </Link>
-                    </li>
-                  </ul>
+                <ul className='flex items-center gap-5'>
+                  <li>
+                    <Link to={'/'}>
+                      <button className='size-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-transparent border border-PrimaryColor-0 transition-all duration-500 text-PrimaryColor-0 hover:text-white z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:rotate-180 before:-z-10 before:transition-all before:duration-500 before:scale-0 group-hover:before:scale-100 group-hover:before:rotate-0'>
+                        <FaXTwitter />
+                      </button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={'/'}>
+                      <button className='size-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-transparent border border-PrimaryColor-0 transition-all duration-500 text-PrimaryColor-0 hover:text-white z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:rotate-180 before:-z-10 before:transition-all before:duration-500 before:scale-0 group-hover:before:scale-100 group-hover:before:rotate-0'>
+                        <FaDribbble />
+                      </button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={'/'}>
+                      <button className='size-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-transparent border border-PrimaryColor-0 transition-all duration-500 text-PrimaryColor-0 hover:text-white z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:rotate-180 before:-z-10 before:transition-all before:duration-500 before:scale-0 group-hover:before:scale-100 group-hover:before:rotate-0'>
+                        <FaLinkedinIn />
+                      </button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={'/'}>
+                      <button className='size-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-transparent border border-PrimaryColor-0 transition-all duration-500 text-PrimaryColor-0 hover:text-white z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:rotate-180 before:-z-10 before:transition-all before:duration-500 before:scale-0 group-hover:before:scale-100 group-hover:before:rotate-0'>
+                        <FaGithub />
+                      </button>
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </div>
             <div className='flex justify-center relative mt-12'>
@@ -78,7 +77,7 @@ const Banner = () => {
               <img
                 src={bannerThumb}
                 draggable='false'
-                className='w-11/12 md:w-[inherit] sm:max-w-[inherit] border-2 border-Secondarycolor-0 rounded-[38px] rotate-[5deg] transition-all duration-500 hover:rotate-0 hover:border-PrimaryColor-0'
+                className='w-11/12 md:w-[inherit] lg:w-10/12 xl:w-[inherit] sm:max-w-[inherit] border-2 border-Secondarycolor-0 rounded-[38px] rotate-[5deg] transition-all duration-500 hover:rotate-0 hover:border-PrimaryColor-0'
               />
             </div>
           </div>

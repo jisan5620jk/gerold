@@ -254,7 +254,7 @@
   padding: 31px 0;
 }
 
-@media screen and (min-width: 320px) and (max-width: 991px) {
+@media only screen and (min-width: 320px) and (max-width: 991px) {
   .header-logo {
     padding: 0;
   }
@@ -272,11 +272,19 @@ nav.main-menu-content > ul {
   margin-right: 23px;
 }
 
-@media screen and (min-width: 992) and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   nav.main-menu-content > ul {
-    gap: 18px;
+    gap: 10px;
+    margin-right: 0;
   }
 }
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  nav.main-menu-content > ul {
+    gap: 35px;
+  }
+}
+
 
 nav.main-menu-content > ul > li {
   display: inline-block;
@@ -385,23 +393,6 @@ nav.main-menu-content > ul > li.current > a::before {
   background-position: -100%;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  nav.main-menu-content > ul > li > a {
-    padding: 17px 5px;
-  }
-
-  .header-btn a {
-    padding: 14px 18px;
-    font-weight: 500;
-    gap: 2px;
-  }
-}
-
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  nav.main-menu-content > ul > li > a {
-    padding: 17px 14px;
-  }
-}
 
 /* Submenu Start Here */
 

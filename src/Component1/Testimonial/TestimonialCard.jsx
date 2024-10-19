@@ -26,7 +26,7 @@ const TestimonialCard = ({
       <h5 className='font-Sora font-bold inline-block text-white text-lg mt-[46px]'>
         {testiName}
       </h5>
-      <p className='font-Sora text-sm text-white font-light mt-[3px]'>
+      <p className='font-Sora text-sm lg:text-[13px] xl:text-sm text-white font-light mt-[3px]'>
         {testiDesignation}
       </p>
     </div>
