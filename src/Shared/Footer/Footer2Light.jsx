@@ -13,7 +13,7 @@ import {
 import { ImFacebook2 } from 'react-icons/im';
 import { IoIosSend } from 'react-icons/io';
 
-const Footer2 = () => {
+const Footer2Light = () => {
   return (
     <footer className='bg-BodyBg2-0 relative z-10 overflow-hidden'>
       <div className='bg-PrimaryColor-0 py-9 mb-[88px]'>
@@ -323,4 +323,4 @@ const Footer2 = () => {
   );
 };
 
-export default Footer2;
+export default Footer2Light;

@@ -23,7 +23,7 @@ import { IoSearch } from 'react-icons/io5';
 import { CgMenuGridO } from 'react-icons/cg';
 import { LiaTimesSolid } from 'react-icons/lia';
 
-const Navbar2 = () => {
+const Navbar2Light = () => {
   //Menu Sidebar
 
   const menuSideBarRef = useRef(null);
@@ -639,4 +639,4 @@ const Navbar2 = () => {
   );
 };
 
-export default Navbar2;
+export default Navbar2Light;

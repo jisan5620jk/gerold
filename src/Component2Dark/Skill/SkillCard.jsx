@@ -17,10 +17,10 @@ const SkillCard = ({ skillIcon, skillTitle, skillPercent, skillSuffix }) => {
           start={-11}
           end={skillPercent}
           suffix={skillSuffix}
-          className='font-Sora text-xl text-TextColor-0 font-extrabold'
+          className='font-Sora text-xl text-TextGrey-0 font-medium transition-all duration-500 group-hover:text-PrimaryColor-0'
         />
       </div>
-      <h4 className='font-Sora text-PrimaryColor-0 mt-[15px]'>
+      <h4 className='font-Sora text-white mt-[15px]'>
         {skillTitle}
       </h4>
     </div>
