@@ -1,28 +1,34 @@
 /* eslint-disable react/prop-types */
 const TestimonialCard = ({
-  testiQuote,
+  testiLogo,
+  testiIconLeft,
+  testiIconRight,
+  testiProfile,
   testiName,
   testiDesignation,
   testiDesc,
 }) => {
   return (
-    <div className='relative px-2 sm:px-[60px] lg:px-10 xl:px-12 2xl:px-[60px] py-10 lg:pt-24 lg:pb-28 2xl:pt-[114px] 2xl:pb-[110px] bg-[url(/images/review-bg.png)] bg-no-repeat bg-cover bg-center rounded-[30px]'>
+    <div className='relative px-2 sm:px-[26px] lg:px-2 xl:px-[26px] pt-[26px] pb-7 bg-BodyBg3-0 rounded-2xl'>
       <img
-        src={testiQuote}
+        src={testiLogo}
         draggable='false'
+        className='absolute top-[25px] left-[26px]'
       />
-      <p className='font-DMSans sm:text-xl lg:text-lg xl:text-xl text-white pt-8'>
-        {testiDesc}
-      </p>
-      <div className='flex flex-col sm:flex-row sm:items-center gap-3 mt-14'>
-        <h5 className='font-Sora font-semibold inline-block text-white text-[22px] mb-1'>
-          {testiName}
-        </h5>
-        <span className='h-[1px] w-6 bg-white bg-opacity-50 hidden sm:block'></span>
-        <p className='font-DMSans text-sm text-white uppercase'>
-          {testiDesignation}
-        </p>
+      <div className="flex items-center justify-end">
+        <img src={testiProfile} className="max-w-[120px] w-[40%] rounded-md rounded-es-[125px]"/>
       </div>
+      <div className="flex items-center mt-4">
+        <span className="text-4xl text-PrimaryColor-0 -ml-2">{testiIconLeft}</span>
+        <span className="text-4xl text-PrimaryColor-0 -ml-[18px]">{testiIconRight}</span>
+      </div>
+      <p className="font-Sora text-white font-light pt-[18px]">{testiDesc}</p>
+      <h5 className='font-Sora font-bold inline-block text-white text-lg mt-[46px]'>
+        {testiName}
+      </h5>
+      <p className='font-Sora text-sm lg:text-[13px] xl:text-sm text-white font-light mt-[3px]'>
+        {testiDesignation}
+      </p>
     </div>
   );
 };

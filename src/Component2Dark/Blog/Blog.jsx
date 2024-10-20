@@ -1,132 +1,88 @@
-import { FaCircle, FaRegCalendarCheck } from 'react-icons/fa6';
-import blogThumb from '/images/blog.png';
-import blogThumb2 from '/images/blog2.png';
+import { FaRegCalendarDays, FaRegComments } from 'react-icons/fa6';
+import blogThumb from '/images/blog/1.jpg';
+import blogThumb2 from '/images/blog/2.jpg';
+import blogThumb3 from '/images/blog/3.jpg';
 import BlogCard from './BlogCard';
-import { GoArrowRight } from 'react-icons/go';
-import { PiUserCircleFill } from 'react-icons/pi';
-import blogShape from '/images/blog-shape.png';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import BlogNavigation from './BlogNavigation';
 
-const blogData = [
+const BlogData = [
   {
     id: 1,
     blogThumb: blogThumb,
-    blogDateIcon: <FaRegCalendarCheck />,
-    blogDate: '24 Mar, 2024',
-    blogTagIcon: <PiUserCircleFill />,
-    blogTag: 'Admin',
+    thumbTitle: 'Tutorial',
+    blogCommentIcon: <FaRegComments />,
+    blogDateIcon: <FaRegCalendarDays />,
+    blogDate: 'Oct 01, 2024',
+    blogComment: 'Comment (0)',
     blogUrl: '/blog_details',
-    blogTitle: 'Transfusion strategy and heart surgery',
-    blogDesc: 'Professional capital without pros users matrix value e-commerce',
-    blogBtnIcon: <GoArrowRight />,
+    blogTitle: 'Top 10 ui ux designers',
   },
   {
     id: 2,
     blogThumb: blogThumb2,
-    blogDateIcon: <FaRegCalendarCheck />,
-    blogDate: '24 Mar, 2024',
-    blogTagIcon: <PiUserCircleFill />,
-    blogTag: 'Admin',
+    thumbTitle: 'Tips',
+    blogCommentIcon: <FaRegComments />,
+    blogDateIcon: <FaRegCalendarDays />,
+    blogDate: 'Nov 01, 2024',
+    blogComment: 'Comment (0)',
     blogUrl: '/blog_details',
-    blogTitle: 'Goals Setting the people Heart is Healthy',
-    blogDesc: 'Professional capital without pros users matrix value e-commerce',
-    blogBtnIcon: <GoArrowRight />,
+    blogTitle: 'App Development Guides',
   },
   {
     id: 3,
-    blogThumb: blogThumb,
-    blogDateIcon: <FaRegCalendarCheck />,
-    blogDate: '24 Mar, 2024',
-    blogTagIcon: <PiUserCircleFill />,
-    blogTag: 'Admin',
+    blogThumb: blogThumb3,
+    thumbTitle: 'Freebies',
+    blogDate: 'Dec 01, 2024',
+    blogCommentIcon: <FaRegComments />,
+    blogDateIcon: <FaRegCalendarDays />,
+    blogComment: 'Comment (0)',
     blogUrl: '/blog_details',
-    blogTitle: 'Goals Setting the people Heart is Healthy',
-    blogDesc: 'Professional capital without pros users matrix value e-commerce',
-    blogBtnIcon: <GoArrowRight />,
+    blogTitle: 'learn graphic design free',
   },
 ];
 
 const Blog = () => {
-  const settings = {
-    loop: true,
-    spaceBetween: 30,
-    speed: 1000,
-    initialSlide: 1,
-    autoplay: true,
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 1,
-      },
-      992: {
-        slidesPerView: 1,
-      },
-      1200: {
-        slidesPerView: 2,
-      },
-    },
-  };
+
   return (
-    <section className='py-28 bg-gradient-to-t from-BodyBg-0 from-10% mx-2 xl:mx-6 2xl:mx-10 relative z-10'>
-      <div className='absolute -left-20 top-0 -z-10'>
-        <img
-          src={blogShape}
-          draggable='false'
-        />
-      </div>
+    <section className='py-28 bg-BodyBg-0'>
       <div className='Container'>
-        <div className=' md:-mb-[116px] border-b border-BorderColor3-0 pb-10'>
-          <div className='inline-block mb-5'>
-            <h6 className='flex items-center justify-start gap-2 bg-white bg-opacity-30 text-PrimaryColor-0 text-[15px] font-semibold border border-white border-opacity-60 rounded-full font-Sora px-[22px] py-2 uppercase'>
-              <FaCircle size={'8'} />
-              our recent blog post
-            </h6>
-          </div>
-          <h1 className='font-Sora font-bold uppercase text-HeadingColor-0 text-[20px] leading-[28px] sm:text-[38px] sm:leading-[48px] md:text-[48px] md:leading-[58px] lg:text-[40px] lg:leading-[50px] xl:text-[46px] xl:leading-[57px] 2xl:text-[55px] 2xl:leading-[67px]'>
-            OUR HAPPY PATIENTS
+        <div className='text-center'>
+          <h1 className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-white from-30% bg-clip-text text-transparent'>
+            Recent Blogs
           </h1>
+          <p className='font-Sora text-TextColor-0 mt-2 mx-auto max-w-[640px] w-full'>
+            We put your ideas and thus your wishes in the form of a unique web
+            project that inspires you and you customers.
+          </p>
         </div>
-        <div className='pt-5'>
-          <Swiper {...settings}>
-            {blogData.map(
-              ({
-                id,
-                blogThumb,
-                blogDateIcon,
-                blogDate,
-                blogTagIcon,
-                blogTag,
-                blogUrl,
-                blogTitle,
-                blogDesc,
-                blogBtnIcon,
-              }) => {
-                return (
-                  <SwiperSlide
-                    key={id}
-                    className='pt-20 md:pt-[154px]'
-                  >
-                    <BlogCard
-                      blogThumb={blogThumb}
-                      blogDateIcon={blogDateIcon}
-                      blogDate={blogDate}
-                      blogTagIcon={blogTagIcon}
-                      blogTag={blogTag}
-                      blogUrl={blogUrl}
-                      blogTitle={blogTitle}
-                      blogDesc={blogDesc}
-                      blogBtnIcon={blogBtnIcon}
-                    />
-                  </SwiperSlide>
-                );
-              }
-            )}
-            <BlogNavigation />
-          </Swiper>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-10 lg:gap-5 xl:gap-7 2xl:gap-10 mt-[48px]'>
+          {BlogData.map(
+            ({
+              id,
+              blogThumb,
+              thumbTitle,
+              blogDateIcon,
+              blogDate,
+              blogComment,
+              blogUrl,
+              blogTitle,
+              blogCommentIcon,
+            }) => {
+              return (
+                <div key={id}>
+                  <BlogCard
+                    blogThumb={blogThumb}
+                    thumbTitle={thumbTitle}
+                    blogDateIcon={blogDateIcon}
+                    blogDate={blogDate}
+                    blogComment={blogComment}
+                    blogCommentIcon={blogCommentIcon}
+                    blogUrl={blogUrl}
+                    blogTitle={blogTitle}
+                  />
+                </div>
+              );
+            }
+          )}
         </div>
       </div>
     </section>

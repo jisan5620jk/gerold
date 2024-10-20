@@ -1,37 +1,43 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { EffectFlip } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 import TestimonialCard from './TestimonialCard';
-import testiThumb from '/images/testi-thumb.jpg';
-import testiQuote from '/images/testi-quote.png';
-import { FaCircle } from 'react-icons/fa6';
-import circleShape from '/images/crcle-bg.png';
-import TestimonialNavigation from './TestimonialNavigation';
+import testiLogo from '/images/testimonials/logo/1.png';
+import testiLogo2 from '/images/testimonials/logo/2.png';
+import testiProfile from '/images/testimonials/user/1.jpg';
+import testiProfile2 from '/images/testimonials/user/2.jpg';
+import { BsFillCaretLeftFill, BsFillCaretRightFill } from 'react-icons/bs';
 
 const testiData = [
   {
     id: 1,
-    testiQuote: testiQuote,
-    testiDesc: `Doctean is the best medical in the world I have great
-                experience with them the provide authentic results &
-                have the best environment the inside here. I can't
-                express enough gratitude for the exceptional care
-                experienced at doctean kudos to the remarkable team for
-                press support!, I highly recommend them.`,
-    testiName: 'Jhon D. Alexon',
-    testiDesignation: 'Mental Patient',
+    testiLogo: testiLogo,
+    testiIconLeft: <BsFillCaretLeftFill />,
+    testiIconRight: <BsFillCaretRightFill />,
+    testiDesc: `“Taylor is a professional Designer he really helps my business by providing value to my business.`,
+    testiName: 'Brandon Fraser',
+    testiDesignation: 'Senior Software Dev, Cosmic Sport',
+    testiProfile: testiProfile,
   },
   {
     id: 2,
-    testiQuote: testiQuote,
-    testiDesc: `Doctean is the best medical in the world I have great
-                experience with them the provide authentic results &
-                have the best environment the inside here. I can't
-                express enough gratitude for the exceptional care
-                experienced at doctean kudos to the remarkable team for
-                press support!, I highly recommend them.`,
-    testiName: 'Jhon D. Alexon',
-    testiDesignation: 'Dental Patient',
+    testiLogo: testiLogo2,
+    testiIconLeft: <BsFillCaretLeftFill />,
+    testiIconRight: <BsFillCaretRightFill />,
+    testiDesc: `“Taylor is a professional Designer he really helps my business by providing value to my business.`,
+    testiName: 'Tim Bailey',
+    testiDesignation: 'SEO Specialist, Theme Junction',
+    testiProfile: testiProfile2,
+  },
+  {
+    id: 3,
+    testiLogo: testiLogo,
+    testiIconLeft: <BsFillCaretLeftFill />,
+    testiIconRight: <BsFillCaretRightFill />,
+    testiDesc: `“Taylor is a professional Designer he really helps my business by providing value to my business.`,
+    testiName: 'Brandon Fraser',
+    testiDesignation: 'Senior Software Dev, Cosmic Sport',
+    testiProfile: testiProfile,
   },
 ];
 
@@ -39,83 +45,74 @@ const Testimonial = () => {
   const settings = {
     loop: true,
     spaceBetween: 30,
+    speed: 1000,
     initialSlide: 1,
     autoplay: true,
-    speed: 1000,
     effect: 'ease',
-    grabCursor: true,
-    flipEffect: {
-      slideShadows: false,
-    },
     breakpoints: {
       320: {
         slidesPerView: 1,
       },
       768: {
-        slidesPerView: 1,
+        slidesPerView: 2,
       },
       992: {
-        slidesPerView: 1,
+        slidesPerView: 2,
       },
       1400: {
-        slidesPerView: 1,
+        slidesPerView: 2,
       },
     },
   };
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + ' pagination-bullet"></span>';
+    },
+  };
   return (
-    <section className='bg-[url(/images/motivation-bg.jpg)] bg-cover bg-center bg-no-repeat pt-[200px] pb-28 relative z-10 overflow-hidden'>
-      <div className='absolute -z-10 top-16 -translate-y-1/2 left-1/2 -translate-x-1/2'>
-        <img
-          src={circleShape}
-          draggable='false'
-          className='max-w-[inherit] w-[inherit]'
-        />
-      </div>
+    <section className='testimonial bg-BodyBg2-0 pt-[120px] pb-[130px] relative z-10 overflow-hidden'>
+      <span className='absolute left-[11%] bottom-[20%] size-[16%] rounded-full bg-gradient-to-t to-PrimaryColor-0 from-Secondarycolor-0 blur-[150px]'></span>
       <div className='Container'>
-        <div className='-mb-[116px] border-b border-BorderColor2-0 pb-10'>
-          <div className='inline-block mb-5'>
-            <h6 className='flex items-center justify-start gap-2 bg-white bg-opacity-0 text-PrimaryColor-0 text-[15px] font-semibold border border-PrimaryColor-0 border-opacity-100 rounded-full font-Sora px-[22px] py-2 uppercase'>
-              <FaCircle size={'8'} />
-              PATIENTS Feedback
-            </h6>
+        <div className='grid gap-[30px] grid-cols-1 lg:grid-cols-12 xl:grid-cols-2 lg:items-start'>
+          <div className='col-span-1 lg:col-span-5 xl:col-span-1 relative overflow-hidden'>
+            <h1 className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] lg:leading-[58px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
+              {`My Client's Stories`}
+            </h1>
+            <p className='font-Sora text-TextColor-0 mt-2 max-w-[470px] w-full xl:pr-5 2xl:pr-0'>
+              Empowering people in new a digital journey with my super services
+            </p>
           </div>
-          <h1 className='font-Sora font-bold uppercase text-white text-[20px] leading-[28px] sm:text-[38px] sm:leading-[48px] md:text-[48px] md:leading-[58px] lg:text-[40px] lg:leading-[50px] xl:text-[46px] xl:leading-[57px] 2xl:text-[55px] 2xl:leading-[67px]'>
-            OUR HAPPY PATIENTS
-          </h1>
-        </div>
-        <div className='grid gap-8 lg:gap-0 grid-cols-6 lg:grid-cols-12 lg:items-center pt-5'>
-          <div className='col-span-6 lg:col-span-4 relative pt-[154px] lg:pt-36 2xl:pt-[140px]'>
-            <div className='relative z-10 rounded-[30px] overflow-hidden'>
-              <img
-                src={testiThumb}
-                draggable='false'
-                className='w-full lg:max-w-[inherit] lg:w-[inherit] 2xl:max-w-full'
-              />
-            </div>
-          </div>
-          <div className='col-span-6 lg:col-span-8 lg:ml-7 xl:ml-20'>
+          <div className='col-span-1 lg:col-span-7 xl:col-span-1'>
             <Swiper
               {...settings}
-              modules={[EffectFlip]}
+              pagination={pagination}
+              modules={[Pagination]}
             >
               <div>
                 {testiData.map(
                   ({
                     id,
-                    testiQuote,
+                    testiLogo,
+                    testiIconLeft,
+                    testiIconRight,
                     testiName,
+                    testiProfile,
                     testiDesignation,
                     testiDesc,
                   }) => {
                     return (
                       <SwiperSlide
                         key={id}
-                        className='mt-28 lg:mt-36 2xl:pt-0'
+                        className='pb-[42px]'
                       >
                         <TestimonialCard
-                          testiQuote={testiQuote}
+                          testiLogo={testiLogo}
+                          testiIconLeft={testiIconLeft}
+                          testiIconRight={testiIconRight}
                           testiName={testiName}
                           testiDesignation={testiDesignation}
+                          testiProfile={testiProfile}
                           testiDesc={testiDesc}
                         />
                       </SwiperSlide>
@@ -123,7 +120,6 @@ const Testimonial = () => {
                   }
                 )}
               </div>
-              <TestimonialNavigation />
             </Swiper>
           </div>
         </div>

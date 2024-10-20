@@ -27,8 +27,40 @@ body {
   @apply font-Sora font-medium rounded-full text-[15px] tracking-custom text-PrimaryColor-0 border border-PrimaryColor-0 flex items-center gap-[8px] px-[35px] py-[16px] transition-all duration-500 hover:text-white hover:bg-PrimaryColor-0;
 }
 
+
 .primary-btn2 {
-  @apply flex items-center gap-2 overflow-hidden border border-PrimaryColor-0 bg-PrimaryColor-0 transition-all z-10 hover:text-white duration-500 px-10 py-[18px] relative rounded-full text-base text-white font-medium font-Sora before:bg-HeadingColor-0 before:h-full before:w-0 before:-skew-x-[25deg] before:absolute before:top-0 before:-right-5 before:-z-10 before:transition-all before:duration-500 hover:before:w-[125%] hover:before:-left-5;
+  @apply font-Sora font-medium rounded-full text-[15px] bg-PrimaryColor-0 text-white flex items-center gap-[8px] px-[35px] py-[16px] transition-all duration-500;
+}
+
+.primary-btn2 .icon-box {
+  position: relative;
+  width: 15px;
+  height: 15px;
+    overflow: hidden;
+    transform: rotate(-45deg);
+}
+
+.primary-btn2 .icon-box .first-icon, .primary-btn2 .icon-box .last-icon {
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.primary-btn2 .icon-box .first-icon, .primary-btn2 .icon-box .last-icon {
+	position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.primary-btn2 .icon-box .first-icon {
+	transform: translateX(-150%); 
+}
+
+.primary-btn2:hover .icon-box .first-icon{
+	transform: translateX(0%);
+}
+
+.primary-btn2:hover .icon-box .last-icon {
+	transform: translateX(150%);
 }
 
 .primary-btn3 {

@@ -1,110 +1,86 @@
-import bannerThumb from '/images/thunb.png';
-import bannerShape from '/images/shape1.png';
-import bannerCheck from '/images/tick.png';
-import bannerHeart from '/images/banner3-heart.png';
-import btnArrow from '/images/arrow.png';
+import bannerThumb from '/images/hero/hero-2.png';
 import { Link } from 'react-router-dom';
-import { FaCircle } from 'react-icons/fa6';
-import FsLightbox from 'fslightbox-react';
-import { useState } from 'react';
+import {
+  FaDribbble,
+  FaGithub,
+  FaLinkedinIn,
+  FaXTwitter,
+} from 'react-icons/fa6';
+import { PiArrowRightBold } from 'react-icons/pi';
 
 const Banner = () => {
-  const [toggler, setToggler] = useState(false);
   return (
-    <div className='bg-white'>
-      <section className="bg-[url('/images/hero-bg3.jpg')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[1250px] md:h-[1400px] lg:h-[880px] xl:h-[790px] 2xl:h-[790px] flex items-center relative z-10 overflow-hidden rounded-t-2xl md:rounded-t-[30px]">
-        <div className='flex justify-center items-center m-auto'>
-          <div className='Container'>
-            <div className='grid grid-cols-1 lg:grid-cols-2 items-center'>
-              <div>
+    <section className='bg-BodyBg-0 relative z-10 overflow-hidden pt-[204px] pb-[57px]'>
+      <div className='flex justify-center items-center m-auto'>
+        <div className='Container'>
+          <div className='flex items-center gap-[60px] p-[30px] border border-Secondarycolor-0 rounded-2xl'>
+            <div className='relative z-10 rounded-xl overflow-hidden'>
+              <img
+                src={bannerThumb}
+                draggable='false'
+                className='brightness-0'
+              />
+            </div>
+            <div>
+              <h1 className='font-Sora text-3xl sm:text-5xl sm:leading-[60px] md:text-[40px] md:leading-[78px] lg:text-[48px] lg:leading-[70px] xl:text-[58px] xl:leading-[75px] 2xl:text-[58px] 2xl:leading-[78px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
+                Hi, I am Web <br /> Developer + UX Designer
+              </h1>
+              <p className='font-Sora text-TextColor-0 max-w-[530px] w-full'>
+                I design and code beautifully simple things and i love what i
+                do. Just simple like that!
+              </p>
+              <div className='flex flex-wrap items-center gap-[26px]'>
                 <div className='inline-block'>
-                  <h6 className='flex items-center justify-start gap-2 bg-white bg-opacity-30 text-PrimaryColor-0 text-[15px] font-semibold border-2 border-white rounded-full font-Sora px-[22px] py-2'>
-                    <FaCircle size={'8'} />
-                    WELCOME TO OUR HOSPITAL
-                  </h6>
-                </div>
-                <h1 className='font-Sora font-extrabold text-3xl sm:text-5xl sm:leading-[58px] md:text-6xl md:leading-[70px] lg:text-5xl lg:leading-[58px] xl:text-[58px] xl:leading-[70px] 2xl:text-[65px] 2xl:leading-[80px] text-HeadingColor-0 mt-[18px] mb-7'>
-                  BETTER CARE FOR <br /> YOUR{' '}
-                  <span className='text-PrimaryColor-0'>HEALTH</span>
-                </h1>
-                <Link to={'/appiontment'}>
-                  <button className='primary-btn3 '>
-                    Research More <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <img
-                      src={btnArrow}
-                      draggable='false'
-                    />
-                  </button>
-                </Link>
-                <div className='flex flex-col sm:flex-row lg:flex-col xl:flex-row lg:items-start xl:items-center items-center gap-5 pt-11'>
-                  <div className='relative z-30 flex flex-col md:flex-row md:justify-between lg:justify-evenly xl:justify-between md:items-center gap-8'>
-                    <div className='flex flex-col sm:flex-row items-center gap-5 bg-white bg-opacity-30 backdrop-filter backdrop-blur-md border-2 border-white rounded-2xl pt-6 px-4 sm:px-8 pb-6'>
-                      <div>
-                        <img
-                          src={bannerCheck}
-                          draggable='false'
-                        />
-                      </div>
-                      <div className='flex-1'>
-                        <h5 className='font-Sora font-semibold text-xl text-HeadingColor-0'>
-                          Best Medical
-                        </h5>
-                        <p className='font-DMSans text-HeadingColor-0 xl:text-white 2xl:text-TextColor2-0 mt-[6px]'>
-                          Rapidiously reinvent long-term
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <button
-                      className='font-Sora font-medium uppercase leading-4 text-PrimaryColor-0 border-b border-PrimaryColor-0'
-                      onClick={() => setToggler(!toggler)}
-                    >
-                      Watch A Video
+                  <Link to={'/'}>
+                    <button className='primary-btn2'>
+                      Hire Me!
+                      <span className='icon-box'>
+                        <span className='first-icon'>
+                          <PiArrowRightBold size={'17'} />
+                        </span>
+                        <span className='last-icon'>
+                          <PiArrowRightBold size={'17'} />
+                        </span>
+                      </span>
                     </button>
-                    <FsLightbox
-                      toggler={toggler}
-                      sources={[
-                        'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-                      ]}
-                    />
-                  </div>
+                  </Link>
                 </div>
-              </div>
-              <div className='flex justify-end md:justify-center lg:justify-end'>
-                <div className='relative z-10'>
-                  <img
-                    src={bannerThumb}
-                    draggable='false'
-                    className='relative top-[70px] sm:top-20 md:top-36 xl:top-14'
-                  />
-                  <img
-                    src={bannerShape}
-                    draggable='false'
-                    className='absolute top-36 left-0 -z-10'
-                  />
-                  <div className='absolute top-64 -left-[50px] size-[100px] rounded-full bg-white bg-opacity-30 border-2 border-white sm:flex items-center justify-center hidden'>
-                    <img
-                      src={bannerHeart}
-                      draggable='false'
-                      className='animate-rotateX'
-                    />
-                  </div>
-                  <div className='absolute top-48 -right-[102px] hidden sm:block'>
-                    <h6 className='-rotate-90 font-Sora font-medium uppercase text-white bg-PrimaryColor-0 px-[26px] py-3 rounded-full'>
-                      30+ Research Center
-                    </h6>
-                  </div>
-                </div>
+                <ul className='flex items-center gap-5'>
+                  <li>
+                    <Link to={'/'}>
+                      <button className='size-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-transparent border border-PrimaryColor-0 transition-all duration-500 text-PrimaryColor-0 hover:text-white z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:rotate-180 before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
+                        <FaXTwitter />
+                      </button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={'/'}>
+                      <button className='size-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-transparent border border-PrimaryColor-0 transition-all duration-500 text-PrimaryColor-0 hover:text-white z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:rotate-180 before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
+                        <FaDribbble />
+                      </button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={'/'}>
+                      <button className='size-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-transparent border border-PrimaryColor-0 transition-all duration-500 text-PrimaryColor-0 hover:text-white z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:rotate-180 before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
+                        <FaLinkedinIn />
+                      </button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={'/'}>
+                      <button className='size-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-transparent border border-PrimaryColor-0 transition-all duration-500 text-PrimaryColor-0 hover:text-white z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:rotate-180 before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
+                        <FaGithub />
+                      </button>
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 
