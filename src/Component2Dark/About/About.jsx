@@ -32,7 +32,7 @@ const About = () => {
           </div>
         </div>
         <div className='col-span-5 border border-Secondarycolor-0 bg-BodyBg3-0 rounded-2xl'>
-          <div className='pt-[30px] px-10'>
+          <div className='pt-[28px] px-10'>
             <h5 className='font-Sora font-medium text-xl text-white'>
               Interface Designer
             </h5>

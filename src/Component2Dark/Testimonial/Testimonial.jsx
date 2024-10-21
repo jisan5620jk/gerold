@@ -2,41 +2,28 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Pagination } from 'swiper/modules';
 import TestimonialCard from './TestimonialCard';
-import testiLogo from '/images/testimonials/logo/1.png';
-import testiLogo2 from '/images/testimonials/logo/2.png';
-import testiProfile from '/images/testimonials/user/1.jpg';
-import testiProfile2 from '/images/testimonials/user/2.jpg';
-import { BsFillCaretLeftFill, BsFillCaretRightFill } from 'react-icons/bs';
-
+import testiProfile from '/images/testimonials/user/1.png';
+import testiProfile2 from '/images/testimonials/user/1.png';
 const testiData = [
   {
     id: 1,
-    testiLogo: testiLogo,
-    testiIconLeft: <BsFillCaretLeftFill />,
-    testiIconRight: <BsFillCaretRightFill />,
-    testiDesc: `“Taylor is a professional Designer he really helps my business by providing value to my business.`,
-    testiName: 'Brandon Fraser',
-    testiDesignation: 'Senior Software Dev, Cosmic Sport',
+    testiDesc: `"I like Portfolio Page more and more each day because it makes my life a lot easier. It fits our needs perfectly. Keep up the excellent work."`,
+    testiName: 'Tim Bailey',
+    testiDesignation: 'Senior Software',
     testiProfile: testiProfile,
   },
   {
     id: 2,
-    testiLogo: testiLogo2,
-    testiIconLeft: <BsFillCaretLeftFill />,
-    testiIconRight: <BsFillCaretRightFill />,
-    testiDesc: `“Taylor is a professional Designer he really helps my business by providing value to my business.`,
-    testiName: 'Tim Bailey',
-    testiDesignation: 'SEO Specialist, Theme Junction',
+    testiDesc: `"I like Portfolio Page more and more each day because it makes my life a lot easier. It fits our needs perfectly. Keep up the excellent work."`,
+    testiName: 'Brandon Fraser',
+    testiDesignation: 'UI & UX designer',
     testiProfile: testiProfile2,
   },
   {
     id: 3,
-    testiLogo: testiLogo,
-    testiIconLeft: <BsFillCaretLeftFill />,
-    testiIconRight: <BsFillCaretRightFill />,
-    testiDesc: `“Taylor is a professional Designer he really helps my business by providing value to my business.`,
-    testiName: 'Brandon Fraser',
-    testiDesignation: 'Senior Software Dev, Cosmic Sport',
+    testiDesc: `"I like Portfolio Page more and more each day because it makes my life a lot easier. It fits our needs perfectly. Keep up the excellent work."`,
+    testiName: 'Tim Bailey',
+    testiDesignation: 'Senior Software',
     testiProfile: testiProfile,
   },
 ];
@@ -71,19 +58,15 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className='testimonial bg-BodyBg2-0 pt-[120px] pb-[130px] relative z-10 overflow-hidden'>
-      <span className='absolute left-[11%] bottom-[20%] size-[16%] rounded-full bg-gradient-to-t to-PrimaryColor-0 from-Secondarycolor-0 blur-[150px]'></span>
+    <section className='testimonial bg-BodyBg-0 pt-[120px] pb-[130px] relative z-10'>
+      <span className='absolute -left-[15%] top-[100px] size-[35%] rounded-full bg-gradient-to-t to-PrimaryColor-0 from-Secondarycolor-0 blur-[150px]'></span>
       <div className='Container'>
-        <div className='grid gap-[30px] grid-cols-1 lg:grid-cols-12 xl:grid-cols-2 lg:items-start'>
-          <div className='col-span-1 lg:col-span-5 xl:col-span-1 relative overflow-hidden'>
-            <h1 className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] lg:leading-[58px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
-              {`My Client's Stories`}
+          <div>
+            <h1 className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] leading-[54px] font-medium bg-gradient-to-l to-PrimaryColor-0 via-white from-white bg-clip-text text-transparent'>
+              Clients Testimonials
             </h1>
-            <p className='font-Sora text-TextColor-0 mt-2 max-w-[470px] w-full xl:pr-5 2xl:pr-0'>
-              Empowering people in new a digital journey with my super services
-            </p>
           </div>
-          <div className='col-span-1 lg:col-span-7 xl:col-span-1'>
+          <div className='mt-[50px]'>
             <Swiper
               {...settings}
               pagination={pagination}
@@ -93,9 +76,6 @@ const Testimonial = () => {
                 {testiData.map(
                   ({
                     id,
-                    testiLogo,
-                    testiIconLeft,
-                    testiIconRight,
                     testiName,
                     testiProfile,
                     testiDesignation,
@@ -107,9 +87,6 @@ const Testimonial = () => {
                         className='pb-[42px]'
                       >
                         <TestimonialCard
-                          testiLogo={testiLogo}
-                          testiIconLeft={testiIconLeft}
-                          testiIconRight={testiIconRight}
                           testiName={testiName}
                           testiDesignation={testiDesignation}
                           testiProfile={testiProfile}
@@ -122,7 +99,6 @@ const Testimonial = () => {
               </div>
             </Swiper>
           </div>
-        </div>
       </div>
     </section>
   );

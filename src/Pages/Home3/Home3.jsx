@@ -1,6 +1,9 @@
 import Banner from '../../Component2Dark/Banner/Banner';
+import Experience from '../../Component2Dark/Experience/Experience';
 import Project from '../../Component2Dark/Project/Project';
+import Service from '../../Component2Dark/Service/Service';
 import Skill from '../../Component2Dark/Skill/Skill';
+import Testimonial from '../../Component2Dark/Testimonial/Testimonial';
 
 const Home3 = () => {
   return (
@@ -8,6 +11,9 @@ const Home3 = () => {
       <Banner />
       <Skill />
       <Project />
+      <Service />
+      <Experience />
+      <Testimonial />
     </>
   );
 };

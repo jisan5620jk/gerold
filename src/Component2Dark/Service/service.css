@@ -1,14 +1,3 @@
-.service-item.active .service-number ,
-.service-item:hover .service-number  {
-  color: #fff;
-}
-
-.service-item.active .service-icon ,
-.service-item:hover .service-icon {
-  transform: rotate(0deg);
-  color: #fff;
-}
-
 .popup-body-overlay {
   position: fixed;
   top: 0;
@@ -26,10 +15,6 @@
 .popup-body-overlay.apply {
   opacity: 1;
   visibility: visible;
-}
-
-.popup-body-overlay:hover {
-  cursor: url(/public/images/cross.png), pointer;
 }
 
 .service-popup {

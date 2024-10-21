@@ -7,6 +7,8 @@ import popUpSliderThumb4 from '/images/portfolio-gallery/p-gallery-4.jpg';
 import modalThumb from '/images/portfolio/modal-img.jpg';
 import profile from '/images/project/project-1.png';
 import projectThumb from '/images/project/project-2.png';
+import projectThumb2 from '/images/project/project-3.png';
+import projectThumb3 from '/images/project/project-4.png';
 import './project.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -20,7 +22,6 @@ const Project = () => {
   const projectPopUpRef = useRef(null);
   const projectPopUpRef2 = useRef(null);
   const projectPopUpRef3 = useRef(null);
-  const projectPopUpRef4 = useRef(null);
   const projectPopUpContentRef = useRef(null);
   const projectBodyOverlayRef = useRef(null);
   const projectCloseBtnRef = useRef(null);
@@ -29,7 +30,6 @@ const Project = () => {
     const projectPopUp = projectPopUpRef.current;
     const projectPopUp2 = projectPopUpRef2.current;
     const projectPopUp3 = projectPopUpRef3.current;
-    const projectPopUp4 = projectPopUpRef4.current;
     const projectPopUpContent = projectPopUpContentRef.current;
     const projectBodyOverlay = projectBodyOverlayRef.current;
     const closeBtn = projectCloseBtnRef.current;
@@ -52,7 +52,6 @@ const Project = () => {
     if (projectPopUp) projectPopUp.addEventListener('click', addClasses);
     if (projectPopUp2) projectPopUp2.addEventListener('click', addClasses);
     if (projectPopUp3) projectPopUp3.addEventListener('click', addClasses);
-    if (projectPopUp4) projectPopUp4.addEventListener('click', addClasses);
 
     if (closeBtn) closeBtn.addEventListener('click', removeClasses);
     if (projectBodyOverlay)
@@ -63,7 +62,6 @@ const Project = () => {
       if (projectPopUp) projectPopUp.removeEventListener('click', addClasses);
       if (projectPopUp2) projectPopUp2.removeEventListener('click', addClasses);
       if (projectPopUp3) projectPopUp3.removeEventListener('click', addClasses);
-      if (projectPopUp4) projectPopUp4.removeEventListener('click', addClasses);
 
       if (closeBtn) closeBtn.removeEventListener('click', removeClasses);
       if (projectBodyOverlay)
@@ -127,16 +125,25 @@ const Project = () => {
                 design tem helps clients achieve their marketing Trager and
                 branding that appeals to a website
               </p>
-              <ul className='mt-[50px] mb-[50px]'>
+              <ul className='flex items-center flex-wrap gap-2 mt-[50px] mb-[50px]'>
                 <li>
-                  <Link to={'/'}>
-                    <button
-                      className='font-Sora font- px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden before:absolute before:left-0 before:top-0 before:w-full before:h-full   
-                      before:bg-gradient-to-l before:from-SecondaryColor-0 before:to-PrimaryColor-0   
-                      before:opacity-0 before:transition-opacity before:duration-500 before:ease-linear   
-                      before:rounded-full before:z-10 hover:before:opacity-100'
-                    >
+                  <Link to={'#'}>
+                    <button className='font-Sora font- px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden ease-linear duration-500 hover:bg-PrimaryColor-0'>
                       Branding
+                    </button>
+                  </Link>
+                </li>{' '}
+                <li>
+                  <Link to={'#'}>
+                    <button className='font-Sora font- px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden ease-linear duration-500 hover:bg-PrimaryColor-0'>
+                      Graphic Design
+                    </button>
+                  </Link>
+                </li>{' '}
+                <li>
+                  <Link to={'#'}>
+                    <button className='font-Sora font- px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden ease-linear duration-500 hover:bg-PrimaryColor-0'>
+                      User Stories
                     </button>
                   </Link>
                 </li>
@@ -170,9 +177,103 @@ const Project = () => {
               />
             </div>
           </div>
-          <div className='grid grid-cols-12 items-center gap-6 mt-[35px]'>
-            <div className='col-span-7 py-5 pl-[35px] pr-5 border border-Secondarycolor-0 bg-BodyBg3-0 rounded-2xl'></div>
-            <div className='col-span-5 py-5 pl-[35px] pr-5 border border-Secondarycolor-0 bg-BodyBg3-0 rounded-2xl'></div>
+          <div className='grid grid-cols-12 items-center gap-6 mt-6'>
+            <div className='col-span-7 pt-5 pb-9 pl-[35px] pr-5 border border-Secondarycolor-0 bg-BodyBg3-0 rounded-2xl'>
+              <div className='h-auto pt-[25px] px-[25px] bg-BodyBg4-0 rounded-2xl'>
+                <img
+                  src={projectThumb2}
+                  draggable='false'
+                  className='mx-auto h-full object-cover'
+                />
+              </div>
+              <div className='w-full'>
+                <h6 className='font-Sora text-PrimaryColor-0 mt-[26px]'>
+                  Social App
+                </h6>
+                <div className='mt-[15px] mb-5'>
+                  <button
+                    ref={projectPopUpRef2}
+                    className='font-Sora font-semibold text-3xl text-white transition-all duration-500 hover:text-PrimaryColor-0'
+                  >
+                    Raze
+                  </button>
+                </div>
+                <p className='font-Sora text-TextColor-0'>
+                  Project was about precision and information. That’s all.
+                </p>
+                <ul className='flex items-center flex-wrap gap-2 mt-[16px]'>
+                  <li>
+                    <Link to={'#'}>
+                      <button className='font-Sora font- px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden ease-linear duration-500 hover:bg-PrimaryColor-0'>
+                        Branding
+                      </button>
+                    </Link>
+                  </li>{' '}
+                  <li>
+                    <Link to={'#'}>
+                      <button className='font-Sora font- px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden ease-linear duration-500 hover:bg-PrimaryColor-0'>
+                        Graphic Design
+                      </button>
+                    </Link>
+                  </li>{' '}
+                  <li>
+                    <Link to={'#'}>
+                      <button className='font-Sora font- px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden ease-linear duration-500 hover:bg-PrimaryColor-0'>
+                        User Stories
+                      </button>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className='col-span-5 pt-5 pb-9 pl-[35px] pr-5 border border-Secondarycolor-0 bg-BodyBg3-0 rounded-2xl'>
+              <div className='h-[346px] pt-[25px] px-[25px] bg-BodyBg4-0 rounded-2xl'>
+                <img
+                  src={projectThumb3}
+                  draggable='false'
+                  className='mx-auto h-full object-cover'
+                />
+              </div>
+              <div className='w-full'>
+                <h6 className='font-Sora text-PrimaryColor-0 mt-[26px]'>
+                  Social App
+                </h6>
+                <div className='mt-[15px] mb-5'>
+                  <button
+                    ref={projectPopUpRef3}
+                    className='font-Sora font-semibold text-3xl text-white transition-all duration-500 hover:text-PrimaryColor-0'
+                  >
+                    Quillow
+                  </button>
+                </div>
+                <p className='font-Sora text-TextColor-0'>
+                  Project was about precision and information.
+                </p>
+                <ul className='flex items-center flex-wrap gap-2 mt-[16px]'>
+                  <li>
+                    <Link to={'#'}>
+                      <button className='font-Sora font- px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden ease-linear duration-500 hover:bg-PrimaryColor-0'>
+                        Branding
+                      </button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={'#'}>
+                      <button className='font-Sora font- px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden ease-linear duration-500 hover:bg-PrimaryColor-0'>
+                        Graphic Design
+                      </button>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={'#'}>
+                      <button className='font-Sora font- px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden ease-linear duration-500 hover:bg-PrimaryColor-0'>
+                        User Stories
+                      </button>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>

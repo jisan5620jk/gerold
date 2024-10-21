@@ -24,7 +24,7 @@ const BlogCard = ({
         to={blogUrl}
         className='absolute top-[15px] left-[15px]'
       >
-        <span className='font-Sora font-medium text-[13px] px-[10px] py-[3px] rounded-full text-white uppercase bg-PrimaryColor-0 relative z-10 before:absolute before:left-0 before:top-0 before:bg-gradient-to-l before:to-PrimaryColor-0 before:to-90% before:from-10% before:from-Secondarycolor-0 before:opacity-0 before:w-full before:h-full before:-z-10 before:rounded-full before:[transition:opacity_0.5s_linear] group-hover:before:opacity-100 overflow-hidden'>
+        <span className='font-Sora font-medium text-[13px] px-[10px] py-[3px] rounded-full text-white uppercase bg-PrimaryColor-0 overflow-hidden relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-gradient-to-l before:from-Secondarycolor-0 before:from-5% before:to-PrimaryColor-0 before:opacity-0 before:transition-opacity before:duration-500 before:ease-linear before:rounded-full before:-z-10 group-hover:before:opacity-100'>
           {thumbTitle}
         </span>
       </Link>

@@ -17,10 +17,6 @@
   visibility: visible;
 }
 
-.popup-body-overlay:hover {
-  cursor: url(/public/images/cross.png), pointer;
-}
-
 .service-popup {
  position: fixed;  
     top: 50%;  
