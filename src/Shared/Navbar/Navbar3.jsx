@@ -235,7 +235,7 @@ const Navbar3 = () => {
               <h4>Get Update</h4>
             </div>
             <form
-              action='#'
+              action='https://formspree.io/f/xkgngbnj'
               method='post'
             >
               <div className='relative'>
@@ -552,7 +552,7 @@ const Navbar3 = () => {
                 <h4>Get Update</h4>
               </div>
               <form
-                action='#'
+                action='https://formspree.io/f/xkgngbnj'
                 method='post'
               >
                 <div className='relative'>

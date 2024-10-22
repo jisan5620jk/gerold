@@ -1,5 +1,5 @@
-import { FiPhoneCall } from "react-icons/fi";
-import { Link } from "react-router-dom";
+import { FiPhoneCall } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 const Appoinment = () => {
   return (
@@ -15,7 +15,7 @@ const Appoinment = () => {
               Just simple like that!
             </p>
             <form
-              action='#'
+              action='https://formspree.io/f/xkgngbnj'
               method='post'
               className='flex flex-col gap-y-5 mt-6'
             >

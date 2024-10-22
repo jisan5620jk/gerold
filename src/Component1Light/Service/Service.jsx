@@ -8,7 +8,7 @@ import icon2 from '/images/services/popup-icon2.png';
 import icon3 from '/images/services/popup-icon3.png';
 import icon4 from '/images/services/popup-icon4.png';
 import icon5 from '/images/services/popup-icon5.png';
-import './service-light.css'
+import './service-light.css';
 import { FiCheck } from 'react-icons/fi';
 import { FaAngleRight } from 'react-icons/fa6';
 
@@ -74,7 +74,6 @@ const Service = () => {
     });
   }, []);
 
-  
   const servicePopUpRef = useRef(null);
   const servicePopUpRef2 = useRef(null);
   const servicePopUpRef3 = useRef(null);
@@ -102,7 +101,15 @@ const Service = () => {
       bodyOverlay.classList.remove('apply');
     };
 
-    if (servicePopUp &&servicePopUp2 &&servicePopUp3 &&servicePopUp4 && popUpContent && bodyOverlay && closeBtn) {
+    if (
+      servicePopUp &&
+      servicePopUp2 &&
+      servicePopUp3 &&
+      servicePopUp4 &&
+      popUpContent &&
+      bodyOverlay &&
+      closeBtn
+    ) {
       servicePopUp.addEventListener('click', addClasses);
       servicePopUp2.addEventListener('click', addClasses);
       servicePopUp3.addEventListener('click', addClasses);
@@ -437,7 +444,7 @@ const Service = () => {
                   <h5 className='font-Sora text-white font-bold text-xl uppercase pb-6'>
                     Get In Touch
                   </h5>
-                  <form action='#'>
+                  <form action='https://formspree.io/f/xkgngbnj'>
                     <input
                       type='text'
                       name='name'

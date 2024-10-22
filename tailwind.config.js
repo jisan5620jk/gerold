@@ -24,6 +24,7 @@ export default {
         BorderColor: ['#22272c'],
         BorderGrey: ['#d9d9d9'],
         BorderGrey2: ['#dddddd'],
+        BorderGrey3: ['#636363'],
         BorderColor2: ['#ffffff33'],
         BorderColor3: ['#1c20491a'],
       },
@@ -140,6 +141,9 @@ export default {
       letterSpacing: {
         custom: '1px',
         custom2: '1',
+      },
+      textDecorationThickness: {
+        1: '1px',
       },
       lineHeight: {},
     },

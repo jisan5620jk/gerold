@@ -1,64 +1,63 @@
-import { FiPhoneCall } from "react-icons/fi";
+import { FaDribbble, FaGithub, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
+import { PiArrowRightBold } from "react-icons/pi";
 import { Link } from "react-router-dom";
 
 const Appoinment = () => {
   return (
-    <section className='bg-BodyBg2-0 py-28 relative z-10 overflow-hidden'>
+    <section className='bg-BodyBg-0 py-28 relative z-10 overflow-hidden'>
       <div className='Container'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 items-center gap-[22px] relative z-10'>
-          <div className='px-4 sm:px-10 lg:px-6 xl:px-10 pt-9 pb-10 bg-BodyBg3-0 rounded-2xl'>
-            <h1 className='font-Sora text-[25px] sm:text-[34px] md:text-[45px] lg:text-[38px] xl:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
-              Let’s work together!
-            </h1>
-            <p className='font-Sora text-white font-light pt-2'>
-              I design and code beautifully simple things and i love what i do.
-              Just simple like that!
-            </p>
+        <div className='flex justify-between items-center gap-[45px] bg-BodyBg3-0 border p-[50px] border-Secondarycolor-0 rounded-2xl relative z-10'>
+          <div>
+            <div className='max-w-[600px]'>
+              <h1 className='font-Sora text-[25px] sm:text-[34px] md:text-[45px] lg:text-[38px] xl:text-[45px] leading-[53px] font-medium bg-gradient-to-r from-PrimaryColor-0 via-white to-white bg-clip-text text-transparent'>
+                Let’s work <br /> together!
+              </h1>
+              <p className='font-Sora text-TextColor-0 pt-5'>
+                I design and code beautifully simple things and i love what i
+                do. Just simple like that!
+              </p>
+            </div>
             <form
-              action='#'
+              action='https://formspree.io/f/xkgngbnj'
               method='post'
-              className='flex flex-col gap-y-5 mt-6'
+              className='flex flex-col gap-y-8 mt-6'
             >
-              <div className='grid grid-cols-1 sm:grid-cols-2 gap-5'>
-                <input
-                  type='text'
-                  name='first-name'
-                  id='first-name'
-                  placeholder='First Name*'
-                  required
-                  className='font-Sora text-white bg-BodyBg2-0 placeholder:text-white placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
-                />
-                <input
-                  type='text'
-                  name='last-name'
-                  id='last-name'
-                  placeholder='Last Name*'
-                  required
-                  className='font-Sora text-white bg-BodyBg2-0 placeholder:text-white placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
-                />
-              </div>
-              <div className='grid grid-cols-1 sm:grid-cols-2 gap-5'>
-                <input
-                  type='email'
-                  name='email'
-                  id='email'
-                  placeholder='Enter E-Mail*'
-                  required
-                  className='font-Sora text-white bg-BodyBg2-0 placeholder:text-white placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
-                />
-                <input
-                  type='text'
-                  name='number'
-                  id='number'
-                  placeholder='Enter Number*'
-                  required
-                  className='font-Sora text-white bg-BodyBg2-0 placeholder:text-white placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
-                />
-              </div>
+              <input
+                type='text'
+                name='first-name'
+                id='first-name'
+                placeholder='First Name*'
+                required
+                className='font-Sora text-white bg-transparent placeholder:text-white placeholder:text-opacity-40 font-light border-b border-BorderGrey3-0 py-[13px] h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
+              />
+              <input
+                type='text'
+                name='last-name'
+                id='last-name'
+                placeholder='Last Name*'
+                required
+                className='font-Sora text-white bg-transparent placeholder:text-white placeholder:text-opacity-40 font-light border-b border-BorderGrey3-0 py-[13px] h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
+              />
+              <input
+                type='email'
+                name='email'
+                id='email'
+                placeholder='Enter E-Mail*'
+                required
+                className='font-Sora text-white bg-transparent placeholder:text-white placeholder:text-opacity-40 font-light border-b border-BorderGrey3-0 py-[13px] h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
+              />
+              <input
+                type='text'
+                name='number'
+                id='number'
+                placeholder='Enter Number*'
+                required
+                className='font-Sora text-white bg-transparent placeholder:text-white placeholder:text-opacity-40 font-light border-b border-BorderGrey3-0 py-[13px] h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
+              />
               <select
                 name='select'
                 id='select'
-                className='font-Sora text-white bg-BodyBg2-0 placeholder:text-white placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
+                className='font-Sora text-white bg-transparent placeholder:text-white placeholder:text-opacity-40 font-light border-b border-BorderGrey3-0 py-[13px] h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
               >
                 <option
                   value='subject'
@@ -89,67 +88,87 @@ const Appoinment = () => {
                 name='message'
                 id='message'
                 placeholder='Write a short meassage...'
-                className='font-Sora text-white bg-BodyBg2-0 placeholder:text-white placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[198px] w-full focus:border-PrimaryColor-0 focus:outline-none resize-none'
+                className='font-Sora text-white bg-transparent placeholder:text-white placeholder:text-opacity-40 font-light border-b border-BorderGrey3-0 py-[13px] h-[206px] w-full focus:border-PrimaryColor-0 focus:outline-none resize-none'
               ></textarea>
-              <div className='inline-block header-btn'>
+              <div className='inline-block mt-2'>
                 <button
                   type='submit'
-                  className='!py-5'
+                  className='primary-btn2 !py-[20px]'
                 >
                   Send Message
+                  <span className='icon-box'>
+                    <span className='first-icon'>
+                      <PiArrowRightBold size={'17'} />
+                    </span>
+                    <span className='last-icon'>
+                      <PiArrowRightBold size={'17'} />
+                    </span>
+                  </span>
                 </button>
               </div>
             </form>
           </div>
-          <div className='relative z-10 lg:pl-28'>
-            <div className='flex items-start gap-[26px] mb-[38px]'>
-              <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-white flex items-center justify-center'>
-                <FiPhoneCall size={'22'} />
-              </div>
-              <div className='flex-1 inline-block'>
-                <h6 className='font-Sora font-extralight text-white pb-[5px]'>
-                  Phone
-                </h6>
+          <div className='relative z-10 max-w-[400px]'>
+            <div>
+              <p className='font-Sora text-TextColor-0'>
+                {`I'm currently avaliable to take on new projects, so feel free to send me a message about anything that you want to run past me. You can contact anytime at 24/7.`}
+              </p>
+            </div>
+            <ul className='my-11 space-y-6'>
+              <li>
                 <Link
                   to={'/'}
-                  className='font-Sora font-medium text-base sm:text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0'
+                  className='font-Sora text-base sm:text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0 underline underline-offset-4 decoration-1'
                 >
                   +01 123 654 8096
                 </Link>
-              </div>
-            </div>
-            <div className='flex items-start gap-[26px] mb-[38px]'>
-              <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-white flex items-center justify-center'>
-                <FiPhoneCall size={'22'} />
-              </div>
-              <div className='flex-1 inline-block'>
-                <h6 className='font-Sora font-extralight text-white pb-[5px]'>
-                  Email
-                </h6>
+              </li>
+              <li>
                 <Link
                   to={'/'}
-                  className='font-Sora font-medium text-base sm:text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0'
+                  className='font-Sora text-base sm:text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0 underline underline-offset-4 decoration-1'
                 >
                   gerolddesign@mail.com
                 </Link>
-              </div>
-            </div>
-            <div className='flex items-start gap-[26px]'>
-              <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-white flex items-center justify-center'>
-                <FiPhoneCall size={'22'} />
-              </div>
-              <div className='flex-1 inline-block'>
-                <h6 className='font-Sora font-extralight text-white pb-[5px]'>
-                  Address
-                </h6>
-                <Link
-                  to={'/'}
-                  className='font-Sora font-medium text-base sm:text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0'
+              </li>
+              <li>
+                <p
+                  className='font-Sora text-base sm:text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0 underline underline-offset-4 decoration-1'
                 >
-                  Warne Park Street Pine, <br /> FL 33157, New York
+                  Warne Park Street Pine, FL <br /> 33157, New York
+                </p>
+              </li>
+            </ul>
+            <ul className='flex items-center gap-5'>
+              <li>
+                <Link to={'/'}>
+                  <button className='size-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-transparent border border-PrimaryColor-0 transition-all duration-500 text-PrimaryColor-0 hover:text-white z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:rounded-full before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
+                    <FaXTwitter />
+                  </button>
                 </Link>
-              </div>
-            </div>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button className='size-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-transparent border border-PrimaryColor-0 transition-all duration-500 text-PrimaryColor-0 hover:text-white z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:rounded-full before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
+                    <FaDribbble />
+                  </button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button className='size-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-transparent border border-PrimaryColor-0 transition-all duration-500 text-PrimaryColor-0 hover:text-white z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:rounded-full before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
+                    <FaLinkedinIn />
+                  </button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button className='size-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-transparent border border-PrimaryColor-0 transition-all duration-500 text-PrimaryColor-0 hover:text-white z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:rounded-full before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
+                    <FaGithub />
+                  </button>
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

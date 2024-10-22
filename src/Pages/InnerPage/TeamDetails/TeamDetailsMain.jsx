@@ -295,7 +295,7 @@ const TeamDetailsMain = () => {
               Get a Consultation
             </h2>
             <form
-              action='#'
+              action='https://formspree.io/f/xkgngbnj'
               method='post'
               className='flex flex-col gap-y-5 mt-9'
             >

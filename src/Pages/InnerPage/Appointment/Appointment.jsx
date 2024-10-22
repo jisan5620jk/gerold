@@ -135,7 +135,7 @@ const Appoinment = () => {
                 Make an Online Appoinemnt <br /> Booking For Treatment Patients
               </h1>
               <form
-                action='#'
+                action='https://formspree.io/f/xkgngbnj'
                 method='post'
                 className='flex flex-col gap-y-5 mt-9'
               >

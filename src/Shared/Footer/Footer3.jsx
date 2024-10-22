@@ -202,7 +202,7 @@ const Footer = () => {
               <span>Closed</span>
             </p>
             <form
-              action='#'
+              action='https://formspree.io/f/xkgngbnj'
               method='post'
               className='relative'
             >

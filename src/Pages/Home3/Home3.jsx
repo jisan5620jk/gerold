@@ -1,4 +1,6 @@
+import Appoinment from '../../Component2Dark/Appoinment/Appionment';
 import Banner from '../../Component2Dark/Banner/Banner';
+import Brand from '../../Component2Dark/Brand/Brand';
 import Experience from '../../Component2Dark/Experience/Experience';
 import Project from '../../Component2Dark/Project/Project';
 import Service from '../../Component2Dark/Service/Service';
@@ -14,6 +16,8 @@ const Home3 = () => {
       <Service />
       <Experience />
       <Testimonial />
+      <Brand />
+      <Appoinment/>
     </>
   );
 };

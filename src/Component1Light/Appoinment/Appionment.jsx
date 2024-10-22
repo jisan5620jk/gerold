@@ -1,5 +1,5 @@
-import { FiPhoneCall } from "react-icons/fi";
-import { Link } from "react-router-dom";
+import { FiPhoneCall } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 const Appoinment = () => {
   return (
@@ -15,7 +15,7 @@ const Appoinment = () => {
               Just simple like that!
             </p>
             <form
-              action='#'
+              action='https://formspree.io/f/xkgngbnj'
               method='post'
               className='flex flex-col gap-y-5 mt-6'
             >
@@ -142,12 +142,11 @@ const Appoinment = () => {
                 <h6 className='font-Sora text-Secondarycolor-0 pb-[5px]'>
                   Address
                 </h6>
-                <Link
-                  to={'/'}
+                <p
                   className='font-Sora font-medium text-base sm:text-xl text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
                 >
                   Warne Park Street Pine, <br /> FL 33157, New York
-                </Link>
+                </p>
               </div>
             </div>
           </div>

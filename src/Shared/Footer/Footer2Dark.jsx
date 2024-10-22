@@ -10,7 +10,7 @@ const Footer2Dark = () => {
   }, []);
 
   return (
-    <footer className='bg-BodyBg-0 relative z-10 pt-[50px] overflow-hidden pb-5'>
+    <footer className='bg-Secondarycolor-0 relative z-10 pt-[50px] overflow-hidden pb-5'>
       <div className='Container'>
         <div className='text-center'>
           <div className='inline-block'>
@@ -59,12 +59,12 @@ const Footer2Dark = () => {
               </Link>
             </li>
           </ul>
-          <p className='font-Sora font-light inline-block sm:flex gap-1 items-center justify-center text-PrimaryColor-0'>
+          <p className='font-Sora font-light inline-block sm:flex gap-1 items-center justify-center text-TextGrey-0'>
             <span>&copy;</span> <span ref={yearRef}></span> All rights reserved
             by{' '}
             <Link
               to={'/'}
-              className='font-medium'
+              className='font-medium text-white'
             >
               ThemeJunction
             </Link>

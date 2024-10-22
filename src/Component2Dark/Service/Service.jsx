@@ -10,7 +10,7 @@ import icon2 from '/images/services/popup-icon2.png';
 import icon3 from '/images/services/popup-icon3.png';
 import icon4 from '/images/services/popup-icon4.png';
 import icon5 from '/images/services/popup-icon5.png';
-import './service.css'
+import './service.css';
 import { FiCheck } from 'react-icons/fi';
 import { FaAngleRight } from 'react-icons/fa6';
 
@@ -74,7 +74,7 @@ const Service = () => {
       <section className='bg-BodyBg-0 pt-[120px] relative'>
         <div className='Container'>
           <div>
-            <h1 className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] leading-[54px] font-medium bg-gradient-to-l to-PrimaryColor-0 via-white from-white bg-clip-text text-transparent'>
+            <h1 className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] leading-[54px] font-medium bg-gradient-to-r from-PrimaryColor-0 from-10% via-white via-30% to-white to-90% bg-clip-text text-transparent'>
               My Specialization
             </h1>
           </div>
@@ -365,7 +365,7 @@ const Service = () => {
                   <h5 className='font-Sora text-white font-bold text-xl uppercase pb-6'>
                     Get In Touch
                   </h5>
-                  <form action='#'>
+                  <form action='https://formspree.io/f/xkgngbnj'>
                     <input
                       type='text'
                       name='name'
