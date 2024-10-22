@@ -4,9 +4,8 @@ import './navbar.css';
 import { useEffect, useRef } from 'react';
 import { HiMinusSm, HiPlusSm } from 'react-icons/hi';
 import { IoCloseOutline } from 'react-icons/io5';
-import { BsDownload } from 'react-icons/bs';
 
-const Navbar2Dark = () => {
+const ServiceNavbar = () => {
   //Menu Bar
   const menuBarRef = useRef(null);
   const offcanvasRef = useRef(null);
@@ -189,10 +188,10 @@ const Navbar2Dark = () => {
                             </span>
                           </Link>
                           <ul className='submenu'>
-                            <li>
+                            <li className='current'>
                               <Link to={'/'}>Home One</Link>
                             </li>
-                            <li className='current'>
+                            <li>
                               <Link to={'/home2'}>Home Two</Link>
                             </li>
                           </ul>
@@ -256,14 +255,8 @@ const Navbar2Dark = () => {
                 </nav>
               </div>
               <div className='header-right-box flex justify-end'>
-                <div>
-                  <Link to={'/'} className='font-Sora font-semibold text-[15px] text-white pl-[30px] pr-[34px] py-[17px] leading-4 rounded-full flex items-center gap-[14px] group bg-PrimaryColor-0'>
-                    Resume{' '}
-                    <span className='relative bottom-[px] size-4 overflow-hidden'>
-                      <BsDownload size={'14'} className='absolute transition-all duration-300 translate-y-0 group-hover:-translate-y-[150%]' />
-                      <BsDownload size={'14'} className='absolute transition-all duration-300 translate-y-[150%] group-hover:translate-y-0' />
-                    </span>
-                  </Link>
+                <div className='header-btn !mb-2 !mr-2 sm:!mr-8 lg:!mb-0 lg:!mr-0'>
+                  <Link to={'/'}>Hire Me!</Link>
                 </div>
                 <div className='header-bar lg:hidden'>
                   <button
@@ -284,4 +277,4 @@ const Navbar2Dark = () => {
   );
 };
 
-export default Navbar2Dark;
+export default ServiceNavbar;
