@@ -8,7 +8,7 @@ const Appoinment = () => {
       <div className='Container'>
         <div className='flex flex-wrap lg:flex-nowrap lg:justify-between items-center gap-[45px] bg-BodyBg3-0 border p-6 sm:p-9 md:p-[50px] border-Secondarycolor-0 rounded-2xl relative z-10'>
           <div
-            data-aos='fade-right'
+            data-aos='fade-up-right'
             data-aos-delay='300'
             data-aos-duration='1000'
           >
@@ -114,7 +114,7 @@ const Appoinment = () => {
           </div>
           <div
             className='relative z-10 max-w-[400px]'
-            data-aos='fade-left'
+            data-aos='fade-up-left'
             data-aos-delay='300'
             data-aos-duration='1000'
           >

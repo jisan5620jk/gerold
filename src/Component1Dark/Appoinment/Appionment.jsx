@@ -7,10 +7,20 @@ const Appoinment = () => {
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 items-center gap-[22px] relative z-10'>
           <div className='px-4 sm:px-10 lg:px-6 xl:px-10 pt-9 pb-10 bg-BodyBg3-0 rounded-2xl'>
-            <h1 className='font-Sora text-[25px] sm:text-[34px] md:text-[45px] lg:text-[38px] xl:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
+            <h1
+              className='font-Sora text-[25px] sm:text-[34px] md:text-[45px] lg:text-[38px] xl:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'
+              data-aos='fade-up-right'
+              data-aos-delay='300'
+              data-aos-duration='1000'
+            >
               Let’s work together!
             </h1>
-            <p className='font-Sora text-white font-light pt-2'>
+            <p
+              className='font-Sora text-white font-light pt-2'
+              data-aos='fade-up-right'
+              data-aos-delay='400'
+              data-aos-duration='1000'
+            >
               I design and code beautifully simple things and i love what i do.
               Just simple like that!
             </p>
@@ -18,6 +28,9 @@ const Appoinment = () => {
               action='https://formspree.io/f/xkgngbnj'
               method='post'
               className='flex flex-col gap-y-5 mt-6'
+              data-aos='fade-up-right'
+              data-aos-delay='500'
+              data-aos-duration='1000'
             >
               <div className='grid grid-cols-1 sm:grid-cols-2 gap-5'>
                 <input
@@ -101,7 +114,12 @@ const Appoinment = () => {
               </div>
             </form>
           </div>
-          <div className='relative z-10 lg:pl-28'>
+          <div
+            className='relative z-10 lg:pl-28'
+            data-aos='fade-up-left'
+            data-aos-delay='400'
+            data-aos-duration='1000'
+          >
             <div className='flex items-start gap-[26px] mb-[38px]'>
               <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-white flex items-center justify-center'>
                 <FiPhoneCall size={'22'} />
@@ -142,9 +160,7 @@ const Appoinment = () => {
                 <h6 className='font-Sora font-extralight text-white pb-[5px]'>
                   Address
                 </h6>
-                <p
-                  className='font-Sora font-medium text-base sm:text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0'
-                >
+                <p className='font-Sora font-medium text-base sm:text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0'>
                   Warne Park Street Pine, <br /> FL 33157, New York
                 </p>
               </div>

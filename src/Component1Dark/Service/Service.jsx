@@ -140,16 +140,28 @@ const Service = () => {
       <section className=' bg-BodyBg2-0 py-[120px] relative'>
         <div className='Container'>
           <div className='text-center'>
-            <h1 className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-white from-35% bg-clip-text text-transparent'>
+            <h1
+              className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-white from-35% bg-clip-text text-transparent'
+              data-aos='fade-up'
+              data-aos-delay='300'
+              data-aos-duration='1000'
+            >
               My Quality Services
             </h1>
-            <p className='font-Sora text-TextColor-0 mt-2 mx-auto max-w-[640px] w-full'>
+            <p
+              className='font-Sora text-TextColor-0 mt-2 mx-auto max-w-[640px] w-full'
+              data-aos='fade-up'
+              data-aos-delay='300'
+              data-aos-duration='1000'
+            >
               We put your ideas and thus your wishes in the form of a unique web
               project that inspires you and you customers.
             </p>
           </div>
           <div className='relative z-10 mt-[50px] service-widget'>
-            <div className='service-item active grid grid-cols-6 md:grid-cols-12 relative z-20 overflow-hidden group border-b border-Secondarycolor-0 py-6 sm:py-[30px] md:py-5 lg:py-[30px] pr-4 sm:pr-4 pl-6 sm:pl-4 md:pl-5 lg:pl-[30px] md:pr-5 lg:pr-36 xl:pr-[56px]'>
+            <div className='service-item active grid grid-cols-6 md:grid-cols-12 relative z-20 overflow-hidden group border-b border-Secondarycolor-0 py-6 sm:py-[30px] md:py-5 lg:py-[30px] pr-4 sm:pr-4 pl-6 sm:pl-4 md:pl-5 lg:pl-[30px] md:pr-5 lg:pr-36 xl:pr-[56px]'data-aos='fade-up'
+              data-aos-delay='300'
+              data-aos-duration='1000'>
               <div className='col-span-6 md:col-span-5 flex items-center gap-2 sm:gap-5'>
                 <h6 className='service-number font-Sora font-bold text-xl text-PrimaryColor-0 uppercase transition-all duration-500'>
                   01
@@ -179,7 +191,9 @@ const Service = () => {
                 className='bg-transparent absolute top-0 left-0 w-full h-full border-none outline-none'
               ></button>
             </div>
-            <div className='service-item grid grid-cols-6 md:grid-cols-12 relative z-20 overflow-hidden group border-b border-Secondarycolor-0 py-6 sm:py-[30px] md:py-5 lg:py-[30px] pr-4 sm:pr-4 pl-6 sm:pl-4 md:pl-5 lg:pl-[30px] md:pr-5 lg:pr-36 xl:pr-[56px]'>
+            <div className='service-item grid grid-cols-6 md:grid-cols-12 relative z-20 overflow-hidden group border-b border-Secondarycolor-0 py-6 sm:py-[30px] md:py-5 lg:py-[30px] pr-4 sm:pr-4 pl-6 sm:pl-4 md:pl-5 lg:pl-[30px] md:pr-5 lg:pr-36 xl:pr-[56px]'data-aos='fade-up'
+              data-aos-delay='400'
+              data-aos-duration='1000'>
               <div className='col-span-6 md:col-span-5 flex items-center gap-2 sm:gap-5'>
                 <h6 className='service-number font-Sora font-bold text-xl text-PrimaryColor-0 uppercase transition-all duration-500'>
                   02
@@ -209,7 +223,9 @@ const Service = () => {
                 className='bg-transparent absolute top-0 left-0 w-full h-full border-none outline-none'
               ></button>
             </div>
-            <div className='service-item grid grid-cols-6 md:grid-cols-12 relative z-20 overflow-hidden group border-b border-Secondarycolor-0 py-6 sm:py-[30px] md:py-5 lg:py-[30px] pr-4 sm:pr-4 pl-6 sm:pl-4 md:pl-5 lg:pl-[30px] md:pr-5 lg:pr-36 xl:pr-[56px]'>
+            <div className='service-item grid grid-cols-6 md:grid-cols-12 relative z-20 overflow-hidden group border-b border-Secondarycolor-0 py-6 sm:py-[30px] md:py-5 lg:py-[30px] pr-4 sm:pr-4 pl-6 sm:pl-4 md:pl-5 lg:pl-[30px] md:pr-5 lg:pr-36 xl:pr-[56px]'data-aos='fade-up'
+              data-aos-delay='500'
+              data-aos-duration='1000'>
               <div className='col-span-6 md:col-span-5 flex items-center gap-2 sm:gap-5'>
                 <h6 className='service-number font-Sora font-bold text-xl text-PrimaryColor-0 uppercase transition-all duration-500'>
                   03
@@ -239,7 +255,9 @@ const Service = () => {
                 className='bg-transparent absolute top-0 left-0 w-full h-full border-none outline-none'
               ></button>
             </div>
-            <div className='service-item grid grid-cols-6 md:grid-cols-12 relative z-20 overflow-hidden group border-b border-Secondarycolor-0 py-6 sm:py-[30px] md:py-5 lg:py-[30px] pr-4 sm:pr-4 pl-6 sm:pl-4 md:pl-5 lg:pl-[30px] md:pr-5 lg:pr-36 xl:pr-[56px]'>
+            <div className='service-item grid grid-cols-6 md:grid-cols-12 relative z-20 overflow-hidden group border-b border-Secondarycolor-0 py-6 sm:py-[30px] md:py-5 lg:py-[30px] pr-4 sm:pr-4 pl-6 sm:pl-4 md:pl-5 lg:pl-[30px] md:pr-5 lg:pr-36 xl:pr-[56px]'data-aos='fade-up'
+              data-aos-delay='600'
+              data-aos-duration='1000'>
               <div className='col-span-6 md:col-span-5 flex items-center gap-2 sm:gap-5'>
                 <h6 className='service-number font-Sora font-bold text-xl text-PrimaryColor-0 uppercase transition-all duration-500'>
                   04

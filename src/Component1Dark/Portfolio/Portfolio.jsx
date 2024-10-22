@@ -185,16 +185,31 @@ const Portfolio = () => {
     <>
       <div className='portfolio-filter text-center bg-BodyBg-0 py-28'>
         <div className='text-center mb-[60px]'>
-          <h1 className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-white from-30% bg-clip-text text-transparent'>
+          <h1
+            className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-white from-30% bg-clip-text text-transparent'
+            data-aos='fade-up'
+            data-aos-delay='300'
+            data-aos-duration='1000'
+          >
             My Recent Works
           </h1>
-          <p className='font-Sora text-TextColor-0 mt-2 mx-auto max-w-[640px] w-full'>
+          <p
+            className='font-Sora text-TextColor-0 mt-2 mx-auto max-w-[640px] w-full'
+            data-aos='fade-up'
+            data-aos-delay='400'
+            data-aos-duration='1000'
+          >
             We put your ideas and thus your wishes in the form of a unique web
             project that inspires you and you customers.
           </p>
         </div>
         <div className='Container'>
-          <div className='button-group filter-button-group relative z-10 inline-block sm:px-2 py-1 sm:py-[6px] rounded-full bg-BodyBg2-0'>
+          <div
+            className='button-group filter-button-group relative z-10 inline-block sm:px-2 py-1 sm:py-[6px] rounded-full bg-BodyBg2-0'
+            data-aos='fade-up'
+            data-aos-delay='500'
+            data-aos-duration='1000'
+          >
             <button
               data-filter='*'
               className='active py-2 px-3 sm:px-[25px] rounded-full relative z-10 font-Sora text-[15px] text-white bg-transparent capitalize tracking-custom2'
@@ -221,7 +236,12 @@ const Portfolio = () => {
             </button>
             <div className='portfolio-active-bg rounded-full top-0 left-0 bottom-0 right-0 absolute -z-10 bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 transition-all duration-500'></div>
           </div>
-          <div className='portfolio-box text-center pt-[50px] bg-contain bg-no-repeat bg-center relative z-10 before:absolute before:top-1/2 before:left-1/2 before:w-[35%] before:h-[35%] before:-z-10 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:bg-PrimaryColor-0 before:bg-gradient-to-r before:to-PrimaryColor-0 before:from-Secondarycolor-0 before:blur-[150px]'>
+          <div
+            className='portfolio-box text-center pt-[50px] bg-contain bg-no-repeat bg-center relative z-10 before:absolute before:top-1/2 before:left-1/2 before:w-[35%] before:h-[35%] before:-z-10 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:bg-PrimaryColor-0 before:bg-gradient-to-r before:to-PrimaryColor-0 before:from-Secondarycolor-0 before:blur-[150px]'
+            data-aos='fade-up'
+            data-aos-delay='600'
+            data-aos-duration='1000'
+          >
             <div className='portfolio-sizer w-[98%] md:w-[48%]'></div>
             <div className='gutter-sizer w-[4%]'></div>
             <div className='portfolio-item branding group bg-BodyBg2-0 mb-[4%] px-5 lg:px-9 pt-5 lg:pt-9 rounded-[10px] w-[98%] md:w-[48%]'>
