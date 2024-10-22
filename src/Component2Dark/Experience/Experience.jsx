@@ -3,11 +3,21 @@ const Experience = () => {
     <section className='bg-BodyBg-0 pt-[120px]'>
       <div className='Container'>
         <div>
-          <h1 className='font-Sora text-[27px] leading-[35px] sm:text-[34px] md:text-[45px] md:leading-[54px] font-medium bg-gradient-to-l to-PrimaryColor-0 via-white from-white bg-clip-text text-transparent'>
+          <h1
+            className='font-Sora text-[27px] leading-[35px] sm:text-[34px] md:text-[45px] md:leading-[54px] font-medium bg-gradient-to-l to-PrimaryColor-0 via-white from-white bg-clip-text text-transparent'
+            data-aos='fade-up'
+            data-aos-delay='300'
+            data-aos-duration='1000'
+          >
             Education & Work Experience
           </h1>
         </div>
-        <div className='flex flex-wrap md:flex-nowrap gap-y-10 gap-7 md:justify-between pt-10 px-6 sm:px-[35px] md:px-5 lg:px-[35px] pb-[70px] bg-BodyBg3-0 border border-Secondarycolor-0 rounded-2xl mt-[50px]'>
+        <div
+          className='flex flex-wrap md:flex-nowrap gap-y-10 gap-7 md:justify-between pt-10 px-6 sm:px-[35px] md:px-5 lg:px-[35px] pb-[70px] bg-BodyBg3-0 border border-Secondarycolor-0 rounded-2xl mt-[50px]'
+          data-aos='fade-up'
+          data-aos-delay='400'
+          data-aos-duration='1000'
+        >
           <div>
             <h4 className='font-Sora font-semibold text-xl text-PrimaryColor-0 uppercase'>
               Education

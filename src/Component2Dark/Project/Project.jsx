@@ -114,7 +114,12 @@ const Project = () => {
               Recent Projects
             </h1>
           </div>
-          <div className='flex flex-col md:flex-row items-center gap-[35px] justify-between py-5 pl-5 sm:pl-[35px] pr-5 border border-Secondarycolor-0 bg-BodyBg3-0 rounded-2xl mt-[50px]'>
+          <div
+            className='flex flex-col md:flex-row items-center gap-[35px] justify-between py-5 pl-5 sm:pl-[35px] pr-5 border border-Secondarycolor-0 bg-BodyBg3-0 rounded-2xl mt-[50px]'
+            data-aos='fade-up'
+            data-aos-delay='400'
+            data-aos-duration='1000'
+          >
             <div className='md:max-w-[380px] w-full'>
               <h6 className='font-Sora text-PrimaryColor-0'>Social App</h6>
               <div className='mt-4 mb-5'>
@@ -183,7 +188,12 @@ const Project = () => {
             </div>
           </div>
           <div className='grid grid-cols-12 items-center lg:items-start xl:items-center gap-6 mt-6'>
-            <div className='col-span-12 lg:col-span-7 pt-5 pb-9 pl-5 sm:pl-[35px] pr-5 border border-Secondarycolor-0 bg-BodyBg3-0 rounded-2xl'>
+            <div
+              className='col-span-12 lg:col-span-7 pt-5 pb-9 pl-5 sm:pl-[35px] pr-5 border border-Secondarycolor-0 bg-BodyBg3-0 rounded-2xl'
+              data-aos='fade-up'
+              data-aos-delay='500'
+              data-aos-duration='1000'
+            >
               <div className='h-auto pt-[25px] px-[25px] bg-BodyBg4-0 rounded-2xl'>
                 <img
                   src={projectThumb2}
@@ -231,7 +241,12 @@ const Project = () => {
                 </ul>
               </div>
             </div>
-            <div className='col-span-12 lg:col-span-5 pt-5 pb-9 pl-5 sm:pl-[35px] pr-5 border border-Secondarycolor-0 bg-BodyBg3-0 rounded-2xl'>
+            <div
+              className='col-span-12 lg:col-span-5 pt-5 pb-9 pl-5 sm:pl-[35px] pr-5 border border-Secondarycolor-0 bg-BodyBg3-0 rounded-2xl'
+              data-aos='fade-up'
+              data-aos-delay='700'
+              data-aos-duration='1000'
+            >
               <div className='h-auto lg:h-[344px] xl:h-[346px] pt-[25px] px-[25px] bg-BodyBg4-0 rounded-2xl'>
                 <img
                   src={projectThumb3}

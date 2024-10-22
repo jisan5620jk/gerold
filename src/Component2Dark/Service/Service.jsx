@@ -74,12 +74,22 @@ const Service = () => {
       <section className='bg-BodyBg-0 pt-[120px] relative'>
         <div className='Container'>
           <div>
-            <h1 className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] leading-[54px] font-medium bg-gradient-to-r from-PrimaryColor-0 from-10% via-white via-80% md:via-30% to-white to-90% bg-clip-text text-transparent'>
+            <h1
+              className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] leading-[54px] font-medium bg-gradient-to-r from-PrimaryColor-0 from-10% via-white via-80% md:via-30% to-white to-90% bg-clip-text text-transparent'
+              data-aos='fade-up'
+              data-aos-delay='300'
+              data-aos-duration='1000'
+            >
               My Specialization
             </h1>
           </div>
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 relative z-10 mt-[50px]'>
-            <div className='rounded-[10px] bg-BodyBg3-0 overflow-hidden border border-Secondarycolor-0 transition-all duration-500 hover:border-PrimaryColor-0'>
+            <div
+              className='rounded-[10px] bg-BodyBg3-0 overflow-hidden border border-Secondarycolor-0 transition-all duration-500 hover:border-PrimaryColor-0'
+              data-aos='fade-up'
+              data-aos-delay='400'
+              data-aos-duration='1000'
+            >
               <div className='bg-Secondarycolor-0 py-5 px-6 sm:px-[30px]'>
                 <div className='size-[64px] rounded-[10px] bg-gradient-to-br to-Secondarycolor-0 from-PrimaryColor-0 flex items-center justify-center'>
                   <img
@@ -107,7 +117,12 @@ const Service = () => {
                 </h6>
               </div>
             </div>
-            <div className='rounded-[10px] bg-BodyBg3-0 overflow-hidden border border-Secondarycolor-0 transition-all duration-500 hover:border-PrimaryColor-0'>
+            <div
+              className='rounded-[10px] bg-BodyBg3-0 overflow-hidden border border-Secondarycolor-0 transition-all duration-500 hover:border-PrimaryColor-0'
+              data-aos='fade-up'
+              data-aos-delay='500'
+              data-aos-duration='1000'
+            >
               <div className='bg-Secondarycolor-0 py-5 px-6 sm:px-[30px]'>
                 <div className='size-[64px] rounded-[10px] bg-gradient-to-br to-Secondarycolor-0 from-PrimaryColor-0 flex items-center justify-center'>
                   <img
@@ -135,7 +150,12 @@ const Service = () => {
                 </h6>
               </div>
             </div>
-            <div className='rounded-[10px] bg-BodyBg3-0 overflow-hidden border border-Secondarycolor-0 transition-all duration-500 hover:border-PrimaryColor-0'>
+            <div
+              className='rounded-[10px] bg-BodyBg3-0 overflow-hidden border border-Secondarycolor-0 transition-all duration-500 hover:border-PrimaryColor-0'
+              data-aos='fade-up'
+              data-aos-delay='300'
+              data-aos-duration='1000'
+            >
               <div className='bg-Secondarycolor-0 py-5 px-6 sm:px-[30px]'>
                 <div className='size-[64px] rounded-[10px] bg-gradient-to-br to-Secondarycolor-0 from-PrimaryColor-0 flex items-center justify-center'>
                   <img
@@ -162,8 +182,13 @@ const Service = () => {
                   10 Projects
                 </h6>
               </div>
-            </div>{' '}
-            <div className='rounded-[10px] bg-BodyBg3-0 overflow-hidden border border-Secondarycolor-0 transition-all duration-500 hover:border-PrimaryColor-0'>
+            </div>
+            <div
+              className='rounded-[10px] bg-BodyBg3-0 overflow-hidden border border-Secondarycolor-0 transition-all duration-500 hover:border-PrimaryColor-0'
+              data-aos='fade-up'
+              data-aos-delay='400'
+              data-aos-duration='1000'
+            >
               <div className='bg-Secondarycolor-0 py-5 px-6 sm:px-[30px]'>
                 <div className='size-[64px] rounded-[10px] bg-gradient-to-br to-Secondarycolor-0 from-PrimaryColor-0 flex items-center justify-center'>
                   <img

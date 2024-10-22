@@ -7,7 +7,11 @@ const Appoinment = () => {
     <section className='bg-BodyBg-0 py-28 relative z-10 overflow-hidden'>
       <div className='Container'>
         <div className='flex flex-wrap lg:flex-nowrap lg:justify-between items-center gap-[45px] bg-BodyBg3-0 border p-6 sm:p-9 md:p-[50px] border-Secondarycolor-0 rounded-2xl relative z-10'>
-          <div>
+          <div
+            data-aos='fade-right'
+            data-aos-delay='300'
+            data-aos-duration='1000'
+          >
             <div className='max-w-[600px]'>
               <h1 className='font-Sora text-[27px] leading-[35px] sm:text-[34px] sm:leading-[44px] md:text-[45px] lg:text-[38px] xl:text-[45px] md:leading-[53px] font-medium bg-gradient-to-r from-PrimaryColor-0 via-white to-white bg-clip-text text-transparent'>
                 Let’s work <br /> together!
@@ -108,7 +112,12 @@ const Appoinment = () => {
               </div>
             </form>
           </div>
-          <div className='relative z-10 max-w-[400px]'>
+          <div
+            className='relative z-10 max-w-[400px]'
+            data-aos='fade-left'
+            data-aos-delay='300'
+            data-aos-duration='1000'
+          >
             <div>
               <p className='font-Sora text-TextColor-0'>
                 {`I'm currently avaliable to take on new projects, so feel free to send me a message about anything that you want to run past me. You can contact anytime at 24/7.`}
@@ -132,9 +141,7 @@ const Appoinment = () => {
                 </Link>
               </li>
               <li>
-                <p
-                  className='font-Sora text-base sm:text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0 underline underline-offset-4 decoration-1'
-                >
+                <p className='font-Sora text-base sm:text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0 underline underline-offset-4 decoration-1'>
                   Warne Park Street Pine, FL <br /> 33157, New York
                 </p>
               </li>
