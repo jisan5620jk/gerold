@@ -543,10 +543,6 @@ nav.main-menu-content > ul > li.current > a::before {
   padding: 0;
 }
 
-.main-menu-mobile ul li:not(:last-child) a {
-  border-bottom: 1px solid #ffffff33;
-}
-
 .main-menu-mobile ul > li > ul > li > a {
   text-transform: capitalize;
   transition: 0.5s;
@@ -718,9 +714,12 @@ nav.main-menu-content > ul > li.current > a::before {
     margin: 0;
   }
 
-  nav.main-menu-content > ul > li > a > span {
-    display: none;
+
+
+  .main-menu-mobile ul li a span.header-icon {
+    display: block;
   }
+  
 }
 
 .homemenu-content a {

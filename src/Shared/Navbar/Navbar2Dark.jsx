@@ -44,13 +44,12 @@ const Navbar2Dark = () => {
     };
   }, []);
 
-  let headerIcon = `  
-  <span className="header-icon">  
-    <svg fill="currentColor" viewBox="0 0 320 512" height="15px" width="15px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
-    </svg>
-  </span>  
-`;
+  let headerIcon = `
+    <span className="header-icon">  
+      <svg fill="currentColor" viewBox="0 0 320 512" height="15px" width="15px" xmlns="http://www.w3.org/2000/svg">
+        <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
+      </svg>
+    </span>`;
 
   useEffect(() => {
     const mainMenuContent = document.querySelector('.main-menu-content');
@@ -170,10 +169,10 @@ const Navbar2Dark = () => {
                         className='!pr-5'
                       >
                         Home{' '}
-                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 group-hover:opacity-0'>
+                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 group-hover:opacity-0 hidden lg:block'>
                           <HiPlusSm />
                         </span>
-                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 opacity-0 group-hover:opacity-100'>
+                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 opacity-0 group-hover:opacity-100 hidden lg:block'>
                           <HiMinusSm />
                         </span>
                       </Link>
@@ -181,10 +180,10 @@ const Navbar2Dark = () => {
                         <li className='has-dropdown current'>
                           <Link to={'/'}>
                             Dark Mode
-                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500'>
+                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 hidden lg:block'>
                               <HiPlusSm />
                             </span>
-                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 opacity-0'>
+                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 opacity-0 hidden lg:block'>
                               <HiMinusSm />
                             </span>
                           </Link>
@@ -200,10 +199,10 @@ const Navbar2Dark = () => {
                         <li className='has-dropdown'>
                           <Link to={'/'}>
                             Light Mode
-                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500'>
+                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 hidden lg:block'>
                               <HiPlusSm />
                             </span>
-                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 opacity-0'>
+                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 opacity-0 hidden lg:block'>
                               <HiMinusSm />
                             </span>
                           </Link>
@@ -233,10 +232,10 @@ const Navbar2Dark = () => {
                         className='!pr-5'
                       >
                         Blog
-                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 group-hover:opacity-0'>
+                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 group-hover:opacity-0 hidden lg:block'>
                           <HiPlusSm />
                         </span>
-                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 opacity-0 group-hover:opacity-100'>
+                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 opacity-0 group-hover:opacity-100 hidden lg:block'>
                           <HiMinusSm />
                         </span>
                       </Link>
@@ -257,11 +256,20 @@ const Navbar2Dark = () => {
               </div>
               <div className='header-right-box flex justify-end'>
                 <div>
-                  <Link to={'/'} className='font-Sora font-semibold text-[15px] text-white pl-[30px] pr-[34px] py-[17px] leading-4 rounded-full flex items-center gap-[14px] group bg-PrimaryColor-0'>
+                  <Link
+                    to={'/'}
+                    className='font-Sora font-semibold text-[15px] text-white pl-[30px] pr-[34px] py-[17px] leading-4 rounded-full flex items-center gap-[14px] group bg-PrimaryColor-0'
+                  >
                     Resume{' '}
                     <span className='relative bottom-[px] size-4 overflow-hidden'>
-                      <BsDownload size={'14'} className='absolute transition-all duration-300 translate-y-0 group-hover:-translate-y-[150%]' />
-                      <BsDownload size={'14'} className='absolute transition-all duration-300 translate-y-[150%] group-hover:translate-y-0' />
+                      <BsDownload
+                        size={'14'}
+                        className='absolute transition-all duration-300 translate-y-0 group-hover:-translate-y-[150%]'
+                      />
+                      <BsDownload
+                        size={'14'}
+                        className='absolute transition-all duration-300 translate-y-[150%] group-hover:translate-y-0'
+                      />
                     </span>
                   </Link>
                 </div>

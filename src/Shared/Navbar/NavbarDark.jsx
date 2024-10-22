@@ -169,10 +169,10 @@ const NavbarDark = () => {
                         className='!pr-5'
                       >
                         Home{' '}
-                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 group-hover:opacity-0'>
+                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 group-hover:opacity-0 hidden lg:block'>
                           <HiPlusSm />
                         </span>
-                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 opacity-0 group-hover:opacity-100'>
+                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 opacity-0 group-hover:opacity-100 hidden lg:block'>
                           <HiMinusSm />
                         </span>
                       </Link>
@@ -180,10 +180,10 @@ const NavbarDark = () => {
                         <li className='has-dropdown current'>
                           <Link to={'/'}>
                             Dark Mode
-                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500'>
+                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 hidden lg:block'>
                               <HiPlusSm />
                             </span>
-                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 opacity-0'>
+                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 opacity-0 hidden lg:block'>
                               <HiMinusSm />
                             </span>
                           </Link>
@@ -199,10 +199,10 @@ const NavbarDark = () => {
                         <li className='has-dropdown'>
                           <Link to={'/'}>
                             Light Mode
-                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500'>
+                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 hidden lg:block'>
                               <HiPlusSm />
                             </span>
-                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 opacity-0'>
+                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 opacity-0 hidden lg:block'>
                               <HiMinusSm />
                             </span>
                           </Link>
@@ -232,10 +232,10 @@ const NavbarDark = () => {
                         className='!pr-5'
                       >
                         Blog
-                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 group-hover:opacity-0'>
+                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 group-hover:opacity-0 hidden lg:block'>
                           <HiPlusSm />
                         </span>
-                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 opacity-0 group-hover:opacity-100'>
+                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 opacity-0 group-hover:opacity-100 hidden lg:block'>
                           <HiMinusSm />
                         </span>
                       </Link>
