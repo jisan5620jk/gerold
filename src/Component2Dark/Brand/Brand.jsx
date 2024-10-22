@@ -15,19 +15,19 @@ const Brand = () => {
     autoplay: true,
     breakpoints: {
       320: {
-        slidesPerView: 1,
-      },
-      576: {
         slidesPerView: 2,
       },
-      768: {
+      576: {
         slidesPerView: 3,
       },
-      992: {
+      768: {
         slidesPerView: 4,
       },
-      1200: {
+      992: {
         slidesPerView: 5,
+      },
+      1200: {
+        slidesPerView: 6,
       },
       1400: {
         slidesPerView: 6,

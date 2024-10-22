@@ -74,13 +74,13 @@ const Service = () => {
       <section className='bg-BodyBg-0 pt-[120px] relative'>
         <div className='Container'>
           <div>
-            <h1 className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] leading-[54px] font-medium bg-gradient-to-r from-PrimaryColor-0 from-10% via-white via-30% to-white to-90% bg-clip-text text-transparent'>
+            <h1 className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] leading-[54px] font-medium bg-gradient-to-r from-PrimaryColor-0 from-10% via-white via-80% md:via-30% to-white to-90% bg-clip-text text-transparent'>
               My Specialization
             </h1>
           </div>
-          <div className='grid grid-cols-2 gap-6 relative z-10 mt-[50px]'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 relative z-10 mt-[50px]'>
             <div className='rounded-[10px] bg-BodyBg3-0 overflow-hidden border border-Secondarycolor-0 transition-all duration-500 hover:border-PrimaryColor-0'>
-              <div className='bg-Secondarycolor-0 py-5 px-[30px]'>
+              <div className='bg-Secondarycolor-0 py-5 px-6 sm:px-[30px]'>
                 <div className='size-[64px] rounded-[10px] bg-gradient-to-br to-Secondarycolor-0 from-PrimaryColor-0 flex items-center justify-center'>
                   <img
                     src={serviceIcon}
@@ -89,7 +89,7 @@ const Service = () => {
                   />
                 </div>
               </div>
-              <div className='p-[30px] mt-7'>
+              <div className='p-6 sm:p-[30px] mt-7'>
                 <div>
                   <button
                     className='font-Sora text-white font-medium text-2xl transition-all duration-500 hover:text-PrimaryColor-0'
@@ -108,7 +108,7 @@ const Service = () => {
               </div>
             </div>
             <div className='rounded-[10px] bg-BodyBg3-0 overflow-hidden border border-Secondarycolor-0 transition-all duration-500 hover:border-PrimaryColor-0'>
-              <div className='bg-Secondarycolor-0 py-5 px-[30px]'>
+              <div className='bg-Secondarycolor-0 py-5 px-6 sm:px-[30px]'>
                 <div className='size-[64px] rounded-[10px] bg-gradient-to-br to-Secondarycolor-0 from-PrimaryColor-0 flex items-center justify-center'>
                   <img
                     src={serviceIcon2}
@@ -117,7 +117,7 @@ const Service = () => {
                   />
                 </div>
               </div>
-              <div className='p-[30px] mt-7'>
+              <div className='p-6 sm:p-[30px] mt-7'>
                 <div>
                   <button
                     className='font-Sora text-white font-medium text-2xl transition-all duration-500 hover:text-PrimaryColor-0'
@@ -136,7 +136,7 @@ const Service = () => {
               </div>
             </div>
             <div className='rounded-[10px] bg-BodyBg3-0 overflow-hidden border border-Secondarycolor-0 transition-all duration-500 hover:border-PrimaryColor-0'>
-              <div className='bg-Secondarycolor-0 py-5 px-[30px]'>
+              <div className='bg-Secondarycolor-0 py-5 px-6 sm:px-[30px]'>
                 <div className='size-[64px] rounded-[10px] bg-gradient-to-br to-Secondarycolor-0 from-PrimaryColor-0 flex items-center justify-center'>
                   <img
                     src={serviceIcon3}
@@ -145,7 +145,7 @@ const Service = () => {
                   />
                 </div>
               </div>
-              <div className='p-[30px] mt-7'>
+              <div className='p-6 sm:p-[30px] mt-7'>
                 <div>
                   <button
                     className='font-Sora text-white font-medium text-2xl transition-all duration-500 hover:text-PrimaryColor-0'
@@ -164,7 +164,7 @@ const Service = () => {
               </div>
             </div>{' '}
             <div className='rounded-[10px] bg-BodyBg3-0 overflow-hidden border border-Secondarycolor-0 transition-all duration-500 hover:border-PrimaryColor-0'>
-              <div className='bg-Secondarycolor-0 py-5 px-[30px]'>
+              <div className='bg-Secondarycolor-0 py-5 px-6 sm:px-[30px]'>
                 <div className='size-[64px] rounded-[10px] bg-gradient-to-br to-Secondarycolor-0 from-PrimaryColor-0 flex items-center justify-center'>
                   <img
                     src={serviceIcon4}
@@ -173,7 +173,7 @@ const Service = () => {
                   />
                 </div>
               </div>
-              <div className='p-[30px] mt-7'>
+              <div className='p-6 sm:p-[30px] mt-7'>
                 <div>
                   <button
                     className='font-Sora text-white font-medium text-2xl transition-all duration-500 hover:text-PrimaryColor-0'

@@ -6,10 +6,10 @@ const Appoinment = () => {
   return (
     <section className='bg-BodyBg-0 py-28 relative z-10 overflow-hidden'>
       <div className='Container'>
-        <div className='flex justify-between items-center gap-[45px] bg-BodyBg3-0 border p-[50px] border-Secondarycolor-0 rounded-2xl relative z-10'>
+        <div className='flex flex-wrap lg:flex-nowrap lg:justify-between items-center gap-[45px] bg-BodyBg3-0 border p-6 sm:p-9 md:p-[50px] border-Secondarycolor-0 rounded-2xl relative z-10'>
           <div>
             <div className='max-w-[600px]'>
-              <h1 className='font-Sora text-[25px] sm:text-[34px] md:text-[45px] lg:text-[38px] xl:text-[45px] leading-[53px] font-medium bg-gradient-to-r from-PrimaryColor-0 via-white to-white bg-clip-text text-transparent'>
+              <h1 className='font-Sora text-[27px] leading-[35px] sm:text-[34px] sm:leading-[44px] md:text-[45px] lg:text-[38px] xl:text-[45px] md:leading-[53px] font-medium bg-gradient-to-r from-PrimaryColor-0 via-white to-white bg-clip-text text-transparent'>
                 Let’s work <br /> together!
               </h1>
               <p className='font-Sora text-TextColor-0 pt-5'>
