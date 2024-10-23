@@ -5,7 +5,7 @@ import { useEffect, useRef } from 'react';
 import { HiMinusSm, HiPlusSm } from 'react-icons/hi';
 import { IoCloseOutline } from 'react-icons/io5';
 
-const ServiceNavbar = () => {
+const AboutNavbar = () => {
   //Menu Bar
   const menuBarRef = useRef(null);
   const offcanvasRef = useRef(null);
@@ -217,10 +217,10 @@ const ServiceNavbar = () => {
                         </li>
                       </ul>
                     </li>
-                    <li>
+                    <li className='current'>
                       <Link to={'/about'}>About</Link>
                     </li>
-                    <li className='current'>
+                    <li>
                       <Link to={'/service'}>Services</Link>
                     </li>
                     <li>
@@ -277,4 +277,4 @@ const ServiceNavbar = () => {
   );
 };
 
-export default ServiceNavbar;
+export default AboutNavbar;

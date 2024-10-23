@@ -1,22 +1,22 @@
 import { FaArrowRightLong } from 'react-icons/fa6';
 import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
-import About from './About';
-import Mission from './Mission/Mission';
-import Testimonial from './Testimonial/Testimonial';
-import Subscribe from '../../../Component1/Subscribe/Subscribe';
+import Resume from './Resume/Resume';
+import Skill from './Skill/Skill';
+import Counter from './Counter/Counter';
+import DanceText from './DanceText/DanceText';
 
 const AboutInner = () => {
   return (
     <>
       <BreadCrumb
-        breadCrumbTitle={'About Us'}
+        breadCrumbTitle={'About'}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={'About Us'}
+        breadCrumbLink={'About'}
       />
-      <About />
-      <Mission />
-      <Testimonial />
-      <Subscribe />
+      <Resume />
+      <Skill/>
+      <Counter />
+      <DanceText/>
     </>
   );
 };

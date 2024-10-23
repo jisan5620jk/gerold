@@ -224,7 +224,7 @@ const ContactNavbar = () => {
                       <Link to={'/service'}>Services</Link>
                     </li>
                     <li>
-                      <Link to={'/'}>Portfolios</Link>
+                      <Link to={'/portfolio'}>Portfolios</Link>
                     </li>
                     <li className='has-dropdown'>
                       <Link

@@ -10,6 +10,10 @@ import Main4 from '../Main/Main4';
 import ServiceInner from '../Pages/InnerPage/ServiceInner/ServiceInner';
 import ContactInner from '../Pages/InnerPage/ContactInner/ContactInner';
 import Main5 from '../Main/Main5';
+import Main6 from '../Main/Main6';
+import AboutInner from '../Pages/InnerPage/AboutInner/AboutInner';
+import Main7 from '../Main/Main7';
+import PortfolioInner from '../Pages/InnerPage/PortfolioInner/PortfolioInner';
 
 const router = createBrowserRouter([
   {
@@ -48,11 +52,33 @@ const router = createBrowserRouter([
   {
     path: '/',
     errorElement: <ErrorPage />,
+    element: <Main6 />,
+    children: [
+      {
+        path: '/about',
+        element: <AboutInner />,
+      },
+    ],
+  },
+  {
+    path: '/',
+    errorElement: <ErrorPage />,
     element: <Main4 />,
     children: [
       {
         path: '/service',
         element: <ServiceInner />,
+      },
+    ],
+  },
+  {
+    path: '/',
+    errorElement: <ErrorPage />,
+    element: <Main7 />,
+    children: [
+      {
+        path: '/portfolio',
+        element: <PortfolioInner />,
       },
     ],
   },
