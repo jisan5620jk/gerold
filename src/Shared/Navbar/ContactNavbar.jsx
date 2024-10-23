@@ -5,7 +5,7 @@ import { useEffect, useRef } from 'react';
 import { HiMinusSm, HiPlusSm } from 'react-icons/hi';
 import { IoCloseOutline } from 'react-icons/io5';
 
-const NavbarDark = () => {
+const ContactNavbar = () => {
   //Menu Bar
   const menuBarRef = useRef(null);
   const offcanvasRef = useRef(null);
@@ -163,16 +163,16 @@ const NavbarDark = () => {
               <div className='header-main-menu text-center hidden lg:block'>
                 <nav className='main-menu-content'>
                   <ul>
-                    <li className='has-dropdown group current'>
+                    <li className='has-dropdown group'>
                       <Link
                         to={'/'}
                         className='!pr-5'
                       >
                         Home{' '}
-                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 group-hover:opacity-0 hidden lg:block'>
+                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 group-hover:opacity-0'>
                           <HiPlusSm />
                         </span>
-                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 opacity-0 group-hover:opacity-100 hidden lg:block'>
+                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 opacity-0 group-hover:opacity-100'>
                           <HiMinusSm />
                         </span>
                       </Link>
@@ -180,15 +180,15 @@ const NavbarDark = () => {
                         <li className='has-dropdown current'>
                           <Link to={'/'}>
                             Dark Mode
-                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 hidden lg:block'>
+                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500'>
                               <HiPlusSm />
                             </span>
-                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 opacity-0 hidden lg:block'>
+                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 opacity-0'>
                               <HiMinusSm />
                             </span>
                           </Link>
                           <ul className='submenu'>
-                            <li className='current'>
+                            <li>
                               <Link to={'/'}>Home One</Link>
                             </li>
                             <li>
@@ -199,10 +199,10 @@ const NavbarDark = () => {
                         <li className='has-dropdown'>
                           <Link to={'/'}>
                             Light Mode
-                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 hidden lg:block'>
+                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500'>
                               <HiPlusSm />
                             </span>
-                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 opacity-0 hidden lg:block'>
+                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 opacity-0'>
                               <HiMinusSm />
                             </span>
                           </Link>
@@ -232,10 +232,10 @@ const NavbarDark = () => {
                         className='!pr-5'
                       >
                         Blog
-                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 group-hover:opacity-0 hidden lg:block'>
+                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 group-hover:opacity-0'>
                           <HiPlusSm />
                         </span>
-                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 opacity-0 group-hover:opacity-100 hidden lg:block'>
+                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 opacity-0 group-hover:opacity-100'>
                           <HiMinusSm />
                         </span>
                       </Link>
@@ -248,7 +248,7 @@ const NavbarDark = () => {
                         </li>
                       </ul>
                     </li>
-                    <li>
+                    <li className='current'>
                       <Link to={'/contact'}>Contact</Link>
                     </li>
                   </ul>
@@ -277,4 +277,4 @@ const NavbarDark = () => {
   );
 };
 
-export default NavbarDark;
+export default ContactNavbar;

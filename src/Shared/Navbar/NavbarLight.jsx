@@ -221,7 +221,7 @@ const NavbarLight = () => {
                       <Link to={'/about'}>About</Link>
                     </li>
                     <li>
-                      <Link to={'/'}>Services</Link>
+                      <Link to={'/service'}>Services</Link>
                     </li>
                     <li>
                       <Link to={'/'}>Portfolios</Link>

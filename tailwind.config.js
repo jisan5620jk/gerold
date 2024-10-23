@@ -17,6 +17,7 @@ export default {
         TextGrey: ['#747779'],
         TextGrey2: ['#636363'],
         BodyBg: ['#0f0715'],
+        BodyBlack: ['#0b0410'],
         BodyBgLight: ['#f6f3fc'],
         BodyBg2: ['#050709'],
         BodyBg3: ['#140c1c'],

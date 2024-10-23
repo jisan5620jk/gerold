@@ -163,7 +163,7 @@ const ServiceNavbar = () => {
               <div className='header-main-menu text-center hidden lg:block'>
                 <nav className='main-menu-content'>
                   <ul>
-                    <li className='has-dropdown group current'>
+                    <li className='has-dropdown group'>
                       <Link
                         to={'/'}
                         className='!pr-5'
@@ -188,7 +188,7 @@ const ServiceNavbar = () => {
                             </span>
                           </Link>
                           <ul className='submenu'>
-                            <li className='current'>
+                            <li>
                               <Link to={'/'}>Home One</Link>
                             </li>
                             <li>
@@ -220,8 +220,8 @@ const ServiceNavbar = () => {
                     <li>
                       <Link to={'/about'}>About</Link>
                     </li>
-                    <li>
-                      <Link to={'/'}>Services</Link>
+                    <li className='current'>
+                      <Link to={'/service'}>Services</Link>
                     </li>
                     <li>
                       <Link to={'/'}>Portfolios</Link>

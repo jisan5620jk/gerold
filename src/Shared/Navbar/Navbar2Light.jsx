@@ -380,7 +380,7 @@ const Navbar2Light = () => {
                       </ul>
                     </li>
                     <li className='has-dropdown'>
-                      <Link to={'/'}>Services</Link>
+                      <Link to={'/service'}>Services</Link>
                       <ul className='submenu'>
                         <li>
                           <Link to={'/service'}>service</Link>
