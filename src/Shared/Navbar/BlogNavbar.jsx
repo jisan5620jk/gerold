@@ -5,7 +5,7 @@ import { useEffect, useRef } from 'react';
 import { HiMinusSm, HiPlusSm } from 'react-icons/hi';
 import { IoCloseOutline } from 'react-icons/io5';
 
-const PortfolioNavbar = () => {
+const BlogNavbar = () => {
   //Menu Bar
   const menuBarRef = useRef(null);
   const offcanvasRef = useRef(null);
@@ -223,10 +223,10 @@ const PortfolioNavbar = () => {
                     <li>
                       <Link to={'/service'}>Services</Link>
                     </li>
-                    <li className='current'>
+                    <li>
                       <Link to={'/portfolio'}>Portfolios</Link>
                     </li>
-                    <li className='has-dropdown'>
+                    <li className='has-dropdown current'>
                       <Link
                         to={'/'}
                         className='!pr-5'
@@ -240,7 +240,7 @@ const PortfolioNavbar = () => {
                         </span>
                       </Link>
                       <ul className='submenu'>
-                        <li>
+                        <li className='current'>
                           <Link to={'/blog'}>blog</Link>
                         </li>
                         <li>
@@ -277,4 +277,4 @@ const PortfolioNavbar = () => {
   );
 };
 
-export default PortfolioNavbar;
+export default BlogNavbar;

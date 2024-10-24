@@ -1,16 +1,16 @@
 import { Outlet } from 'react-router-dom';
 import ScrollToTop from '../Shared/BackToTop/BackToTop';
 import Footer2Dark from '../Shared/Footer/Footer2Dark';;
-import AboutNavbar from '../Shared/Navbar/AboutNavbar';
+import BlogNavbar from '../Shared/Navbar/BlogNavbar';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 AOS.init();
 
-const Main6 = () => {
+const Main8 = () => {
   return (
     <>
-      <AboutNavbar />
+      <BlogNavbar />
       <ScrollToTop />
       <div>
         <Outlet />
@@ -19,4 +19,4 @@ const Main6 = () => {
     </>
   );
 };
-export default Main6;
+export default Main8;

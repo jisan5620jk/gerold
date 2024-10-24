@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "fslightbox-react": "^1.7.6",
     "imagesloaded": "^4.1.4",
     "isotope-layout": "^3.0.6",
     "react": "^18.3.1",

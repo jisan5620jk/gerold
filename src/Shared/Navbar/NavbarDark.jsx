@@ -241,7 +241,7 @@ const NavbarDark = () => {
                       </Link>
                       <ul className='submenu'>
                         <li>
-                          <Link to={'/blog_grid'}>blog grid</Link>
+                          <Link to={'/blog'}>blog</Link>
                         </li>
                         <li>
                           <Link to={'/blog_details'}>blog details</Link>

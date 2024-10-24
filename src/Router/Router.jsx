@@ -14,6 +14,8 @@ import Main6 from '../Main/Main6';
 import AboutInner from '../Pages/InnerPage/AboutInner/AboutInner';
 import Main7 from '../Main/Main7';
 import PortfolioInner from '../Pages/InnerPage/PortfolioInner/PortfolioInner';
+import BlogInner from '../Pages/InnerPage/BlogInner/BlogInner';
+import Main8 from '../Main/Main8';
 
 const router = createBrowserRouter([
   {
@@ -79,6 +81,17 @@ const router = createBrowserRouter([
       {
         path: '/portfolio',
         element: <PortfolioInner />,
+      },
+    ],
+  },
+  {
+    path: '/',
+    errorElement: <ErrorPage />,
+    element: <Main8 />,
+    children: [
+      {
+        path: '/blog',
+        element: <BlogInner />,
       },
     ],
   },

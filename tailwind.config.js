@@ -114,6 +114,24 @@ export default {
           '50%': { transform: 'rotate3d(0, 1, 0, 180deg)' },
           '100%': { transform: 'rotate3d(0, 1, 0, 360deg)' },
         },
+        Pulse: {
+          '0%': {
+            boxShadow:
+              '0 0 0 0 rgba(255, 255, 255, 0.7), 0 0 0 0 rgba(255, 255, 255, 0.7)',
+          },
+          '40%': {
+            boxShadow:
+              '0 0 0 50px rgba(255, 255, 255, 0), 0 0 0 0 rgba(255, 255, 255, 0.7)',
+          },
+          '80%': {
+            boxShadow:
+              '0 0 0 50px rgba(255, 255, 255, 0), 0 0 0 30px rgba(255, 255, 255, 0)',
+          },
+          '100%': {
+            boxShadow:
+              '0 0 0 0 rgba(255, 255, 255, 0), 0 0 0 30px rgba(255, 255, 255, 0)',
+          },
+        },
       },
       animation: {
         movebtn: 'movebtn 3s linear infinite',
@@ -128,6 +146,7 @@ export default {
         dance4: 'dance4 10s alternate infinite',
         dance5: 'dance5 10s alternate infinite',
         dance7: 'dance7 4s alternate infinite',
+        Pulse: 'Pulse 3s linear infinite',
         swing: 'swing 1s ease-in-out 1s forwards infinite alternate',
         headerSlideDown:
           '500ms ease-in-out 0s normal none 1 running headerSlideDown',
