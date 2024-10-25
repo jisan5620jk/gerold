@@ -9,6 +9,7 @@ export default {
       },
       colors: {
         PrimaryColor: ['#8750f7'],
+        PrimaryColor2: ['#9b8dff'],
         Secondarycolor: ['#2a1454'],
         HeadingColor: ['#8750f7'],
         TextDark: ['#050709'],

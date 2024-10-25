@@ -1,9 +1,4 @@
-.portfolio-box {
-	scrollbar-width: none;
-	overflow: auto;
-}
-
-.portfolio-body-overlay {
+.project-body-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -17,12 +12,12 @@
   transition: 0.45s ease-in-out;
 }
 
-.portfolio-body-overlay.apply {
+.project-body-overlay.apply {
   opacity: 1;
   visibility: visible;
 }
 
-.portfolio-popup {
+.project-popup {
  position: fixed;  
     top: 50%;  
     bottom: 0;
@@ -42,14 +37,14 @@
     scrollbar-width: none;
 }
 
-.portfolio-popup.opened {
+.project-popup.opened {
   top: 0;
   transform: translateX(-50%) scale(1);
   opacity: 1;
   visibility: visible;
 }
 
-.portfolio-popup.opened {
+.project-popup.opened {
   right: 0;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;

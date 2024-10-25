@@ -1,8 +1,10 @@
-import { Link } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
-import { HiArrowUpRight } from 'react-icons/hi2';
 import { FaTimes } from 'react-icons/fa';
 import modalThumb from '/images/services/modal-img.jpg';
+import serviceIcon from '/images/services/service-icon.png';
+import serviceIcon2 from '/images/services/service-icon2.png';
+import serviceIcon3 from '/images/services/service-icon3.png';
+import serviceIcon4 from '/images/services/service-icon4.png';
 import icon from '/images/services/popup-icon.png';
 import icon2 from '/images/services/popup-icon2.png';
 import icon3 from '/images/services/popup-icon3.png';
@@ -13,275 +15,219 @@ import { FiCheck } from 'react-icons/fi';
 import { FaAngleRight } from 'react-icons/fa6';
 
 const Service = () => {
-  useEffect(() => {
-    const activeBg = document.querySelector('.service-active-bg');
-    const serviceItems = document.querySelectorAll('.service-item');
-    const servicesWidget = document.querySelector('.service-widget');
-
-    if (!activeBg || !serviceItems.length || !servicesWidget) {
-      console.error('Required elements are not found in the DOM.');
-      return;
-    }
-
-    let element = document.querySelector('.active');
-
-    const activeService = (activeBg, e) => {
-      if (!e) return;
-
-      const topOff = e.getBoundingClientRect().top + window.scrollY;
-      const height = e.offsetHeight;
-      const menuTop =
-        servicesWidget.getBoundingClientRect().top + window.scrollY;
-
-      e.closest('.service-item').classList.remove('mleave');
-      Array.from(e.closest('.service-item').parentNode.children).forEach(
-        (sibling) => {
-          if (sibling !== e.closest('.service-item')) {
-            sibling.classList.add('mleave');
-          }
-        }
-      );
-
-      activeBg.style.top = `${topOff - menuTop}px`;
-      activeBg.style.height = `${height}px`;
-    };
-
-    serviceItems.forEach((item) => {
-      item.addEventListener('mouseenter', () => activeService(activeBg, item));
-    });
-
-    servicesWidget.addEventListener('mouseleave', () => {
-      element = document.querySelector('.active');
-      activeService(activeBg, element);
-      Array.from(element.closest('.service-item').parentNode.children).forEach(
-        (sibling) => {
-          if (sibling !== element.closest('.service-item')) {
-            sibling.classList.remove('mleave');
-          }
-        }
-      );
-    });
-
-    activeService(activeBg, element);
-
-    document.querySelectorAll('.service-item').forEach((item) => {
-      item.addEventListener('click', () => {
-        document
-          .querySelectorAll('.service-item')
-          .forEach((item) => item.classList.remove('active'));
-        item.classList.add('active');
-      });
-    });
-  }, []);
-
   const servicePopUpRef = useRef(null);
   const servicePopUpRef2 = useRef(null);
   const servicePopUpRef3 = useRef(null);
   const servicePopUpRef4 = useRef(null);
-  const popUpContentRef = useRef(null);
-  const bodyOverlayRef = useRef(null);
-  const closeBtnRef = useRef(null);
+  const servicePopUpContentRef = useRef(null);
+  const serviceBodyOverlayRef = useRef(null);
+  const serviceCloseBtnRef = useRef(null);
 
   useEffect(() => {
     const servicePopUp = servicePopUpRef.current;
     const servicePopUp2 = servicePopUpRef2.current;
     const servicePopUp3 = servicePopUpRef3.current;
     const servicePopUp4 = servicePopUpRef4.current;
-    const popUpContent = popUpContentRef.current;
-    const bodyOverlay = bodyOverlayRef.current;
-    const closeBtn = closeBtnRef.current;
+    const servicePopUpContent = servicePopUpContentRef.current;
+    const serviceBodyOverlay = serviceBodyOverlayRef.current;
+    const closeBtn = serviceCloseBtnRef.current;
 
     const addClasses = () => {
-      popUpContent.classList.add('opened');
-      bodyOverlay.classList.add('apply');
+      if (servicePopUpContent && serviceBodyOverlay) {
+        servicePopUpContent.classList.add('opened');
+        serviceBodyOverlay.classList.add('apply');
+      }
     };
 
     const removeClasses = () => {
-      popUpContent.classList.remove('opened');
-      bodyOverlay.classList.remove('apply');
+      if (servicePopUpContent && serviceBodyOverlay) {
+        servicePopUpContent.classList.remove('opened');
+        serviceBodyOverlay.classList.remove('apply');
+      }
     };
 
-    if (
-      servicePopUp &&
-      servicePopUp2 &&
-      servicePopUp3 &&
-      servicePopUp4 &&
-      popUpContent &&
-      bodyOverlay &&
-      closeBtn
-    ) {
-      servicePopUp.addEventListener('click', addClasses);
-      servicePopUp2.addEventListener('click', addClasses);
-      servicePopUp3.addEventListener('click', addClasses);
-      servicePopUp4.addEventListener('click', addClasses);
-      closeBtn.addEventListener('click', removeClasses);
-      bodyOverlay.addEventListener('click', removeClasses);
-    }
+    // Add listeners for all popups
+    if (servicePopUp) servicePopUp.addEventListener('click', addClasses);
+    if (servicePopUp2) servicePopUp2.addEventListener('click', addClasses);
+    if (servicePopUp3) servicePopUp3.addEventListener('click', addClasses);
+    if (servicePopUp4) servicePopUp4.addEventListener('click', addClasses);
+
+    if (closeBtn) closeBtn.addEventListener('click', removeClasses);
+    if (serviceBodyOverlay)
+      serviceBodyOverlay.addEventListener('click', removeClasses);
 
     return () => {
-      if (
-        servicePopUp &&
-        servicePopUp2 &&
-        servicePopUp3 &&
-        servicePopUp4 &&
-        popUpContent &&
-        bodyOverlay &&
-        closeBtn
-      ) {
-        servicePopUp.removeEventListener('click', addClasses);
-        closeBtn.removeEventListener('click', removeClasses);
-        bodyOverlay.removeEventListener('click', removeClasses);
-      }
+      // Remove listeners for all popups
+      if (servicePopUp) servicePopUp.removeEventListener('click', addClasses);
+      if (servicePopUp2) servicePopUp2.removeEventListener('click', addClasses);
+      if (servicePopUp3) servicePopUp3.removeEventListener('click', addClasses);
+      if (servicePopUp4) servicePopUp4.removeEventListener('click', addClasses);
+
+      if (closeBtn) closeBtn.removeEventListener('click', removeClasses);
+      if (serviceBodyOverlay)
+        serviceBodyOverlay.removeEventListener('click', removeClasses);
     };
   }, []);
 
   return (
     <>
-      <section className=' bg-BodyBg2-0 py-[120px] relative'>
+      <section className='bg-white pt-[120px] relative'>
         <div className='Container'>
-          <div className='text-center'>
-            <h1 className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-white from-35% bg-clip-text text-transparent'>
-              My Quality Services
+          <div>
+            <h1
+              className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] leading-[54px] font-medium bg-gradient-to-r from-PrimaryColor-0 from-10% via-Secondarycolor-0 via-80% md:via-30% to-Secondarycolor-0 to-90% bg-clip-text text-transparent'
+              data-aos='fade-up'
+              data-aos-delay='300'
+              data-aos-duration='1000'
+            >
+              My Specialization
             </h1>
-            <p className='font-Sora text-TextColor-0 mt-2 mx-auto max-w-[640px] w-full'>
-              We put your ideas and thus your wishes in the form of a unique web
-              project that inspires you and you customers.
-            </p>
           </div>
-          <div className='relative z-10 mt-[50px] service-widget'>
-            <div className='service-item active grid grid-cols-6 md:grid-cols-12 relative z-20 overflow-hidden group border-b border-Secondarycolor-0 py-6 sm:py-[30px] md:py-5 lg:py-[30px] pr-4 sm:pr-4 pl-6 sm:pl-4 md:pl-5 lg:pl-[30px] md:pr-5 lg:pr-36 xl:pr-[56px]'>
-              <div className='col-span-6 md:col-span-5 flex items-center gap-2 sm:gap-5'>
-                <h6 className='service-number font-Sora font-bold text-xl text-PrimaryColor-0 uppercase transition-all duration-500'>
-                  01
-                </h6>
-                <h4 className='font-Sora font-bold text-xl sm:text-2xl lg:text-3xl text-white'>
-                  Branding Design
-                </h4>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 relative z-10 mt-[50px]'>
+            <div
+              className='rounded-[10px] overflow-hidden border border-BorderGrey2-0 bg-BodyBgLight-0 transition-all ease-linear duration-500 hover:border-PrimaryColor-0'
+              data-aos='fade-up'
+              data-aos-delay='400'
+              data-aos-duration='1000'
+            >
+              <div className='bg-PrimaryColor2-0 py-5 px-6 sm:px-[30px]'>
+                <div className='size-[64px] rounded-[10px] bg-gradient-to-br to-Secondarycolor-0 from-PrimaryColor-0 flex items-center justify-center'>
+                  <img
+                    src={serviceIcon}
+                    draggable='false'
+                    className='brightness-0 invert-[1]'
+                  />
+                </div>
               </div>
-              <div className='col-span-6 md:col-span-7 mt-4 md:mt-0 lg:ml-10 xl:ml-0 flex items-center justify-between max-w-[490px] w-full'>
-                <p className='font-Sora text-TextColor-0'>
-                  I break down complex user experinece problems to create
-                  integritiy focussed solutions that connect billions of people
-                </p>
-              </div>
-              <div className='absolute top-7 sm:top-8 md:top-1/2 md:-translate-y-1/2 right-6 sm:right-8 md:right-5 lg:right-8 inline-block'>
-                <Link
-                  to={'/service'}
-                  className='inline-block relative'
-                >
-                  <button className='text-xl sm:text-3xl text-PrimaryColor-0 service-icon transition-all duration-500 rotate-90'>
-                    <HiArrowUpRight />
+              <div className='p-6 sm:p-[30px] mt-7'>
+                <div>
+                  <button
+                    className='font-Sora text-Secondarycolor-0 font-medium text-2xl transition-all duration-500 hover:text-PrimaryColor-0'
+                    ref={servicePopUpRef}
+                  >
+                    Website Design
                   </button>
-                </Link>
-              </div>
-              <button
-                ref={servicePopUpRef}
-                className='bg-transparent absolute top-0 left-0 w-full h-full border-none outline-none'
-              ></button>
-            </div>
-            <div className='service-item active grid grid-cols-6 md:grid-cols-12 relative z-20 overflow-hidden group border-b border-Secondarycolor-0 py-6 sm:py-[30px] md:py-5 lg:py-[30px] pr-4 sm:pr-4 pl-6 sm:pl-4 md:pl-5 lg:pl-[30px] md:pr-5 lg:pr-36 xl:pr-[56px]'>
-              <div className='col-span-6 md:col-span-5 flex items-center gap-2 sm:gap-5'>
-                <h6 className='service-number font-Sora font-bold text-xl text-PrimaryColor-0 uppercase transition-all duration-500'>
-                  02
-                </h6>
-                <h4 className='font-Sora font-bold text-xl sm:text-2xl lg:text-3xl text-white'>
-                  Web Design
-                </h4>
-              </div>
-              <div className='col-span-6 md:col-span-7 mt-4 md:mt-0 lg:ml-10 xl:ml-0 flex items-center justify-between max-w-[490px] w-full'>
-                <p className='font-Sora text-TextColor-0'>
-                  I break down complex user experinece problems to create
-                  integritiy focussed solutions that connect billions of people
+                </div>
+                <p className='font-Sora text-TextLight-0 pt-2 pb-9'>
+                  I created digital products with unique ideas use Figma &
+                  Framer
                 </p>
-              </div>
-              <div className='absolute top-7 sm:top-8 md:top-1/2 md:-translate-y-1/2 right-6 sm:right-8 md:right-5 lg:right-8 inline-block'>
-                <Link
-                  to={'/service'}
-                  className='inline-block relative'
-                >
-                  <button className='text-xl sm:text-3xl text-PrimaryColor-0 service-icon transition-all duration-500 rotate-90'>
-                    <HiArrowUpRight />
-                  </button>
-                </Link>
-              </div>
-              <button
-                ref={servicePopUpRef2}
-                className='bg-transparent absolute top-0 left-0 w-full h-full border-none outline-none'
-              ></button>
-            </div>
-            <div className='service-item active grid grid-cols-6 md:grid-cols-12 relative z-20 overflow-hidden group border-b border-Secondarycolor-0 py-6 sm:py-[30px] md:py-5 lg:py-[30px] pr-4 sm:pr-4 pl-6 sm:pl-4 md:pl-5 lg:pl-[30px] md:pr-5 lg:pr-36 xl:pr-[56px]'>
-              <div className='col-span-6 md:col-span-5 flex items-center gap-2 sm:gap-5'>
-                <h6 className='service-number font-Sora font-bold text-xl text-PrimaryColor-0 uppercase transition-all duration-500'>
-                  03
+                <h6 className='font-Sora text-Secondarycolor-0 uppercase underline'>
+                  10 Projects
                 </h6>
-                <h4 className='font-Sora font-bold text-xl sm:text-2xl lg:text-3xl text-white'>
-                  UI/UX Design
-                </h4>
               </div>
-              <div className='col-span-6 md:col-span-7 mt-4 md:mt-0 lg:ml-10 xl:ml-0 flex items-center justify-between max-w-[490px] w-full'>
-                <p className='font-Sora text-TextColor-0'>
-                  I break down complex user experinece problems to create
-                  integritiy focussed solutions that connect billions of people
-                </p>
-              </div>
-              <div className='absolute top-7 sm:top-8 md:top-1/2 md:-translate-y-1/2 right-6 sm:right-8 md:right-5 lg:right-8 inline-block'>
-                <Link
-                  to={'/service'}
-                  className='inline-block relative'
-                >
-                  <button className='text-xl sm:text-3xl text-PrimaryColor-0 service-icon transition-all duration-500 rotate-90'>
-                    <HiArrowUpRight />
-                  </button>
-                </Link>
-              </div>
-              <button
-                ref={servicePopUpRef3}
-                className='bg-transparent absolute top-0 left-0 w-full h-full border-none outline-none'
-              ></button>
             </div>
-            <div className='service-item active grid grid-cols-6 md:grid-cols-12 relative z-20 overflow-hidden group border-b border-Secondarycolor-0 py-6 sm:py-[30px] md:py-5 lg:py-[30px] pr-4 sm:pr-4 pl-6 sm:pl-4 md:pl-5 lg:pl-[30px] md:pr-5 lg:pr-36 xl:pr-[56px]'>
-              <div className='col-span-6 md:col-span-5 flex items-center gap-2 sm:gap-5'>
-                <h6 className='service-number font-Sora font-bold text-xl text-PrimaryColor-0 uppercase transition-all duration-500'>
-                  04
+            <div
+              className='rounded-[10px] overflow-hidden border border-BorderGrey2-0 bg-BodyBgLight-0 transition-all ease-linear duration-500 hover:border-PrimaryColor-0'
+              data-aos='fade-up'
+              data-aos-delay='400'
+              data-aos-duration='1000'
+            >
+              <div className='bg-PrimaryColor2-0 py-5 px-6 sm:px-[30px]'>
+                <div className='size-[64px] rounded-[10px] bg-gradient-to-br to-Secondarycolor-0 from-PrimaryColor-0 flex items-center justify-center'>
+                  <img
+                    src={serviceIcon2}
+                    draggable='false'
+                    className='brightness-0 invert-[1]'
+                  />
+                </div>
+              </div>
+              <div className='p-6 sm:p-[30px] mt-7'>
+                <div>
+                  <button
+                    className='font-Sora text-Secondarycolor-0 font-medium text-2xl transition-all duration-500 hover:text-PrimaryColor-0'
+                    ref={servicePopUpRef2}
+                  >
+                    Website Design
+                  </button>
+                </div>
+                <p className='font-Sora text-TextLight-0 pt-2 pb-9'>
+                  I created digital products with unique ideas use Figma &
+                  Framer
+                </p>
+                <h6 className='font-Sora text-Secondarycolor-0 uppercase underline'>
+                  10 Projects
                 </h6>
-                <h4 className='font-Sora font-bold text-xl sm:text-2xl lg:text-3xl text-white'>
-                  Graphics Design
-                </h4>
               </div>
-              <div className='col-span-6 md:col-span-7 mt-4 md:mt-0 lg:ml-10 xl:ml-0 flex items-center justify-between max-w-[490px] w-full'>
-                <p className='font-Sora text-TextColor-0'>
-                  I break down complex user experinece problems to create
-                  integritiy focussed solutions that connect billions of people
-                </p>
-              </div>
-              <div className='absolute top-7 sm:top-8 md:top-1/2 md:-translate-y-1/2 right-6 sm:right-8 md:right-5 lg:right-8 inline-block'>
-                <Link
-                  to={'/service'}
-                  className='inline-block relative'
-                >
-                  <button className='text-xl sm:text-3xl text-PrimaryColor-0 service-icon transition-all duration-500 rotate-90'>
-                    <HiArrowUpRight />
-                  </button>
-                </Link>
-              </div>
-              <button
-                ref={servicePopUpRef4}
-                className='bg-transparent absolute top-0 left-0 w-full h-full border-none outline-none'
-              ></button>
             </div>
-            <div className='service-active-bg absolute top-0 left-0 right-0 bottom-0 z-10 bg-PrimaryColor-0 bg-gradient-to-r to-Secondarycolor-0 from-PrimaryColor-0 transition-all duration-500'></div>
+            <div
+              className='rounded-[10px] overflow-hidden border border-BorderGrey2-0 bg-BodyBgLight-0 transition-all ease-linear duration-500 hover:border-PrimaryColor-0'
+              data-aos='fade-up'
+              data-aos-delay='400'
+              data-aos-duration='1000'
+            >
+              <div className='bg-PrimaryColor2-0 py-5 px-6 sm:px-[30px]'>
+                <div className='size-[64px] rounded-[10px] bg-gradient-to-br to-Secondarycolor-0 from-PrimaryColor-0 flex items-center justify-center'>
+                  <img
+                    src={serviceIcon3}
+                    draggable='false'
+                    className='brightness-0 invert-[1]'
+                  />
+                </div>
+              </div>
+              <div className='p-6 sm:p-[30px] mt-7'>
+                <div>
+                  <button
+                    className='font-Sora text-Secondarycolor-0 font-medium text-2xl transition-all duration-500 hover:text-PrimaryColor-0'
+                    ref={servicePopUpRef3}
+                  >
+                    Website Developer
+                  </button>
+                </div>
+                <p className='font-Sora text-TextLight-0 pt-2 pb-9'>
+                  I created digital products with unique ideas use Figma &
+                  Framer
+                </p>
+                <h6 className='font-Sora text-Secondarycolor-0 uppercase underline'>
+                  10 Projects
+                </h6>
+              </div>
+            </div>
+            <div
+              className='rounded-[10px] overflow-hidden border border-BorderGrey2-0 bg-BodyBgLight-0 transition-all ease-linear duration-500 hover:border-PrimaryColor-0'
+              data-aos='fade-up'
+              data-aos-delay='400'
+              data-aos-duration='1000'
+            >
+              <div className='bg-PrimaryColor2-0 py-5 px-6 sm:px-[30px]'>
+                <div className='size-[64px] rounded-[10px] bg-gradient-to-br to-Secondarycolor-0 from-PrimaryColor-0 flex items-center justify-center'>
+                  <img
+                    src={serviceIcon4}
+                    draggable='false'
+                    className='brightness-0 invert-[1]'
+                  />
+                </div>
+              </div>
+              <div className='p-6 sm:p-[30px] mt-7'>
+                <div>
+                  <button
+                    className='font-Sora text-Secondarycolor-0 font-medium text-2xl transition-all duration-500 hover:text-PrimaryColor-0'
+                    ref={servicePopUpRef4}
+                  >
+                    App Design
+                  </button>
+                </div>
+                <p className='font-Sora text-TextLight-0 pt-2 pb-9'>
+                  I created digital products with unique ideas use Figma &
+                  Framer
+                </p>
+                <h6 className='font-Sora text-Secondarycolor-0 uppercase underline'>
+                  10 Projects
+                </h6>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <div>
         <div className='service-popup-content'>
           <div
-            ref={popUpContentRef}
+            ref={servicePopUpContentRef}
             className='service-popup py-[75px]'
           >
             <div>
               <button
-                ref={closeBtnRef}
+                ref={serviceCloseBtnRef}
                 className='absolute top-[100px] right-6 size-[46px] rounded-full bg-gradient-to-tl to-PrimaryColor-0 to-100% from-BodyBg-0 from-10% flex items-center justify-center text-white text-xl group'
               >
                 <FaTimes className='transition-all duration-500 group-hover:rotate-180' />
@@ -482,7 +428,7 @@ const Service = () => {
           </div>
         </div>
         <div
-          ref={bodyOverlayRef}
+          ref={serviceBodyOverlayRef}
           className='popup-body-overlay'
         ></div>
       </div>

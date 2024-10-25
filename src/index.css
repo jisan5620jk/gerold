@@ -29,7 +29,7 @@ body {
 
 
 .primary-btn2 {
-  @apply font-Sora font-medium rounded-full text-[15px] bg-PrimaryColor-0 text-white flex items-center gap-[12px] pl-[32px] pr-[34px] py-[17px] transition-all duration-500 leading-4;
+  @apply font-Sora font-medium rounded-full text-[15px] bg-PrimaryColor-0 text-white flex items-center gap-[12px] pl-[30px] pr-[34px] py-[17px] transition-all duration-500 leading-4;
 }
 
 .primary-btn2 .icon-box {

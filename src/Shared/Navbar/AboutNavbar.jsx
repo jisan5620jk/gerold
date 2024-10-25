@@ -211,7 +211,7 @@ const AboutNavbar = () => {
                               <Link to={'/home_light'}>Home One</Link>
                             </li>
                             <li>
-                              <Link to={'/home2'}>Home Two</Link>
+                              <Link to={'/home2_light'}>Home Two</Link>
                             </li>
                           </ul>
                         </li>

@@ -58,36 +58,6 @@ const Appoinment = () => {
                 required
                 className='font-Sora text-white bg-transparent placeholder:text-white placeholder:text-opacity-40 font-light border-b border-BorderGrey3-0 py-[13px] h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
               />
-              <select
-                name='select'
-                id='select'
-                className='font-Sora text-white bg-transparent placeholder:text-white placeholder:text-opacity-40 font-light border-b border-BorderGrey3-0 py-[13px] h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
-              >
-                <option
-                  value='subject'
-                  className='text-HeadingColor-0 bg-BodyBg2-0'
-                >
-                  Your Subject
-                </option>
-                <option
-                  value='subject2'
-                  className='text-HeadingColor-0 bg-BodyBg2-0'
-                >
-                  Bangla
-                </option>
-                <option
-                  value='subject3'
-                  className='text-HeadingColor-0 bg-BodyBg2-0'
-                >
-                  Arabic
-                </option>
-                <option
-                  value='subject4'
-                  className='text-HeadingColor-0 bg-BodyBg2-0'
-                >
-                  China
-                </option>
-              </select>
               <textarea
                 name='message'
                 id='message'
