@@ -11,6 +11,8 @@ import blogThumb2 from '/images/blog/blog-3.jpg';
 import blogThumb3 from '/images/blog/blog-2.jpg';
 import blogThumb4 from '/images/blog/blog-1.jpg';
 import blogPost from '/images/blog/post-thumb-1.jpg';
+import blogPost2 from '/images/blog/post-thumb-2.jpg';
+import blogPost3 from '/images/blog/post-thumb-3.jpg';
 import { PiPlayCircleLight, PiQuotes } from 'react-icons/pi';
 import FsLightbox from 'fslightbox-react';
 import { useState } from 'react';
@@ -18,6 +20,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import BlogNavigation from './BlogNavigation';
 import { IoIosSearch } from 'react-icons/io';
+import { GoArrowLeft, GoArrowRight } from 'react-icons/go';
 
 const BlogInner = () => {
   const [toggler, setToggler] = useState(false);
@@ -37,9 +40,14 @@ const BlogInner = () => {
       />
       <section className='py-28 bg-BodyBlack-0'>
         <div className='Container'>
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+          <div className='grid grid-cols-2 lg:grid-cols-3 gap-6'>
             <div className='col-span-2'>
-              <article className='bg-BodyBg3-0 group rounded-lg overflow-hidden mb-10'>
+              <article
+                className='bg-BodyBg3-0 group rounded-lg overflow-hidden mb-10'
+                data-aos='fade-up'
+                data-aos-delay='300'
+                data-aos-duration='1000'
+              >
                 <div className='overflow-hidden'>
                   <Link
                     to={'/blog_details'}
@@ -48,7 +56,7 @@ const BlogInner = () => {
                     <img
                       src={blogThumb}
                       draggable='false'
-                      className='origin-center transition-all ease-in-out duration-1000 group-hover:scale-110'
+                      className='min-h-[250px] h-auto object-cover origin-center transition-all ease-in-out duration-1000 group-hover:scale-110'
                     />
                     <Link
                       to={'/blog_details'}
@@ -111,7 +119,12 @@ const BlogInner = () => {
                   </div>
                 </div>
               </article>
-              <blockquote className='rounded-lg bg-BodyBg3-0 py-10 px-[30px] mb-10'>
+              <blockquote
+                className='rounded-lg bg-BodyBg3-0 p-5 sm:py-10 sm:px-[30px] mb-10'
+                data-aos='fade-up'
+                data-aos-delay='300'
+                data-aos-duration='1000'
+              >
                 <div className='text-white'>
                   <PiQuotes size={'40'} />
                 </div>
@@ -127,13 +140,18 @@ const BlogInner = () => {
                   Silvester Scott
                 </cite>
               </blockquote>
-              <article className='bg-BodyBg3-0 group rounded-lg overflow-hidden mb-10'>
+              <article
+                className='bg-BodyBg3-0 group rounded-lg overflow-hidden mb-10'
+                data-aos='fade-up'
+                data-aos-delay='300'
+                data-aos-duration='1000'
+              >
                 <div className='overflow-hidden'>
                   <div className='relative'>
                     <img
                       src={blogThumb2}
                       draggable='false'
-                      className='origin-center transition-all ease-in-out duration-1000 group-hover:scale-110'
+                      className='min-h-[250px] h-auto object-cover origin-center transition-all ease-in-out duration-1000 group-hover:scale-110'
                     />
                     <Link
                       to={'/blog_details'}
@@ -210,7 +228,12 @@ const BlogInner = () => {
                   </div>
                 </div>
               </article>
-              <article className='bg-BodyBg3-0 group rounded-lg overflow-hidden mb-10'>
+              <article
+                className='bg-BodyBg3-0 group rounded-lg overflow-hidden mb-10'
+                data-aos='fade-up'
+                data-aos-delay='300'
+                data-aos-duration='1000'
+              >
                 <div className='overflow-hidden'>
                   <Swiper {...settings}>
                     <SwiperSlide>
@@ -218,7 +241,7 @@ const BlogInner = () => {
                         <img
                           src={blogThumb3}
                           draggable='false'
-                          className='origin-center transition-all ease-in-out duration-1000 group-hover:scale-110'
+                          className='min-h-[250px] h-auto object-cover origin-center transition-all ease-in-out duration-1000 group-hover:scale-110'
                         />
                         <Link
                           to={'/blog_details'}
@@ -235,7 +258,7 @@ const BlogInner = () => {
                         <img
                           src={blogThumb2}
                           draggable='false'
-                          className='origin-center transition-all ease-in-out duration-1000 group-hover:scale-110'
+                          className='min-h-[250px] h-auto object-cover origin-center transition-all ease-in-out duration-1000 group-hover:scale-110'
                         />
                         <Link
                           to={'/blog_details'}
@@ -252,7 +275,7 @@ const BlogInner = () => {
                         <img
                           src={blogThumb4}
                           draggable='false'
-                          className='origin-center transition-all ease-in-out duration-1000 group-hover:scale-110'
+                          className='min-h-[250px] h-auto object-cover origin-center transition-all ease-in-out duration-1000 group-hover:scale-110'
                         />
                         <Link
                           to={'/blog_details'}
@@ -318,7 +341,12 @@ const BlogInner = () => {
                   </div>
                 </div>
               </article>
-              <article className='bg-BodyBg3-0 group rounded-lg overflow-hidden mb-10'>
+              <article
+                className='bg-BodyBg3-0 group rounded-lg overflow-hidden mb-14'
+                data-aos='fade-up'
+                data-aos-delay='300'
+                data-aos-duration='1000'
+              >
                 <div className='overflow-hidden'>
                   <Link
                     to={'/blog_details'}
@@ -327,7 +355,7 @@ const BlogInner = () => {
                     <img
                       src={blogThumb4}
                       draggable='false'
-                      className='origin-center transition-all ease-in-out duration-1000 group-hover:scale-110'
+                      className='min-h-[250px] h-auto object-cover origin-center transition-all ease-in-out duration-1000 group-hover:scale-110'
                     />
                     <Link
                       to={'/blog_details'}
@@ -390,9 +418,62 @@ const BlogInner = () => {
                   </div>
                 </div>
               </article>
+              <div
+                data-aos='fade-up'
+                data-aos-delay='300'
+                data-aos-duration='1000'
+              >
+                <ul className='flex items-center gap-5 flex-wrap'>
+                  <li>
+                    <Link
+                      to={'#'}
+                      className='size-10 rounded-full overflow-hidden relative bg-transparent flex items-center text-xl text-white justify-center transition-all duration-500 z-10 after:absolute after:top-0 after:rotate-180 after:left-0 after:bg-PrimaryColor-0 after:w-full after:h-full after:opacity-0 after:-z-10 after:transition-all after:duration-500 hover:after:opacity-100'
+                    >
+                      <GoArrowLeft />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to={'#'}
+                      className='size-10 rounded-full overflow-hidden relative bg-transparent flex items-center font-Sora text-white justify-center transition-all duration-500 z-10 after:absolute after:top-0 after:rotate-180 after:left-0 after:bg-PrimaryColor-0 after:w-full after:h-full after:opacity-0 after:-z-10 after:transition-all after:duration-500 hover:after:opacity-100'
+                    >
+                      1
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to={'#'}
+                      className='size-10 rounded-full overflow-hidden relative bg-transparent flex items-center font-Sora text-white justify-center transition-all duration-500 z-10 after:absolute after:top-0 after:rotate-180 after:left-0 after:bg-PrimaryColor-0 after:w-full after:h-full after:opacity-100 after:-z-10 after:transition-all after:duration-500 hover:after:opacity-100'
+                    >
+                      2
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to={'#'}
+                      className='size-10 rounded-full overflow-hidden relative bg-transparent flex items-center font-Sora text-white justify-center transition-all duration-500 z-10 after:absolute after:top-0 after:rotate-180 after:left-0 after:bg-PrimaryColor-0 after:w-full after:h-full after:opacity-0 after:-z-10 after:transition-all after:duration-500 hover:after:opacity-100'
+                    >
+                      3
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to={'#'}
+                      className='size-10 rounded-full overflow-hidden relative bg-transparent flex items-center text-xl text-white justify-center transition-all duration-500 z-10 after:absolute after:top-0 after:rotate-180 after:left-0 after:bg-PrimaryColor-0 after:w-full after:h-full after:opacity-0 after:-z-10 after:transition-all after:duration-500 hover:after:opacity-100'
+                    >
+                      <GoArrowRight />
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div>
-              <div className='px-[25px] py-[30px] rounded-lg bg-BodyBg3-0 mb-[30px]'>
+            <div className='col-span-2 lg:col-span-1'>
+              <div
+                className='px-[25px] py-[30px] rounded-lg bg-BodyBg3-0 mb-[30px]'
+                data-aos='fade-up'
+                data-aos-delay='400'
+                data-aos-duration='1000'
+              >
                 <form
                   action='https://formspree.io/f/xkgngbnj'
                   method='get'
@@ -414,7 +495,12 @@ const BlogInner = () => {
                   </button>
                 </form>
               </div>
-              <div className='px-[25px] py-[30px] rounded-lg bg-BodyBg3-0 mb-[30px]'>
+              <div
+                className='px-4 sm:px-[25px] py-[30px] rounded-lg bg-BodyBg3-0 mb-[30px]'
+                data-aos='fade-up'
+                data-aos-delay='300'
+                data-aos-duration='1000'
+              >
                 <h5 className='font-Sora font-bold text-white text-xl tracking-wide uppercase'>
                   Categories
                 </h5>
@@ -457,12 +543,17 @@ const BlogInner = () => {
                   </li>
                 </ul>
               </div>
-              <div className='px-[25px] py-[30px] rounded-lg bg-BodyBg3-0 mb-[30px]'>
+              <div
+                className='px-4 sm:px-[25px] py-[30px] rounded-lg bg-BodyBg3-0 mb-[30px]'
+                data-aos='fade-up'
+                data-aos-delay='300'
+                data-aos-duration='1000'
+              >
                 <h5 className='font-Sora font-bold text-white text-xl tracking-wide uppercase'>
                   Recent post
                 </h5>
                 <div className='space-y-[30px] mt-[25px]'>
-                  <div className='flex items-start gap-5 group'>
+                  <div className='flex flex-col sm:flex-row lg:flex-col xl:flex-row items-start gap-5 group'>
                     <Link
                       to={'/blog_details'}
                       className='overflow-hidden'
@@ -474,7 +565,7 @@ const BlogInner = () => {
                       />
                     </Link>
                     <div className='flex-1'>
-                      <div className='flex items-center gap-[25px] mb-1'>
+                      <div className='flex flex-wrap items-center gap-y-1 gap-x-[25px] mb-1'>
                         <h6 className='font-Sora text-TextColor-0 flex items-center gap-2'>
                           <FaRegCalendarDays className='text-PrimaryColor-0' />
                           Jan 2024
@@ -489,25 +580,25 @@ const BlogInner = () => {
                       </div>
                       <Link
                         to={'/blog_details'}
-                        className='font-Sora font-medium tracking-wide text-lg leading-6 text-white transition-all duration-500 hover:text-PrimaryColor-0'
+                        className='font-Sora font-medium tracking-wide text-base sm:text-lg leading-6 text-white transition-all duration-500 hover:text-PrimaryColor-0'
                       >
                         Definition and Principles of JIT Logistics
                       </Link>
                     </div>
                   </div>
-                  <div className='flex items-start gap-5 group'>
+                  <div className='flex flex-col sm:flex-row lg:flex-col xl:flex-row items-start gap-5 group'>
                     <Link
                       to={'/blog_details'}
                       className='overflow-hidden'
                     >
                       <img
-                        src={blogPost}
+                        src={blogPost2}
                         draggable='false'
                         className='max-w-20 w-full transition-all ease-linear duration-500 group-hover:scale-105'
                       />
                     </Link>
                     <div className='flex-1'>
-                      <div className='flex items-center gap-[25px] mb-1'>
+                      <div className='flex flex-wrap items-center gap-y-1 gap-x-[25px] mb-1'>
                         <h6 className='font-Sora text-TextColor-0 flex items-center gap-2'>
                           <FaRegCalendarDays className='text-PrimaryColor-0' />
                           Jan 2024
@@ -522,25 +613,25 @@ const BlogInner = () => {
                       </div>
                       <Link
                         to={'/blog_details'}
-                        className='font-Sora font-medium tracking-wide text-lg leading-6 text-white transition-all duration-500 hover:text-PrimaryColor-0'
+                        className='font-Sora font-medium tracking-wide text-base sm:text-lg leading-6 text-white transition-all duration-500 hover:text-PrimaryColor-0'
                       >
                         Real-world Examples of Successful JIT Logistics
                       </Link>
                     </div>
                   </div>
-                  <div className='flex items-start gap-5 group'>
+                  <div className='flex flex-col sm:flex-row lg:flex-col xl:flex-row items-start gap-5 group'>
                     <Link
                       to={'/blog_details'}
                       className='overflow-hidden'
                     >
                       <img
-                        src={blogPost}
+                        src={blogPost3}
                         draggable='false'
                         className='max-w-20 w-full transition-all ease-linear duration-500 group-hover:scale-105'
                       />
                     </Link>
                     <div className='flex-1'>
-                      <div className='flex items-center gap-[25px] mb-1'>
+                      <div className='flex flex-wrap items-center gap-y-1 gap-x-[25px] mb-1'>
                         <h6 className='font-Sora text-TextColor-0 flex items-center gap-2'>
                           <FaRegCalendarDays className='text-PrimaryColor-0' />
                           Jan 2024
@@ -555,7 +646,7 @@ const BlogInner = () => {
                       </div>
                       <Link
                         to={'/blog_details'}
-                        className='font-Sora font-medium tracking-wide text-lg leading-6 text-white transition-all duration-500 hover:text-PrimaryColor-0'
+                        className='font-Sora font-medium tracking-wide text-base sm:text-lg leading-6 text-white transition-all duration-500 hover:text-PrimaryColor-0'
                       >
                         Real-world Examples of Successful JIT Logistics
                       </Link>
@@ -563,36 +654,56 @@ const BlogInner = () => {
                   </div>
                 </div>
               </div>
-              <div className='px-[25px] py-[30px] rounded-lg bg-BodyBg3-0 mb-[30px]'>
+              <div
+                className='px-4 sm:px-[25px] py-[30px] rounded-lg bg-BodyBg3-0 mb-[30px]'
+                data-aos='fade-up'
+                data-aos-delay='300'
+                data-aos-duration='1000'
+              >
                 <h5 className='font-Sora font-bold text-white text-xl tracking-wide uppercase'>
                   Popular tag
                 </h5>
                 <ul className='flex flex-wrap items-center gap-[15px] mt-[25px]'>
-                   <li>
-                    <Link to={'#'} className='font-Sora text-white inline-block border border-BorderGrey4-0 rounded-full px-[15px] py-2 transition-all duration-500 ease-linear hover:bg-PrimaryColor-0 hover:border-PrimaryColor-0'>
-                    Business
+                  <li>
+                    <Link
+                      to={'#'}
+                      className='font-Sora text-white inline-block border border-BorderGrey4-0 rounded-full px-[15px] py-2 transition-all duration-500 ease-linear hover:bg-PrimaryColor-0 hover:border-PrimaryColor-0'
+                    >
+                      Business
                     </Link>
-                   </li>
-                   <li>
-                    <Link to={'#'} className='font-Sora text-white inline-block border border-BorderGrey4-0 rounded-full px-[15px] py-2 transition-all duration-500 ease-linear hover:bg-PrimaryColor-0 hover:border-PrimaryColor-0'>
-                    Analysis
+                  </li>
+                  <li>
+                    <Link
+                      to={'#'}
+                      className='font-Sora text-white inline-block border border-BorderGrey4-0 rounded-full px-[15px] py-2 transition-all duration-500 ease-linear hover:bg-PrimaryColor-0 hover:border-PrimaryColor-0'
+                    >
+                      Analysis
                     </Link>
-                   </li>
-                   <li>
-                    <Link to={'#'} className='font-Sora text-white inline-block border border-BorderGrey4-0 rounded-full px-[15px] py-2 transition-all duration-500 ease-linear hover:bg-PrimaryColor-0 hover:border-PrimaryColor-0'>
-                    Technology
+                  </li>
+                  <li>
+                    <Link
+                      to={'#'}
+                      className='font-Sora text-white inline-block border border-BorderGrey4-0 rounded-full px-[15px] py-2 transition-all duration-500 ease-linear hover:bg-PrimaryColor-0 hover:border-PrimaryColor-0'
+                    >
+                      Technology
                     </Link>
-                   </li>
-                   <li>
-                    <Link to={'#'} className='font-Sora text-white inline-block border border-BorderGrey4-0 rounded-full px-[15px] py-2 transition-all duration-500 ease-linear hover:bg-PrimaryColor-0 hover:border-PrimaryColor-0'>
-                    Finance
+                  </li>
+                  <li>
+                    <Link
+                      to={'#'}
+                      className='font-Sora text-white inline-block border border-BorderGrey4-0 rounded-full px-[15px] py-2 transition-all duration-500 ease-linear hover:bg-PrimaryColor-0 hover:border-PrimaryColor-0'
+                    >
+                      Finance
                     </Link>
-                   </li>
-                   <li>
-                    <Link to={'#'} className='font-Sora text-white inline-block border border-BorderGrey4-0 rounded-full px-[15px] py-2 transition-all duration-500 ease-linear hover:bg-PrimaryColor-0 hover:border-PrimaryColor-0'>
-                    Design
+                  </li>
+                  <li>
+                    <Link
+                      to={'#'}
+                      className='font-Sora text-white inline-block border border-BorderGrey4-0 rounded-full px-[15px] py-2 transition-all duration-500 ease-linear hover:bg-PrimaryColor-0 hover:border-PrimaryColor-0'
+                    >
+                      Design
                     </Link>
-                   </li>
+                  </li>
                 </ul>
               </div>
             </div>

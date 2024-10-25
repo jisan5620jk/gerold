@@ -1,25 +1,29 @@
-import { Link } from 'react-router-dom';
-import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
-import blogDetailsThumb from '/images/service.jpg';
 import {
-  FaArrowRight,
+  FaAnglesLeft,
+  FaAnglesRight,
   FaArrowRightLong,
-  FaRegFolderOpen,
-  FaUserDoctor,
+  FaLinkedinIn,
+  FaPinterestP,
+  FaRegCalendarDays,
+  FaRegComments,
+  FaRegUser,
+  FaXTwitter,
 } from 'react-icons/fa6';
-import { MdEmail } from 'react-icons/md';
-import icon from '/images/dtls-icn.png';
-import icon2 from '/images/dtls-icn2.png';
-import callIcon from '/images/call3..png';
-import itemthumb from '/images/blog4.jpg';
-import itemthumb2 from '/images/blog5.jpg';
-import itemthumb3 from '/images/blog6.jpg';
-import author1 from '/images/people4.png';
-import author2 from '/images/people3.png';
-import author3 from '/images/people5.png';
-import { IoSearch } from 'react-icons/io5';
-import { BiSolidShare } from 'react-icons/bi';
-import Subscribe from '../../../Component1/Subscribe/Subscribe';
+import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
+import { Link } from 'react-router-dom';
+import blogThumb from '/images/blog/blog-4.jpg';
+import blogBtnImg from '/images/blog/1.jpg';
+import blogBtnImg2 from '/images/blog/2.jpg';
+import blogPost from '/images/blog/post-thumb-1.jpg';
+import blogPost2 from '/images/blog/post-thumb-2.jpg';
+import blogPost3 from '/images/blog/post-thumb-3.jpg';
+import userImg from '/images/blog/user-1.jpg';
+import userImg2 from '/images/blog/user-2.jpg';
+import userImg3 from '/images/blog/user-3.jpg';
+import userImg4 from '/images/blog/user-4.jpg';
+import { PiQuotes } from 'react-icons/pi';
+import { IoIosCheckmarkCircle, IoIosSearch } from 'react-icons/io';
+import { FaFacebookF } from 'react-icons/fa';
 
 const BlogDetails = () => {
   return (
@@ -27,406 +31,739 @@ const BlogDetails = () => {
       <BreadCrumb
         breadCrumbTitle={'Blog Details'}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={'Blog Details'}
+        breadCrumbLink={'Blog Detials'}
       />
-      <section className='py-[120px] bg-BodyBg-0'>
+      <section className='py-28 bg-BodyBlack2-0'>
         <div className='Container'>
-          <div className='grid grid-cols-3 gap-[50px]'>
-            <div className='col-span-3 lg:col-span-2'>
-              <div className='rounded-[30px] overflow-hidden'>
-                <img
-                  src={blogDetailsThumb}
-                  draggable='false'
-                  className='w-full'
-                />
-              </div>
-              <h2 className='font-Sora font-bold text-[28px] text-HeadingColor-0 capitalize mt-8'>
-                How Virtual Healthcare is Transforming Patient Care
-              </h2>
-              <p className='font-Sora text-TextColor2-0 mt-5'>
-                Alternative innovation to ethical network environmental
-                whiteboard pursue compelling results premier methods
-                empowerment. Dramatically architect go forward opportunities
-                before user-centric partner Credibly implement exceptional
-              </p>
-              <p className='font-Sora text-TextColor2-0 mt-7 mb-11'>
-                Continually fashion orthogonal leadership skills whereas
-                wireless metrics. Uniquely syndicate exceptio opportunities with
-                interdependent users. Globally enhance fully tested
-                meta-services rather than pan solutions. Proactively integrate
-                client-integrate go forward architectures and turnkey
-                meta-services. Interactively harness integrated ROI whereas
-                frictionless products.
-              </p>
-              <div className='grid grid-cols-1 md:grid-cols-2 sm:items-center gap-8 mb-14'>
-                <div className='flex flex-col sm:flex-row md:flex-col xl:flex-row gap-6 rounded-2xl border-2 border-white bg-white bg-opacity-25 px-[30px] py-8'>
-                  <div className='size-20 rounded-full border-2 border-white bg-white bg-opacity-25 flex items-center justify-center'>
-                    <img
-                      src={icon}
-                      draggable='false'
+          <div className='grid grid-cols-2 lg:grid-cols-3 gap-6'>
+            <div className='col-span-2'>
+              <article
+                data-aos='fade-up'
+                data-aos-delay='300'
+                data-aos-duration='1000'
+              >
+                <div
+                  to={'/blog_details'}
+                  className='relative'
+                >
+                  <img
+                    src={blogThumb}
+                    draggable='false'
+                    className='min-h-[250px] h-auto object-cover origin-center rounded-t-lg'
+                  />
+                  <Link
+                    to={'/blog_details'}
+                    className='absolute top-[15px] right-[15px]'
+                  >
+                    <span className='font-Sora text-[13px] px-[14px] py-[8px] rounded-full text-white uppercase bg-PrimaryColor-0 overflow-hidden relative z-20 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-gradient-to-l before:from-Secondarycolor-0 before:from-5% before:to-PrimaryColor-0 before:opacity- before:transition-opacity before:duration-500 before:ease-linear before:rounded-full before:-z-10 hover:before:opacity-100'>
+                      Tutorial
+                    </span>
+                  </Link>
+                </div>
+                <div className='flex items-center flex-wrap gap-y-3 gap-x-[25px] mb-4 mt-[30px]'>
+                  <Link
+                    to={'#'}
+                    className='font-Sora font-light text-white flex items-center gap-2 transition-all ease-in-out duration-500 hover:text-PrimaryColor-0'
+                  >
+                    <FaRegUser className='text-PrimaryColor-0' />
+                    By Admin
+                  </Link>
+                  <h6 className='font-Sora font-light text-white flex items-center gap-2'>
+                    <FaRegCalendarDays className='text-PrimaryColor-0' />
+                    11 Jul, 2024
+                  </h6>
+                  <div className='flex items-center gap-2'>
+                    <FaRegComments
+                      size={'18'}
+                      className='text-PrimaryColor-0'
                     />
-                  </div>
-                  <div className='flex-1'>
-                    <h5 className='font-Sora font-bold text-[22px] text-HeadingColor-0'>
-                      Make Appointment
-                    </h5>
-                    <p className='font-Sora text-TextColor2-0 mt-1'>
-                      Ethical network environmental architect go forward opportu
-                      credibly implement
-                    </p>
+                    <Link
+                      to={'#'}
+                      className='font-Sora font-light text-white transition-all ease-in-out duration-500 hover:text-PrimaryColor-0'
+                    >
+                      Comments (3)
+                    </Link>
                   </div>
                 </div>
-                <div className='flex flex-col sm:flex-row md:flex-col xl:flex-row gap-6 rounded-2xl border-2 border-white bg-white bg-opacity-25 px-[30px] py-8'>
-                  <div className='size-20 rounded-full border-2 border-white bg-white bg-opacity-25 flex items-center justify-center'>
-                    <img
-                      src={icon2}
-                      draggable='false'
-                    />
-                  </div>
-                  <div className='flex-1'>
-                    <h5 className='font-Sora font-bold text-[22px] text-HeadingColor-0'>
-                      Get Consultation
-                    </h5>
-                    <p className='font-Sora text-TextColor2-0 mt-1'>
-                      Ethical network environmental architect go forward opportu
-                      credibly implement
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className='flex flex-col sm:flex-row sm:items-center gap-8 sm:gap-[64px] bg-PrimaryColor-0 rounded-2xl px-4 sm:px-10 py-7'>
-                <div className='text-white relative before:absolute before:top-0 before:hidden sm:before:block before:-right-8 before:w-[2px] before:h-[48px] before:bg-white before:bg-opacity-25'>
-                  <FaUserDoctor size={'50'} />
-                </div>
-                <h4 className='font-DMSans font-medium text-xl sm:text-[22px] text-white italic'>
-                  Competently architect intermandated deliverables client niches
-                  continually underwhelm
-                </h4>
-              </div>
-              <div className='mt-[60px]'>
-                <h3 className='font-Sora font-bold text-[28px] text-HeadingColor-0 capitalize mb-10'>
-                  All Comments
+                <h3
+                  to={'/blog_details'}
+                  className='font-Sora text-white font-bold text-xl leading-8 sm:text-2xl sm:leading-8 md:text-3xl md:leading-10'
+                >
+                  The Role of Technology in Modern Logistics Management
                 </h3>
-                <div className='flex flex-col sm:flex-row gap-6 pb-8'>
-                  <div className='size-[62px]'>
+                <p className='font-Sora text-TextColor-0 mt-5 mb-5'>
+                  Welcome to our blog, where we celebrate our achievement as an
+                  AWS SaaS Competency Partner and share insights on how we
+                  accomplished this significant milestone.
+                </p>
+                <p className='font-Sora text-TextColor-0 mb-5'>
+                  As businesses unlock growth opportunities in the digital age,
+                  harnessing the power of cloud computing has become essential.
+                  Amazon Web Services (AWS) offers the AWS SaaS Competency
+                  Partner program, recognizing companies with exceptional
+                  expertise in delivering Software-as-a-Service solutions on the
+                  AWS platform.
+                </p>
+                <p className='font-Sora text-TextColor-0 mb-5'>
+                  In this blog, we will delve into the strategies, best
+                  practices, and key factors that accelerated our business
+                  growth and earned us the prestigious AWS SaaS Competency
+                  Partner status.
+                </p>
+              </article>
+              <blockquote
+                className='rounded-lg bg-BodyBg3-0 p-5 sm:py-10 sm:px-[30px] mb-7'
+              >
+                <div className='text-white'>
+                  <PiQuotes size={'40'} />
+                </div>
+                <p className='font-Sora text-TextColor-0 pt-4 pb-[14px]'>
+                  “Welcome to our blog, where we celebrate our achievement as an
+                  AWS SaaS Competency Partner and share insights on how we
+                  accomplished this significant milestone. As businesses unlock
+                  growth opportunities in the digital age, harnessing the power
+                  of cloud computing has become essential. Amazon Web Services
+                  (AWS) offers the AWS SaaS Competency.”
+                </p>
+                <cite className='font-Sora text-white font-medium text-xl italic pl-[50px] relative z-10 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:h-[2px] before:w-[35px] before:bg-PrimaryColor-0'>
+                  Silvester Scott
+                </cite>
+              </blockquote>
+              <h4 className='font-Sora font-bold text-2xl text-white'>
+                The Role of Technology in Modern Logistics Management
+              </h4>
+              <p className='font-Sora text-TextColor-0 mt-[14px] mb-5'>
+                Welcome to our blog, where we celebrate our achievement as an
+                AWS SaaS Competency Partner and share insights on how we
+                accomplished this significant milestone.
+              </p>
+              <p className='font-Sora text-TextColor-0 mb-5'>
+                As businesses unlock growth opportunities in the digital age,
+                harnessing the power of cloud computing has become essential.
+                Amazon Web Services (AWS) offers the AWS SaaS Competency Partner
+                program, recognizing companies with exceptional expertise in
+                delivering Software-as-a-Service solutions on the AWS platform.
+              </p>
+              <p className='font-Sora text-TextColor-0 mb-5'>
+                In this blog, we will delve into the strategies, best practices,
+                and key factors that accelerated our business growth and earned
+                us the prestigious AWS SaaS Competency Partner status.
+              </p>
+              <p className='font-Sora text-TextColor-0 mb-[26px]'>
+                Explore the transformative impact of technology on logistics
+                management. Discuss how technologies like IoT, AI, and
+                blockchain are reshaping the industry and improving efficiency.
+              </p>
+              <h5 className='font-Sora font-bold text-lg text-white mb-3'>
+                Key Points
+              </h5>
+              <ul className='space-y-2'>
+                <li className='flex items-center gap-2 font-Sora text-TextColor-0 font-medium'>
+                  <IoIosCheckmarkCircle
+                    size={'20'}
+                    className='text-PrimaryColor-0'
+                  />
+                  IoT and Real-Time Tracking
+                </li>
+                <li className='flex items-center gap-2 font-Sora text-TextColor-0 font-medium'>
+                  <IoIosCheckmarkCircle
+                    size={'20'}
+                    className='text-PrimaryColor-0'
+                  />
+                  Artificial Intelligence in Route Optimization and Predictive
+                  Analytics
+                </li>
+                <li className='flex items-center gap-2 font-Sora text-TextColor-0 font-medium'>
+                  <IoIosCheckmarkCircle
+                    size={'20'}
+                    className='text-PrimaryColor-0'
+                  />
+                  Blockchain for Enhanced Transparency and Security
+                </li>
+                <li className='flex items-center gap-2 font-Sora text-TextColor-0 font-medium'>
+                  <IoIosCheckmarkCircle
+                    size={'20'}
+                    className='text-PrimaryColor-0'
+                  />
+                  Warehouse Automation and Robotics
+                </li>
+              </ul>
+              <h4 className='font-Sora font-bold text-2xl text-white mt-7'>
+                Conclusion
+              </h4>
+              <p className='font-Sora text-TextColor-0 mb-5 mt-[14px]'>
+                {` Emphasize the long-term benefits of integrating sustainable
+                practices into logistics operations, both for the planet and a
+                company's reputation.`}
+              </p>
+              <p className='font-Sora text-TextColor-0 mb-12'>
+                These outlines can be expanded into comprehensive blog posts,
+                each providing valuable insights and information on the
+                respective topics.
+              </p>
+              <div className='flex justify-between items-start gap-8 py-[31px] border-y border-BorderColor-0'>
+                <div className='flex items-start gap-[30px]'>
+                  <h4 className='font-Sora font-bold text-2xl text-white'>
+                    Tags:
+                  </h4>
+                  <ul className='flex flex-wrap items-center gap-[10px]'>
+                    <li>
+                      <Link
+                        to={'#'}
+                        className='font-Sora text-white inline-block bg-BodyBg3-0 rounded-full px-[15px] py-2 transition-all duration-500 ease-linear hover:bg-PrimaryColor-0'
+                      >
+                        Business
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to={'#'}
+                        className='font-Sora text-white inline-block bg-BodyBg3-0 rounded-full px-[15px] py-2 transition-all duration-500 ease-linear hover:bg-PrimaryColor-0'
+                      >
+                        Analysis
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to={'#'}
+                        className='font-Sora text-white inline-block bg-BodyBg3-0 rounded-full px-[15px] py-2 transition-all duration-500 ease-linear hover:bg-PrimaryColor-0'
+                      >
+                        Technology
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to={'#'}
+                        className='font-Sora text-white inline-block bg-BodyBg3-0 rounded-full px-[15px] py-2 transition-all duration-500 ease-linear hover:bg-PrimaryColor-0'
+                      >
+                        Design
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to={'#'}
+                        className='font-Sora text-white inline-block bg-BodyBg3-0 rounded-full px-[15px] py-2 transition-all duration-500 ease-linear hover:bg-PrimaryColor-0'
+                      >
+                        Strategy
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to={'#'}
+                        className='font-Sora text-white inline-block bg-BodyBg3-0 rounded-full px-[15px] py-2 transition-all duration-500 ease-linear hover:bg-PrimaryColor-0'
+                      >
+                        Tips
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <ul className='flex items-center gap-[10px]'>
+                  <li>
+                    <Link
+                      to={'#'}
+                      className='size-10 rounded-full overflow-hidden relative bg-transparent flex items-center border border-PrimaryColor-0  text-white justify-center transition-all duration-500 z-10 after:absolute after:top-0 after:rotate-180 after:left-0 after:bg-PrimaryColor-0 after:w-full after:h-full after:opacity-0 after:-z-10 after:transition-all after:duration-500 hover:after:opacity-100'
+                    >
+                      <FaFacebookF />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to={'#'}
+                      className='size-10 rounded-full overflow-hidden relative bg-transparent flex items-center border border-PrimaryColor-0 text-white justify-center transition-all duration-500 z-10 after:absolute after:top-0 after:rotate-180 after:left-0 after:bg-PrimaryColor-0 after:w-full after:h-full after:opacity-0 after:-z-10 after:transition-all after:duration-500 hover:after:opacity-100'
+                    >
+                      <FaXTwitter />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to={'#'}
+                      className='size-10 rounded-full overflow-hidden relative bg-transparent flex items-center border border-PrimaryColor-0 text-white justify-center transition-all duration-500 z-10 after:absolute after:top-0 after:rotate-180 after:left-0 after:bg-PrimaryColor-0 after:w-full after:h-full after:opacity-0 after:-z-10 after:transition-all after:duration-500 hover:after:opacity-100'
+                    >
+                      <FaLinkedinIn />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to={'#'}
+                      className='size-10 rounded-full overflow-hidden relative bg-transparent flex items-center border border-PrimaryColor-0 text-white justify-center transition-all duration-500 z-10 after:absolute after:top-0 after:rotate-180 after:left-0 after:bg-PrimaryColor-0 after:w-full after:h-full after:opacity-0 after:-z-10 after:transition-all after:duration-500 hover:after:opacity-100'
+                    >
+                      <FaPinterestP />
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div className='grid grid-cols-2 items-center gap-8 py-[31px] border-b border-BorderColor-0'>
+                <div className='bg-BodyBg3-0 py-[35px] px-[25px] flex items-start gap-5'>
+                  <Link to={'/blog_details'}>
                     <img
+                      src={blogBtnImg}
                       draggable='false'
-                      src={author1}
-                      className='w-full'
+                      className='max-w-[85px] w-full'
                     />
-                  </div>
-                  <div className='flex-1 relative'>
-                    <h5 className='font-Sora font-semibold text-HeadingColor-0 text-xl'>
-                      Dr. David Alexon
-                    </h5>
-                    <p className='font-Sora font-light text-TextColor2-0 mt-3'>
-                      Pretium nulla suspendisse porttitor nunc a sodales tempor
-                      mauris sed felis maximus, interdum metus vel tincidunt
-                      diam mam ac risus vitae sem vehicula egestas send velit
-                      nulla, viverra non commodo et sodales id dui. Lorem ipsum
-                      dolor sit amet, conse.
-                    </p>
-                    <Link to={'/'}>
-                      <button className='text-HeadingColor-0 text-sm rounded-full flex items-center gap-2 font-Sora absolute top-2 right-0'>
-                        <BiSolidShare
-                          size={'18'}
-                          className='text-SecondaryColor-0'
-                        />
-                        Reply
-                      </button>
+                  </Link>
+                  <div className='flex-1'>
+                    <h6 className='flex items-center gap-2 font-Sora text-PrimaryColor-0 uppercase mb-2'>
+                      <FaAnglesLeft
+                        size={'15'}
+                        className='relative bottom-[2px]'
+                      />
+                      Previous
+                    </h6>
+                    <Link
+                      to={'/blog_datails'}
+                      className='font-Sora font-bold text-white text-lg leading-6 transition-all duration-500 hover:text-PrimaryColor-0'
+                    >
+                      Building a Real Estate Website Tips and Ideas
                     </Link>
                   </div>
                 </div>
-                <div className='flex flex-col sm:flex-row gap-6 border-y-2 border-white border-opacity-80 py-10 md:ml-[90px]'>
-                  <div className='size-[62px]'>
-                    <img
-                      draggable='false'
-                      src={author2}
-                      className='w-full'
-                    />
-                  </div>
-                  <div className='flex-1 relative'>
-                    <h5 className='font-Sora font-semibold text-HeadingColor-0 text-xl'>
-                      Dr. Michel Hemilton
-                    </h5>
-                    <p className='font-Sora font-light text-TextColor2-0 mt-3'>
-                      Pretium nulla suspendisse porttitor nunc a sodales tempor
-                      mauris sed felis maximus, interdum metus vel tincidunt
-                      diam mam ac risus vitae sem vehicula egestas send velit
-                      nulla, viverra non commodo et sodales id dui.
-                    </p>
-                    <Link to={'/'}>
-                      <button className='text-HeadingColor-0 text-sm rounded-full flex items-center gap-2 font-Sora absolute top-2 right-0'>
-                        <BiSolidShare
-                          size={'18'}
-                          className='text-SecondaryColor-0'
-                        />
-                        Reply
-                      </button>
+                <div className='bg-BodyBg3-0 py-[35px] px-[25px] flex items-start gap-5'>
+                  <div className='flex-1 text-right'>
+                    <h6 className='flex items-center justify-end gap-2 font-Sora text-PrimaryColor-0 uppercase mb-2'>
+                      Next{' '}
+                      <FaAnglesRight
+                        size={'15'}
+                        className='relative bottom-[2px]'
+                      />
+                    </h6>
+                    <Link
+                      to={'/blog_datails'}
+                      className='font-Sora font-bold text-white text-lg leading-6 transition-all duration-500 hover:text-PrimaryColor-0'
+                    >
+                      Architecture Is Not Based On Concrete And Steel
                     </Link>
                   </div>
-                </div>
-                <div className='flex flex-col sm:flex-row gap-6 pt-8'>
-                  <div className='size-[62px]'>
+                  <Link to={'/blog_details'}>
                     <img
+                      src={blogBtnImg2}
                       draggable='false'
-                      src={author3}
-                      className='w-full'
+                      className='max-w-[85px] w-full'
                     />
-                  </div>
-                  <div className='flex-1 relative'>
-                    <h5 className='font-Sora font-semibold text-HeadingColor-0 text-xl'>
-                      Dr. Minhaz Khan
-                    </h5>
-                    <p className='font-Sora font-light text-TextColor2-0 mt-3'>
-                      Pretium nulla suspendisse porttitor nunc a sodales tempor
-                      mauris sed felis maximus, interdum metus vel tincidunt
-                      diam mam ac risus vitae sem vehicula egestas send velit
-                      nulla, viverra non commodo et sodales id dui. Lorem ipsum
-                      dolor sit amet, conse.
-                    </p>
-                    <Link to={'/'}>
-                      <button className='text-HeadingColor-0 text-sm rounded-full flex items-center gap-2 font-Sora absolute top-2 right-0'>
-                        <BiSolidShare
-                          size={'18'}
-                          className='text-SecondaryColor-0'
-                        />
-                        Reply
-                      </button>
-                    </Link>
-                  </div>
+                  </Link>
                 </div>
               </div>
+              <h3 className='font-Sora font-bold text-3xl text-white pb-3 relative before:absolute before:bottom-0 before:left-0 before:bg-PrimaryColor-0 before:h-[2px] before:w-[60px] mb-[30px] mt-[46px]'>
+                3 Comments
+              </h3>
+              <div className='flex flex-col sm:flex-row items-start gap-5 border-b border-BorderColor-0 pb-[30px] mb-[30px]'>
+                <div>
+                  <img src={userImg} />
+                </div>
+                <div className='flex-1 -mt-1'>
+                  <Link
+                    to={'/blog_details'}
+                    className='font-Sora font-bold text-[22px] text-white transition-all duration-500 hover:text-PrimaryColor-0'
+                  >
+                    Jane Doe
+                  </Link>
+                  <h6 className='font-Sora text-TextColor-0 text-sm'>
+                    January 3, 2024
+                  </h6>
+                  <p className='font-Sora text-TextColor-0 pt-4 pb-[30px]'>
+                    England dotted with a lush, green landscape, rustic villages
+                    and throbbing with humanity. South Asian country that has
+                    plenty to offer to visitors with its diverse wildlife.
+                  </p>
+                  <Link
+                    to={'/blog_details'}
+                    className='font-Sora text-PrimaryColor-0 px-5 py-[5px] border border-PrimaryColor-0 transition-all ease-linear duration-500 hover:text-white hover:bg-PrimaryColor-0'
+                  >
+                    Reply
+                  </Link>
+                </div>
+              </div>
+              <div className='flex flex-col sm:flex-row items-start gap-5 border-b border-BorderColor-0 pb-[30px] ml-[30px] mb-[30px]'>
+                <div>
+                  <img src={userImg2} />
+                </div>
+                <div className='flex-1 -mt-1'>
+                  <Link
+                    to={'/blog_details'}
+                    className='font-Sora font-bold text-[22px] text-white transition-all duration-500 hover:text-PrimaryColor-0'
+                  >
+                    Fred Bloggs
+                  </Link>
+                  <h6 className='font-Sora text-TextColor-0 text-sm'>
+                    February 3, 2024
+                  </h6>
+                  <p className='font-Sora text-TextColor-0 pt-4 pb-[30px]'>
+                    {`It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem Ipsum is that it has a
+                    more-or-less normal distribution of letters, as opposed to
+                    using 'Content here making it look like readable English.`}
+                  </p>
+                  <Link
+                    to={'/blog_details'}
+                    className='font-Sora text-PrimaryColor-0 px-5 py-[5px] border border-PrimaryColor-0 transition-all ease-linear duration-500 hover:text-white hover:bg-PrimaryColor-0'
+                  >
+                    Reply
+                  </Link>
+                </div>
+              </div>
+              <div className='flex flex-col sm:flex-row items-start gap-5 border-b border-BorderColor-0 pb-[30px] ml-[30px] mb-[30px]'>
+                <div>
+                  <img src={userImg3} />
+                </div>
+                <div className='flex-1 -mt-1'>
+                  <Link
+                    to={'/blog_details'}
+                    className='font-Sora font-bold text-[22px] text-white transition-all duration-500 hover:text-PrimaryColor-0'
+                  >
+                    Jane Bloggs
+                  </Link>
+                  <h6 className='font-Sora text-TextColor-0 text-sm'>
+                    January 15, 2024
+                  </h6>
+                  <p className='font-Sora text-TextColor-0 pt-4 pb-[30px]'>
+                    But I must explain to you how all this mistaken idea of
+                    denouncing pleasure and praising pain was born and I will
+                    give you a complete account
+                  </p>
+                  <Link
+                    to={'/blog_details'}
+                    className='font-Sora text-PrimaryColor-0 px-5 py-[5px] border border-PrimaryColor-0 transition-all ease-linear duration-500 hover:text-white hover:bg-PrimaryColor-0'
+                  >
+                    Reply
+                  </Link>
+                </div>
+              </div>
+              <div className='flex flex-col sm:flex-row items-start gap-5 border-b border-BorderColor-0 pb-[30px]'>
+                <div>
+                  <img src={userImg4} />
+                </div>
+                <div className='flex-1 -mt-1'>
+                  <Link
+                    to={'/blog_details'}
+                    className='font-Sora font-bold text-[22px] text-white transition-all duration-500 hover:text-PrimaryColor-0'
+                  >
+                    Themedemos
+                  </Link>
+                  <h6 className='font-Sora text-TextColor-0 text-sm'>
+                    January 20, 2024
+                  </h6>
+                  <p className='font-Sora text-TextColor-0 pt-4 pb-[30px]'>
+                    {`There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered alteration in some
+                    form, by injected humour, or randomised words which don't
+                    look even slightly believable. If you are going to use a
+                    passage you need to be sure there isn't anything
+                    embarrassing hidden in the middle of text. All the`}
+                  </p>
+                  <Link
+                    to={'/blog_details'}
+                    className='font-Sora text-PrimaryColor-0 px-5 py-[5px] border border-PrimaryColor-0 transition-all ease-linear duration-500 hover:text-white hover:bg-PrimaryColor-0'
+                  >
+                    Reply
+                  </Link>
+                </div>
+              </div>
+              <h3 className='font-Sora font-bold text-3xl text-white pb-3 relative before:absolute before:bottom-0 before:left-0 before:bg-PrimaryColor-0 before:h-[2px] before:w-[60px] mb-[20px] mt-[50px]'>
+            Leave A Reply
+              </h3>
+              <p className='font-Sora text-TextColor-0'>
+                Your email address will not be published. Required fields are
+                marked *
+              </p>
+              <form
+                action='https://formspree.io/f/xkgngbnj'
+                method='post'
+                className='flex flex-col gap-y-5 mt-4'
+              >
+                <div className='grid grid-cols-1 sm:grid-cols-2 gap-5'>
+                  <input
+                    type='text'
+                    name='Enter Name'
+                    id='Enter Name'
+                    placeholder='Enter Name*'
+                    required
+                    className='font-Sora text-white bg-BodyBg3-0 placeholder:text-white placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
+                  />
+                  <input
+                    type='email'
+                    name='email'
+                    id='email'
+                    placeholder='Enter E-Mail*'
+                    required
+                    className='font-Sora text-white bg-BodyBg3-0 placeholder:text-white placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
+                  />
+                </div>
+                <input
+                  type='url'
+                  name='url'
+                  id='url'
+                  placeholder='Enter Website*'
+                  required
+                  className='font-Sora text-white bg-BodyBg3-0 placeholder:text-white placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
+                />
+                <textarea
+                  name='message'
+                  id='message'
+                  placeholder='Enter Your Comments'
+                  className='font-Sora text-white bg-BodyBg3-0 placeholder:text-white placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[200px] w-full focus:border-PrimaryColor-0 focus:outline-none resize-none'
+                ></textarea>
+                <label htmlFor='terms' className='flex items-center gap-2 font-Sora text-TextColor-0'>
+                  <input
+                    type='checkbox'
+                    name='terms'
+                    id='terms'
+                  />
+                  Save my name, email, and website in this browser for the next
+                  time I comment.
+                </label>
+                <div className='inline-block header-btn mt-2'>
+                  <button
+                    type='submit'
+                    className=''
+                  >
+                    Post Comment
+                  </button>
+                </div>
+              </form>
             </div>
-            <div className='col-span-3 lg:col-span-1'>
-              <div className='rounded-2xl px-4 sm:px-7 lg:px-4 xl:px-7 pt-7 pb-9 overflow-hidden bg-white bg-opacity-20 border-2 border-white border-opacity-80 mb-7'>
-                <h4 className='font-Sora font-semibold text-2xl text-HeadingColor-0 pb-2 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0'>
-                  Search
-                </h4>
-                <div className='relative inline-block w-full'>
+            <div className='col-span-2 lg:col-span-1'>
+              <div
+                className='px-[25px] py-[30px] rounded-lg bg-BodyBg3-0 mb-[30px]'
+                data-aos='fade-up'
+                data-aos-delay='400'
+                data-aos-duration='1000'
+              >
+                <form
+                  action='https://formspree.io/f/xkgngbnj'
+                  method='get'
+                  className='relative w-full overflow-hidden'
+                >
                   <input
                     type='text'
                     name='search'
                     id='search'
-                    placeholder='Search here...'
+                    placeholder='Search...'
                     required
-                    className='w-full h-[60px] p-6 bg-white bg-opacity-30 border-2 border-white border-opacity-80 rounded-full font-Sora'
+                    className='bg-BodyBlack-0 rounded-lg w-full overflow-hidden font-Sora text-white placeholder:text-TextGrey-0 border border-BorderColor-0 focus:border-PrimaryColor-0 focus:bg-BodyBlack-0 focus:outline-none pl-5 py-4 pr-[60px]'
                   />
                   <button
                     type='submit'
-                    className='text-xl text-white rounded-full size-11 bg-PrimaryColor-0 transition-all duration-500 flex items-center justify-center hover:hue-rotate-[360deg] absolute right-2 top-1/2 -translate-y-1/2'
+                    className='absolute z-10 top-0 right-0 size-[60px] rounded-r-lg bg-PrimaryColor-0 flex items-center justify-center text-3xl text-white transition-all duration-500 hover:bg-Secondarycolor-0'
                   >
-                    <IoSearch />
+                    <IoIosSearch />
                   </button>
-                </div>
+                </form>
               </div>
-              <div className='rounded-2xl px-4 sm:px-7 lg:px-4 xl:px-7 pt-7 pb-6 overflow-hidden bg-white bg-opacity-30 border-2 border-white border-opacity-80 mb-7'>
-                <h4 className='font-Sora font-semibold text-2xl text-HeadingColor-0 pb-2 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0'>
+              <div
+                className='px-4 sm:px-[25px] py-[30px] rounded-lg bg-BodyBg3-0 mb-[30px]'
+                data-aos='fade-up'
+                data-aos-delay='300'
+                data-aos-duration='1000'
+              >
+                <h5 className='font-Sora font-bold text-white text-xl tracking-wide uppercase'>
                   Categories
-                </h4>
-                <ul className='mt-8'>
-                  <li>
-                    <Link to={'/service_details'}>
-                      <button className='w-full font-Sora text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded-md bg-white bg-opacity-30 border-2 border-white border-opacity-80 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:border-PrimaryColor-0 hover:text-white'>
-                        <span className='flex items-center gap-3 lg:gap-1 xl:gap-3'>
-                          <FaRegFolderOpen className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                          Dental Care
-                        </span>
-                        <FaArrowRightLong className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                      </button>
+                </h5>
+                <ul className='space-y-5 mt-[23px]'>
+                  <li className='flex items-center justify-between font-Sora font-medium text-PrimaryColor-0'>
+                    <Link
+                      to={'#'}
+                      className='text-TextColor-0 transition-all duration-500 hover:text-PrimaryColor-0 capitalize'
+                    >
+                      Business
                     </Link>
+                    (4)
                   </li>
-                  <li>
-                    <Link to={'/service_details2'}>
-                      <button className='w-full font-Sora text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded-md bg-white bg-opacity-30 border-2 border-white border-opacity-80 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:border-PrimaryColor-0 hover:text-white'>
-                        <span className='flex items-center gap-3 lg:gap-1 xl:gap-3'>
-                          <FaRegFolderOpen className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                          Pharmachology
-                        </span>
-                        <FaArrowRightLong className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                      </button>
+                  <li className='flex items-center justify-between font-Sora font-medium text-PrimaryColor-0'>
+                    <Link
+                      to={'#'}
+                      className='text-TextColor-0 transition-all duration-500 hover:text-PrimaryColor-0 capitalize'
+                    >
+                      Analysis
                     </Link>
+                    (0)
                   </li>
-                  <li>
-                    <Link to={'/service_details3'}>
-                      <button className='w-full font-Sora text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded-md bg-white bg-opacity-30 border-2 border-white border-opacity-80 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:border-PrimaryColor-0 hover:text-white'>
-                        <span className='flex items-center gap-3 lg:gap-1 xl:gap-3'>
-                          <FaRegFolderOpen className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                          Plastic Surgery
-                        </span>
-                        <FaArrowRightLong className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                      </button>
+                  <li className='flex items-center justify-between font-Sora font-medium text-PrimaryColor-0'>
+                    <Link
+                      to={'#'}
+                      className='text-TextColor-0 transition-all duration-500 hover:text-PrimaryColor-0 capitalize'
+                    >
+                      Technology
                     </Link>
+                    (1)
                   </li>
-                  <li>
-                    <Link to={'/service_details4'}>
-                      <button className='w-full font-Sora text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded-md bg-white bg-opacity-30 border-2 border-white border-opacity-80 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:border-PrimaryColor-0 hover:text-white'>
-                        <span className='flex items-center gap-3 lg:gap-1 xl:gap-3'>
-                          <FaRegFolderOpen className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                          Mental Care
-                        </span>
-                        <FaArrowRightLong className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                      </button>
+                  <li className='flex items-center justify-between font-Sora font-medium text-PrimaryColor-0'>
+                    <Link
+                      to={'#'}
+                      className='text-TextColor-0 transition-all duration-500 hover:text-PrimaryColor-0 capitalize'
+                    >
+                      Technology
                     </Link>
-                  </li>
-                  <li>
-                    <Link to={'/service_details5'}>
-                      <button className='w-full font-Sora text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded-md bg-white bg-opacity-30 border-2 border-white border-opacity-80 mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:border-PrimaryColor-0 hover:text-white'>
-                        <span className='flex items-center gap-3 lg:gap-1 xl:gap-3'>
-                          <FaRegFolderOpen className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                          Hematology
-                        </span>
-                        <FaArrowRightLong className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                      </button>
-                    </Link>
+                    (10)
                   </li>
                 </ul>
               </div>
-              <div className='rounded-2xl px-4 sm:px-7 lg:px-4 xl:px-7 pt-7 pb-6 overflow-hidden bg-white bg-opacity-20 border-2 border-white border-opacity-80 mb-7'>
-                <h4 className='font-Sora font-semibold text-2xl text-HeadingColor-0 pb-2 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0'>
-                  Popular Post
-                </h4>
-                <Link to={'/blog-details'}>
-                  <button className='group flex gap-4 mb-6'>
-                    <div className='size-[82px] rounded-xl overflow-hidden'>
+              <div
+                className='px-4 sm:px-[25px] py-[30px] rounded-lg bg-BodyBg3-0 mb-[30px]'
+                data-aos='fade-up'
+                data-aos-delay='300'
+                data-aos-duration='1000'
+              >
+                <h5 className='font-Sora font-bold text-white text-xl tracking-wide uppercase'>
+                  Recent post
+                </h5>
+                <div className='space-y-[30px] mt-[25px]'>
+                  <div className='flex flex-col sm:flex-row lg:flex-col xl:flex-row items-start gap-5 group'>
+                    <Link
+                      to={'/blog_details'}
+                      className='overflow-hidden'
+                    >
                       <img
+                        src={blogPost}
                         draggable='false'
-                        src={itemthumb}
-                        className='size-full'
+                        className='max-w-20 w-full transition-all ease-linear duration-500 group-hover:scale-105'
                       />
+                    </Link>
+                    <div className='flex-1'>
+                      <div className='flex flex-wrap items-center gap-y-1 gap-x-[25px] mb-1'>
+                        <h6 className='font-Sora text-TextColor-0 flex items-center gap-2'>
+                          <FaRegCalendarDays className='text-PrimaryColor-0' />
+                          Jan 2024
+                        </h6>
+                        <Link
+                          to={'#'}
+                          className='font-Sora text-TextColor-0 flex items-center gap-2 transition-all duration-500 hover:text-PrimaryColor-0'
+                        >
+                          <FaRegComments className='text-PrimaryColor-0 text-lg' />
+                          (3)
+                        </Link>
+                      </div>
+                      <Link
+                        to={'/blog_details'}
+                        className='font-Sora font-medium tracking-wide text-base sm:text-lg leading-6 text-white transition-all duration-500 hover:text-PrimaryColor-0'
+                      >
+                        Definition and Principles of JIT Logistics
+                      </Link>
                     </div>
-                    <div className='flex-1 text-left'>
-                      <h6 className='font-Sora font-semibold md:text-lg lg:text-sm xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0'>
-                        How Virtual Healthcare is Transforming Pati...
-                      </h6>
-                      <p className='font-Sora text-TextColor2-0 text-sm mt-1'>
-                        AUGUST 01, 2024
-                      </p>
-                    </div>
-                  </button>
-                </Link>
-                <Link to={'/blog_details'}>
-                  <button className='group flex gap-4 my-6'>
-                    <div className='size-[82px] rounded-xl overflow-hidden'>
+                  </div>
+                  <div className='flex flex-col sm:flex-row lg:flex-col xl:flex-row items-start gap-5 group'>
+                    <Link
+                      to={'/blog_details'}
+                      className='overflow-hidden'
+                    >
                       <img
+                        src={blogPost2}
                         draggable='false'
-                        src={itemthumb2}
-                        className='size-full'
+                        className='max-w-20 w-full transition-all ease-linear duration-500 group-hover:scale-105'
                       />
+                    </Link>
+                    <div className='flex-1'>
+                      <div className='flex flex-wrap items-center gap-y-1 gap-x-[25px] mb-1'>
+                        <h6 className='font-Sora text-TextColor-0 flex items-center gap-2'>
+                          <FaRegCalendarDays className='text-PrimaryColor-0' />
+                          Jan 2024
+                        </h6>
+                        <Link
+                          to={'#'}
+                          className='font-Sora text-TextColor-0 flex items-center gap-2 transition-all duration-500 hover:text-PrimaryColor-0'
+                        >
+                          <FaRegComments className='text-PrimaryColor-0 text-lg' />
+                          (3)
+                        </Link>
+                      </div>
+                      <Link
+                        to={'/blog_details'}
+                        className='font-Sora font-medium tracking-wide text-base sm:text-lg leading-6 text-white transition-all duration-500 hover:text-PrimaryColor-0'
+                      >
+                        Real-world Examples of Successful JIT Logistics
+                      </Link>
                     </div>
-                    <div className='flex-1 text-left'>
-                      <h6 className='font-Sora font-semibold md:text-lg lg:text-sm xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0'>
-                        How Your Digestive Health Impacts Mental...
-                      </h6>
-                      <p className='font-Sora text-TextColor2-0 text-sm mt-1'>
-                        AUGUST 16, 2024
-                      </p>
-                    </div>
-                  </button>
-                </Link>
-                <Link to={'/blog_details'}>
-                  <button className='group flex gap-4 my-6'>
-                    <div className='size-[82px] rounded-xl overflow-hidden'>
+                  </div>
+                  <div className='flex flex-col sm:flex-row lg:flex-col xl:flex-row items-start gap-5 group'>
+                    <Link
+                      to={'/blog_details'}
+                      className='overflow-hidden'
+                    >
                       <img
+                        src={blogPost3}
                         draggable='false'
-                        src={itemthumb3}
-                        className='size-full'
+                        className='max-w-20 w-full transition-all ease-linear duration-500 group-hover:scale-105'
                       />
+                    </Link>
+                    <div className='flex-1'>
+                      <div className='flex flex-wrap items-center gap-y-1 gap-x-[25px] mb-1'>
+                        <h6 className='font-Sora text-TextColor-0 flex items-center gap-2'>
+                          <FaRegCalendarDays className='text-PrimaryColor-0' />
+                          Jan 2024
+                        </h6>
+                        <Link
+                          to={'#'}
+                          className='font-Sora text-TextColor-0 flex items-center gap-2 transition-all duration-500 hover:text-PrimaryColor-0'
+                        >
+                          <FaRegComments className='text-PrimaryColor-0 text-lg' />
+                          (3)
+                        </Link>
+                      </div>
+                      <Link
+                        to={'/blog_details'}
+                        className='font-Sora font-medium tracking-wide text-base sm:text-lg leading-6 text-white transition-all duration-500 hover:text-PrimaryColor-0'
+                      >
+                        Real-world Examples of Successful JIT Logistics
+                      </Link>
                     </div>
-                    <div className='flex-1 text-left'>
-                      <h6 className='font-Sora font-semibold md:text-lg lg:text-sm xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0'>
-                        Expert Advice for a Better Quality of Life...
-                      </h6>
-                      <p className='font-Sora text-TextColor2-0 text-sm mt-1'>
-                        AUGUST 27, 2024
-                      </p>
-                    </div>
-                  </button>
-                </Link>
-              </div>
-              <div className='rounded-2xl px-4 sm:px-7 lg:px-4 xl:px-7 pt-7 pb-6 overflow-hidden bg-white bg-opacity-20 border-2 border-white border-opacity-80 mb-7'>
-                <h4 className='font-Sora font-semibold text-2xl text-HeadingColor-0 pb-2 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0'>
-                  Tags
-                </h4>
-                <ul className='inline-block'>
-                  <li className='inline-block mr-[10px] mb-[10px]'>
-                    <Link to={'/'}>
-                      <button className='bg-white bg-opacity-20 border-2 border-white border-opacity-80 rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Sora text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white'>
-                        Medical Care
-                      </button>
-                    </Link>
-                  </li>
-                  <li className='inline-block mr-[10px] mb-[10px]'>
-                    <Link to={'/'}>
-                      <button className='bg-white bg-opacity-20 border-2 border-white border-opacity-80 rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Sora text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white'>
-                        Dentist
-                      </button>
-                    </Link>
-                  </li>
-                  <li className='inline-block mr-[10px] mb-[10px]'>
-                    <Link to={'/'}>
-                      <button className='bg-white bg-opacity-20 border-2 border-white border-opacity-80 rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Sora text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white'>
-                        Psychologist
-                      </button>
-                    </Link>
-                  </li>
-                  <li className='inline-block mr-[10px] mb-[10px]'>
-                    <Link to={'/'}>
-                      <button className='bg-white bg-opacity-20 border-2 border-white border-opacity-80 rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Sora text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white'>
-                        Health Care
-                      </button>
-                    </Link>
-                  </li>
-                  <li className='inline-block mr-[10px] mb-[10px]'>
-                    <Link to={'/'}>
-                      <button className='bg-white bg-opacity-20 border-2 border-white border-opacity-80 rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Sora text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white'>
-                        Medicine
-                      </button>
-                    </Link>
-                  </li>
-                  <li className='inline-block mr-[10px] mb-[10px]'>
-                    <Link to={'/'}>
-                      <button className='bg-white bg-opacity-20 border-2 border-white border-opacity-80 rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-Sora text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white'>
-                        Therapist
-                      </button>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="rounded-2xl px-4 sm:px-9 lg:px-4 xl:px-9 overflow-hidden bg-[url('/images/company-bg.png')] bg-cover bg-no-repeat bg-center py-[50px]">
-                <div className='relative before:absolute before:size-[90px] before:-top-[10px] before:-left-[10px] before:animate-rotational before:rounded-full before:border-[3px] before:border-dashed before:border-PrimaryColor-0 '>
-                  <img
-                    src={callIcon}
-                    draggable='false'
-                  />
+                  </div>
                 </div>
-                <h6 className='font-Sora font-medium text-lg text-white mt-9 mb-2'>
-                  Call Us Anytime
-                </h6>
-                <Link to={'/'}>
-                  <button className='font-Sora font-semibold text-2xl text-white'>
-                    +123 (4567) 890
-                  </button>
-                </Link>
-                <Link to={'/'}>
-                  <button className='font-Sora text-white flex gap-2 items-center mt-4 mb-[52px]'>
-                    <MdEmail className='text-xl text-PrimaryColor-0' />
-                    example@gmail.com
-                  </button>
-                </Link>
-                <Link to={'/contact'}>
-                  <button className='font-Sora text-white flex gap-2 items-center bg-PrimaryColor-0 w-full h-[58px] rounded-md justify-center z-10 relative before:absolute before:top-0 before:right-0 before:scale-0 before:-z-10 before:w-full before:h-full before:bg-SecondaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:scale-100 hover:text-white'>
-                    Contact Us
-                    <FaArrowRight />
-                  </button>
-                </Link>
+              </div>
+              <div
+                className='px-4 sm:px-[25px] py-[30px] rounded-lg bg-BodyBg3-0 mb-[30px]'
+                data-aos='fade-up'
+                data-aos-delay='300'
+                data-aos-duration='1000'
+              >
+                <h5 className='font-Sora font-bold text-white text-xl tracking-wide uppercase'>
+                  Popular tag
+                </h5>
+                <ul className='flex flex-wrap items-center gap-[15px] mt-[25px]'>
+                  <li>
+                    <Link
+                      to={'#'}
+                      className='font-Sora text-white inline-block border border-BorderGrey4-0 rounded-full px-[15px] py-2 transition-all duration-500 ease-linear hover:bg-PrimaryColor-0 hover:border-PrimaryColor-0'
+                    >
+                      Business
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to={'#'}
+                      className='font-Sora text-white inline-block border border-BorderGrey4-0 rounded-full px-[15px] py-2 transition-all duration-500 ease-linear hover:bg-PrimaryColor-0 hover:border-PrimaryColor-0'
+                    >
+                      Analysis
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to={'#'}
+                      className='font-Sora text-white inline-block border border-BorderGrey4-0 rounded-full px-[15px] py-2 transition-all duration-500 ease-linear hover:bg-PrimaryColor-0 hover:border-PrimaryColor-0'
+                    >
+                      Technology
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to={'#'}
+                      className='font-Sora text-white inline-block border border-BorderGrey4-0 rounded-full px-[15px] py-2 transition-all duration-500 ease-linear hover:bg-PrimaryColor-0 hover:border-PrimaryColor-0'
+                    >
+                      Finance
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to={'#'}
+                      className='font-Sora text-white inline-block border border-BorderGrey4-0 rounded-full px-[15px] py-2 transition-all duration-500 ease-linear hover:bg-PrimaryColor-0 hover:border-PrimaryColor-0'
+                    >
+                      Design
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <Subscribe />
     </>
   );
 };
