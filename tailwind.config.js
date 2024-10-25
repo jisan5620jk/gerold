@@ -27,6 +27,7 @@ export default {
         BorderGrey: ['#d9d9d9'],
         BorderGrey2: ['#dddddd'],
         BorderGrey3: ['#636363'],
+        BorderGrey4: ['#747779'],
         BorderColor2: ['#ffffff33'],
         BorderColor3: ['#1c20491a'],
       },

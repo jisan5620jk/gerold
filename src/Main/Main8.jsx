@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import ScrollToTop from '../Shared/BackToTop/BackToTop';
-import Footer2Dark from '../Shared/Footer/Footer2Dark';;
+import FooterDark from '../Shared/Footer/FooterDark';;
 import BlogNavbar from '../Shared/Navbar/BlogNavbar';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -15,7 +15,7 @@ const Main8 = () => {
       <div>
         <Outlet />
       </div>
-      <Footer2Dark />
+      <FooterDark />
     </>
   );
 };
