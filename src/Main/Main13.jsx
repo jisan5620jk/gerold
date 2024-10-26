@@ -3,14 +3,14 @@ import ScrollToTop from '../Shared/BackToTop/BackToTop';
 import FooterDark from '../Shared/Footer/FooterDark';;
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import ServiceNavbarLight from '../Shared/Navbar/ServiceNavbarLight';
+import PortfolioNavbarLight from '../Shared/Navbar/PortfolioNavbarLight';
 
 AOS.init();
 
-const Main12 = () => {
+const Main13 = () => {
   return (
     <>
-      <ServiceNavbarLight />
+      <PortfolioNavbarLight />
       <ScrollToTop />
       <div>
         <Outlet />
@@ -19,4 +19,4 @@ const Main12 = () => {
     </>
   );
 };
-export default Main12;
+export default Main13;

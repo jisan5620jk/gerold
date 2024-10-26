@@ -218,13 +218,13 @@ const NavbarLight = () => {
                       </ul>
                     </li>
                     <li>
-                      <Link to={'/about'}>About</Link>
+                      <Link to={'/about_light'}>About</Link>
                     </li>
                     <li>
-                      <Link to={'/service'}>Services</Link>
+                      <Link to={'/service_light'}>Services</Link>
                     </li>
                     <li>
-                      <Link to={'/portfolio'}>Portfolios</Link>
+                      <Link to={'/blog_light'}>Portfolios</Link>
                     </li>
                     <li className='has-dropdown'>
                       <Link
@@ -241,15 +241,15 @@ const NavbarLight = () => {
                       </Link>
                       <ul className='submenu'>
                         <li>
-                          <Link to={'/blog'}>blog</Link>
+                          <Link to={'/blog_light'}>blog</Link>
                         </li>
                         <li>
-                          <Link to={'/blog_details'}>blog details</Link>
+                          <Link to={'/blog_details_light'}>blog details</Link>
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <Link to={'/contact'}>Contact</Link>
+                      <Link to={'/contact_light'}>Contact</Link>
                     </li>
                   </ul>
                 </nav>

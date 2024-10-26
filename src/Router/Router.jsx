@@ -20,11 +20,18 @@ import Main9 from '../Main/Main9';
 import BlogDetails from '../Pages/InnerPage/BlogDetails/BlogDetails';
 import Home4 from '../Pages/Home4/Home4';
 import Main10 from '../Main/Main10';
-import Main11 from '../Main/Main11';
 import BlogDetailsLight from '../Pages/InnerPage/BlogDetailsLight/BlogDetailsLight';
 import BlogInnerLight from '../Pages/InnerPage/BlogInnerLight/BlogInnerLight';
-import Main12 from '../Main/Main12';
 import ContactInnerLight from '../Pages/InnerPage/ContactInnerLight/ContactInnerLight';
+import PortfolioInnerLight from '../Pages/InnerPage/PortfolioInnerLight/PortfolioInnerLight';
+import ServiceInnerLight from '../Pages/InnerPage/ServiceInnerLight/ServiceInnerLight';
+import AboutInnerLight from '../Pages/InnerPage/AboutInnerLight/AboutInnerLight';
+import Main11 from '../Main/Main11';
+import Main12 from '../Main/Main12';
+import Main13 from '../Main/Main13';
+import Main14 from '../Main/Main14';
+import Main15 from '../Main/Main15';
+import Main16 from '../Main/Main16';
 
 const router = createBrowserRouter([
   {
@@ -85,11 +92,33 @@ const router = createBrowserRouter([
   {
     path: '/',
     errorElement: <ErrorPage />,
+    element: <Main11 />,
+    children: [
+      {
+        path: '/about_light',
+        element: <AboutInnerLight />,
+      },
+    ],
+  },
+  {
+    path: '/',
+    errorElement: <ErrorPage />,
     element: <Main4 />,
     children: [
       {
         path: '/service',
         element: <ServiceInner />,
+      },
+    ],
+  },
+  {
+    path: '/',
+    errorElement: <ErrorPage />,
+    element: <Main12 />,
+    children: [
+      {
+        path: '/service_light',
+        element: <ServiceInnerLight />,
       },
     ],
   },
@@ -107,6 +136,17 @@ const router = createBrowserRouter([
   {
     path: '/',
     errorElement: <ErrorPage />,
+    element: <Main13 />,
+    children: [
+      {
+        path: '/portfolio_light',
+        element: <PortfolioInnerLight />,
+      },
+    ],
+  },
+  {
+    path: '/',
+    errorElement: <ErrorPage />,
     element: <Main8 />,
     children: [
       {
@@ -118,7 +158,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     errorElement: <ErrorPage />,
-    element: <Main12 />,
+    element: <Main15 />,
     children: [
       {
         path: '/blog_light',
@@ -140,7 +180,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     errorElement: <ErrorPage />,
-    element: <Main11 />,
+    element: <Main14 />,
     children: [
       {
         path: '/blog_details_light',
@@ -162,7 +202,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     errorElement: <ErrorPage />,
-    element: <Main5 />,
+    element: <Main16 />,
     children: [
       {
         path: '/contact_light',

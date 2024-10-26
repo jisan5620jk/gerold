@@ -17,7 +17,7 @@ import { FaAngleRight } from 'react-icons/fa6';
 import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
 
 
-const ServiceInner = () => {
+const ServiceInnerLight = () => {
    const servicePopUpRef = useRef(null);
    const servicePopUpRef2 = useRef(null);
    const servicePopUpRef3 = useRef(null);
@@ -82,24 +82,18 @@ const ServiceInner = () => {
         breadCrumbIcon={<FaArrowRightLong />}
         breadCrumbLink={'Services'}
       />
-      <section className='py-[120px] relative z-10 bg-BodyBlack-0'>
+      <section className='py-[120px] relative z-10 bg-BodyBgLight-0'>
         <div className='Container'>
           <div className='text-center'>
-            <h1
-              className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 from-50% via-Secondarycolor-0 via-70% to-Secondarycolor-0 to-50% bg-clip-text text-transparent'
-            >
+            <h1 className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 from-40% via-Secondarycolor-0 via-70% to-Secondarycolor-0 to-40% bg-clip-text text-transparent'>
               Services
             </h1>
-            <h6
-              className='font-Sora text-TextColor-0 uppercase'
-            >
+            <h6 className='font-Sora text-TextLight-0 uppercase'>
               Offerd Services
             </h6>
           </div>
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 relative z-10 mt-[50px]'>
-            <div
-              className='rounded-[10px] bg-BodyBlack-0 overflow-hidden group border border-PrimaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:ease-linear before:duration-300 before:opacity-0 hover:before:opacity-100 before:-z-10'
-            >
+            <div className='rounded-[10px] bg-BodyBgLight-0 overflow-hidden group border border-BorderGrey2-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:ease-linear before:duration-300 before:opacity-0 hover:before:opacity-100 before:-z-10'>
               <div className='pt-6 px-6 sm:px-[30px]'>
                 <div>
                   <img
@@ -112,22 +106,20 @@ const ServiceInner = () => {
               <div className='px-6 sm:px-[30px] pt-7 pb-9'>
                 <div>
                   <button
-                    className='font-Sora text-white font-bold text-[22px]'
+                    className='font-Sora text-PrimaryColor-0 font-bold text-[22px] transition-all duration-500 group-hover:text-white'
                     ref={servicePopUpRef}
                   >
                     Web Design
                   </button>
                 </div>
-                <p className='font-Sora text-TextColor-0 pt-2 max-w-[515px] w-full'>
+                <p className='font-Sora text-TextLight-0 pt-2 max-w-[515px] w-full transition-all duration-500 group-hover:text-white'>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et do eiusmod tempor
                   incididunt dolore magna aliqua.
                 </p>
               </div>
             </div>
-            <div
-              className='rounded-[10px] bg-BodyBlack-0 overflow-hidden group border border-PrimaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:ease-linear before:duration-300 before:opacity-0 hover:before:opacity-100 before:-z-10'
-            >
+            <div className='rounded-[10px] bg-BodyBgLight-0 overflow-hidden group border border-BorderGrey2-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:ease-linear before:duration-300 before:opacity-0 hover:before:opacity-100 before:-z-10'>
               <div className='px-6 sm:px-[30px] pt-7'>
                 <div>
                   <img
@@ -140,13 +132,13 @@ const ServiceInner = () => {
               <div className='p-6 sm:p-[30px]'>
                 <div>
                   <button
-                    className='font-Sora text-white font-bold text-[22px]'
+                    className='font-Sora text-PrimaryColor-0 font-bold text-[22px] transition-all duration-500 group-hover:text-white'
                     ref={servicePopUpRef3}
                   >
                     Product Design
                   </button>
                 </div>
-                <p className='font-Sora text-TextColor-0 pt-2 max-w-[515px] w-full'>
+                <p className='font-Sora text-TextLight-0 pt-2 max-w-[515px] w-full transition-all duration-500 group-hover:text-white'>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et do eiusmod tempor
                   incididunt dolore magna aliqua.
@@ -154,7 +146,7 @@ const ServiceInner = () => {
               </div>
             </div>
             <div
-              className='rounded-[10px] bg-BodyBlack-0 overflow-hidden group border border-PrimaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:ease-linear before:duration-300 before:opacity-0 hover:before:opacity-100 before:-z-10'
+              className='rounded-[10px] bg-BodyBgLight-0 overflow-hidden group border border-BorderGrey2-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:ease-linear before:duration-300 before:opacity-0 hover:before:opacity-100 before:-z-10'
               data-aos='fade-up'
               data-aos-delay='400'
               data-aos-duration='1000'
@@ -171,13 +163,13 @@ const ServiceInner = () => {
               <div className='p-6 sm:p-[30px]'>
                 <div>
                   <button
-                    className='font-Sora text-white font-bold text-[22px]'
+                    className='font-Sora text-PrimaryColor-0 font-bold text-[22px] transition-all duration-500 group-hover:text-white'
                     ref={servicePopUpRef2}
                   >
                     UI UX Design
                   </button>
                 </div>
-                <p className='font-Sora text-TextColor-0 pt-2 max-w-[515px] w-full'>
+                <p className='font-Sora text-TextLight-0 pt-2 max-w-[515px] w-full transition-all duration-500 group-hover:text-white'>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et do eiusmod tempor
                   incididunt dolore magna aliqua.
@@ -185,7 +177,7 @@ const ServiceInner = () => {
               </div>
             </div>
             <div
-              className='rounded-[10px] bg-BodyBlack-0 overflow-hidden group border border-PrimaryColor-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:ease-linear before:duration-300 before:opacity-0 hover:before:opacity-100 before:-z-10'
+              className='rounded-[10px] bg-BodyBgLight-0 overflow-hidden group border border-BorderGrey2-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:ease-linear before:duration-300 before:opacity-0 hover:before:opacity-100 before:-z-10'
               data-aos='fade-up'
               data-aos-delay='500'
               data-aos-duration='1000'
@@ -202,13 +194,13 @@ const ServiceInner = () => {
               <div className='p-6 sm:p-[30px]'>
                 <div>
                   <button
-                    className='font-Sora text-white font-bold text-[22px]'
+                    className='font-Sora text-PrimaryColor-0 font-bold text-[22px] transition-all duration-500 group-hover:text-white'
                     ref={servicePopUpRef4}
                   >
                     Motion Graphic
                   </button>
                 </div>
-                <p className='font-Sora text-TextColor-0 pt-2 max-w-[515px] w-full'>
+                <p className='font-Sora text-TextLight-0 pt-2 max-w-[515px] w-full transition-all duration-500 group-hover:text-white'>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et do eiusmod tempor
                   incididunt dolore magna aliqua.
@@ -435,4 +427,4 @@ const ServiceInner = () => {
   );
 };
 
-export default ServiceInner;
+export default ServiceInnerLight;

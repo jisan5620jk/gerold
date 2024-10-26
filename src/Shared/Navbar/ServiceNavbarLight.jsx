@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom';
-import Logo from '/images/logo/logo-dark.png';
+import Logo from '/images/logo/logo.png';
 import './navbar.css';
 import { useEffect, useRef } from 'react';
 import { HiMinusSm, HiPlusSm } from 'react-icons/hi';
 import { IoCloseOutline } from 'react-icons/io5';
-import { BsDownload } from 'react-icons/bs';
 
-const Navbar2Light = () => {
+const ServiceNavbarLight = () => {
   //Menu Bar
   const menuBarRef = useRef(null);
   const offcanvasRef = useRef(null);
@@ -44,12 +43,13 @@ const Navbar2Light = () => {
     };
   }, []);
 
-  let headerIcon = `
-    <span className="header-icon">  
-      <svg fill="currentColor" viewBox="0 0 320 512" height="15px" width="15px" xmlns="http://www.w3.org/2000/svg">
-        <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
-      </svg>
-    </span>`;
+  let headerIcon = `  
+  <span className="header-icon">  
+    <svg fill="currentColor" viewBox="0 0 320 512" height="15px" width="15px" xmlns="http://www.w3.org/2000/svg">
+      <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
+    </svg>
+  </span>  
+`;
 
   useEffect(() => {
     const mainMenuContent = document.querySelector('.main-menu-content');
@@ -131,7 +131,7 @@ const Navbar2Light = () => {
       ></div>
       <div
         id='header-sticky'
-        className='header-area light py-5 lg:py-0'
+        className='header-area py-5 lg:py-0'
       >
         <div className='Container'>
           <div className='flex items-center justify-between lg:grid lg:grid-cols-12'>
@@ -151,7 +151,7 @@ const Navbar2Light = () => {
                   </li>
                   <li>
                     <Link to={'/'}>
-                      <button className='hidden sm:block font-Sora font-medium text-[15px] text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0 relative bottom-[1px]'>
+                      <button className='hidden sm:block font-Sora font-medium text-[15px] text-white transition-all duration-500 hover:text-PrimaryColor-0 relative bottom-[1px]'>
                         mail@gerolddesign.com
                       </button>
                     </Link>
@@ -163,16 +163,16 @@ const Navbar2Light = () => {
               <div className='header-main-menu text-center hidden lg:block'>
                 <nav className='main-menu-content'>
                   <ul>
-                    <li className='has-dropdown group current'>
+                    <li className='has-dropdown group'>
                       <Link
                         to={'/'}
                         className='!pr-5'
                       >
                         Home{' '}
-                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 group-hover:opacity-0 hidden lg:block'>
+                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 group-hover:opacity-0'>
                           <HiPlusSm />
                         </span>
-                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 opacity-0 group-hover:opacity-100 hidden lg:block'>
+                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 opacity-0 group-hover:opacity-100'>
                           <HiMinusSm />
                         </span>
                       </Link>
@@ -180,10 +180,10 @@ const Navbar2Light = () => {
                         <li className='has-dropdown current'>
                           <Link to={'/'}>
                             Dark Mode
-                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 hidden lg:block'>
+                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500'>
                               <HiPlusSm />
                             </span>
-                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 opacity-0 hidden lg:block'>
+                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 opacity-0'>
                               <HiMinusSm />
                             </span>
                           </Link>
@@ -199,10 +199,10 @@ const Navbar2Light = () => {
                         <li className='has-dropdown'>
                           <Link to={'/'}>
                             Light Mode
-                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 hidden lg:block'>
+                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500'>
                               <HiPlusSm />
                             </span>
-                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 opacity-0 hidden lg:block'>
+                            <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 opacity-0'>
                               <HiMinusSm />
                             </span>
                           </Link>
@@ -210,7 +210,7 @@ const Navbar2Light = () => {
                             <li>
                               <Link to={'/home_light'}>Home One</Link>
                             </li>
-                            <li className='current'>
+                            <li>
                               <Link to={'/home2_light'}>Home Two</Link>
                             </li>
                           </ul>
@@ -220,7 +220,7 @@ const Navbar2Light = () => {
                     <li>
                       <Link to={'/about_light'}>About</Link>
                     </li>
-                    <li>
+                    <li className='current'>
                       <Link to={'/service_light'}>Services</Link>
                     </li>
                     <li>
@@ -232,10 +232,10 @@ const Navbar2Light = () => {
                         className='!pr-5'
                       >
                         Blog
-                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 group-hover:opacity-0 hidden lg:block'>
+                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 group-hover:opacity-0'>
                           <HiPlusSm />
                         </span>
-                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 opacity-0 group-hover:opacity-100 hidden lg:block'>
+                        <span className='absolute top-1/2 -translate-y-1/2 -right-[6px] text-[22px] transition-all duration-500 opacity-0 group-hover:opacity-100'>
                           <HiMinusSm />
                         </span>
                       </Link>
@@ -255,23 +255,8 @@ const Navbar2Light = () => {
                 </nav>
               </div>
               <div className='header-right-box flex justify-end'>
-                <div>
-                  <Link
-                    to={'/'}
-                    className='font-Sora font-semibold text-[15px] text-white pl-[30px] pr-[34px] py-[17px] leading-4 rounded-full flex items-center gap-[14px] group bg-PrimaryColor-0'
-                  >
-                    Resume{' '}
-                    <span className='relative bottom-[px] size-4 overflow-hidden'>
-                      <BsDownload
-                        size={'14'}
-                        className='absolute transition-all duration-300 translate-y-0 group-hover:-translate-y-[150%]'
-                      />
-                      <BsDownload
-                        size={'14'}
-                        className='absolute transition-all duration-300 translate-y-[150%] group-hover:translate-y-0'
-                      />
-                    </span>
-                  </Link>
+                <div className='header-btn !mb-2 !mr-2 sm:!mr-8 lg:!mb-0 lg:!mr-0'>
+                  <Link to={'/'}>Hire Me!</Link>
                 </div>
                 <div className='header-bar lg:hidden'>
                   <button
@@ -292,4 +277,4 @@ const Navbar2Light = () => {
   );
 };
 
-export default Navbar2Light;
+export default ServiceNavbarLight;
