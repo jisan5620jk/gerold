@@ -20,6 +20,11 @@ import Main9 from '../Main/Main9';
 import BlogDetails from '../Pages/InnerPage/BlogDetails/BlogDetails';
 import Home4 from '../Pages/Home4/Home4';
 import Main10 from '../Main/Main10';
+import Main11 from '../Main/Main11';
+import BlogDetailsLight from '../Pages/InnerPage/BlogDetailsLight/BlogDetailsLight';
+import BlogInnerLight from '../Pages/InnerPage/BlogInnerLight/BlogInnerLight';
+import Main12 from '../Main/Main12';
+import ContactInnerLight from '../Pages/InnerPage/ContactInnerLight/ContactInnerLight';
 
 const router = createBrowserRouter([
   {
@@ -113,6 +118,17 @@ const router = createBrowserRouter([
   {
     path: '/',
     errorElement: <ErrorPage />,
+    element: <Main12 />,
+    children: [
+      {
+        path: '/blog_light',
+        element: <BlogInnerLight />,
+      },
+    ],
+  },
+  {
+    path: '/',
+    errorElement: <ErrorPage />,
     element: <Main9 />,
     children: [
       {
@@ -124,11 +140,33 @@ const router = createBrowserRouter([
   {
     path: '/',
     errorElement: <ErrorPage />,
+    element: <Main11 />,
+    children: [
+      {
+        path: '/blog_details_light',
+        element: <BlogDetailsLight />,
+      },
+    ],
+  },
+  {
+    path: '/',
+    errorElement: <ErrorPage />,
     element: <Main5 />,
     children: [
       {
         path: '/contact',
         element: <ContactInner />,
+      },
+    ],
+  },
+  {
+    path: '/',
+    errorElement: <ErrorPage />,
+    element: <Main5 />,
+    children: [
+      {
+        path: '/contact_light',
+        element: <ContactInnerLight />,
       },
     ],
   },

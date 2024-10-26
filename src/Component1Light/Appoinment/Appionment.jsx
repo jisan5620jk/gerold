@@ -62,25 +62,21 @@ const Appoinment = () => {
               >
                 <option
                   value='subject'
-                  className='text-HeadingColor-0 bg-BodyBgLight-0'
                 >
                   Your Subject
                 </option>
                 <option
                   value='subject2'
-                  className='text-HeadingColor-0 bg-BodyBgLight-0'
                 >
                   Bangla
                 </option>
                 <option
                   value='subject3'
-                  className='text-HeadingColor-0 bg-BodyBgLight-0'
                 >
                   Arabic
                 </option>
                 <option
                   value='subject4'
-                  className='text-HeadingColor-0 bg-BodyBgLight-0'
                 >
                   China
                 </option>

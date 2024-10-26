@@ -17,6 +17,7 @@ import About from '../About/About';
 const Banner = () => {
   return (
     <section className='bg-BodyBg-0 relative z-10 overflow-hidden pt-[135px]'>
+      <span className='absolute -z-10 -top-[10%] -right-[5%] w-[322px] h-[308px] rounded-full bg-gradient-to-r to-PrimaryColor-0 from-transparent blur-[150px]'></span>
       <div className='Container'>
         <div className='flex flex-col md:flex-row items-center group gap-[60px] md:gap-8 lg:gap-[60px] p-6 sm:p-[30px] border border-Secondarycolor-0 bg-BodyBg3-0 rounded-2xl'>
           <div className='relative z-10 rounded-xl overflow-hidden max-w-[325px] w-full transition-all duration-500 border border-transparent group-hover:border-PrimaryColor-0'>

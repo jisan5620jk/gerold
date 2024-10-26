@@ -32,8 +32,8 @@
   border-radius: 30px;
 }
 
-.menu-bar:hover span {
-  background: #fff;
+.header-area.light .menu-bar span {
+  background: #2a1454;
 }
 
 .menu-bar:hover span:nth-child(1),
