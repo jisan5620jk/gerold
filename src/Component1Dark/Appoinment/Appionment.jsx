@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Appoinment = () => {
   return (
-    <section className='bg-BodyBgLight-0 py-28 relative z-10 overflow-hidden'>
+    <section className='bg-BodyBg-0 py-28 relative z-10 overflow-hidden'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 items-center gap-[22px] relative z-10'>
           <div className='px-4 sm:px-10 lg:px-6 xl:px-10 pt-9 pb-10 bg-white rounded-2xl'>
