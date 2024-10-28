@@ -14,6 +14,25 @@
   color: #fff;
 }
 
+
+
+
+.service-light .service-item2.mleave2 .service-number ,
+.service-light .service-item2.mleave2 .service-title ,
+.service-light .service-item2.mleave2 .service-desc {
+  color: #8750f7;
+}
+
+
+.service-light .service-item2.mleave2 .service-desc {
+  color: #140c1c;
+}
+
+.service-item.mleave2 .service-icon {
+  transform: rotate(90deg);
+  color: #8750f7;
+}
+
 .popup-body-overlay {
   position: fixed;
   top: 0;

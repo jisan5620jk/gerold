@@ -109,7 +109,6 @@ const Project = () => {
               className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] leading-[54px] font-medium bg-gradient-to-r from-PrimaryColor-0 from-10% via-Secondarycolor-0 via-60% md:via-30% to-Secondarycolor-0 to-90% bg-clip-text text-transparent'
               data-aos='fade-up'
               data-aos-duration='1000'
-              data-aos-delay='400'
             >
               Recent Projects
             </h1>
@@ -191,7 +190,6 @@ const Project = () => {
             <div
               className='col-span-12 lg:col-span-7 pt-5 pb-9 pl-5 sm:pl-[35px] pr-5 border border-BorderGrey2-0 bg-BodyBgLight-0 rounded-2xl'
               data-aos='fade-up'
-              data-aos-delay='500'
               data-aos-duration='1000'
             >
               <div className='h-auto pt-[25px] px-[25px] bg-BodyBg4-0 rounded-2xl'>
@@ -244,7 +242,6 @@ const Project = () => {
             <div
               className='col-span-12 lg:col-span-5 pt-5 pb-9 pl-5 sm:pl-[35px] pr-5 border border-BorderGrey2-0 bg-BodyBgLight-0 rounded-2xl'
               data-aos='fade-up'
-              data-aos-delay='700'
               data-aos-duration='1000'
             >
               <div className='h-auto lg:h-[344px] xl:h-[346px] pt-[25px] px-[25px] bg-BodyBg4-0 rounded-2xl'>

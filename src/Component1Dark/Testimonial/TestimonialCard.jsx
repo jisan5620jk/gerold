@@ -18,7 +18,7 @@ const TestimonialCard = ({
       <div className="flex items-center justify-end">
         <img src={testiProfile} className="max-w-[120px] w-[40%] rounded-md rounded-es-[125px]"/>
       </div>
-      <div className="flex items-center mt-4">
+      <div className="testi-icon flex items-center mt-4">
         <span className="text-4xl text-PrimaryColor-0 -ml-2">{testiIconLeft}</span>
         <span className="text-4xl text-PrimaryColor-0 -ml-[18px]">{testiIconRight}</span>
       </div>

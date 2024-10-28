@@ -1,12 +1,12 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 import brandThumb from '/images/brand/brand-l-1.png';
 import brandThumb2 from '/images/brand/brand-l-2.png';
 import brandThumb3 from '/images/brand/brand-l-3.png';
 import brandThumb4 from '/images/brand/brand-l-4.png';
 import brandThumb5 from '/images/brand/brand-l-5.png';
 import brandThumb6 from '/images/brand/brand-l-6.png';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const Brand = () => {
   const settings = {
@@ -53,7 +53,6 @@ const Brand = () => {
             <Link
               to={'/home2_light'}
               data-aos='fade-up'
-              data-aos-delay='400'
               data-aos-duration='1000'
             >
               <img
@@ -63,9 +62,9 @@ const Brand = () => {
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link to={'/home2_light'}
+            <Link
+              to={'/home2_light'}
               data-aos='fade-up'
-              data-aos-delay='500'
               data-aos-duration='1000'
             >
               <img
@@ -75,9 +74,9 @@ const Brand = () => {
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link to={'/home2_light'}
+            <Link
+              to={'/home2_light'}
               data-aos='fade-up'
-              data-aos-delay='600'
               data-aos-duration='1000'
             >
               <img
@@ -87,9 +86,9 @@ const Brand = () => {
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link to={'/home2_light'}
+            <Link
+              to={'/home2_light'}
               data-aos='fade-up'
-              data-aos-delay='700'
               data-aos-duration='1000'
             >
               <img
@@ -99,9 +98,9 @@ const Brand = () => {
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link to={'/home2_light'}
+            <Link
+              to={'/home2_light'}
               data-aos='fade-up'
-              data-aos-delay='800'
               data-aos-duration='1000'
             >
               <img
@@ -111,9 +110,9 @@ const Brand = () => {
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link to={'/home2_light'}
+            <Link
+              to={'/home2_light'}
               data-aos='fade-up'
-              data-aos-delay='900'
               data-aos-duration='1000'
             >
               <img
@@ -123,9 +122,9 @@ const Brand = () => {
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link to={'/home2_light'}
+            <Link
+              to={'/home2_light'}
               data-aos='fade-up'
-              data-aos-delay='1000'
               data-aos-duration='1000'
             >
               <img

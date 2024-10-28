@@ -77,7 +77,6 @@ const Service = () => {
             <h1
               className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] leading-[54px] font-medium bg-gradient-to-r from-PrimaryColor-0 from-10% via-white via-80% md:via-30% to-white to-90% bg-clip-text text-transparent'
               data-aos='fade-up'
-              data-aos-delay='300'
               data-aos-duration='1000'
             >
               My Specialization
@@ -87,7 +86,6 @@ const Service = () => {
             <div
               className='rounded-[10px] bg-BodyBg3-0 overflow-hidden border border-Secondarycolor-0 transition-all duration-500 hover:border-PrimaryColor-0'
               data-aos='fade-up'
-              data-aos-delay='400'
               data-aos-duration='1000'
             >
               <div className='bg-Secondarycolor-0 py-5 px-6 sm:px-[30px]'>
@@ -120,7 +118,6 @@ const Service = () => {
             <div
               className='rounded-[10px] bg-BodyBg3-0 overflow-hidden border border-Secondarycolor-0 transition-all duration-500 hover:border-PrimaryColor-0'
               data-aos='fade-up'
-              data-aos-delay='500'
               data-aos-duration='1000'
             >
               <div className='bg-Secondarycolor-0 py-5 px-6 sm:px-[30px]'>
@@ -153,7 +150,6 @@ const Service = () => {
             <div
               className='rounded-[10px] bg-BodyBg3-0 overflow-hidden border border-Secondarycolor-0 transition-all duration-500 hover:border-PrimaryColor-0'
               data-aos='fade-up'
-              data-aos-delay='300'
               data-aos-duration='1000'
             >
               <div className='bg-Secondarycolor-0 py-5 px-6 sm:px-[30px]'>
@@ -186,7 +182,6 @@ const Service = () => {
             <div
               className='rounded-[10px] bg-BodyBg3-0 overflow-hidden border border-Secondarycolor-0 transition-all duration-500 hover:border-PrimaryColor-0'
               data-aos='fade-up'
-              data-aos-delay='400'
               data-aos-duration='1000'
             >
               <div className='bg-Secondarycolor-0 py-5 px-6 sm:px-[30px]'>

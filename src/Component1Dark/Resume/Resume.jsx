@@ -11,8 +11,7 @@ const Resume = () => {
             <h1
               className='font-Sora text-[27px] sm:text-[34px] md:text-[36px] lg:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent flex items-center gap-5'
               data-aos='fade-up'
-              data-aos-delay='300'
-              data-aos-duration='1000'
+              data-aos-duration='2000'
             >
               <img
                 src={icon}
@@ -25,7 +24,7 @@ const Resume = () => {
               <div
                 data-aos='fade-up-right'
                 data-aos-delay='300'
-                data-aos-duration='1000'
+                data-aos-duration='2000'
               >
                 <ResumeCard
                   resumeDesc={'2022 - Present'}
@@ -36,7 +35,7 @@ const Resume = () => {
               <div
                 data-aos='fade-up-right'
                 data-aos-delay='400'
-                data-aos-duration='1000'
+                data-aos-duration='2000'
               >
                 <ResumeCard
                   resumeDesc={'2021 - 2022'}
@@ -47,7 +46,7 @@ const Resume = () => {
               <div
                 data-aos='fade-up-right'
                 data-aos-delay='500'
-                data-aos-duration='1000'
+                data-aos-duration='2000'
               >
                 <ResumeCard
                   resumeDesc={'2020 - 2021'}
@@ -58,7 +57,7 @@ const Resume = () => {
               <div
                 data-aos='fade-up-right'
                 data-aos-delay='600'
-                data-aos-duration='1000'
+                data-aos-duration='2000'
               >
                 <ResumeCard
                   resumeDesc={'2018 - 2020'}
@@ -72,8 +71,7 @@ const Resume = () => {
             <h1
               className='font-Sora text-[27px] sm:text-[34px] md:text-[36px] lg:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent flex items-center gap-5'
               data-aos='fade-up'
-              data-aos-delay='400'
-              data-aos-duration='1000'
+              data-aos-duration='2000'
             >
               <img
                 src={icon2}
@@ -86,7 +84,7 @@ const Resume = () => {
               <div
                 data-aos='fade-up-left'
                 data-aos-delay='300'
-                data-aos-duration='1000'
+                data-aos-duration='2000'
               >
                 <ResumeCard
                   resumeDesc={'2020 - 2023'}
@@ -97,7 +95,7 @@ const Resume = () => {
               <div
                 data-aos='fade-up-left'
                 data-aos-delay='400'
-                data-aos-duration='1000'
+                data-aos-duration='2000'
               >
                 <ResumeCard
                   resumeDesc={'2016 - 2020'}
@@ -108,7 +106,7 @@ const Resume = () => {
               <div
                 data-aos='fade-up-left'
                 data-aos-delay='500'
-                data-aos-duration='1000'
+                data-aos-duration='2000'
               >
                 <ResumeCard
                   resumeDesc={'2012 - 2015'}
@@ -119,7 +117,7 @@ const Resume = () => {
               <div
                 data-aos='fade-up-left'
                 data-aos-delay='600'
-                data-aos-duration='1000'
+                data-aos-duration='2000'
               >
                 <ResumeCard
                   resumeDesc={'2010 - 2011'}

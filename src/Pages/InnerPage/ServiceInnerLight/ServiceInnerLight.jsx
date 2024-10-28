@@ -16,64 +16,60 @@ import { FiCheck } from 'react-icons/fi';
 import { FaAngleRight } from 'react-icons/fa6';
 import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
 
-
 const ServiceInnerLight = () => {
-   const servicePopUpRef = useRef(null);
-   const servicePopUpRef2 = useRef(null);
-   const servicePopUpRef3 = useRef(null);
-   const servicePopUpRef4 = useRef(null);
-   const servicePopUpContentRef = useRef(null);
-   const serviceBodyOverlayRef = useRef(null);
-   const serviceCloseBtnRef = useRef(null);
+  const servicePopUpRef = useRef(null);
+  const servicePopUpRef2 = useRef(null);
+  const servicePopUpRef3 = useRef(null);
+  const servicePopUpRef4 = useRef(null);
+  const servicePopUpContentRef = useRef(null);
+  const serviceBodyOverlayRef = useRef(null);
+  const serviceCloseBtnRef = useRef(null);
 
-   useEffect(() => {
-     const servicePopUp = servicePopUpRef.current;
-     const servicePopUp2 = servicePopUpRef2.current;
-     const servicePopUp3 = servicePopUpRef3.current;
-     const servicePopUp4 = servicePopUpRef4.current;
-     const servicePopUpContent = servicePopUpContentRef.current;
-     const serviceBodyOverlay = serviceBodyOverlayRef.current;
-     const closeBtn = serviceCloseBtnRef.current;
+  useEffect(() => {
+    const servicePopUp = servicePopUpRef.current;
+    const servicePopUp2 = servicePopUpRef2.current;
+    const servicePopUp3 = servicePopUpRef3.current;
+    const servicePopUp4 = servicePopUpRef4.current;
+    const servicePopUpContent = servicePopUpContentRef.current;
+    const serviceBodyOverlay = serviceBodyOverlayRef.current;
+    const closeBtn = serviceCloseBtnRef.current;
 
-     const addClasses = () => {
-       if (servicePopUpContent && serviceBodyOverlay) {
-         servicePopUpContent.classList.add('opened');
-         serviceBodyOverlay.classList.add('apply');
-       }
-     };
+    const addClasses = () => {
+      if (servicePopUpContent && serviceBodyOverlay) {
+        servicePopUpContent.classList.add('opened');
+        serviceBodyOverlay.classList.add('apply');
+      }
+    };
 
-     const removeClasses = () => {
-       if (servicePopUpContent && serviceBodyOverlay) {
-         servicePopUpContent.classList.remove('opened');
-         serviceBodyOverlay.classList.remove('apply');
-       }
-     };
+    const removeClasses = () => {
+      if (servicePopUpContent && serviceBodyOverlay) {
+        servicePopUpContent.classList.remove('opened');
+        serviceBodyOverlay.classList.remove('apply');
+      }
+    };
 
-     // Add listeners for all popups
-     if (servicePopUp) servicePopUp.addEventListener('click', addClasses);
-     if (servicePopUp2) servicePopUp2.addEventListener('click', addClasses);
-     if (servicePopUp3) servicePopUp3.addEventListener('click', addClasses);
-     if (servicePopUp4) servicePopUp4.addEventListener('click', addClasses);
+    // Add listeners for all popups
+    if (servicePopUp) servicePopUp.addEventListener('click', addClasses);
+    if (servicePopUp2) servicePopUp2.addEventListener('click', addClasses);
+    if (servicePopUp3) servicePopUp3.addEventListener('click', addClasses);
+    if (servicePopUp4) servicePopUp4.addEventListener('click', addClasses);
 
-     if (closeBtn) closeBtn.addEventListener('click', removeClasses);
-     if (serviceBodyOverlay)
-       serviceBodyOverlay.addEventListener('click', removeClasses);
+    if (closeBtn) closeBtn.addEventListener('click', removeClasses);
+    if (serviceBodyOverlay)
+      serviceBodyOverlay.addEventListener('click', removeClasses);
 
-     return () => {
-       // Remove listeners for all popups
-       if (servicePopUp) servicePopUp.removeEventListener('click', addClasses);
-       if (servicePopUp2)
-         servicePopUp2.removeEventListener('click', addClasses);
-       if (servicePopUp3)
-         servicePopUp3.removeEventListener('click', addClasses);
-       if (servicePopUp4)
-         servicePopUp4.removeEventListener('click', addClasses);
+    return () => {
+      // Remove listeners for all popups
+      if (servicePopUp) servicePopUp.removeEventListener('click', addClasses);
+      if (servicePopUp2) servicePopUp2.removeEventListener('click', addClasses);
+      if (servicePopUp3) servicePopUp3.removeEventListener('click', addClasses);
+      if (servicePopUp4) servicePopUp4.removeEventListener('click', addClasses);
 
-       if (closeBtn) closeBtn.removeEventListener('click', removeClasses);
-       if (serviceBodyOverlay)
-         serviceBodyOverlay.removeEventListener('click', removeClasses);
-     };
-   }, []);
+      if (closeBtn) closeBtn.removeEventListener('click', removeClasses);
+      if (serviceBodyOverlay)
+        serviceBodyOverlay.removeEventListener('click', removeClasses);
+    };
+  }, []);
 
   return (
     <>
@@ -148,7 +144,6 @@ const ServiceInnerLight = () => {
             <div
               className='rounded-[10px] bg-BodyBgLight-0 overflow-hidden group border border-BorderGrey2-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:ease-linear before:duration-300 before:opacity-0 hover:before:opacity-100 before:-z-10'
               data-aos='fade-up'
-              data-aos-delay='400'
               data-aos-duration='1000'
             >
               <div className='px-6 sm:px-[30px] pt-7'>
@@ -179,7 +174,6 @@ const ServiceInnerLight = () => {
             <div
               className='rounded-[10px] bg-BodyBgLight-0 overflow-hidden group border border-BorderGrey2-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:ease-linear before:duration-300 before:opacity-0 hover:before:opacity-100 before:-z-10'
               data-aos='fade-up'
-              data-aos-delay='500'
               data-aos-duration='1000'
             >
               <div className='px-6 sm:px-[30px] pt-7'>

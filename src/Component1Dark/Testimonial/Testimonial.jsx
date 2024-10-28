@@ -7,6 +7,7 @@ import testiLogo2 from '/images/testimonials/logo/2.png';
 import testiProfile from '/images/testimonials/user/1.jpg';
 import testiProfile2 from '/images/testimonials/user/2.jpg';
 import { BsFillCaretLeftFill, BsFillCaretRightFill } from 'react-icons/bs';
+import './testimonial.css';
 
 const testiData = [
   {
@@ -79,7 +80,6 @@ const Testimonial = () => {
             <h1
               className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] lg:leading-[58px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'
               data-aos='fade-up-right'
-              data-aos-delay='300'
               data-aos-duration='1000'
             >
               {`My Client's Stories`}
@@ -87,7 +87,6 @@ const Testimonial = () => {
             <p
               className='font-Sora text-TextColor-0 mt-2 max-w-[470px] w-full xl:pr-5 2xl:pr-0'
               data-aos='fade-up-right'
-              data-aos-delay='400'
               data-aos-duration='1000'
             >
               Empowering people in new a digital journey with my super services

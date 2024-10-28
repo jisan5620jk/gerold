@@ -1,0 +1,24 @@
+.testi-icon span {
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-duration: .4s;
+  transition-duration: .4s;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-delay: 0.54s;
+  transition-delay: 0.4s;
+}
+
+.swiper-slide .testi-icon span{
+-webkit-transform: translateX(22px) rotate(-135deg);
+    -ms-transform: translateX(22px) rotate(-135deg);
+    transform: translateX(22px) rotate(-135deg);
+}
+
+.swiper-slide.swiper-slide-active .testi-icon span ,
+.swiper-slide.swiper-slide-next .testi-icon span {
+-webkit-transform: translateX(0) rotate(0);
+    -ms-transform: translateX(0) rotate(0);
+    transform: translateX(0) rotate(0);
+}
+    

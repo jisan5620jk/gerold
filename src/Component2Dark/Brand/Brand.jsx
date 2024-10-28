@@ -1,5 +1,5 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 import brandThumb from '/images/brand/brand-1.png';
 import brandThumb2 from '/images/brand/brand-2.png';
 import brandThumb3 from '/images/brand/brand-3.png';
@@ -51,7 +51,6 @@ const Brand = () => {
           <SwiperSlide>
             <div
               data-aos='fade-up'
-              data-aos-delay='400'
               data-aos-duration='1000'
             >
               <img
@@ -63,7 +62,6 @@ const Brand = () => {
           <SwiperSlide>
             <div
               data-aos='fade-up'
-              data-aos-delay='500'
               data-aos-duration='1000'
             >
               <img
@@ -75,7 +73,6 @@ const Brand = () => {
           <SwiperSlide>
             <div
               data-aos='fade-up'
-              data-aos-delay='600'
               data-aos-duration='1000'
             >
               <img
@@ -87,7 +84,6 @@ const Brand = () => {
           <SwiperSlide>
             <div
               data-aos='fade-up'
-              data-aos-delay='700'
               data-aos-duration='1000'
             >
               <img
@@ -99,7 +95,6 @@ const Brand = () => {
           <SwiperSlide>
             <div
               data-aos='fade-up'
-              data-aos-delay='800'
               data-aos-duration='1000'
             >
               <img
@@ -111,7 +106,6 @@ const Brand = () => {
           <SwiperSlide>
             <div
               data-aos='fade-up'
-              data-aos-delay='900'
               data-aos-duration='1000'
             >
               <img
@@ -123,7 +117,6 @@ const Brand = () => {
           <SwiperSlide>
             <div
               data-aos='fade-up'
-              data-aos-delay='1000'
               data-aos-duration='1000'
             >
               <img

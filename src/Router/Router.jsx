@@ -46,7 +46,6 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: '/',
     errorElement: <ErrorPage />,
     element: <Main2 />,
     children: [
@@ -57,7 +56,6 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: '/',
     errorElement: <ErrorPage />,
     element: <Main3 />,
     children: [
@@ -68,7 +66,6 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: '/',
     errorElement: <ErrorPage />,
     element: <Main10 />,
     children: [
@@ -79,7 +76,6 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: '/',
     errorElement: <ErrorPage />,
     element: <Main6 />,
     children: [
@@ -90,7 +86,6 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: '/',
     errorElement: <ErrorPage />,
     element: <Main11 />,
     children: [
@@ -101,7 +96,6 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: '/',
     errorElement: <ErrorPage />,
     element: <Main4 />,
     children: [
@@ -112,7 +106,6 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: '/',
     errorElement: <ErrorPage />,
     element: <Main12 />,
     children: [
@@ -123,7 +116,6 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: '/',
     errorElement: <ErrorPage />,
     element: <Main7 />,
     children: [
@@ -134,7 +126,6 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: '/',
     errorElement: <ErrorPage />,
     element: <Main13 />,
     children: [
@@ -145,7 +136,6 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: '/',
     errorElement: <ErrorPage />,
     element: <Main8 />,
     children: [
@@ -156,7 +146,6 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: '/',
     errorElement: <ErrorPage />,
     element: <Main15 />,
     children: [
@@ -167,7 +156,6 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: '/',
     errorElement: <ErrorPage />,
     element: <Main9 />,
     children: [
@@ -178,7 +166,6 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: '/',
     errorElement: <ErrorPage />,
     element: <Main14 />,
     children: [
@@ -189,7 +176,6 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: '/',
     errorElement: <ErrorPage />,
     element: <Main5 />,
     children: [
@@ -200,7 +186,6 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: '/',
     errorElement: <ErrorPage />,
     element: <Main16 />,
     children: [

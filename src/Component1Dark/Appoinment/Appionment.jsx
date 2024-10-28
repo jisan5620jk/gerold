@@ -3,22 +3,20 @@ import { Link } from 'react-router-dom';
 
 const Appoinment = () => {
   return (
-    <section className='bg-BodyBg-0 py-28 relative z-10 overflow-hidden'>
+    <section className='bg-BodyBg2-0 py-28 relative z-10 overflow-hidden'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 items-center gap-[22px] relative z-10'>
-          <div className='px-4 sm:px-10 lg:px-6 xl:px-10 pt-9 pb-10 bg-white rounded-2xl'>
+          <div className='px-4 sm:px-10 lg:px-6 xl:px-10 pt-9 pb-10 bg-BodyBg-0 rounded-2xl'>
             <h1
-              className='font-Sora text-[25px] sm:text-[34px] md:text-[45px] lg:text-[38px] xl:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-Secondarycolor-0 bg-clip-text text-transparent'
+              className='font-Sora text-[25px] sm:text-[34px] md:text-[45px] lg:text-[38px] xl:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'
               data-aos='fade-up-right'
-              data-aos-delay='300'
               data-aos-duration='1000'
             >
               Let’s work together!
             </h1>
             <p
-              className='font-Sora text-TextLight-0 font-light pt-2'
+              className='font-Sora text-TextColor-0 font-light pt-2'
               data-aos='fade-up-right'
-              data-aos-delay='400'
               data-aos-duration='1000'
             >
               I design and code beautifully simple things and i love what i do.
@@ -29,7 +27,6 @@ const Appoinment = () => {
               method='post'
               className='flex flex-col gap-y-5 mt-6'
               data-aos='fade-up-right'
-              data-aos-delay='500'
               data-aos-duration='1000'
             >
               <div className='grid grid-cols-1 sm:grid-cols-2 gap-5'>
@@ -39,7 +36,7 @@ const Appoinment = () => {
                   id='first-name'
                   placeholder='First Name*'
                   required
-                  className='font-Sora text-TextLight-0 bg-BodyBgLight-0 placeholder:text-TextLight-0 placeholder:text-opacity-60 border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
+                  className='font-Sora text-TextColor-0 bg-BodyBg-0 placeholder:text-TextColor-0 placeholder:text-opacity-40 border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
                 />
                 <input
                   type='text'
@@ -47,7 +44,7 @@ const Appoinment = () => {
                   id='last-name'
                   placeholder='Last Name*'
                   required
-                  className='font-Sora text-TextLight-0 bg-BodyBgLight-0 placeholder:text-TextLight-0 placeholder:text-opacity-60 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
+                  className='font-Sora text-TextColor-0 bg-BodyBg-0 placeholder:text-TextColor-0 placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
                 />
               </div>
               <div className='grid grid-cols-1 sm:grid-cols-2 gap-5'>
@@ -57,7 +54,7 @@ const Appoinment = () => {
                   id='email'
                   placeholder='Enter E-Mail*'
                   required
-                  className='font-Sora text-TextLight-0 bg-BodyBgLight-0 placeholder:text-TextLight-0 placeholder:text-opacity-60 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
+                  className='font-Sora text-TextColor-0 bg-BodyBg-0 placeholder:text-TextColor-0 placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
                 />
                 <input
                   type='text'
@@ -65,40 +62,24 @@ const Appoinment = () => {
                   id='number'
                   placeholder='Enter Number*'
                   required
-                  className='font-Sora text-TextLight-0 bg-BodyBgLight-0 placeholder:text-TextLight-0 placeholder:text-opacity-60 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
+                  className='font-Sora text-TextColor-0 bg-BodyBg-0 placeholder:text-TextColor-0 placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
                 />
               </div>
               <select
                 name='select'
                 id='select'
-                className='font-Sora text-TextLight-0 bg-BodyBgLight-0 placeholder:text-TextLight-0 placeholder:text-opacity-60 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
+                className='font-Sora text-TextColor-0 bg-BodyBg-0 placeholder:text-TextColor-0 placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
               >
-                <option
-                  value='subject'
-                >
-                  Your Subject
-                </option>
-                <option
-                  value='subject2'
-                >
-                  Bangla
-                </option>
-                <option
-                  value='subject3'
-                >
-                  Arabic
-                </option>
-                <option
-                  value='subject4'
-                >
-                  China
-                </option>
+                <option value='subject'>Your Subject</option>
+                <option value='subject2'>Bangla</option>
+                <option value='subject3'>Arabic</option>
+                <option value='subject4'>China</option>
               </select>
               <textarea
                 name='message'
                 id='message'
                 placeholder='Write a short meassage...'
-                className='font-Sora text-TextLight-0 bg-BodyBgLight-0 placeholder:text-TextLight-0 placeholder:text-opacity-60 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[198px] w-full focus:border-PrimaryColor-0 focus:outline-none resize-none'
+                className='font-Sora text-TextColor-0 bg-BodyBg-0 placeholder:text-TextColor-0 placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[198px] w-full focus:border-PrimaryColor-0 focus:outline-none resize-none'
               ></textarea>
               <div className='inline-block header-btn'>
                 <button
@@ -121,12 +102,10 @@ const Appoinment = () => {
                 <FiPhoneCall size={'22'} />
               </div>
               <div className='flex-1 inline-block'>
-                <h6 className='font-Sora text-TextDark-0 pb-[5px]'>
-                  Phone
-                </h6>
+                <h6 className='font-Sora text-TextColor-0 pb-[5px]'>Phone</h6>
                 <Link
                   to={'/'}
-                  className='font-Sora font-medium text-base sm:text-xl text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
+                  className='font-Sora font-medium text-base sm:text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0'
                 >
                   +01 123 654 8096
                 </Link>
@@ -137,12 +116,10 @@ const Appoinment = () => {
                 <FiPhoneCall size={'22'} />
               </div>
               <div className='flex-1 inline-block'>
-                <h6 className='font-Sora text-TextDark-0 pb-[5px]'>
-                  Email
-                </h6>
+                <h6 className='font-Sora text-TextColor-0 pb-[5px]'>Email</h6>
                 <Link
                   to={'/'}
-                  className='font-Sora font-medium text-base sm:text-xl text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
+                  className='font-Sora font-medium text-base sm:text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0'
                 >
                   gerolddesign@mail.com
                 </Link>
@@ -153,10 +130,8 @@ const Appoinment = () => {
                 <FiPhoneCall size={'22'} />
               </div>
               <div className='flex-1 inline-block'>
-                <h6 className='font-Sora text-TextDark-0 pb-[5px]'>
-                  Address
-                </h6>
-                <p className='font-Sora font-medium text-base sm:text-xl text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'>
+                <h6 className='font-Sora text-TextColor-0 pb-[5px]'>Address</h6>
+                <p className='font-Sora font-medium text-base sm:text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0'>
                   Warne Park Street Pine, <br /> FL 33157, New York
                 </p>
               </div>

@@ -9,6 +9,15 @@
   color: #fff;
 }
 
+.service-item.mleave .service-number {
+  color: #8750f7;
+}
+
+.service-item.mleave .service-icon {
+  transform: rotate(90deg);
+  color: #8750f7;
+}
+
 .popup-body-overlay {
   position: fixed;
   top: 0;
