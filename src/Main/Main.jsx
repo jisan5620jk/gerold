@@ -4,11 +4,10 @@ import NavbarDark from '../Shared/Navbar/NavbarDark';
 import FooterDark from '../Shared/Footer/FooterDark';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
 
 
 const Main = () => {
-    useEffect(() => {
+  window.onload = function() {
       AOS.init({
         // Global settings:
         disable: false, // Accepts boolean, string or function. 'mobile' disables animations on mobile devices.
@@ -25,13 +24,13 @@ const Main = () => {
         delay: 0, // Values from 0 to 3000, with step 50ms.
         duration: 400, // Values from 0 to 3000, with step 50ms.
         easing: 'ease', // Default easing for AOS animations.
-        once: false, // Whether animation should happen only once - while scrolling down.
+        once: true, // Whether animation should happen only once - while scrolling down.
         mirror: false, // Whether elements should animate out while scrolling past them.
         anchorPlacement: 'top-bottom', // Defines which position of the element regarding to window should trigger the animation.
       });
 
       AOS.refresh(); // Refresh AOS to detect new elements and apply animations.
-    }, []);
+    }
   return (
     <>
       <NavbarDark />

@@ -135,7 +135,7 @@ const Banner = () => {
                 start={-11}
                 prefix='1.'
                 end={'5'}
-                suffix={'+'}
+                suffix={'K+'}
                 className='font-Sora text-4xl sm:text-6xl md:text-[50px] lg:text-[64px] text-TextColor-0 font-medium'
               />
             </div>

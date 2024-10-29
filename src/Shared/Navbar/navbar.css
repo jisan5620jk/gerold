@@ -71,16 +71,16 @@
   scrollbar-width: none;
   visibility: hidden;
   transition: 0.45s ease-in-out;
-  overflow-y: scroll;    -webkit-transform-origin: top;
-    -ms-transform-origin: top;
-    transform-origin: top;
-    -webkit-transform: scaleY(0);
-    -ms-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transition: all 0.4s ease-in-out 0s;
-    -o-transition: all 0.4s ease-in-out 0s;
+  overflow-y: scroll;
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+  -webkit-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
 }
-
 
 .offcanvas .homemenu {
   margin-bottom: 30px;
@@ -117,8 +117,8 @@
 .offcanvas.opened {
   visibility: visible;
   -webkit-transform: scaleY(1);
-    -ms-transform: scaleY(1);
-    transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  transform: scaleY(1);
 }
 
 @media (max-width: 576px) {
@@ -234,23 +234,26 @@
 /* Header Sticky */
 
 .header-area.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  width: 100%;
-  z-index: 98;
-  visibility: visible;
-  background-color: #00000063;
-  backdrop-filter: blur(8px);
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  -webkit-animation: 0.95s ease 0s normal forwards 1 running headerSlideDown;
-  -khtml-animation: 0.95s ease 0s normal forwards 1 running headerSlideDown;
-  -moz-animation: 0.95s ease 0s normal forwards 1 running headerSlideDown;
-  -ms-animation: 0.95s ease 0s normal forwards 1 running headerSlideDown;
-  -o-animation: 0.95s ease 0s normal forwards 1 running headerSlideDown;
-  animation: 0.95s ease 0s normal forwards 1 running headerSlideDown;
+  @apply fixed top-0 left-0 z-50 w-full transition-all duration-300 opacity-100 animate-bounceInDown bg-BodyBlack2-0 shadow-shades;
+}
+
+.header-area.light.sticky {
+  @apply fixed top-0 left-0 z-50 w-full transition-all duration-300 opacity-100 animate-bounceInDown bg-BodyBgLight-0 shadow-shades;
+}
+
+.header-area.sticky-out {
+  @apply fixed -top-full left-0 w-full animate-bounceInUp ;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+
+.header-area.sticky{
+    @apply relative top-0 left-0 z-50 w-full transition-all duration-300 opacity-100 animate-bounceInDown bg-BodyBlack2-0 shadow-shades;
+  }
+
+.header-area.light.sticky {
+    @apply relative top-0 left-0 z-50 w-full transition-all duration-300 opacity-100 animate-bounceInDown bg-BodyBgLight-0 shadow-shades;
+  }
 }
 
 /* Header Main Menu */
@@ -714,12 +717,9 @@ nav.main-menu-content > ul > li.current > a::before {
     margin: 0;
   }
 
-
-
   .main-menu-mobile ul li a span.header-icon {
     display: block;
   }
-  
 }
 
 .homemenu-content a {

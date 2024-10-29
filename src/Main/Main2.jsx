@@ -4,10 +4,9 @@ import NavbarLight from '../Shared/Navbar/NavbarLight';
 import FooterLight from '../Shared/Footer/FooterLight';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
 
 const Main2 = () => {
-      useEffect(() => {
+  window.onload = function() {
         AOS.init({
           // Global settings:
           disable: false, // Accepts boolean, string or function. 'mobile' disables animations on mobile devices.
@@ -30,7 +29,7 @@ const Main2 = () => {
         });
 
         AOS.refresh(); // Refresh AOS to detect new elements and apply animations.
-      }, []);
+      }
   return (
     <>
       <NavbarLight />

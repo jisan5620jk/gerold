@@ -1,34 +1,29 @@
-
-.service-light .service-item2.active2 .service-number ,
-.service-light .service-item2:hover .service-number ,
-.service-light .service-item2.active2 .service-title ,
-.service-light .service-item2:hover .service-title ,
-.service-light .service-item2.active2 .service-desc ,
+.service-light .service-item2.active2 .service-number,
+.service-light .service-item2:hover .service-number,
+.service-light .service-item2.active2 .service-title,
+.service-light .service-item2:hover .service-title,
+.service-light .service-item2.active2 .service-desc,
 .service-light .service-item2:hover .service-desc {
   color: #fff;
 }
 
-.service-light .service-item2.active2 .service-icon ,
+.service-light .service-item2.active2 .service-icon,
 .service-light .service-item2:hover .service-icon {
   transform: rotate(0deg);
   color: #fff;
 }
 
-
-
-
-.service-light .service-item2.mleave2 .service-number ,
-.service-light .service-item2.mleave2 .service-title ,
+.service-light .service-item2.mleave2 .service-number,
+.service-light .service-item2.mleave2 .service-title,
 .service-light .service-item2.mleave2 .service-desc {
   color: #8750f7;
 }
-
 
 .service-light .service-item2.mleave2 .service-desc {
   color: #140c1c;
 }
 
-.service-item.mleave2 .service-icon {
+.service-light .service-item2.mleave2 .service-icon {
   transform: rotate(90deg);
   color: #8750f7;
 }
@@ -53,23 +48,23 @@
 }
 
 .service-popup {
- position: fixed;  
-    top: 50%;  
-    bottom: 0;
-    left: 50%;  
-    transform: translateX(-50%) scale(0.8);  
-    width: 100%;  
-    max-width: 1100px;  
-    background-color: transparent;  
-    background-position: center;  
-    background-size: cover;  
-    background-repeat: no-repeat; 
-    z-index: 99;  
-    opacity: 0;  
-    visibility: hidden;  
-    transition: 0.45s ease-in;  
-    overflow-y: scroll;  
-    scrollbar-width: none;
+  position: fixed;
+  top: 50%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(0.8);
+  width: 100%;
+  max-width: 1100px;
+  background-color: transparent;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.45s ease-in;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
 
 .service-popup.opened {

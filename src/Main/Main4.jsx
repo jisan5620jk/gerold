@@ -4,12 +4,11 @@ import Footer2Dark from '../Shared/Footer/Footer2Dark';
 import ServiceNavbar from '../Shared/Navbar/ServiceNavbar';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
 
 
 
 const Main4 = () => {
-      useEffect(() => {
+  window.onload = function() {
         AOS.init({
           // Global settings:
           disable: false, // Accepts boolean, string or function. 'mobile' disables animations on mobile devices.
@@ -32,7 +31,7 @@ const Main4 = () => {
         });
 
         AOS.refresh(); // Refresh AOS to detect new elements and apply animations.
-      }, []);
+      }
   return (
     <>
       <ServiceNavbar />

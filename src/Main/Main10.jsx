@@ -1,13 +1,12 @@
 import { Outlet } from 'react-router-dom';
 import ScrollToTop from '../Shared/BackToTop/BackToTop';
 import Navbar2Light from '../Shared/Navbar/Navbar2Light';
-import Footer2Dark from '../Shared/Footer/Footer2Dark';
+import Footer2Light from '../Shared/Footer/Footer2Light';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
 
 const Main10 = () => {
-      useEffect(() => {
+  window.onload = function() {
         AOS.init({
           // Global settings:
           disable: false, // Accepts boolean, string or function. 'mobile' disables animations on mobile devices.
@@ -30,7 +29,7 @@ const Main10 = () => {
         });
 
         AOS.refresh(); // Refresh AOS to detect new elements and apply animations.
-      }, []);
+      }
   return (
     <>
       <Navbar2Light />
@@ -38,7 +37,7 @@ const Main10 = () => {
       <div>
         <Outlet />
       </div>
-      <Footer2Dark />
+      <Footer2Light />
     </>
   );
 };

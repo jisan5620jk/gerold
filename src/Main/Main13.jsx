@@ -4,10 +4,9 @@ import FooterDark from '../Shared/Footer/FooterDark';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import PortfolioNavbarLight from '../Shared/Navbar/PortfolioNavbarLight';
-import { useEffect } from 'react';
 
 const Main13 = () => {
-      useEffect(() => {
+  window.onload = function() {
         AOS.init({
           // Global settings:
           disable: false, // Accepts boolean, string or function. 'mobile' disables animations on mobile devices.
@@ -30,7 +29,7 @@ const Main13 = () => {
         });
 
         AOS.refresh(); // Refresh AOS to detect new elements and apply animations.
-      }, []);
+      }
   return (
     <>
       <PortfolioNavbarLight />

@@ -4,9 +4,32 @@ import './navbar.css';
 import { useEffect, useRef } from 'react';
 import { HiMinusSm, HiPlusSm } from 'react-icons/hi';
 import { IoCloseOutline } from 'react-icons/io5';
-import { BsDownload } from 'react-icons/bs';
+import { TbDownload } from 'react-icons/tb';
 
 const Navbar2Dark = () => {
+  //Sticky
+
+  let lastScrollTop = 0;
+
+  window.addEventListener('scroll', () => {
+    const scroll = window.scrollY;
+    const header = document.querySelector('.header-area');
+
+    if (scroll > 300) {
+      header.classList.add('sticky');
+      header.classList.remove('sticky-out');
+    } else if (scroll < lastScrollTop) {
+      if (scroll < 500) {
+        header.classList.add('sticky-out');
+        header.classList.remove('sticky');
+      }
+    } else {
+      header.classList.remove('sticky');
+    }
+
+    lastScrollTop = scroll;
+  });
+
   //Menu Bar
   const menuBarRef = useRef(null);
   const offcanvasRef = useRef(null);
@@ -258,16 +281,16 @@ const Navbar2Dark = () => {
                 <div>
                   <Link
                     to={'/'}
-                    className='font-Sora font-semibold text-[15px] text-white pl-[30px] pr-[34px] py-[17px] leading-4 rounded-full flex items-center gap-[14px] group bg-PrimaryColor-0'
+                    className='font-Sora font-semibold text-[15px] text-white pl-[30px] pr-[34px] py-[17px] leading-3 rounded-full flex items-center gap-[14px] group bg-PrimaryColor-0'
                   >
                     Resume{' '}
-                    <span className='relative bottom-[px] size-4 overflow-hidden'>
-                      <BsDownload
-                        size={'14'}
+                    <span className='relative bottom-[1px] size-4 overflow-hidden'>
+                      <TbDownload
+                        size={'16'}
                         className='absolute transition-all duration-300 translate-y-0 group-hover:-translate-y-[150%]'
                       />
-                      <BsDownload
-                        size={'14'}
+                      <TbDownload
+                        size={'16'}
                         className='absolute transition-all duration-300 translate-y-[150%] group-hover:translate-y-0'
                       />
                     </span>

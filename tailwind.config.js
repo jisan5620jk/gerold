@@ -135,6 +135,33 @@ export default {
               '0 0 0 0 rgba(255, 255, 255, 0), 0 0 0 30px rgba(255, 255, 255, 0)',
           },
         },
+        bounceInDown: {
+          '0%': { opacity: '0', transform: 'translateY(-2000px)' },
+          '60%': { opacity: '1', transform: 'translateY(0px)' },
+          '80%': { transform: 'translateY(-10px)' },
+          '100%': { transform: 'translateY(0)' },
+        },
+        bounceInUp: {
+          '0%, 10%, 35%, 50%, to': {
+            animationTimingFunction: 'cubic-bezier(0.215, 0.61, 0.355, 1)',
+            transform: 'translate3d(0, 0px, 0)',
+          },
+          '10%': {
+            transform: 'translate3d(0, 0px, 0)',
+          },
+          '35%': {
+            transform: 'translate3d(0, -10px, 0)',
+          },
+          '50%': {
+            transform: 'translate3d(0, 2px, 0)',
+          },
+          '80%': {
+            transform: 'translate3d(0, -90px, 0)',
+          },
+          to: {
+            transform: 'translate3d(0, -3000px, 0)',
+          },
+        },
       },
       animation: {
         movebtn: 'movebtn 3s linear infinite',
@@ -153,10 +180,13 @@ export default {
         swing: 'swing 1s ease-in-out 1s forwards infinite alternate',
         headerSlideDown:
           '500ms ease-in-out 0s normal none 1 running headerSlideDown',
+        bounceInDown: 'bounceInDown 1s both',
+        bounceInUp: 'bounceInUp 1s both',
       },
       boxShadow: {
         cases: '0px 10px 15px rgba(187, 187, 187, 0.2)',
         shade: '0px 0px 20px rgba(187, 187, 187, 0.2)',
+        shades: '0 0 30px rgba(135, 80, 247, 0.2)',
         shadow: '0px 30px 50px rgba(152,178,240,0.5)',
       },
       mixBlendMode: {
