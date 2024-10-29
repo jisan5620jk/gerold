@@ -1,65 +1,72 @@
-import { useEffect } from 'react';
 import './preloader.css';
+import { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
 
 const Preloader = () => {
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      document.querySelector('#loading-screen').style.opacity = 0;
-      setTimeout(() => {
-        document.querySelector('#loading-screen').remove();
-      }, 300);
-    }, 1000); // Adjust the duration as needed
+  const preloaderRef = useRef(null);
+  const svgRef = useRef(null);
 
-    return () => clearTimeout(timeout);
+  useEffect(() => {
+    const svg = svgRef.current;
+    const tl = gsap.timeline({
+      onComplete: startStrokeAnimation,
+    });
+
+    const curve = 'M0 502S175 272 500 272s500 230 500 230V0H0Z';
+    const flat = 'M0 2S175 1 500 1s500 1 500 1V0H0Z';
+
+    tl.to('.preloader-heading .load-text', {
+      delay: 1.5,
+      y: -100,
+      opacity: 0,
+    })
+      .to(svg, {
+        duration: 0.5,
+        attr: { d: curve },
+        ease: 'power2.easeIn',
+      })
+      .to(svg, {
+        duration: 0.5,
+        attr: { d: flat },
+        ease: 'power2.easeOut',
+      })
+      .to(preloaderRef.current, {
+        y: -1500,
+      })
+      .to(preloaderRef.current, {
+        zIndex: -1,
+        display: 'none',
+      });
+
+    function startStrokeAnimation() {
+      // Your stroke animation logic here
+    }
   }, []);
 
   return (
     <div
-      className='loading-screen'
-      id='loading-screen'
+      className='preloader'
+      ref={preloaderRef}
     >
-      <span className='bar top-bar'></span>
-      <span className='bar down-bar'></span>
-      <div className='animation-preloader'>
-        <div className='spinner'></div>
-        <div className='loader'></div>
-        <div className='txt-loading'>
-          <span
-            data-text-preloader='G'
-            className='letters-loading'
-          >
-            G
-          </span>
-          <span
-            data-text-preloader='E'
-            className='letters-loading'
-          >
-            E
-          </span>
-          <span
-            data-text-preloader='R'
-            className='letters-loading'
-          >
-            R
-          </span>
-          <span
-            data-text-preloader='O'
-            className='letters-loading'
-          >
-            O
-          </span>
-          <span
-            data-text-preloader='L'
-            className='letters-loading'
-          >
-            L
-          </span>
-          <span
-            data-text-preloader='D'
-            className='letters-loading'
-          >
-            D
-          </span>
+      <svg
+        viewBox='0 0 1000 1000'
+        preserveAspectRatio='none'
+      >
+        <path
+          id='preloaderSvg'
+          ref={svgRef}
+          d='M0,1005S175,995,500,995s500,5,500,5V0H0Z'
+        ></path>
+      </svg>
+      <div className='preloader-heading'>
+        <div className='load-text'>
+          <span>L</span>
+          <span>o</span>
+          <span>a</span>
+          <span>d</span>
+          <span>i</span>
+          <span>n</span>
+          <span>g</span>
         </div>
       </div>
     </div>
