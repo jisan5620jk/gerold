@@ -36,164 +36,99 @@ import Main16 from '../Main/Main16';
 const router = createBrowserRouter([
   {
     path: '/',
-    errorElement: <ErrorPage />,
     element: <Main />,
-    children: [
-      {
-        path: '/',
-        element: <Home1 />,
-      },
-    ],
+    errorElement: <ErrorPage />,
+    children: [{ path: '/', element: <Home1 /> }],
   },
   {
-    errorElement: <ErrorPage />,
+    path: '/home_light',
     element: <Main2 />,
-    children: [
-      {
-        path: '/home_light',
-        element: <Home2 />,
-      },
-    ],
+    errorElement: <ErrorPage />,
+    children: [{ path: '/home_light', element: <Home2 /> }],
   },
   {
-    errorElement: <ErrorPage />,
+    path: '/home2',
     element: <Main3 />,
-    children: [
-      {
-        path: '/home2',
-        element: <Home3 />,
-      },
-    ],
+    errorElement: <ErrorPage />,
+    children: [{ path: '/home2', element: <Home3 /> }],
   },
   {
-    errorElement: <ErrorPage />,
+    path: '/home2_light',
     element: <Main10 />,
-    children: [
-      {
-        path: '/home2_light',
-        element: <Home4 />,
-      },
-    ],
+    errorElement: <ErrorPage />,
+    children: [{ path: '/home2_light', element: <Home4 /> }],
   },
   {
-    errorElement: <ErrorPage />,
+    path: '/about',
     element: <Main6 />,
-    children: [
-      {
-        path: '/about',
-        element: <AboutInner />,
-      },
-    ],
+    errorElement: <ErrorPage />,
+    children: [{ path: '/about', element: <AboutInner /> }],
   },
   {
-    errorElement: <ErrorPage />,
+    path: '/about_light',
     element: <Main11 />,
-    children: [
-      {
-        path: '/about_light',
-        element: <AboutInnerLight />,
-      },
-    ],
+    errorElement: <ErrorPage />,
+    children: [{ path: '/about_light', element: <AboutInnerLight /> }],
   },
   {
-    errorElement: <ErrorPage />,
+    path: '/service',
     element: <Main4 />,
-    children: [
-      {
-        path: '/service',
-        element: <ServiceInner />,
-      },
-    ],
+    errorElement: <ErrorPage />,
+    children: [{ path: '/service', element: <ServiceInner /> }],
   },
   {
-    errorElement: <ErrorPage />,
+    path: '/service_light',
     element: <Main12 />,
-    children: [
-      {
-        path: '/service_light',
-        element: <ServiceInnerLight />,
-      },
-    ],
+    errorElement: <ErrorPage />,
+    children: [{ path: '/service_light', element: <ServiceInnerLight /> }],
   },
   {
-    errorElement: <ErrorPage />,
+    path: '/portfolio',
     element: <Main7 />,
-    children: [
-      {
-        path: '/portfolio',
-        element: <PortfolioInner />,
-      },
-    ],
+    errorElement: <ErrorPage />,
+    children: [{ path: '/portfolio', element: <PortfolioInner /> }],
   },
   {
-    errorElement: <ErrorPage />,
+    path: '/portfolio_light',
     element: <Main13 />,
-    children: [
-      {
-        path: '/portfolio_light',
-        element: <PortfolioInnerLight />,
-      },
-    ],
+    errorElement: <ErrorPage />,
+    children: [{ path: '/portfolio_light', element: <PortfolioInnerLight /> }],
   },
   {
-    errorElement: <ErrorPage />,
+    path: '/blog',
     element: <Main8 />,
-    children: [
-      {
-        path: '/blog',
-        element: <BlogInner />,
-      },
-    ],
+    errorElement: <ErrorPage />,
+    children: [{ path: '/blog', element: <BlogInner /> }],
   },
   {
-    errorElement: <ErrorPage />,
+    path: '/blog_light',
     element: <Main15 />,
-    children: [
-      {
-        path: '/blog_light',
-        element: <BlogInnerLight />,
-      },
-    ],
+    errorElement: <ErrorPage />,
+    children: [{ path: '/blog_light', element: <BlogInnerLight /> }],
   },
   {
-    errorElement: <ErrorPage />,
+    path: '/blog_details',
     element: <Main9 />,
-    children: [
-      {
-        path: '/blog_details',
-        element: <BlogDetails />,
-      },
-    ],
+    errorElement: <ErrorPage />,
+    children: [{ path: '/blog_details', element: <BlogDetails /> }],
   },
   {
-    errorElement: <ErrorPage />,
+    path: '/blog_details_light',
     element: <Main14 />,
-    children: [
-      {
-        path: '/blog_details_light',
-        element: <BlogDetailsLight />,
-      },
-    ],
+    errorElement: <ErrorPage />,
+    children: [{ path: '/blog_details_light', element: <BlogDetailsLight /> }],
   },
   {
-    errorElement: <ErrorPage />,
+    path: '/contact',
     element: <Main5 />,
-    children: [
-      {
-        path: '/contact',
-        element: <ContactInner />,
-      },
-    ],
+    errorElement: <ErrorPage />,
+    children: [{ path: '/contact', element: <ContactInner /> }],
   },
   {
-    errorElement: <ErrorPage />,
+    path: '/contact_light',
     element: <Main16 />,
-    children: [
-      {
-        path: '/contact_light',
-        element: <ContactInnerLight />,
-      },
-    ],
+    errorElement: <ErrorPage />,
+    children: [{ path: '/contact_light', element: <ContactInnerLight /> }],
   },
 ]);
 
