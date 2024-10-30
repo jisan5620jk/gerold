@@ -6,7 +6,7 @@ const Appoinment = () => {
     <section className='bg-BodyBg2-0 py-28 relative z-10 overflow-hidden'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 items-center gap-[22px] relative z-10'>
-          <div className='px-4 sm:px-10 lg:px-6 xl:px-10 pt-9 pb-10 bg-BodyBg-0 rounded-2xl'>
+          <div className='px-4 sm:px-10 lg:px-6 xl:px-10 pt-9 pb-10 bg-BodyBg3-0 rounded-2xl'>
             <h1
               className='font-Sora text-[25px] sm:text-[34px] md:text-[45px] lg:text-[38px] xl:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'
               data-aos='fade-up-right'
@@ -25,18 +25,18 @@ const Appoinment = () => {
             <form
               action='https://formspree.io/f/xkgngbnj'
               method='post'
-              className='flex flex-col gap-y-5 mt-6'
+              className='flex flex-col gap-y-4 mt-6'
               data-aos='fade-up-right'
               data-aos-duration='1000'
             >
-              <div className='grid grid-cols-1 sm:grid-cols-2 gap-5'>
+              <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
                 <input
                   type='text'
                   name='first-name'
                   id='first-name'
                   placeholder='First Name*'
                   required
-                  className='font-Sora text-TextColor-0 bg-BodyBg-0 placeholder:text-TextColor-0 placeholder:text-opacity-40 border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
+                  className='font-Sora text-TextColor-0 bg-BodyBg2-0 placeholder:text-TextColor-0 placeholder:text-opacity-40 border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
                 />
                 <input
                   type='text'
@@ -44,17 +44,17 @@ const Appoinment = () => {
                   id='last-name'
                   placeholder='Last Name*'
                   required
-                  className='font-Sora text-TextColor-0 bg-BodyBg-0 placeholder:text-TextColor-0 placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
+                  className='font-Sora text-TextColor-0 bg-BodyBg2-0 placeholder:text-TextColor-0 placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
                 />
               </div>
-              <div className='grid grid-cols-1 sm:grid-cols-2 gap-5'>
+              <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
                 <input
                   type='email'
                   name='email'
                   id='email'
                   placeholder='Enter E-Mail*'
                   required
-                  className='font-Sora text-TextColor-0 bg-BodyBg-0 placeholder:text-TextColor-0 placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
+                  className='font-Sora text-TextColor-0 bg-BodyBg2-0 placeholder:text-TextColor-0 placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
                 />
                 <input
                   type='text'
@@ -62,13 +62,13 @@ const Appoinment = () => {
                   id='number'
                   placeholder='Enter Number*'
                   required
-                  className='font-Sora text-TextColor-0 bg-BodyBg-0 placeholder:text-TextColor-0 placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
+                  className='font-Sora text-TextColor-0 bg-BodyBg2-0 placeholder:text-TextColor-0 placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
                 />
               </div>
               <select
                 name='select'
                 id='select'
-                className='font-Sora text-TextColor-0 bg-BodyBg-0 placeholder:text-TextColor-0 placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
+                className='font-Sora text-TextColor-0 bg-BodyBg2-0 placeholder:text-TextColor-0 placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
               >
                 <option value='subject'>Your Subject</option>
                 <option value='subject2'>Bangla</option>
@@ -79,7 +79,7 @@ const Appoinment = () => {
                 name='message'
                 id='message'
                 placeholder='Write a short meassage...'
-                className='font-Sora text-TextColor-0 bg-BodyBg-0 placeholder:text-TextColor-0 placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[198px] w-full focus:border-PrimaryColor-0 focus:outline-none resize-none'
+                className='font-Sora text-TextColor-0 bg-BodyBg2-0 placeholder:text-TextColor-0 placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[198px] w-full focus:border-PrimaryColor-0 focus:outline-none resize-none'
               ></textarea>
               <div className='inline-block header-btn'>
                 <button

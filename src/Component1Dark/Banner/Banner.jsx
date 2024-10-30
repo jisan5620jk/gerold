@@ -72,7 +72,7 @@ const Banner = () => {
                 </ul>
               </div>
             </div>
-            <div className='flex justify-center relative mt-12'>
+            <div className='flex justify-center relative mt-12 lg:mt-0'>
               <span className='absolute -z-10 -left-[5%] -bottom-[5%] size-[220px] rounded-full bg-gradient-to-r to-PrimaryColor-0 from-transparent blur-[150px]'></span>
               <img
                 src={bannerThumb}
@@ -82,7 +82,7 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7 sm:gap-10 xl:gap-20 pt-16 sm:pt-20 md:pt-[138px]'>
+        <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7 sm:gap-10 xl:gap-20 pt-16 sm:pt-20 md:pt-[124px]'>
           <div className='flex flex-col sm:flex-row sm:items-center gap-3'>
             <div>
               <CountUp

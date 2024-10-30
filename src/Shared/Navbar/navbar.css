@@ -233,26 +233,23 @@
 
 /* Header Sticky */
 
-.header-area.sticky {
-  @apply fixed top-0 left-0 z-50 w-full transition-all duration-300 opacity-100 animate-bounceInDown bg-BodyBlack2-0 shadow-shades;
+
+.header-area.is-sticky {
+  @apply fixed top-0 left-0 z-50 w-full transition-all duration-300 py-[10px] animate-bounceInDown bg-BodyBlack2-0 shadow-shades;
 }
 
-.header-area.light.sticky {
-  @apply fixed top-0 left-0 z-50 w-full transition-all duration-300 opacity-100 animate-bounceInDown bg-BodyBgLight-0 shadow-shades;
-}
-
-.header-area.sticky-out {
-  @apply fixed -top-full left-0 w-full animate-bounceInUp ;
+.header-area.light.is-sticky {
+  @apply fixed top-0 left-0 z-50 w-full transition-all duration-300 py-[10px] animate-bounceInDown bg-BodyBgLight-0 shadow-shades;
 }
 
 @media (min-width: 320px) and (max-width: 991px) {
 
-.header-area.sticky{
-    @apply relative top-0 left-0 z-50 w-full transition-all duration-300 opacity-100 animate-bounceInDown bg-BodyBlack2-0 shadow-shades;
+.header-area.is-sticky{
+    @apply relative top-0 left-0 z-50 w-full transition-all duration-300 animate-bounceInDown bg-BodyBlack2-0 shadow-shades;
   }
 
-.header-area.light.sticky {
-    @apply relative top-0 left-0 z-50 w-full transition-all duration-300 opacity-100 animate-bounceInDown bg-BodyBgLight-0 shadow-shades;
+.header-area.is-sticky {
+    @apply relative top-0 left-0 z-50 w-full transition-all duration-300 animate-bounceInDown bg-BodyBgLight-0 shadow-shades;
   }
 }
 
@@ -265,10 +262,11 @@
   width: 100%;
   display: flex;
   align-items: center;
+  padding: 20px 0;
 }
 
 .header-logo {
-  padding: 31px 0;
+  padding: 11px 0;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 991px) {

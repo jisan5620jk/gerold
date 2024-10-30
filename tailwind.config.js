@@ -181,7 +181,7 @@ export default {
         headerSlideDown:
           '500ms ease-in-out 0s normal none 1 running headerSlideDown',
         bounceInDown: 'bounceInDown 1s both',
-        bounceInUp: 'bounceInUp 1s both',
+        bounceInUp: 'bounceInUp 1s forwards',
       },
       boxShadow: {
         cases: '0px 10px 15px rgba(187, 187, 187, 0.2)',

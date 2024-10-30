@@ -6,28 +6,26 @@ import { HiMinusSm, HiPlusSm } from 'react-icons/hi';
 import { IoCloseOutline } from 'react-icons/io5';
 
 const NavbarDark = () => {
+
   //Sticky
 
-  let lastScrollTop = 0;
+useEffect(() => {
+  window.addEventListener('scroll', isSticky);
+  return () => {
+    window.removeEventListener('scroll', isSticky);
+  };
+});
 
-  window.addEventListener('scroll', () => {
-    const scroll = window.scrollY;
-    const header = document.querySelector('.header-area');
+/* Method that will fix header after a specific scrollable */
+const isSticky = () => {
+  const header = document.querySelector('.header-area');
+  const scrollTop = window.scrollY;
+  scrollTop >= 250
+    ? header.classList.add('is-sticky')
+    : header.classList.remove('is-sticky');
+};
 
-    if (scroll > 300) {
-      header.classList.add('sticky');
-      header.classList.remove('sticky-out');
-    } else if (scroll < lastScrollTop) {
-      if (scroll < 500) {
-        header.classList.add('sticky-out');
-        header.classList.remove('sticky');
-      }
-    } else {
-      header.classList.remove('sticky');
-    }
 
-    lastScrollTop = scroll;
-  });
 
   //Menu Bar
   const menuBarRef = useRef(null);
