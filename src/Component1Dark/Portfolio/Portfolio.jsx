@@ -258,7 +258,7 @@ const Portfolio = () => {
                 <p className='font-Sora font-light text-white pt-4'>
                   Project was about precision and information.
                 </p>
-                <span className='text-3xl tracking-custom2 absolute top-1/2 right-[25px] md:right-4 lg:right-[25px] -translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
+                <span className='text-3xl tracking-custom2 absolute top-8 sm:top-1/2 right-[25px] md:right-4 lg:right-[25px] sm:-translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
                   <HiArrowUpRight />
                 </span>
                 <button
@@ -281,7 +281,7 @@ const Portfolio = () => {
                 <p className='font-Sora font-light text-white pt-4'>
                   Project was about precision and information.
                 </p>
-                <span className='text-3xl tracking-custom2 absolute top-1/2 right-[25px] md:right-4 lg:right-[25px] -translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
+                <span className='text-3xl tracking-custom2 absolute top-8 sm:top-1/2 right-[25px] md:right-4 lg:right-[25px] sm:-translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
                   <HiArrowUpRight />
                 </span>
                 <button
@@ -304,7 +304,7 @@ const Portfolio = () => {
                 <p className='font-Sora font-light text-white pt-4'>
                   Project was about precision and information.
                 </p>
-                <span className='text-3xl tracking-custom2 absolute top-1/2 right-[25px] md:right-4 lg:right-[25px] -translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
+                <span className='text-3xl tracking-custom2 absolute top-8 sm:top-1/2 right-[25px] md:right-4 lg:right-[25px] sm:-translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
                   <HiArrowUpRight />
                 </span>
                 <button
@@ -327,7 +327,7 @@ const Portfolio = () => {
                 <p className='font-Sora font-light text-white pt-4'>
                   Project was about precision and information.
                 </p>
-                <span className='text-3xl tracking-custom2 absolute top-1/2 right-[25px] md:right-4 lg:right-[25px] -translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
+                <span className='text-3xl tracking-custom2 absolute top-8 sm:top-1/2 right-[25px] md:right-4 lg:right-[25px] sm:-translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
                   <HiArrowUpRight />
                 </span>
                 <button
