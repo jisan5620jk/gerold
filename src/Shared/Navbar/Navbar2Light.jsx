@@ -147,10 +147,7 @@ const Navbar2Light = () => {
         ref={bodyOverlayRef}
         className='body-overlay'
       ></div>
-      <div
-        id='header-sticky'
-        className='header-area light py-5 lg:py-0'
-      >
+      <div className='header-area light py-5 lg:py-0'>
         <div className='Container'>
           <div className='flex items-center justify-between lg:grid lg:grid-cols-12'>
             <div className='col-span-4'>
@@ -195,7 +192,7 @@ const Navbar2Light = () => {
                         </span>
                       </Link>
                       <ul className='submenu'>
-                        <li className='has-dropdown current'>
+                        <li className='has-dropdown'>
                           <Link to={'/'}>
                             Dark Mode
                             <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 hidden lg:block'>
@@ -214,7 +211,7 @@ const Navbar2Light = () => {
                             </li>
                           </ul>
                         </li>
-                        <li className='has-dropdown'>
+                        <li className='has-dropdown current'>
                           <Link to={'/'}>
                             Light Mode
                             <span className='absolute top-1/2 -translate-y-1/2 right-4 text-xl transition-all duration-500 hidden lg:block'>

@@ -147,10 +147,7 @@ const BlogNavbarLight = () => {
         ref={bodyOverlayRef}
         className='body-overlay'
       ></div>
-      <div
-        id='header-sticky'
-        className='header-area py-5 lg:py-0'
-      >
+      <div className='header-area py-5 lg:py-0'>
         <div className='Container'>
           <div className='flex items-center justify-between lg:grid lg:grid-cols-12'>
             <div className='col-span-4'>

@@ -148,7 +148,6 @@ const Navbar2Dark = () => {
         className='body-overlay'
       ></div>
       <div
-        id='header-sticky'
         className='header-area py-5 lg:py-0'
       >
         <div className='Container'>

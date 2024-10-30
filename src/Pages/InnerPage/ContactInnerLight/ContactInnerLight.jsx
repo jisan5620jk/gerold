@@ -1,6 +1,6 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import Appoinment from "../../../Component1Dark/Appoinment/Appionment";
+import Appoinment from "../../../Component1Light/Appoinment/Appionment";
 
 const ContactInnerLight = () => {
   return (
