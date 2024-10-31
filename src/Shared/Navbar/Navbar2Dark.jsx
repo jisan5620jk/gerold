@@ -62,35 +62,39 @@ const Navbar2Dark = () => {
     };
   }, []);
 
-  let headerIcon = `
-    <span className="header-icon">  
-      <svg fill="currentColor" viewBox="0 0 320 512" height="18px" width="18px" xmlns="http://www.w3.org/2000/svg">
-        <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
-      </svg>
-    </span>`;
+  let headerIcon = `  
+  <span className="header-icon">  
+    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="22px" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+  </span>  
+  `;
+  let headerIcon2 = `  
+  <span className="header-icon">  
+    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="22px" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M5 12h14"></path></svg>
+  </span>  
+  `;
 
   useEffect(() => {
     const mainMenuContent = document.querySelector('.main-menu-content');
     const mainMenuMobile = document.querySelector('.main-menu-mobile');
-
     if (mainMenuContent && mainMenuMobile) {
       const navContent = mainMenuContent.outerHTML;
       mainMenuMobile.innerHTML = navContent;
-
       const arrows = document.querySelectorAll(
         '.main-menu-mobile .has-dropdown > a'
       );
-
       arrows.forEach((arrow) => {
         const arrowBtn = document.createElement('BUTTON');
         arrowBtn.classList.add('dropdown-toggle-btn');
         arrowBtn.innerHTML = headerIcon;
-
+        arrowBtn.style.transition = 'all 0.3s ease'; // Add transition effect
         arrow.appendChild(arrowBtn);
-
         arrowBtn.addEventListener('click', (e) => {
           e.preventDefault();
-          arrowBtn.classList.toggle('dropdown-opened');
+          const isOpened = arrowBtn.classList.toggle('dropdown-opened');
+          arrowBtn.innerHTML = isOpened ? headerIcon2 : headerIcon;
+          arrowBtn.style.transform = isOpened
+            ? 'rotate(180deg)'
+            : 'rotate(0deg)'; // Add rotation for visual effect
           arrow.parentElement.classList.toggle('expanded');
           arrow.parentElement.parentElement.classList.add('dropdown-opened');
           arrow.parentElement.parentElement
@@ -112,7 +116,7 @@ const Navbar2Dark = () => {
         });
       });
     }
-  }, [headerIcon]);
+  }, [headerIcon, headerIcon2]);
 
   return (
     <>
