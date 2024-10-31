@@ -28,7 +28,7 @@ const Footer2Dark = () => {
           <ul className='flex items-center justify-center gap-2 sm:gap-[35px] my-7'>
             <li>
               <Link
-                to={'/about'}
+                to={'/about_light'}
                 className='font-Sora font-bold text-[15px] text-white relative z-10 before:bottom-0 before:right-0 before:absolute before:w-0 before:h-[2px] before:bg-gradient-to-r before:to-Secondarycolor-0 before:from-PrimaryColor-0 hover:before:left-0 hover:w-full'
               >
                 About
@@ -36,7 +36,7 @@ const Footer2Dark = () => {
             </li>
             <li>
               <Link
-                to={'/service'}
+                to={'/service_light'}
                 className='font-Sora font-bold text-[15px] text-white relative z-10 before:bottom-0 before:right-0 before:absolute before:w-0 before:h-[2px] before:bg-gradient-to-r before:to-Secondarycolor-0 before:from-PrimaryColor-0 hover:before:left-0 hover:w-full'
               >
                 Services
@@ -52,7 +52,7 @@ const Footer2Dark = () => {
             </li>
             <li>
               <Link
-                to={'/contact'}
+                to={'/contact_light'}
                 className='font-Sora font-bold text-[15px] text-white relative z-10 before:bottom-0 before:right-0 before:absolute before:w-0 before:h-[2px] before:bg-gradient-to-r before:to-Secondarycolor-0 before:from-PrimaryColor-0 hover:before:left-0 hover:w-full'
               >
                 Contact

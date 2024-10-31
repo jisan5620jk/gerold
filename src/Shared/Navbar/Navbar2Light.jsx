@@ -132,7 +132,7 @@ const Navbar2Light = () => {
             </div>
             <div className='offcanvas_logo inline-block'>
               <Link
-                to={'/'}
+                to={'/home2_light'}
                 title='Gerold'
               >
                 <img
@@ -157,7 +157,7 @@ const Navbar2Light = () => {
                 <ul className='flex items-center gap-[35px]'>
                   <li>
                     <Link
-                      to={'/'}
+                      to={'/home2_light'}
                       title='Gerold'
                     >
                       <img
@@ -182,7 +182,7 @@ const Navbar2Light = () => {
                   <ul>
                     <li className='has-dropdown group current'>
                       <Link
-                        to={'/'}
+                        to={'/home2_light'}
                         className='!pr-5'
                       >
                         Home{' '}
@@ -244,8 +244,8 @@ const Navbar2Light = () => {
                       <Link to={'/portfolio_light'}>Portfolios</Link>
                     </li>
                     <li className='has-dropdown'>
-                      <Link
-                        to={'/'}
+                       <Link
+                        to={'/blog_light'}
                         className='!pr-5'
                       >
                         Blog

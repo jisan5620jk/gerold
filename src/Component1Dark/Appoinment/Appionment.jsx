@@ -1,4 +1,6 @@
+import { FaRegEnvelope } from 'react-icons/fa';
 import { FiPhoneCall } from 'react-icons/fi';
+import { IoLocationOutline } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 
 const Appoinment = () => {
@@ -98,7 +100,7 @@ const Appoinment = () => {
             data-aos-duration='1000'
           >
             <div className='flex items-start gap-[26px] mb-[38px]'>
-              <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-white flex items-center justify-center'>
+              <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-TextColor-0 flex items-center justify-center'>
                 <FiPhoneCall size={'22'} />
               </div>
               <div className='flex-1 inline-block'>
@@ -112,8 +114,8 @@ const Appoinment = () => {
               </div>
             </div>
             <div className='flex items-start gap-[26px] mb-[38px]'>
-              <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-white flex items-center justify-center'>
-                <FiPhoneCall size={'22'} />
+              <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-TextColor-0 flex items-center justify-center'>
+                <FaRegEnvelope size={'21'} />
               </div>
               <div className='flex-1 inline-block'>
                 <h6 className='font-Sora text-TextColor-0 pb-[5px]'>Email</h6>
@@ -126,8 +128,8 @@ const Appoinment = () => {
               </div>
             </div>
             <div className='flex items-start gap-[26px]'>
-              <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-white flex items-center justify-center'>
-                <FiPhoneCall size={'22'} />
+              <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-TextColor-0 flex items-center justify-center'>
+                <IoLocationOutline size={'22'} />
               </div>
               <div className='flex-1 inline-block'>
                 <h6 className='font-Sora text-TextColor-0 pb-[5px]'>Address</h6>

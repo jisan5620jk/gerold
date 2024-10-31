@@ -11,7 +11,7 @@ import { BsDownload } from 'react-icons/bs';
 
 const Banner = () => {
   return (
-    <section className='bg-BodyBg-0 relative z-10 overflow-hidden pt-[204px] pb-[57px]'>
+    <section className='bg-BodyBg-0 relative z-10 overflow-hidden pt-[130px] md:pt-[204px] pb-[57px]'>
       <span className='absolute -z-10 -top-[10%] -right-[5%] w-[322px] h-[308px] rounded-full bg-gradient-to-r to-PrimaryColor-0 from-transparent blur-[150px]'></span>
       <div className='Container'>
         <div className='relative z-10'>
@@ -22,13 +22,21 @@ const Banner = () => {
           </div>
           <div className='grid grid-cols-1 lg:grid-cols-2 lg:items-center'>
             <div>
-              <h3 className='font-Sora text-2xl sm:text-4xl font-bold text-TextColor-0 pb-[17px]'>
+              <h3 className='font-Sora text-[22px] sm:text-4xl font-bold text-TextColor-0 pb-[17px]'>
                 I am Gerold
               </h3>
-              <h1 className='font-Sora text-3xl sm:text-5xl sm:leading-[60px] md:text-[65px] md:leading-[78px] lg:text-[52px] lg:leading-[70px] xl:text-[62px] xl:leading-[75px] 2xl:text-[65px] 2xl:leading-[78px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
+              <h1 className='font-Sora text-4xl sm:text-5xl sm:leading-[60px] md:text-[65px] md:leading-[78px] lg:text-[52px] lg:leading-[70px] xl:text-[62px] xl:leading-[75px] 2xl:text-[65px] 2xl:leading-[78px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent -mt-4'>
                 Web Developer + <br /> UX Designer
               </h1>
-              <p className='font-Sora text-base sm:text-xl font-light sm:leading-[30px] text-TextColor-0 max-w-[550px] w-full pt-[15px] pb-[50px]'>
+              <div className='flex justify-center relative mt-12 lg:mt-0 lg:hidden'>
+                <span className='absolute -z-10 -left-[5%] -bottom-[5%] size-[220px] rounded-full bg-gradient-to-r to-PrimaryColor-0 from-transparent blur-[150px]'></span>
+                <img
+                  src={bannerThumb}
+                  draggable='false'
+                  className='w-10/12 md:w-[inherit] lg:w-10/12 xl:w-[inherit] sm:max-w-[inherit] border-2 border-Secondarycolor-0 rounded-[38px] rotate-[5deg] transition-all duration-500 hover:rotate-0 hover:border-PrimaryColor-0'
+                />
+              </div>
+              <p className='font-Sora text-base sm:text-xl font-light sm:leading-[30px] text-TextColor-0 max-w-[550px] w-full pt-10 lg:pt-[15px] pb-7 md:pb-[50px]'>
                 I break down complex user experinece problems to create
                 integritiy focussed solutions that connect billions of people
               </p>
@@ -72,7 +80,7 @@ const Banner = () => {
                 </ul>
               </div>
             </div>
-            <div className='flex justify-center relative mt-12 lg:mt-0'>
+            <div className='lg:flex justify-center relative mt-12 lg:mt-0 hidden'>
               <span className='absolute -z-10 -left-[5%] -bottom-[5%] size-[220px] rounded-full bg-gradient-to-r to-PrimaryColor-0 from-transparent blur-[150px]'></span>
               <img
                 src={bannerThumb}

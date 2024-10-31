@@ -167,11 +167,11 @@ const NavbarDark = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to={'/'}>
+                    <a href={'mailto:mail@gerolddesign.com'}>
                       <button className='hidden sm:block font-Sora font-medium text-[15px] text-white transition-all duration-500 hover:text-PrimaryColor-0 relative bottom-[1px]'>
                         mail@gerolddesign.com
                       </button>
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -245,7 +245,7 @@ const NavbarDark = () => {
                     </li>
                     <li className='has-dropdown'>
                       <Link
-                        to={'/'}
+                        to={'/blog'}
                         className='!pr-5'
                       >
                         Blog

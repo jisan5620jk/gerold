@@ -29,7 +29,7 @@ const BlogInnerLight = () => {
     spaceBetween: 30,
     speed: 1000,
     autoplay: true,
-    slidePerView:1,
+    slidePerView: 1,
   };
   return (
     <>
@@ -168,12 +168,6 @@ const BlogInnerLight = () => {
                       >
                         <PiPlayCircleLight size={'38'} />
                       </button>
-                      <FsLightbox
-                        toggler={toggler}
-                        sources={[
-                          'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-                        ]}
-                      />
                     </span>
                   </div>
                 </div>
@@ -709,6 +703,10 @@ const BlogInnerLight = () => {
             </div>
           </div>
         </div>
+        <FsLightbox
+          toggler={toggler}
+          sources={['https://youtu.be/6kYRUsXtS4s?si=PZDWPl1EAxKJQC0y']}
+        />
       </section>
     </>
   );

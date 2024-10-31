@@ -132,7 +132,7 @@ const BlogDetailsNavbarLight = () => {
             </div>
             <div className='offcanvas_logo inline-block'>
               <Link
-                to={'/'}
+                to={'/home_light'}
                 title='Gerold'
               >
                 <img
@@ -157,7 +157,7 @@ const BlogDetailsNavbarLight = () => {
                 <ul className='flex items-center gap-[35px]'>
                   <li>
                     <Link
-                      to={'/'}
+                      to={'/home_light'}
                       title='Gerold'
                     >
                       <img
@@ -167,11 +167,11 @@ const BlogDetailsNavbarLight = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to={'/'}>
+                    <a href={'mailto:mail@gerolddesign.com'}>
                       <button className='hidden sm:block font-Sora font-medium text-[15px] text-white transition-all duration-500 hover:text-PrimaryColor-0 relative bottom-[1px]'>
                         mail@gerolddesign.com
                       </button>
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -182,7 +182,7 @@ const BlogDetailsNavbarLight = () => {
                   <ul>
                     <li className='has-dropdown group'>
                       <Link
-                        to={'/'}
+                        to={'/home_light'}
                         className='!pr-5'
                       >
                         Home{' '}
@@ -244,8 +244,8 @@ const BlogDetailsNavbarLight = () => {
                       <Link to={'/portfolio_light'}>Portfolios</Link>
                     </li>
                     <li className='has-dropdown current'>
-                      <Link
-                        to={'/'}
+                       <Link
+                        to={'/blog_light'}
                         className='!pr-5'
                       >
                         Blog

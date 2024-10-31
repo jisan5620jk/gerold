@@ -14,8 +14,8 @@ import blogPost from '/images/blog/post-thumb-1.jpg';
 import blogPost2 from '/images/blog/post-thumb-2.jpg';
 import blogPost3 from '/images/blog/post-thumb-3.jpg';
 import { PiPlayCircleLight, PiQuotes } from 'react-icons/pi';
-import FsLightbox from 'fslightbox-react';
-import { useState } from 'react';
+import FsLightbox from "fslightbox-react";
+import { useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import BlogNavigation from './BlogNavigation';
@@ -29,7 +29,6 @@ const BlogInner = () => {
     spaceBetween: 30,
     speed: 1000,
     autoplay: true,
-    slidePerView:1,
   };
   return (
     <>
@@ -146,8 +145,8 @@ const BlogInner = () => {
                 data-aos-delay='300'
                 data-aos-duration='1000'
               >
-                <div className='overflow-hidden'>
-                  <div className='relative'>
+                <div>
+                  <div className='relative overflow-hidden'>
                     <img
                       src={blogThumb2}
                       draggable='false'
@@ -168,12 +167,6 @@ const BlogInner = () => {
                       >
                         <PiPlayCircleLight size={'38'} />
                       </button>
-                      <FsLightbox
-                        toggler={toggler}
-                        sources={[
-                          'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-                        ]}
-                      />
                     </span>
                   </div>
                 </div>
@@ -709,6 +702,10 @@ const BlogInner = () => {
             </div>
           </div>
         </div>
+        <FsLightbox
+          toggler={toggler}
+          sources={['https://youtu.be/6kYRUsXtS4s?si=PZDWPl1EAxKJQC0y']}
+        />
       </section>
     </>
   );

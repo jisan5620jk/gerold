@@ -1,4 +1,6 @@
+import { FaRegEnvelope } from 'react-icons/fa';
 import { FiPhoneCall } from 'react-icons/fi';
+import { IoLocationOutline } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 
 const Appoinment = () => {
@@ -60,26 +62,10 @@ const Appoinment = () => {
                 id='select'
                 className='font-Sora text-Secondarycolor-0 bg-BodyBgLight-0 placeholder:text-TextGrey2-0 border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
               >
-                <option
-                  value='subject'
-                >
-                  Your Subject
-                </option>
-                <option
-                  value='subject2'
-                >
-                  Bangla
-                </option>
-                <option
-                  value='subject3'
-                >
-                  Arabic
-                </option>
-                <option
-                  value='subject4'
-                >
-                  China
-                </option>
+                <option value='subject'>Your Subject</option>
+                <option value='subject2'>Bangla</option>
+                <option value='subject3'>Arabic</option>
+                <option value='subject4'>China</option>
               </select>
               <textarea
                 name='message'
@@ -116,7 +102,7 @@ const Appoinment = () => {
             </div>
             <div className='flex items-start gap-[26px] mb-[38px]'>
               <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-white flex items-center justify-center'>
-                <FiPhoneCall size={'22'} />
+                <FaRegEnvelope size={'22'} />
               </div>
               <div className='flex-1 inline-block'>
                 <h6 className='font-Sora text-Secondarycolor-0 pb-[5px]'>
@@ -132,15 +118,13 @@ const Appoinment = () => {
             </div>
             <div className='flex items-start gap-[26px]'>
               <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-white flex items-center justify-center'>
-                <FiPhoneCall size={'22'} />
+                <IoLocationOutline size={'22'} />
               </div>
               <div className='flex-1 inline-block'>
                 <h6 className='font-Sora text-Secondarycolor-0 pb-[5px]'>
                   Address
                 </h6>
-                <p
-                  className='font-Sora font-medium text-base sm:text-xl text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
-                >
+                <p className='font-Sora font-medium text-base sm:text-xl text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'>
                   Warne Park Street Pine, <br /> FL 33157, New York
                 </p>
               </div>
