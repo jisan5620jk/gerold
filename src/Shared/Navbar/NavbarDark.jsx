@@ -6,26 +6,23 @@ import { HiMinusSm, HiPlusSm } from 'react-icons/hi';
 import { IoCloseOutline } from 'react-icons/io5';
 
 const NavbarDark = () => {
-
   //Sticky
 
-useEffect(() => {
-  window.addEventListener('scroll', isSticky);
-  return () => {
-    window.removeEventListener('scroll', isSticky);
+  useEffect(() => {
+    window.addEventListener('scroll', isSticky);
+    return () => {
+      window.removeEventListener('scroll', isSticky);
+    };
+  });
+
+  /* Method that will fix header after a specific scrollable */
+  const isSticky = () => {
+    const header = document.querySelector('.header-area');
+    const scrollTop = window.scrollY;
+    scrollTop >= 250
+      ? header.classList.add('is-sticky')
+      : header.classList.remove('is-sticky');
   };
-});
-
-/* Method that will fix header after a specific scrollable */
-const isSticky = () => {
-  const header = document.querySelector('.header-area');
-  const scrollTop = window.scrollY;
-  scrollTop >= 250
-    ? header.classList.add('is-sticky')
-    : header.classList.remove('is-sticky');
-};
-
-
 
   //Menu Bar
   const menuBarRef = useRef(null);
@@ -66,7 +63,7 @@ const isSticky = () => {
 
   let headerIcon = `  
   <span className="header-icon">  
-    <svg fill="currentColor" viewBox="0 0 320 512" height="15px" width="15px" xmlns="http://www.w3.org/2000/svg">
+    <svg fill="currentColor" viewBox="0 0 320 512" height="18px" width="18px" xmlns="http://www.w3.org/2000/svg">
       <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
     </svg>
   </span>  
@@ -124,24 +121,26 @@ const isSticky = () => {
           ref={offcanvasRef}
           className='offcanvas'
         >
-          <div className='offcanvas_close-btn'>
-            <button
-              ref={closeBtnRef}
-              className='close-btn'
-            >
-              <IoCloseOutline />
-            </button>
-          </div>
-          <div className='offcanvas_logo inline-block'>
-            <Link
-              to={'/'}
-              title='Gerold'
-            >
-              <img
-                src={Logo}
-                draggable='false'
-              />
-            </Link>
+          <div className='sm:w-[65%] mx-auto'>
+            <div className='offcanvas_close-btn'>
+              <button
+                ref={closeBtnRef}
+                className='close-btn'
+              >
+                <IoCloseOutline />
+              </button>
+            </div>
+            <div className='offcanvas_logo inline-block'>
+              <Link
+                to={'/'}
+                title='Gerold'
+              >
+                <img
+                  src={Logo}
+                  draggable='false'
+                />
+              </Link>
+            </div>
           </div>
           <div className='main-menu-mobile lg:none'></div>
         </div>
