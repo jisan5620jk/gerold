@@ -18,23 +18,35 @@
 }
 
 .service-popup {
- position: fixed;  
-    top: 50%;  
-    bottom: 0;
-    left: 50%;  
-    transform: translateX(-50%) scale(0.8);  
-    width: 100%;  
-    max-width: 1100px;  
-    background-color: transparent;  
-    background-position: center;  
-    background-size: cover;  
-    background-repeat: no-repeat; 
-    z-index: 99;  
-    opacity: 0;  
-    visibility: hidden;  
-    transition: 0.45s ease-in;  
-    overflow-y: scroll;  
-    scrollbar-width: none;
+  position: fixed;
+  top: 50%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(0.8);
+  width: 100%;
+  max-width: 1100px;
+  background-color: transparent;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.45s ease-in;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .service-popup {
+    max-width: 670px !important;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .service-popup {
+    max-width: 330px !important;
+  }
 }
 
 .service-popup.opened {

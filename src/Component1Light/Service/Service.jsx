@@ -13,75 +13,71 @@ import { FiCheck } from 'react-icons/fi';
 import { FaAngleRight } from 'react-icons/fa6';
 
 const Service = () => {
-useEffect(() => {
-  const activeBg = document.querySelector('.service-active-bg');
-  const serviceItems = document.querySelectorAll('.service-item');
-  const servicesWidget = document.querySelector('.service-widget');
+  useEffect(() => {
+    const activeBg = document.querySelector('.service-active-bg');
+    const serviceItems = document.querySelectorAll('.service-item');
+    const servicesWidget = document.querySelector('.service-widget');
 
-  if (!activeBg || !serviceItems.length || !servicesWidget) {
-    console.error('Required elements are not found in the DOM.');
-    return;
-  }
+    if (!activeBg || !serviceItems.length || !servicesWidget) {
+      console.error('Required elements are not found in the DOM.');
+      return;
+    }
 
-  const activeService = (activeBg, e) => {
-    if (!e) return;
-    const topOff = e.getBoundingClientRect().top + window.scrollY;
-    const height = e.offsetHeight;
-    const menuTop = servicesWidget.getBoundingClientRect().top + window.scrollY;
-    const middlePosition = topOff + height / 2 - activeBg.offsetHeight / 2;
-    e.closest('.service-item').classList.remove('mleave');
-    Array.from(e.closest('.service-item').parentNode.children).forEach(
-      (sibling) => {
-        if (sibling !== e.closest('.service-item')) {
-          sibling.classList.add('mleave');
-        }
+    const setInitialPosition = () => {
+      const activeItem = document.querySelector('.service-item.active');
+      if (activeItem) {
+        const height = activeItem.offsetHeight;
+        activeBg.style.top = `0px`; // Set top position to 0px
+        activeBg.style.height = `${height}px`;
       }
-    );
-    activeBg.style.top = `${middlePosition - menuTop}px`;
-    activeBg.style.height = `${height}px`;
-  };
+    };
 
-  const setInitialPosition = () => {
-    const activeItem = document.querySelector('.service-item.active');
-    if (activeItem) {
-      const topOff = activeItem.getBoundingClientRect().top + window.scrollY;
-      const height = activeItem.offsetHeight;
+    const activeService = (activeBg, e) => {
+      if (!e) return;
+      const topOff = e.getBoundingClientRect().top + window.scrollY;
+      const height = e.offsetHeight;
       const menuTop =
         servicesWidget.getBoundingClientRect().top + window.scrollY;
-      const middlePosition = topOff + height / 2 - activeBg.offsetHeight / 2;
-      activeBg.style.top = `${middlePosition - menuTop}px`;
-      activeBg.style.height = `${height}px`;
-    }
-  };
-
-  setInitialPosition(); // Set initial position
-
-  serviceItems.forEach((item) => {
-    item.addEventListener('mouseenter', () => activeService(activeBg, item));
-  });
-
-  servicesWidget.addEventListener('mouseleave', () => {
-    const element = document.querySelector('.active');
-    activeService(activeBg, element);
-    Array.from(element.closest('.service-item').parentNode.children).forEach(
-      (sibling) => {
-        if (sibling !== element.closest('.service-item')) {
-          sibling.classList.remove('mleave');
+      e.closest('.service-item').classList.remove('mleave');
+      Array.from(e.closest('.service-item').parentNode.children).forEach(
+        (sibling) => {
+          if (sibling !== e.closest('.service-item')) {
+            sibling.classList.add('mleave');
+          }
         }
-      }
-    );
-  });
+      );
+      activeBg.style.top = `${topOff - menuTop}px`; // Update top position on hover
+      activeBg.style.height = `${height}px`;
+    };
 
-  document.querySelectorAll('.service-item').forEach((item) => {
-    item.addEventListener('click', () => {
-      document
-        .querySelectorAll('.service-item')
-        .forEach((item) => item.classList.remove('active'));
-      item.classList.add('active');
-      activeService(activeBg, item); // Update position on click
+    serviceItems.forEach((item) => {
+      item.addEventListener('mouseenter', () => activeService(activeBg, item));
     });
-  });
-}, []);
+
+    servicesWidget.addEventListener('mouseleave', () => {
+      const element = document.querySelector('.active');
+      activeService(activeBg, element);
+      Array.from(element.closest('.service-item').parentNode.children).forEach(
+        (sibling) => {
+          if (sibling !== element.closest('.service-item')) {
+            sibling.classList.remove('mleave');
+          }
+        }
+      );
+    });
+
+    setInitialPosition(); // Set initial position
+
+    document.querySelectorAll('.service-item').forEach((item) => {
+      item.addEventListener('click', () => {
+        document
+          .querySelectorAll('.service-item')
+          .forEach((item) => item.classList.remove('active'));
+        item.classList.add('active');
+        activeService(activeBg, item); // Update position on click
+      });
+    });
+  }, []);
 
   const servicePopUpRef = useRef(null);
   const servicePopUpRef2 = useRef(null);

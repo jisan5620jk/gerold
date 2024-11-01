@@ -67,6 +67,18 @@
   scrollbar-width: none;
 }
 
+@media screen and (min-width:768px) and (max-width: 991px){
+  .service-popup {
+  max-width: 670px !important;
+}
+}
+
+@media screen and (max-width: 667px){
+  .service-popup {
+  max-width: 330px !important;
+}
+}
+
 .service-popup.opened {
   top: 0;
   transform: translateX(-50%) scale(1);
