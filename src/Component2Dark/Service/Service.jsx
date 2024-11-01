@@ -71,7 +71,7 @@ const Service = () => {
 
   return (
     <>
-      <section className='bg-BodyBg-0 pt-[120px] relative'>
+      <section className='bg-BodyBg-0  pt-[60px] md:pt-20 lg:pt-[120px] relative'>
         <div className='Container'>
           <div>
             <h1

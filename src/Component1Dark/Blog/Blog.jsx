@@ -7,7 +7,7 @@ import BlogCard from './BlogCard';
 const Blog = () => {
 
   return (
-    <section className='py-[60px] md:py-28 bg-BodyBg-0'>
+    <section className='py-[60px] md:py-20 lg:py-28 bg-BodyBg-0'>
       <div className='Container'>
         <div className='text-center'>
           <h1

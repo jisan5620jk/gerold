@@ -10,7 +10,7 @@ const ResumeCard = ({
       <h6 className='font-Sora font-bold text-xl text-PrimaryColor-0 capitalize transition-all duration-500 group-hover:text-white'>
         {resumeSubTilte}
       </h6>
-      <h4 className='font-Sora font-bold text-base sm:text-xl md:text-[19px] lg:text-[25px] text-Secondarycolor-0 mt-[10px] mb-[9px] transition-all duration-500 group-hover:text-white uppercase'>
+      <h4 className='font-Sora font-bold text-base sm:text-xl md:text-[19px] lg:text-[25px] text-Secondarycolor-0 mt-2 md:mt-[10px] md:mb-[9px] transition-all duration-500 group-hover:text-white uppercase'>
         {resumeTitle}
       </h4>
       <p className='font-Sora text-TextLight-0 transition-all duration-500 group-hover:text-white'>

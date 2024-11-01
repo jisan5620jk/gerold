@@ -6,7 +6,7 @@ const About = () => {
     return (
       <div className='grid grid-cols-12 items-center lg:items-start 2xl:items-center gap-6 mt-[35px]'>
         <div className='col-span-12 lg:col-span-7 py-10 px-6 sm:px-10 xl:px-[65px] border border-Secondarycolor-0 bg-BodyBg3-0 rounded-2xl'>
-          <h1 className='font-Sora text-[23px] leading-8 sm:text-[34px] md:text-[45px] lg:text-[44px] xl:text-[45px] md:leading-[54px] font-medium bg-gradient-to-l to-PrimaryColor-0 via-white from-white bg-clip-text text-transparent'>
+          <h1 className='font-Sora text-[23px] leading-8 sm:text-[34px] md:text-[45px] lg:text-[40px] xl:text-[45px] md:leading-[54px] lg:leading-[48px] xl:leading-[54px] font-medium bg-gradient-to-l to-PrimaryColor-0 via-white from-white bg-clip-text text-transparent'>
             Achievements in my <br /> professional life.
           </h1>
           <p className='font-Sora font-light text-lg sm:text-xl leading-[30px] text-TextColor-0 pt-[21px]'>
@@ -15,7 +15,7 @@ const About = () => {
                 startups, and collaborated with talented people to create
                 digital products for both business and consumer use.`}
           </p>
-          <div className='inline-block mt-20'>
+          <div className='inline-block mt-14 xl:mt-20'>
             <Link to={'/'}>
               <button className='primary-btn2'>
                 Contact Me

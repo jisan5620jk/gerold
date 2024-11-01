@@ -1,6 +1,6 @@
 const Experience = () => {
   return (
-    <section className='bg-white pt-[120px]'>
+    <section className='bg-white pt-[60px] md:pt-20 lg:pt-[120px]'>
       <div className='Container'>
         <div>
           <h1
@@ -13,7 +13,7 @@ const Experience = () => {
           </h1>
         </div>
         <div
-          className='flex flex-wrap md:flex-nowrap gap-y-10 gap-7 md:justify-between pt-10 px-6 sm:px-[35px] md:px-5 lg:px-[35px] pb-[70px] border border-BorderGrey2-0 bg-BodyBgLight-0 rounded-2xl mt-[50px]'
+          className='flex flex-wrap md:flex-nowrap gap-y-10 gap-7 md:justify-between pt-10 px-6 sm:px-[35px] md:px-5 lg:px-[35px] pb-[70px] border border-BorderGrey2-0 bg-BodyBgLight-0 rounded-2xl mt-8 md:mt-[50px]'
           data-aos='fade-up'
           data-aos-delay='400'
           data-aos-duration='1000'

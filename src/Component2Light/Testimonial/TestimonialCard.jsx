@@ -6,7 +6,7 @@ const TestimonialCard = ({
   testiDesc,
 }) => {
   return (
-    <div className='relative pt-8 sm:pt-[46px] px-6 sm:px-10 pb-[40px] border border-BorderGrey2-0 bg-BodyBgLight-0 rounded-2xl'>
+    <div className='relative pt-8 sm:pt-[46px] px-6 sm:px-10 md:px-5 lg:px-10 pb-[40px] border border-BorderGrey2-0 bg-BodyBgLight-0 rounded-2xl'>
       <p className='font-Sora text-TextLight-0 leading-[30px] text-xl max-w-[480px] w-full'>
         {testiDesc}
       </p>

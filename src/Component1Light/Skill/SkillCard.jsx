@@ -5,7 +5,7 @@ import CountUp from 'react-countup';
 const SkillCard = ({ skillIcon, skillTitle, skillPercent, skillSuffix }) => {
   return (
     <div className='text-center group'>
-      <div className='bg-BodyBgLight-0 pt-10 pb-[26px] rounded-[20px] px-[60px] xl:px-[52px] 2xl:px-[60px] border border-BorderGrey-0 transition-all duration-700 group-hover:border-PrimaryColor-0 relative z-10 overflow-hidden before:absolute before:left-0 before:top-0 before:bg-Secondarycolor-0 before:-z-10 before:[transition:opacity_0.5s_linear] before:w-full before:h-full before:opacity-0 hover:before:opacity-100'>
+      <div className='bg-BodyBgLight-0 pt-6 md:pt-10 pb-5 md:pb-[26px] rounded-[20px] px-14 md:px-[60px] xl:px-[52px] 2xl:px-[60px] border border-BorderGrey-0 transition-all duration-700 group-hover:border-PrimaryColor-0 relative z-10 overflow-hidden before:absolute before:left-0 before:top-0 before:bg-Secondarycolor-0 before:-z-10 before:[transition:opacity_0.5s_linear] before:w-full before:h-full before:opacity-0 hover:before:opacity-100'>
         <div className='mb-[25px]'>
           <img
             src={skillIcon}

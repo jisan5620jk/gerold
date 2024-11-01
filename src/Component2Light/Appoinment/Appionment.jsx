@@ -4,12 +4,75 @@ import { Link } from "react-router-dom";
 
 const Appoinment = () => {
   return (
-    <section className='bg-white py-28 relative z-10 overflow-hidden'>
+    <section className='bg-white py-[60px] md:py-20 lg:py-28 relative z-10 overflow-hidden'>
       <div className='Container'>
         <div className='flex flex-wrap lg:flex-nowrap lg:justify-between items-center gap-[45px] border p-6 sm:p-9 md:p-[50px] border-BorderGrey2-0 bg-BodyBgLight-0 rounded-2xl relative z-10'>
           <div
+            className='lg:block relative z-10 max-w-[400px]'
+            data-aos='fade-up-left'
+            data-aos-duration='1000'
+          >
+            <div>
+              <p className='font-Sora text-TextLight-0'>
+                {`I'm currently avaliable to take on new projects, so feel free to send me a message about anything that you want to run past me. You can contact anytime at 24/7.`}
+              </p>
+            </div>
+            <ul className='my-11 space-y-6'>
+              <li>
+                <Link
+                  to={'/'}
+                  className='font-Sora text-base sm:text-xl text-TextLight-0 transition-all duration-500 hover:text-PrimaryColor-0 underline underline-offset-4 decoration-1'
+                >
+                  +01 123 654 8096
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={'/'}
+                  className='font-Sora text-base sm:text-xl text-TextLight-0 transition-all duration-500 hover:text-PrimaryColor-0 underline underline-offset-4 decoration-1'
+                >
+                  gerolddesign@mail.com
+                </Link>
+              </li>
+              <li>
+                <p className='font-Sora text-base sm:text-xl text-TextLight-0 transition-all duration-500 hover:text-PrimaryColor-0 underline underline-offset-4 decoration-1'>
+                  Warne Park Street Pine, FL <br /> 33157, New York
+                </p>
+              </li>
+            </ul>
+            <ul className='flex items-center gap-5'>
+              <li>
+                <Link to={'/'}>
+                  <button className='size-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-transparent border border-PrimaryColor-0 transition-all duration-500 text-PrimaryColor-0 hover:text-TextLight-0 z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:rounded-full before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
+                    <FaXTwitter />
+                  </button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button className='size-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-transparent border border-PrimaryColor-0 transition-all duration-500 text-PrimaryColor-0 hover:text-TextLight-0 z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:rounded-full before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
+                    <FaDribbble />
+                  </button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button className='size-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-transparent border border-PrimaryColor-0 transition-all duration-500 text-PrimaryColor-0 hover:text-TextLight-0 z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:rounded-full before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
+                    <FaLinkedinIn />
+                  </button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button className='size-[35px] flex justify-center items-center rounded-full overflow-hidden relative bg-transparent border border-PrimaryColor-0 transition-all duration-500 text-PrimaryColor-0 hover:text-TextLight-0 z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:rounded-full before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
+                    <FaGithub />
+                  </button>
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div
             data-aos='fade-up-right'
-            data-aos-delay='300'
             data-aos-duration='1000'
           >
             <div className='max-w-[600px]'>
@@ -83,9 +146,8 @@ const Appoinment = () => {
             </form>
           </div>
           <div
-            className='relative z-10 max-w-[400px]'
+            className='hidden lg:block relative z-10 max-w-[400px]'
             data-aos='fade-up-left'
-            data-aos-delay='300'
             data-aos-duration='1000'
           >
             <div>

@@ -71,7 +71,7 @@ const Service = () => {
 
   return (
     <>
-      <section className='bg-white pt-[120px] relative'>
+      <section className='bg-white pt-[60px] md:pt-20 lg:pt-[120px] relative'>
         <div className='Container'>
           <div>
             <h1
@@ -82,7 +82,7 @@ const Service = () => {
               My Specialization
             </h1>
           </div>
-          <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 relative z-10 mt-[50px]'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 relative z-10 mt-8 md:mt-[50px]'>
             <div
               className='rounded-[10px] overflow-hidden border border-BorderGrey2-0 bg-BodyBgLight-0 transition-all ease-linear duration-500 hover:border-PrimaryColor-0'
               data-aos='fade-up'

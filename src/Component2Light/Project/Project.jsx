@@ -114,7 +114,7 @@ const Project = () => {
             </h1>
           </div>
           <div
-            className='flex flex-col md:flex-row items-center gap-[35px] justify-between py-5 pl-5 sm:pl-[35px] pr-5 border border-BorderGrey2-0 bg-BodyBgLight-0 rounded-2xl mt-[50px]'
+            className='flex flex-col md:flex-row items-center gap-[35px] justify-between py-5 pl-5 sm:pl-[35px] pr-5 border border-BorderGrey2-0 bg-BodyBgLight-0 rounded-2xl mt-8 md:mt-[50px]'
             data-aos='fade-up'
             data-aos-delay='400'
             data-aos-duration='1000'

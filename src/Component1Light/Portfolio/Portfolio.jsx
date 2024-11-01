@@ -183,7 +183,7 @@ const Portfolio = () => {
   };
   return (
     <>
-      <div className='portfolio-filter light text-center bg-white py-28'>
+      <div className='portfolio-filter light text-center bg-white py-[60px] md:py-20 lg:py-28'>
         <div className='text-center mb-[60px]'>
           <h1 className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-Secondarycolor-0 from-30% bg-clip-text text-transparent'>
             My Recent Works

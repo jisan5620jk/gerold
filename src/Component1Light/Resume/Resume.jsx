@@ -58,7 +58,7 @@ const resumeData2 = [
 
 const Resume = () => {
   return (
-    <section className=' bg-BodyBgLight-0 pt-[106px] pb-[120px] relative'>
+    <section className=' bg-BodyBgLight-0  py-[60px] md:py-20 lg:pt-[106px] lg:pb-[120px] relative'>
       <div className='Container'>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-y-[30px] gap-x-[30px] xl:gap-x-[120px] items-center'>
           <div>

@@ -1,6 +1,6 @@
 const Experience = () => {
   return (
-    <section className='bg-BodyBg-0 pt-[120px]'>
+    <section className='bg-BodyBg-0 pt-[60px] md:pt-20 lg:pt-[120px]'>
       <div className='Container'>
         <div>
           <h1

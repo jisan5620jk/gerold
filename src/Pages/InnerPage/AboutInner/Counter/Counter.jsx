@@ -4,7 +4,7 @@ const Counter = () => {
   return (
     <div className='bg-BodyBg-0'>
       <div className='Container'>
-        <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7 sm:gap-10 xl:gap-20 pt-16 sm:pt-20 md:py-[92px]'>
+        <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7 sm:gap-10 xl:gap-20 py-16 sm:py-20 md:py-[92px]'>
           <div
             className='flex flex-col sm:flex-row sm:items-center gap-3'
             data-aos='fade-up'

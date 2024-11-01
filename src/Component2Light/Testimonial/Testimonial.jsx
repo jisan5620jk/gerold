@@ -58,7 +58,7 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className='testimonial bg-white pt-[120px] pb-[130px] relative z-10'>
+    <section className='testimonial bg-white pt-[60px] pb-[60px] md:pt-20 md:pb-20 lg:pt-[120px] lg:pb-[130px] relative z-10'>
       <span className='absolute -left-[15%] top-[100px] size-[35%] rounded-full bg-gradient-to-t to-PrimaryColor-0 from-white blur-[150px]'></span>
       <div className='Container'>
         <div>
@@ -72,7 +72,7 @@ const Testimonial = () => {
           </h1>
         </div>
         <div
-          className='mt-[50px]'
+          className='mt-8 md:mt-[50px]'
           data-aos='fade-up'
           data-aos-delay='400'
           data-aos-duration='1000'

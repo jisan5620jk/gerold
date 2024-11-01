@@ -58,7 +58,7 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className='testimonial bg-BodyBg-0 pt-[120px] pb-[130px] relative z-10'>
+    <section className='testimonial bg-BodyBg-0  pt-[60px] pb-[70px] md:pt-20 mb:mb-[90px] lg:pt-[120px] lg:pb-[130px] relative z-10'>
       <span className='absolute -left-[15%] top-[100px] size-[35%] rounded-full bg-gradient-to-t to-PrimaryColor-0 from-Secondarycolor-0 blur-[150px]'></span>
       <div className='Container'>
         <div>

@@ -11,7 +11,6 @@ const Appoinment = () => {
           <div
             className='relative z-10 lg:pl-28 md:hidden'
             data-aos='fade-up-left'
-            data-aos-delay='400'
             data-aos-duration='1000'
           >
             <div className='flex items-start gap-[26px] mb-[38px]'>
