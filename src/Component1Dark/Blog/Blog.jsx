@@ -7,7 +7,7 @@ import BlogCard from './BlogCard';
 const Blog = () => {
 
   return (
-    <section className='py-28 bg-BodyBg-0'>
+    <section className='py-[60px] md:py-28 bg-BodyBg-0'>
       <div className='Container'>
         <div className='text-center'>
           <h1
@@ -28,7 +28,7 @@ const Blog = () => {
             project that inspires you and you customers.
           </p>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-10 lg:gap-5 xl:gap-7 2xl:gap-10 mt-[48px]'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-10 lg:gap-5 xl:gap-7 2xl:gap-10 mt-10 md:mt-[48px]'>
           <div
             data-aos='fade-up'
             data-aos-delay='300'
@@ -37,10 +37,10 @@ const Blog = () => {
             <BlogCard
               blogThumb={blogThumb}
               thumbTitle={'Tutorial'}
-              blogDateIcon={<FaRegComments />}
-              blogDate={<FaRegCalendarDays />}
-              blogComment={'Oct 01, 2024'}
-              blogCommentIcon={'Comment (0)'}
+              blogDateIcon={<FaRegCalendarDays />}
+              blogCommentIcon={<FaRegComments />}
+              blogDate={'Oct 01, 2024'}
+              blogComment={'Comment (0)'}
               blogUrl={'/blog_details'}
               blogTitle={'Top 10 ui ux designers'}
             />
@@ -53,10 +53,10 @@ const Blog = () => {
             <BlogCard
               blogThumb={blogThumb2}
               thumbTitle={'Tips'}
-              blogDateIcon={<FaRegComments />}
-              blogDate={<FaRegCalendarDays />}
-              blogComment={'Nov 01, 2024'}
-              blogCommentIcon={'Comment (0)'}
+              blogDateIcon={<FaRegCalendarDays />}
+              blogCommentIcon={<FaRegComments />}
+              blogDate={'Nov 01, 2024'}
+              blogComment={'Comment (0)'}
               blogUrl={'/blog_details'}
               blogTitle={'App Development Guides'}
             />
@@ -69,10 +69,10 @@ const Blog = () => {
             <BlogCard
               blogThumb={blogThumb3}
               thumbTitle={'Tutorial'}
-              blogDateIcon={<FaRegComments />}
-              blogDate={<FaRegCalendarDays />}
-              blogComment={'Dec 01, 2024'}
-              blogCommentIcon={'Comment (0)'}
+              blogDateIcon={<FaRegCalendarDays />}
+              blogCommentIcon={<FaRegComments />}
+              blogDate={'Dec 01, 2024'}
+              blogComment={'Comment (0)'}
               blogUrl={'/blog_details'}
               blogTitle={'learn graphic design free'}
             />

@@ -137,7 +137,7 @@ const Service = () => {
 
   return (
     <>
-      <section className=' bg-BodyBg2-0 py-[120px] relative'>
+      <section className=' bg-BodyBg2-0 py-[60px] md:py-[120px] relative'>
         <div className='Container'>
           <div className='text-center'>
             <h1

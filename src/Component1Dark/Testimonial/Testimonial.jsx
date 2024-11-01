@@ -72,20 +72,20 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className='testimonial bg-BodyBg2-0 pt-[120px] pb-[130px] relative z-10 overflow-hidden'>
+    <section className='testimonial bg-BodyBg2-0 pt-[60px] md:pt-[120px] pb-[70px] md:pb-[130px] relative z-10 overflow-hidden'>
       <span className='absolute left-[11%] bottom-[20%] size-[16%] rounded-full bg-gradient-to-t to-PrimaryColor-0 from-Secondarycolor-0 blur-[150px]'></span>
       <div className='Container'>
         <div className='grid gap-[30px] grid-cols-1 lg:grid-cols-12 xl:grid-cols-2 lg:items-start'>
           <div className='col-span-1 lg:col-span-5 xl:col-span-1 relative overflow-hidden'>
             <h1
-              className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] lg:leading-[58px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'
+              className='font-Sora text-[27px] sm:text-[34px] md:text-[38px] lg:md:text-[45px] lg:leading-[58px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'
               data-aos='fade-up-right'
               data-aos-duration='1000'
             >
               {`My Client's Stories`}
             </h1>
             <p
-              className='font-Sora text-TextColor-0 mt-2 max-w-[470px] w-full xl:pr-5 2xl:pr-0'
+              className='font-Sora text-TextColor-0 mt-2 lg:max-w-[470px] w-full xl:pr-5 2xl:pr-0'
               data-aos='fade-up-right'
               data-aos-duration='1000'
             >
@@ -95,7 +95,6 @@ const Testimonial = () => {
           <div
             className='col-span-1 lg:col-span-7 xl:col-span-1'
             data-aos='fade-up-left'
-            data-aos-delay='400'
             data-aos-duration='1000'
           >
             <Swiper

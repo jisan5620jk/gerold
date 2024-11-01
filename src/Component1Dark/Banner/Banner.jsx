@@ -28,7 +28,7 @@ const Banner = () => {
               <h1 className='font-Sora text-4xl sm:text-5xl sm:leading-[60px] md:text-[65px] md:leading-[78px] lg:text-[52px] lg:leading-[70px] xl:text-[62px] xl:leading-[75px] 2xl:text-[65px] 2xl:leading-[78px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent -mt-4'>
                 Web Developer + <br /> UX Designer
               </h1>
-              <div className='flex justify-center relative mt-12 lg:mt-0 lg:hidden'>
+              <div className='flex justify-center relative mt-10 lg:mt-0 lg:hidden'>
                 <span className='absolute -z-10 -left-[5%] -bottom-[5%] size-[220px] rounded-full bg-gradient-to-r to-PrimaryColor-0 from-transparent blur-[150px]'></span>
                 <img
                   src={bannerThumb}
@@ -36,11 +36,11 @@ const Banner = () => {
                   className='w-10/12 md:w-[inherit] lg:w-10/12 xl:w-[inherit] sm:max-w-[inherit] border-2 border-Secondarycolor-0 rounded-[38px] rotate-[5deg] transition-all duration-500 hover:rotate-0 hover:border-PrimaryColor-0'
                 />
               </div>
-              <p className='font-Sora text-base sm:text-xl font-light sm:leading-[30px] text-TextColor-0 max-w-[550px] w-full pt-10 lg:pt-[15px] pb-7 md:pb-[50px]'>
+              <p className='font-Sora text-xl sm:text-2xl font-light sm:leading-[30px] text-TextColor-0 max-w-[550px] w-full pt-10 lg:pt-[15px] pb-7 md:pb-[50px]'>
                 I break down complex user experinece problems to create
                 integritiy focussed solutions that connect billions of people
               </p>
-              <div className='flex flex-col sm:flex-row sm:items-center gap-[26px]'>
+              <div className='flex flex-wrap sm:items-center gap-[26px]'>
                 <div className='inline-block'>
                   <Link to={'/'}>
                     <button className='primary-btn'>
@@ -91,7 +91,7 @@ const Banner = () => {
           </div>
         </div>
         <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7 sm:gap-10 xl:gap-20 pt-16 sm:pt-20 md:pt-[124px]'>
-          <div className='flex flex-col sm:flex-row sm:items-center gap-3'>
+          <div className='flex flex-col justify-center mx-auto lg:mx-0 lg:justify-start sm:flex-row sm:items-center gap-3'>
             <div>
               <CountUp
                 start={-11}
@@ -105,7 +105,7 @@ const Banner = () => {
               Experience
             </p>
           </div>
-          <div className='flex flex-col sm:flex-row sm:items-center gap-3'>
+          <div className='flex flex-col justify-center mx-auto lg:mx-0 lg:justify-start sm:flex-row sm:items-center gap-3'>
             <div>
               <CountUp
                 start={-11}
@@ -119,7 +119,7 @@ const Banner = () => {
               Completed
             </p>
           </div>
-          <div className='flex flex-col sm:flex-row sm:items-center gap-3'>
+          <div className='flex flex-col justify-center mx-auto lg:mx-0 lg:justify-start sm:flex-row sm:items-center gap-3'>
             <div>
               <CountUp
                 start={-11}
@@ -134,7 +134,7 @@ const Banner = () => {
               Clients
             </p>
           </div>
-          <div className='flex flex-col sm:flex-row sm:items-center gap-3'>
+          <div className='flex flex-col justify-center mx-auto lg:mx-0 lg:justify-start sm:flex-row sm:items-center gap-3'>
             <div>
               <CountUp
                 start={-11}

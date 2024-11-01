@@ -4,7 +4,7 @@ import icon2 from '/images/resume/resume-icon2.png';
 
 const Resume = () => {
   return (
-    <section className=' bg-BodyBg2-0 pt-[106px] pb-[120px] relative'>
+    <section className=' bg-BodyBg2-0 py-[60px] md:pt-[106px] md:pb-[120px] relative'>
       <div className='Container'>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-y-[30px] gap-x-[30px] xl:gap-x-[120px] items-center'>
           <div>
@@ -20,7 +20,7 @@ const Resume = () => {
               />
               My Experience
             </h1>
-            <div className='relative z-10 mt-[45px] grid grid-cols-1 gap-y-[30px]'>
+            <div className='relative z-10 mt-10 md:mt-[45px] grid grid-cols-1 gap-y-[30px]'>
               <div
                 data-aos='fade-up-right'
                 data-aos-delay='300'
@@ -69,7 +69,7 @@ const Resume = () => {
           </div>
           <div>
             <h1
-              className='font-Sora text-[27px] sm:text-[34px] md:text-[36px] lg:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent flex items-center gap-5'
+              className='font-Sora text-[27px] sm:text-[34px] md:text-[36px] lg:text-[45px] font-bold mt-5 md:mt-0 bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent flex items-center gap-5'
               data-aos='fade-up'
               data-aos-duration='2000'
             >
@@ -80,7 +80,7 @@ const Resume = () => {
               />
               My Education
             </h1>
-            <div className='relative z-10 mt-[45px] grid grid-cols-1 gap-y-[30px]'>
+            <div className='relative z-10 mt-10 md:mt-[45px] grid grid-cols-1 gap-y-[30px]'>
               <div
                 data-aos='fade-up-left'
                 data-aos-delay='300'

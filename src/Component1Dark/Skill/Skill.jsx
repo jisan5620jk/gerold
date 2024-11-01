@@ -8,7 +8,7 @@ import icon6 from '/images/icons/js.svg';
 
 const Skill = () => {
   return (
-    <section className=' bg-BodyBg-0 pt-[106px] pb-[120px] relative'>
+    <section className=' bg-BodyBg-0 py-[60px] md:pt-[106px] md:pb-[120px] relative'>
       <div className='Container'>
         <div className='text-center'>
           <h1
