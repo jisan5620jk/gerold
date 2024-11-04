@@ -11,7 +11,7 @@ import { BsDownload } from 'react-icons/bs';
 
 const Banner = () => {
   return (
-    <section className='bg-BodyBg-0 relative z-10 overflow-hidden pt-[130px] lg:pt-[204px] pb-[57px]'>
+    <section className='bg-BodyBg-0 relative z-10 overflow-hidden pt-[130px] lg:pt-[203px] pb-[57px]'>
       <span className='absolute -z-10 -top-[10%] -right-[5%] w-[322px] h-[308px] rounded-full bg-gradient-to-r to-PrimaryColor-0 from-transparent blur-[150px]'></span>
       <div className='Container'>
         <div className='relative z-10'>
@@ -125,7 +125,7 @@ const Banner = () => {
                 start={-11}
                 prefix='1.'
                 end={'5'}
-                suffix='k+'
+                suffix='k'
                 className='font-Sora text-4xl sm:text-6xl md:text-[64px] text-TextColor-0 font-bold'
               />
             </div>
@@ -138,13 +138,13 @@ const Banner = () => {
             <div>
               <CountUp
                 start={-11}
-                end={'12'}
+                end={'14'}
                 suffix={''}
                 className='font-Sora text-4xl sm:text-6xl md:text-[64px] text-TextColor-0 font-bold'
               />
             </div>
             <p className='font-Sora text-TextColor-0 -mt-2'>
-              Creativity <br /> Award
+              Years of <br /> Experience
             </p>
           </div>
         </div>

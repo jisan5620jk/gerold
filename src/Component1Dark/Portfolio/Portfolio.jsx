@@ -237,7 +237,6 @@ const Portfolio = () => {
           <div
             className='portfolio-box text-center pt-[50px] bg-contain bg-no-repeat bg-center relative z-10 before:absolute before:top-1/2 before:left-1/2 before:w-[35%] before:h-[35%] before:-z-10 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:bg-PrimaryColor-0 before:bg-gradient-to-r before:to-PrimaryColor-0 before:from-Secondarycolor-0 before:blur-[150px]'
             data-aos='fade-up'
-            data-aos-delay='600'
             data-aos-duration='1000'
           >
             <div className='portfolio-sizer w-[98%] md:w-[48%]'></div>

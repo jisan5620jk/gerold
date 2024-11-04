@@ -9,7 +9,7 @@ const TestimonialCard = ({
   testiDesc,
 }) => {
   return (
-    <div className='relative px-6 sm:px-[26px] lg:px-2 xl:px-[26px] pt-[26px] pb-7 bg-BodyBg3-0 rounded-2xl'>
+    <div className='relative px-6 sm:px-[25px] lg:px-2 xl:px-[25px] pt-[26px] pb-7 bg-BodyBg3-0 rounded-2xl'>
       <img
         src={testiLogo}
         draggable='false'

@@ -23,8 +23,8 @@ const Resume = () => {
               >
                 <ResumeCard
                   resumeDesc={'2022 - Present'}
-                  resumeSubTilte={'Lead Developer'}
-                  resumeTitle={'Blockdots, London'}
+                  resumeSubTilte={'Blockdots, London'}
+                  resumeTitle={'Lead Developer'}
                 />
               </div>
               <div
@@ -33,8 +33,8 @@ const Resume = () => {
               >
                 <ResumeCard
                   resumeDesc={'2021 - 2022'}
-                  resumeSubTilte={'Full Stack Web Developer'}
-                  resumeTitle={'Parsons, The New School'}
+                  resumeSubTilte={'Parsons, The New School'}
+                  resumeTitle={'Full Stack Web Developer'}
                 />
               </div>
               <div
@@ -43,8 +43,8 @@ const Resume = () => {
               >
                 <ResumeCard
                   resumeDesc={'2020 - 2021'}
-                  resumeSubTilte={'UI Designer'}
-                  resumeTitle={'House of Life, Leeds'}
+                  resumeSubTilte={'House of Life, Leeds'}
+                  resumeTitle={'UI Designer'}
                 />
               </div>
               <div
@@ -53,8 +53,8 @@ const Resume = () => {
               >
                 <ResumeCard
                   resumeDesc={'2018 - 2020'}
-                  resumeSubTilte={'Junior Graphics Designer'}
-                  resumeTitle={'Theme Junction, Bursa'}
+                  resumeSubTilte={'Theme Junction, Bursa'}
+                  resumeTitle={'Junior Graphics Designer'}
                 />
               </div>
             </div>
@@ -75,8 +75,8 @@ const Resume = () => {
               >
                 <ResumeCard
                   resumeDesc={'2020 - 2023'}
-                  resumeSubTilte={'Programming course'}
-                  resumeTitle={'Harverd University'}
+                  resumeSubTilte={'Harverd University'}
+                  resumeTitle={'Programming course'}
                 />
               </div>
               <div
@@ -85,8 +85,8 @@ const Resume = () => {
               >
                 <ResumeCard
                   resumeDesc={'2016 - 2020'}
-                  resumeSubTilte={'raphic design course'}
-                  resumeTitle={'University of Denmark'}
+                  resumeSubTilte={'University of Denmark'}
+                  resumeTitle={'Graphic design course'}
                 />
               </div>
               <div
@@ -95,8 +95,8 @@ const Resume = () => {
               >
                 <ResumeCard
                   resumeDesc={'2012 - 2015'}
-                  resumeSubTilte={'Web design course'}
-                  resumeTitle={'University of California'}
+                  resumeSubTilte={'University of California'}
+                  resumeTitle={'Web design course'}
                 />
               </div>
               <div
@@ -105,8 +105,8 @@ const Resume = () => {
               >
                 <ResumeCard
                   resumeDesc={'2010 - 2011'}
-                  resumeSubTilte={'Design & Technology'}
-                  resumeTitle={'Parsons, The New School'}
+                  resumeSubTilte={'Parsons, The New School'}
+                  resumeTitle={'Design & Technology'}
                 />
               </div>
             </div>

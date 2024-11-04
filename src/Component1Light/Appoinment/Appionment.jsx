@@ -9,7 +9,7 @@ const Appoinment = () => {
       <div className='Container'>
         <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-[22px] relative z-10'>
           <div className='relative z-10 lg:pl-28 md:hidden'>
-            <div className='flex items-start gap-[26px] mb-[38px]'>
+            <div className='flex items-start gap-[25px] mb-[40px]'>
               <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-white flex items-center justify-center'>
                 <FiPhoneCall size={'22'} />
               </div>
@@ -25,7 +25,7 @@ const Appoinment = () => {
                 </Link>
               </div>
             </div>
-            <div className='flex items-start gap-[26px] mb-[38px]'>
+            <div className='flex items-start gap-[25px] mb-[40px]'>
               <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-white flex items-center justify-center'>
                 <FaRegEnvelope size={'22'} />
               </div>
@@ -109,7 +109,7 @@ const Appoinment = () => {
                 id='select'
                 className='font-Sora text-Secondarycolor-0 bg-BodyBgLight-0 placeholder:text-TextGrey2-0 border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
               >
-                <option value='subject'>Your Subject</option>
+                <option value='subject'>Choose Subject</option>
                 <option value='subject2'>Bangla</option>
                 <option value='subject3'>Arabic</option>
                 <option value='subject4'>China</option>
@@ -131,7 +131,7 @@ const Appoinment = () => {
             </form>
           </div>
           <div className='relative z-10 lg:pl-28 hidden md:block'>
-            <div className='flex items-start gap-[26px] mb-[38px]'>
+            <div className='flex items-start gap-[25px] mb-[40px]'>
               <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-white flex items-center justify-center'>
                 <FiPhoneCall size={'22'} />
               </div>
@@ -147,7 +147,7 @@ const Appoinment = () => {
                 </Link>
               </div>
             </div>
-            <div className='flex items-start gap-[26px] mb-[38px]'>
+            <div className='flex items-start gap-[25px] mb-[40px]'>
               <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-white flex items-center justify-center'>
                 <FaRegEnvelope size={'22'} />
               </div>

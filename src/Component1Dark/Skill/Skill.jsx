@@ -45,7 +45,7 @@ const Skill = () => {
           >
             <SkillCard
               skillIcon={icon2}
-              skillPercent={92}
+              skillPercent={80}
               skillSuffix={'%'}
               skillTitle={'Sketch'}
             />
@@ -56,7 +56,7 @@ const Skill = () => {
           >
             <SkillCard
               skillIcon={icon3}
-              skillPercent={92}
+              skillPercent={85}
               skillSuffix={'%'}
               skillTitle={'XD'}
             />
@@ -67,7 +67,7 @@ const Skill = () => {
           >
             <SkillCard
               skillIcon={icon4}
-              skillPercent={92}
+              skillPercent={99}
               skillSuffix={'%'}
               skillTitle={'WordPess'}
             />
@@ -78,7 +78,7 @@ const Skill = () => {
           >
             <SkillCard
               skillIcon={icon5}
-              skillPercent={92}
+              skillPercent={89}
               skillSuffix={'%'}
               skillTitle={'React'}
             />
@@ -89,7 +89,7 @@ const Skill = () => {
           >
             <SkillCard
               skillIcon={icon6}
-              skillPercent={92}
+              skillPercent={93}
               skillSuffix={'%'}
               skillTitle={'JavaScript'}
             />

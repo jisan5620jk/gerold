@@ -402,7 +402,7 @@ const Service = () => {
                 </div>
               </div>
               <div className='col-span-2 md:col-span-1'>
-                <div className='bg-BodyBg-0 rounded-lg px-6 py-7 mb-[30px]'>
+                <div className='bg-BodyBg3-0 rounded-lg px-6 py-7 mb-[30px]'>
                   <h5 className='font-Sora text-white font-bold text-xl uppercase pb-6'>
                     All Services
                   </h5>
@@ -420,7 +420,7 @@ const Service = () => {
                       </button>
                     </li>
                     <li>
-                      <button className='flex items-center gap-[10px] font-Sora text-white w-full px-5 py-4 rounded-lg bg-transparent relative z-10 before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-PrimaryColor-0 overflow-hidden before:bg-opacity-40 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 mb-1'>
+                      <button className='flex items-center gap-[10px] font-Sora text-white w-full px-5 py-4 rounded-lg bg-transparent relative z-10 transition-all duration-300 ease-in hover:bg-Secondarycolor-0 mb-1'>
                         <img
                           src={icon2}
                           draggable='false'
@@ -432,7 +432,7 @@ const Service = () => {
                       </button>
                     </li>
                     <li>
-                      <button className='flex items-center gap-[10px] font-Sora text-white w-full px-5 py-4 rounded-lg bg-transparent relative z-10 before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-PrimaryColor-0 overflow-hidden before:bg-opacity-40 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 mb-1'>
+                      <button className='flex items-center gap-[10px] font-Sora text-white w-full px-5 py-4 rounded-lg bg-transparent relative z-10 transition-all duration-300 ease-in hover:bg-Secondarycolor-0 mb-1'>
                         <img
                           src={icon3}
                           draggable='false'
@@ -444,7 +444,7 @@ const Service = () => {
                       </button>
                     </li>
                     <li>
-                      <button className='flex items-center gap-[10px] font-Sora text-white w-full px-5 py-4 rounded-lg bg-transparent relative z-10 before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-PrimaryColor-0 overflow-hidden before:bg-opacity-40 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 mb-1'>
+                      <button className='flex items-center gap-[10px] font-Sora text-white w-full px-5 py-4 rounded-lg bg-transparent relative z-10 transition-all duration-300 ease-in hover:bg-Secondarycolor-0 mb-1'>
                         <img
                           src={icon4}
                           draggable='false'
@@ -456,7 +456,7 @@ const Service = () => {
                       </button>
                     </li>
                     <li>
-                      <button className='flex items-center gap-[10px] font-Sora text-white w-full px-5 py-4 rounded-lg bg-transparent relative z-10 before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-PrimaryColor-0 overflow-hidden before:bg-opacity-40 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 mb-1'>
+                      <button className='flex items-center gap-[10px] font-Sora text-white w-full px-5 py-4 rounded-lg bg-transparent relative z-10 transition-all duration-300 ease-in hover:bg-Secondarycolor-0 mb-1'>
                         <img
                           src={icon5}
                           draggable='false'
@@ -469,7 +469,7 @@ const Service = () => {
                     </li>
                   </ul>
                 </div>
-                <div className='bg-BodyBg-0 rounded-lg px-6 pt-7 pb-8'>
+                <div className='bg-BodyBg3-0 rounded-lg px-6 pt-7 pb-8'>
                   <h5 className='font-Sora text-white font-bold text-xl uppercase pb-6'>
                     Get In Touch
                   </h5>
@@ -479,7 +479,7 @@ const Service = () => {
                       name='name'
                       id='name'
                       placeholder='Name'
-                      className='w-full h-[50px] px-5 py-4 rounded-lg bg-BodyBg2-0 border border-BorderColor-0 text-white transition-all duration-500 hover:border-PrimaryColor-0 outline-none mb-3'
+                      className='w-full h-[50px] px-5 py-4 rounded-lg bg-BodyBg2-0 border border-BorderColor-0 text-white transition-all duration-500 hover:border-PrimaryColor-0 outline-none mb-[10px]'
                       required
                     />
                     <input
@@ -487,19 +487,19 @@ const Service = () => {
                       name='email'
                       id='email'
                       placeholder='E-Mail'
-                      className='w-full h-[50px] px-5 py-4 rounded-lg bg-BodyBg2-0 border border-BorderColor-0 text-white transition-all duration-500 hover:border-PrimaryColor-0 outline-none mb-3'
+                      className='w-full h-[50px] px-5 py-4 rounded-lg bg-BodyBg2-0 border border-BorderColor-0 text-white transition-all duration-500 hover:border-PrimaryColor-0 outline-none mb-[10px]'
                       required
                     />
                     <textarea
                       name='message'
                       id='message'
                       placeholder='Message'
-                      className='w-full h-[150px] px-5 py-4 rounded-lg bg-BodyBg2-0 border border-BorderColor-0 text-white transition-all duration-500 hover:border-PrimaryColor-0 outline-none resize-none mb-2'
+                      className='w-full h-[150px] px-5 py-4 rounded-lg bg-BodyBg2-0 border border-BorderColor-0 text-white transition-all duration-500 hover:border-PrimaryColor-0 outline-none resize-none mb-1'
                     ></textarea>
                     <div className='header-btn w-full'>
                       <button
                         type='submit'
-                        className='w-full'
+                        className='w-full !py-5'
                       >
                         Send Message
                       </button>

@@ -45,7 +45,7 @@ const testiData = [
 const Testimonial = () => {
   const settings = {
     loop: true,
-    spaceBetween: 30,
+    spaceBetween: 34,
     speed: 1000,
     initialSlide: 1,
     autoplay: true,
@@ -85,7 +85,7 @@ const Testimonial = () => {
               {`My Client's Stories`}
             </h1>
             <p
-              className='font-Sora text-TextColor-0 mt-2 lg:max-w-[470px] w-full xl:pr-5 2xl:pr-0'
+              className='font-Sora text-TextColor-0 mt-[14px] lg:max-w-[470px] w-full xl:pr-5 2xl:pr-0'
               data-aos='fade-up-right'
               data-aos-duration='1000'
             >

@@ -6,7 +6,7 @@ const ResumeCard = ({
   resumeDesc,
 }) => {
   return (
-    <div className='bg-BodyBg-0 py-5 rounded-[20px] px-4 sm:px-[30px] md:px-4 lg:px-[30px] group relative z-10 overflow-hidden before:absolute before:left-0 before:top-0 before:bg-gradient-to-l before:to-PrimaryColor-0 before:-z-10 before:from-Secondarycolor-0 before:transition-all before:duration-500 before:w-full before:h-full before:opacity-0 hover:before:opacity-100'>
+    <div className='bg-BodyBg3-0 py-5 rounded-[20px] px-4 sm:px-[30px] md:px-4 lg:px-[30px] group relative z-10 overflow-hidden before:absolute before:left-0 before:top-0 before:bg-gradient-to-l before:to-PrimaryColor-0 before:-z-10 before:from-Secondarycolor-0 before:transition-all before:duration-500 before:w-full before:h-full before:opacity-0 hover:before:opacity-100'>
         <h6 className='font-Sora font-bold text-[15px] md:text-xl text-PrimaryColor-0 capitalize transition-all duration-500 group-hover:text-white'>
           {resumeDesc}
         </h6>

@@ -21,7 +21,7 @@ body {
 }
 
 .primary-btn {
-  @apply font-Sora font-medium rounded-full text-[15px] tracking-custom text-PrimaryColor-0 border border-PrimaryColor-0 flex items-center gap-[8px] px-[35px] py-[16px] transition-all duration-500 hover:text-white hover:bg-PrimaryColor-0;
+  @apply font-Sora font-medium rounded-full text-[15px] tracking-custom text-PrimaryColor-0 border border-PrimaryColor-0 flex items-center gap-[8px] px-[35px] py-[17px] leading-[20px] transition-all duration-500 hover:text-white hover:bg-PrimaryColor-0;
 }
 
 .primary-btn2 {
