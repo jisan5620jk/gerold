@@ -22,7 +22,7 @@ const Banner = () => {
           </div>
           <div className='grid grid-cols-1 md:grid-cols-2 md:items-center'>
             <div>
-              <h3 className='font-Sora text-[22px] md:text-[25px] lg:text-4xl font-bold text-TextColor-0 pb-[17px]'>
+              <h3 className='font-Sora text-[22px] md:text-[25px] lg:text-4xl font-bold text-TextColor-0 pb-[17px] md:mb-4'>
                 I am Gerold
               </h3>
               <h1 className='font-Sora text-4xl sm:text-5xl sm:leading-[60px] md:text-[38px] md:leading-[48px] lg:text-[50px] lg:leading-[62px] xl:text-[62px] xl:leading-[75px] 2xl:text-[65px] 2xl:leading-[78px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent -mt-4'>
@@ -36,7 +36,7 @@ const Banner = () => {
                   className='w-10/12 md:w-[inherit] lg:w-10/12 xl:w-[inherit] sm:max-w-[inherit] border-2 border-Secondarycolor-0 rounded-[38px] rotate-[5deg] transition-all duration-500 hover:rotate-0 hover:border-PrimaryColor-0'
                 />
               </div>
-              <p className='font-Sora text-xl sm:text-2xl lg:text-[21px] xl:text-2xl font-light sm:leading-[30px] text-TextColor-0 max-w-[550px] w-full pt-10 md:pt-[15px] pb-7 lg:pb-[50px]'>
+              <p className='font-Sora text-xl font-light sm:leading-[30px] text-TextColor-0 max-w-[550px] w-full pt-10 md:pt-[15px] pb-7 lg:pb-[50px]'>
                 I break down complex user experinece problems to create
                 integritiy focussed solutions that connect billions of people
               </p>

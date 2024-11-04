@@ -8,9 +8,12 @@ import { useEffect } from 'react';
 
 const Main5 = () => {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      once: true,
+    });
     AOS.refresh();
   }, []);
+
   return (
     <>
       <ContactNavbar />

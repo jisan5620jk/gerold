@@ -136,7 +136,7 @@ const Navbar2Light = () => {
             </div>
             <div className='offcanvas_logo inline-block'>
               <Link
-                to={'/home2_light'}
+                to={'/home_light'}
                 title='Gerold'
               >
                 <img
@@ -161,7 +161,7 @@ const Navbar2Light = () => {
                 <ul className='flex items-center gap-[35px]'>
                   <li>
                     <Link
-                      to={'/home2_light'}
+                      to={'/home_light'}
                       title='Gerold'
                     >
                       <img

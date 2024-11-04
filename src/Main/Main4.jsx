@@ -8,9 +8,12 @@ import ServiceNavbar from '../Shared/Navbar/ServiceNavbar';
 
 const Main4 = () => {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      once: true,
+    });
     AOS.refresh();
   }, []);
+
   return (
     <>
       <ServiceNavbar />

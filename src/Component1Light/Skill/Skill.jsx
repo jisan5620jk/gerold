@@ -14,7 +14,6 @@ const Skill = () => {
           <h1
             className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-Secondarycolor-0 from-25% bg-clip-text text-transparent'
             data-aos='fade-up'
-            data-aos-delay='300'
             data-aos-duration='1000'
           >
             My Skills
@@ -22,7 +21,6 @@ const Skill = () => {
           <p
             className='font-Sora text-TextLight-0 mt-2 mx-auto max-w-[640px] w-full'
             data-aos='fade-up'
-            data-aos-delay='400'
             data-aos-duration='1000'
           >
             We put your ideas and thus your wishes in the form of a unique web
@@ -33,7 +31,6 @@ const Skill = () => {
           <div
             data-aos='fade-up'
             data-aos-duration='1000'
-            data-aos-delay='300'
           >
             <SkillCard
               skillIcon={icon}
@@ -45,61 +42,56 @@ const Skill = () => {
           <div
             data-aos='fade-up'
             data-aos-duration='1000'
-            data-aos-delay='400'
           >
             <SkillCard
               skillIcon={icon2}
               skillPercent={92}
               skillSuffix={'%'}
-              skillTitle={'Figma'}
+              skillTitle={'Sketch'}
             />
           </div>
           <div
             data-aos='fade-up'
             data-aos-duration='1000'
-            data-aos-delay='500'
           >
             <SkillCard
               skillIcon={icon3}
               skillPercent={92}
               skillSuffix={'%'}
-              skillTitle={'Figma'}
+              skillTitle={'XD'}
             />
           </div>
           <div
             data-aos='fade-up'
             data-aos-duration='1000'
-            data-aos-delay='600'
           >
             <SkillCard
               skillIcon={icon4}
               skillPercent={92}
               skillSuffix={'%'}
-              skillTitle={'Figma'}
+              skillTitle={'WordPess'}
             />
           </div>
           <div
             data-aos='fade-up'
             data-aos-duration='1000'
-            data-aos-delay='700'
           >
             <SkillCard
               skillIcon={icon5}
               skillPercent={92}
               skillSuffix={'%'}
-              skillTitle={'Figma'}
+              skillTitle={'React'}
             />
           </div>
           <div
             data-aos='fade-up'
             data-aos-duration='1000'
-            data-aos-delay='800'
           >
             <SkillCard
               skillIcon={icon6}
               skillPercent={92}
               skillSuffix={'%'}
-              skillTitle={'Figma'}
+              skillTitle={'JavaScript'}
             />
           </div>
         </div>

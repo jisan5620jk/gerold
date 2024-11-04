@@ -13,7 +13,6 @@ const Blog = () => {
           <h1
             className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-white from-30% bg-clip-text text-transparent'
             data-aos='fade-up'
-            data-aos-delay='300'
             data-aos-duration='1000'
           >
             Recent Blogs
@@ -21,7 +20,6 @@ const Blog = () => {
           <p
             className='font-Sora text-TextColor-0 mt-2 mx-auto max-w-[640px] w-full'
             data-aos='fade-up'
-            data-aos-delay='400'
             data-aos-duration='1000'
           >
             We put your ideas and thus your wishes in the form of a unique web
@@ -31,7 +29,6 @@ const Blog = () => {
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-10 lg:gap-5 xl:gap-7 2xl:gap-10 mt-10 md:mt-[48px]'>
           <div
             data-aos='fade-up'
-            data-aos-delay='300'
             data-aos-duration='1000'
           >
             <BlogCard
@@ -47,7 +44,6 @@ const Blog = () => {
           </div>
           <div
             data-aos='fade-up'
-            data-aos-delay='400'
             data-aos-duration='1000'
           >
             <BlogCard
@@ -63,7 +59,6 @@ const Blog = () => {
           </div>
           <div
             data-aos='fade-up'
-            data-aos-delay='500'
             data-aos-duration='1000'
           >
             <BlogCard

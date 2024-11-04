@@ -20,7 +20,7 @@ const Banner = () => {
       <span className='absolute -z-10 -top-[10%] -right-[5%] w-[322px] h-[308px] rounded-full bg-gradient-to-r to-PrimaryColor-0 from-transparent blur-[150px]'></span>
       <div className='Container'>
         <div className='flex flex-col md:flex-row items-center group gap-[60px] md:gap-8 lg:gap-[60px] p-6 sm:p-[30px] border border-Secondarycolor-0 bg-BodyBg3-0 rounded-2xl'>
-          <div className='hidden md:block relative z-10 rounded-xl overflow-hidden max-w-[325px] w-full transition-all duration-500 border border-transparent group-hover:border-PrimaryColor-0'>
+          <div className='hidden md:block relative z-10 rounded-[15px] overflow-hidden max-w-[325px] w-full transition-all duration-500 border-2 border-transparent group-hover:border-PrimaryColor-0'>
             <img
               src={bannerThumb}
               draggable='false'
@@ -40,7 +40,7 @@ const Banner = () => {
               I design and code beautifully simple things and i love what i do.
               Just simple like that!
             </p>
-            <div className='flex flex-wrap items-center gap-[26px] mt-7 md:mt-[35px]'>
+            <div className='flex flex-wrap items-center gap-[25px] mt-7 md:mt-[35px]'>
               <div className='inline-block'>
                 <Link to={'/'}>
                   <button className='primary-btn2'>

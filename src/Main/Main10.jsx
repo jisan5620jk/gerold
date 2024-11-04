@@ -8,9 +8,12 @@ import { useEffect } from 'react';
 
 const Main10 = () => {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      once: true,
+    });
     AOS.refresh();
   }, []);
+
   return (
     <>
       <Navbar2Light />

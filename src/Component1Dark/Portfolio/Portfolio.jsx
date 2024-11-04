@@ -183,12 +183,11 @@ const Portfolio = () => {
   };
   return (
     <>
-      <div className='portfolio-filter text-center bg-BodyBg-0 py-[60px] md:py-20 lg:py-28'>
-        <div className='text-center mb-[60px]'>
+      <div className='portfolio-filter text-center bg-BodyBg-0 pt-[60px] pb-[30px] md:pt-20 md:pb-[60px] lg:pt-28 lg:pb-20'>
+        <div className='text-center mb-[50px]'>
           <h1
             className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-white from-30% bg-clip-text text-transparent'
             data-aos='fade-up'
-            data-aos-delay='300'
             data-aos-duration='1000'
           >
             My Recent Works
@@ -196,7 +195,6 @@ const Portfolio = () => {
           <p
             className='font-Sora text-TextColor-0 mt-2 mx-auto max-w-[640px] w-full'
             data-aos='fade-up'
-            data-aos-delay='400'
             data-aos-duration='1000'
           >
             We put your ideas and thus your wishes in the form of a unique web

@@ -55,7 +55,7 @@ const Appoinment = () => {
           </div>
           <div className='px-4 sm:px-10 md:px-5 lg:px-6 xl:px-10 pt-9 pb-10 md:py-7 lg:pt-9 lg:pb-10 bg-BodyBg3-0 rounded-2xl mt-6 lg:mt-0'>
             <h1
-              className='font-Sora text-[25px] sm:text-[34px] md:leading-[40px] lg:text-[38px] xl:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'
+              className='font-Sora text-[25px] sm:text-[34px] md:leading-[40px] lg:text-[38px] lg:leading-[58px] xl:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'
               data-aos='fade-up-right'
               data-aos-duration='1000'
             >

@@ -6,7 +6,6 @@ const Experience = () => {
           <h1
             className='font-Sora text-[27px] leading-[35px] sm:text-[34px] md:text-[45px] md:leading-[54px] font-medium bg-gradient-to-l to-PrimaryColor-0 via-Secondarycolor-0 from-Secondarycolor-0 bg-clip-text text-transparent'
             data-aos='fade-up'
-            data-aos-delay='300'
             data-aos-duration='1000'
           >
             Education & Work Experience
@@ -15,7 +14,6 @@ const Experience = () => {
         <div
           className='flex flex-wrap md:flex-nowrap gap-y-10 gap-7 md:justify-between pt-10 px-6 sm:px-[35px] md:px-5 lg:px-[35px] pb-[70px] border border-BorderGrey2-0 bg-BodyBgLight-0 rounded-2xl mt-8 md:mt-[50px]'
           data-aos='fade-up'
-          data-aos-delay='400'
           data-aos-duration='1000'
         >
           <div>
@@ -64,7 +62,7 @@ const Experience = () => {
                 </p>
               </div>
               <div className='relative z-10 mt-8 before:absolute before:top-1 before:-left-[26px] sm:before:-left-[46px] md:before:-left-[26px] lg:before:-left-[46px] before:size-[13px] before:rounded-full before:bg-PrimaryColor2-0'>
-                <h5 className='font-Sora font-medium text-lg sm:text-xl text-white uppercase'>
+                <h5 className='font-Sora font-medium text-lg sm:text-xl text-Secondarycolor-0 uppercase'>
                   Enver Studio
                 </h5>
                 <h6 className='font-Sora font-medium text-TextLight-0 pt-[11px]'>
@@ -75,7 +73,7 @@ const Experience = () => {
                 </p>
               </div>
               <div className='relative z-10 mt-8 before:absolute before:top-1 before:-left-[26px] sm:before:-left-[46px] md:before:-left-[26px] lg:before:-left-[46px] before:size-[13px] before:rounded-full before:bg-PrimaryColor2-0'>
-                <h5 className='font-Sora font-medium text-lg sm:text-xl text-white uppercase'>
+                <h5 className='font-Sora font-medium text-lg sm:text-xl text-Secondarycolor-0 uppercase'>
                   TOKO Distributor
                 </h5>
                 <h6 className='font-Sora font-medium text-TextLight-0 pt-[11px]'>
@@ -86,7 +84,7 @@ const Experience = () => {
                 </p>
               </div>
               <div className='relative z-10 mt-8 before:absolute before:top-1 before:-left-[26px] sm:before:-left-[46px] md:before:-left-[26px] lg:before:-left-[46px] before:size-[13px] before:rounded-full before:bg-PrimaryColor2-0'>
-                <h5 className='font-Sora font-medium text-lg sm:text-xl text-white uppercase'>
+                <h5 className='font-Sora font-medium text-lg sm:text-xl text-Secondarycolor-0 uppercase'>
                   Sakoo
                 </h5>
                 <h6 className='font-Sora font-medium text-TextLight-0 pt-[11px]'>
@@ -115,7 +113,7 @@ const Experience = () => {
                 </p>
               </div>
               <div className='relative z-10 mt-8 before:absolute before:top-1 before:-left-[26px] sm:before:-left-[46px] md:before:-left-[26px] lg:before:-left-[46px] before:size-[13px] before:rounded-full before:bg-PrimaryColor2-0'>
-                <h5 className='font-Sora font-medium text-lg sm:text-xl text-white uppercase'>
+                <h5 className='font-Sora font-medium text-lg sm:text-xl text-Secondarycolor-0 uppercase'>
                   Enver Studio
                 </h5>
                 <h6 className='font-Sora font-medium text-TextLight-0 pt-[11px]'>
@@ -126,7 +124,7 @@ const Experience = () => {
                 </p>
               </div>
               <div className='relative z-10 mt-8 before:absolute before:top-1 before:-left-[26px] sm:before:-left-[46px] md:before:-left-[26px] lg:before:-left-[46px] before:size-[13px] before:rounded-full before:bg-PrimaryColor2-0'>
-                <h5 className='font-Sora font-medium text-lg sm:text-xl text-white uppercase'>
+                <h5 className='font-Sora font-medium text-lg sm:text-xl text-Secondarycolor-0 uppercase'>
                   TOKO Distributor
                 </h5>
                 <h6 className='font-Sora font-medium text-TextLight-0 pt-[11px]'>

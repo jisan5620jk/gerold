@@ -40,7 +40,7 @@ const About = () => {
               {`As a UI designer, I work closely with clients to understand their needs and goals for their software or website.`}
             </p>
           </div>
-          <div className='-mt-8'>
+          <div className='-mt-10'>
             <img
               src={aboutImg}
               draggable='false'

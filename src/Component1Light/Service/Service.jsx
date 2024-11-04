@@ -14,9 +14,9 @@ import { FaAngleRight } from 'react-icons/fa6';
 
 const Service = () => {
   useEffect(() => {
-    const activeBg = document.querySelector('.service-active-bg');
-    const serviceItems = document.querySelectorAll('.service-item');
-    const servicesWidget = document.querySelector('.service-widget');
+    const activeBg = document.querySelector('.service-active-bg2');
+    const serviceItems = document.querySelectorAll('.service-item2');
+    const servicesWidget = document.querySelector('.service-widget2');
 
     if (!activeBg || !serviceItems.length || !servicesWidget) {
       console.error('Required elements are not found in the DOM.');
@@ -24,7 +24,7 @@ const Service = () => {
     }
 
     const setInitialPosition = () => {
-      const activeItem = document.querySelector('.service-item.active');
+      const activeItem = document.querySelector('.service-item2.active2');
       if (activeItem) {
         const height = activeItem.offsetHeight;
         activeBg.style.top = `0px`; // Set top position to 0px
@@ -38,11 +38,11 @@ const Service = () => {
       const height = e.offsetHeight;
       const menuTop =
         servicesWidget.getBoundingClientRect().top + window.scrollY;
-      e.closest('.service-item').classList.remove('mleave');
-      Array.from(e.closest('.service-item').parentNode.children).forEach(
+      e.closest('.service-item2').classList.remove('mleave2');
+      Array.from(e.closest('.service-item2').parentNode.children).forEach(
         (sibling) => {
-          if (sibling !== e.closest('.service-item')) {
-            sibling.classList.add('mleave');
+          if (sibling !== e.closest('.service-item2')) {
+            sibling.classList.add('mleave2');
           }
         }
       );
@@ -55,12 +55,12 @@ const Service = () => {
     });
 
     servicesWidget.addEventListener('mouseleave', () => {
-      const element = document.querySelector('.active');
+      const element = document.querySelector('.active2');
       activeService(activeBg, element);
-      Array.from(element.closest('.service-item').parentNode.children).forEach(
+      Array.from(element.closest('.service-item2').parentNode.children).forEach(
         (sibling) => {
-          if (sibling !== element.closest('.service-item')) {
-            sibling.classList.remove('mleave');
+          if (sibling !== element.closest('.service-item2')) {
+            sibling.classList.remove('mleave2');
           }
         }
       );
@@ -68,12 +68,12 @@ const Service = () => {
 
     setInitialPosition(); // Set initial position
 
-    document.querySelectorAll('.service-item').forEach((item) => {
+    document.querySelectorAll('.service-item2').forEach((item) => {
       item.addEventListener('click', () => {
         document
-          .querySelectorAll('.service-item')
-          .forEach((item) => item.classList.remove('active'));
-        item.classList.add('active');
+          .querySelectorAll('.service-item2')
+          .forEach((item) => item.classList.remove('active2'));
+        item.classList.add('active2');
         activeService(activeBg, item); // Update position on click
       });
     });
@@ -161,7 +161,7 @@ const Service = () => {
               project that inspires you and you customers.
             </p>
           </div>
-          <div className='relative z-10 mt-[50px] service-widget'>
+          <div className='relative z-10 mt-[50px] service-widget2'>
             <div
               className='service-item2 active2 grid grid-cols-6 md:grid-cols-12 relative z-20 overflow-hidden group border border-BorderGrey2-0 ease-linear transition-all duration-500 hover:border-PrimaryColor-0 py-6 sm:py-[30px] md:py-5 lg:py-[30px] pr-4 sm:pr-4 pl-6 sm:pl-4 md:pl-5 lg:pl-[30px] md:pr-5 lg:pr-36 xl:pr-[56px]'
               data-aos='fade-up'
