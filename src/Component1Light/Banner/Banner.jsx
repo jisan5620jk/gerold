@@ -25,22 +25,22 @@ const Banner = () => {
               <h3 className='font-Sora text-[22px] md:text-[25px] lg:text-4xl font-bold text-Secondarycolor-0 pb-[17px]'>
                 I am Gerold
               </h3>
-              <h1 className='font-Sora text-4xl sm:text-5xl sm:leading-[60px] md:text-[38px] md:leading-[48px] lg:text-[50px] lg:leading-[62px] xl:text-[62px] xl:leading-[75px] 2xl:text-[65px] 2xl:leading-[78px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-Secondarycolor-0 bg-clip-text text-transparent -mt-4'>
+              <h1 className='font-Sora text-[35px] leading-[42px] sm:text-5xl sm:leading-[60px] md:text-[38px] md:leading-[48px] lg:text-[50px] lg:leading-[62px] xl:text-[62px] xl:leading-[75px] 2xl:text-[65px] 2xl:leading-[78px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-Secondarycolor-0 bg-clip-text text-transparent -mt-4'>
                 Web Developer + <br /> UX Designer
               </h1>
-              <div className='flex justify-center relative mt-10 lg:mt-0 md:hidden'>
+              <div className='flex justify-center relative mt-8 lg:mt-0 md:hidden'>
                 <span className='absolute -z-10 -left-[5%] -bottom-[5%] size-[220px] rounded-full bg-gradient-to-r to-PrimaryColor-0 from-transparent blur-[150px]'></span>
                 <img
                   src={bannerThumb}
                   draggable='false'
-                  className='w-10/12 md:w-[inherit] lg:w-10/12 xl:w-[inherit] sm:max-w-[inherit] border-2 border-Secondarycolor-0 rounded-[38px] rotate-[5deg] transition-all duration-500 hover:rotate-0 hover:border-PrimaryColor-0'
+                  className='w-[80%] md:w-[inherit] lg:w-10/12 xl:w-[inherit] sm:max-w-[inherit] border-2 border-Secondarycolor-0 rounded-[38px] rotate-[5deg] transition-all duration-500 hover:rotate-0 hover:border-PrimaryColor-0'
                 />
               </div>
-              <p className='font-Sora text-xl sm:text-2xl lg:text-[21px] xl:text-2xl font-light sm:leading-[30px] text-TextLight-0 max-w-[550px] w-full pt-10 md:pt-[15px] pb-7 lg:pb-[50px]'>
+              <p className='font-Sora text-xl sm:text-2xl lg:text-[21px] xl:text-2xl font-light sm:leading-[30px] text-TextLight-0 max-w-[550px] w-full pt-10 md:pt-[15px] pb-6 lg:pb-[50px]'>
                 I break down complex user experinece problems to create
                 integritiy focussed solutions that connect billions of people
               </p>
-              <div className='flex flex-wrap sm:items-center gap-[26px]'>
+              <div className='flex flex-wrap sm:items-center gap-y-7 gap-x-[26px]'>
                 <div className='inline-block'>
                   <Link to={'/'}>
                     <button className='primary-btn'>
@@ -97,7 +97,7 @@ const Banner = () => {
                 start={-11}
                 end={'14'}
                 suffix={''}
-                className='font-Sora text-4xl sm:text-6xl md:text-[64px] text-PrimaryColor-0 font-bold'
+                className='font-Sora text-[45px] sm:text-6xl md:text-[64px] text-PrimaryColor-0 font-bold'
               />
             </div>
             <p className='font-Sora text-PrimaryColor-0 -mt-2'>
@@ -111,7 +111,7 @@ const Banner = () => {
                 start={-11}
                 end={'50'}
                 suffix={'+'}
-                className='font-Sora text-4xl sm:text-6xl md:text-[64px] text-PrimaryColor-0 font-bold'
+                className='font-Sora text-[45px] sm:text-6xl md:text-[64px] text-PrimaryColor-0 font-bold'
               />
             </div>
             <p className='font-Sora text-PrimaryColor-0 -mt-2'>
@@ -126,7 +126,7 @@ const Banner = () => {
                 prefix='1.'
                 end={'5'}
                 suffix='K'
-                className='font-Sora text-4xl sm:text-6xl md:text-[64px] text-PrimaryColor-0 font-bold'
+                className='font-Sora text-[45px] sm:text-6xl md:text-[64px] text-PrimaryColor-0 font-bold'
               />
             </div>
             <p className='font-Sora text-PrimaryColor-0 -mt-2'>
@@ -140,7 +140,7 @@ const Banner = () => {
                 start={-11}
                 end={'14'}
                 suffix={''}
-                className='font-Sora text-4xl sm:text-6xl md:text-[64px] text-PrimaryColor-0 font-bold'
+                className='font-Sora text-[45px] sm:text-6xl md:text-[64px] text-PrimaryColor-0 font-bold'
               />
             </div>
             <p className='font-Sora text-PrimaryColor-0 -mt-2'>

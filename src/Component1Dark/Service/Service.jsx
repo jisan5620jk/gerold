@@ -161,9 +161,9 @@ const Service = () => {
               project that inspires you and you customers.
             </p>
           </div>
-          <div className='relative z-10 mt-[50px] service-widget'>
+          <div className='relative z-10 mt-10 md:mt-[50px] service-widget'>
             <div
-              className='service-item active grid grid-cols-6 md:grid-cols-12 relative z-20 overflow-hidden group border-b border-Secondarycolor-0 py-6 sm:py-[30px] md:py-5 lg:py-[30px] pr-4 sm:pr-4 pl-6 sm:pl-4 md:pl-5 lg:pl-[30px] md:pr-5 lg:pr-36 xl:pr-[56px]'
+              className='service-item active grid grid-cols-6 md:grid-cols-12 relative z-20 overflow-hidden group border-b border-Secondarycolor-0 py-6 sm:py-[30px] md:py-5 lg:py-[30px] pr-2 sm:pr-4 pl-6 sm:pl-4 md:pl-5 lg:pl-[30px] md:pr-5 lg:pr-36 xl:pr-[56px]'
               data-aos='fade-up'
               data-aos-duration='1000'
             >
@@ -197,7 +197,7 @@ const Service = () => {
               ></button>
             </div>
             <div
-              className='service-item grid grid-cols-6 md:grid-cols-12 relative z-20 overflow-hidden group border-b border-Secondarycolor-0 py-6 sm:py-[30px] md:py-5 lg:py-[30px] pr-4 sm:pr-4 pl-6 sm:pl-4 md:pl-5 lg:pl-[30px] md:pr-5 lg:pr-36 xl:pr-[56px]'
+              className='service-item grid grid-cols-6 md:grid-cols-12 relative z-20 overflow-hidden group border-b border-Secondarycolor-0 py-6 sm:py-[30px] md:py-5 lg:py-[30px] pr-2 sm:pr-4 pl-6 sm:pl-4 md:pl-5 lg:pl-[30px] md:pr-5 lg:pr-36 xl:pr-[56px]'
               data-aos='fade-up'
               data-aos-duration='1000'
             >
@@ -231,7 +231,7 @@ const Service = () => {
               ></button>
             </div>
             <div
-              className='service-item grid grid-cols-6 md:grid-cols-12 relative z-20 overflow-hidden group border-b border-Secondarycolor-0 py-6 sm:py-[30px] md:py-5 lg:py-[30px] pr-4 sm:pr-4 pl-6 sm:pl-4 md:pl-5 lg:pl-[30px] md:pr-5 lg:pr-36 xl:pr-[56px]'
+              className='service-item grid grid-cols-6 md:grid-cols-12 relative z-20 overflow-hidden group border-b border-Secondarycolor-0 py-6 sm:py-[30px] md:py-5 lg:py-[30px] pr-2 sm:pr-4 pl-6 sm:pl-4 md:pl-5 lg:pl-[30px] md:pr-5 lg:pr-36 xl:pr-[56px]'
               data-aos='fade-up'
               data-aos-duration='1000'
             >
@@ -265,7 +265,7 @@ const Service = () => {
               ></button>
             </div>
             <div
-              className='service-item grid grid-cols-6 md:grid-cols-12 relative z-20 overflow-hidden group border-b border-Secondarycolor-0 py-6 sm:py-[30px] md:py-5 lg:py-[30px] pr-4 sm:pr-4 pl-6 sm:pl-4 md:pl-5 lg:pl-[30px] md:pr-5 lg:pr-36 xl:pr-[56px]'
+              className='service-item grid grid-cols-6 md:grid-cols-12 relative z-20 overflow-hidden group border-b border-Secondarycolor-0 py-6 sm:py-[30px] md:py-5 lg:py-[30px] pr-2 sm:pr-4 pl-6 sm:pl-4 md:pl-5 lg:pl-[30px] md:pr-5 lg:pr-36 xl:pr-[56px]'
               data-aos='fade-up'
               data-aos-duration='1000'
             >

@@ -184,7 +184,7 @@ const Portfolio = () => {
   return (
     <>
       <div className='portfolio-filter text-center bg-BodyBg-0 pt-[60px] pb-[30px] md:pt-20 md:pb-[60px] lg:pt-28 lg:pb-20'>
-        <div className='text-center mb-[50px]'>
+        <div className='text-center mx-3 md:mx-0 mb-10 md:mb-[50px]'>
           <h1
             className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-white from-30% bg-clip-text text-transparent'
             data-aos='fade-up'
@@ -210,52 +210,52 @@ const Portfolio = () => {
           >
             <button
               data-filter='*'
-              className='active py-2 px-3 sm:px-[25px] rounded-full relative z-10 font-Sora text-[15px] text-white bg-transparent capitalize tracking-custom2'
+              className='active px-[10px] py-6px md:py-2 md:px-3 sm:px-[25px] rounded-full relative z-10 font-Sora text-sm md:text-[15px] text-white bg-transparent capitalize tracking-custom2'
             >
               All
             </button>
             <button
               data-filter='.uxui'
-              className='py-2 px-3 sm:px-[25px] rounded-full relative z-10 font-Sora text-[15px] text-white bg-transparent capitalize tracking-custom2'
+              className='px-[10px] py-6px md:py-2 md:px-3 sm:px-[25px] rounded-full relative z-10 font-Sora text-sm md:text-[15px] text-white bg-transparent capitalize tracking-custom2'
             >
               UX/UI
             </button>
             <button
               data-filter='.branding'
-              className='py-2 px-3 sm:px-[25px] rounded-full relative z-10 font-Sora text-[15px] text-white bg-transparent capitalize tracking-custom2'
+              className='px-[10px] py-6px md:py-2 md:px-3 sm:px-[25px] rounded-full relative z-10 font-Sora text-sm md:text-[15px] text-white bg-transparent capitalize tracking-custom2'
             >
               Branding
             </button>
             <button
               data-filter='.mobile-app'
-              className='py-2 px-3 sm:px-[25px] rounded-full relative z-10 font-Sora text-[15px] text-white bg-transparent capitalize tracking-custom2'
+              className='px-[10px] py-6px md:py-2 md:px-3 sm:px-[25px] rounded-full relative z-10 font-Sora text-sm md:text-[15px] text-white bg-transparent capitalize tracking-custom2'
             >
               Apps
             </button>
             <div className='portfolio-active-bg rounded-full top-0 left-0 bottom-0 right-0 absolute -z-10 bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 transition-all duration-500'></div>
           </div>
           <div
-            className='portfolio-box text-center pt-[50px] bg-contain bg-no-repeat bg-center relative z-10 before:absolute before:top-1/2 before:left-1/2 before:w-[35%] before:h-[35%] before:-z-10 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:bg-PrimaryColor-0 before:bg-gradient-to-r before:to-PrimaryColor-0 before:from-Secondarycolor-0 before:blur-[150px]'
+            className='portfolio-box text-center pt-10 md:pt-[50px] bg-contain bg-no-repeat bg-center relative z-10 before:absolute before:top-1/2 before:left-1/2 before:w-[35%] before:h-[35%] before:-z-10 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:bg-PrimaryColor-0 before:bg-gradient-to-r before:to-PrimaryColor-0 before:from-Secondarycolor-0 before:blur-[150px]'
             data-aos='fade-up'
             data-aos-duration='1000'
           >
             <div className='portfolio-sizer w-[98%] md:w-[48%]'></div>
             <div className='gutter-sizer w-[4%]'></div>
-            <div className='portfolio-item branding group bg-BodyBg2-0 mb-[4%] px-5 lg:px-9 pt-5 lg:pt-9 rounded-[10px] w-[98%] md:w-[48%]'>
+            <div className='portfolio-item branding group bg-BodyBg3-0 mb-[4%] px-[15px] md:px-5 lg:px-9 pt-5 lg:pt-9 rounded-[10px] w-[98%] md:w-[48%]'>
               <div className='image-box text-center'>
                 <img
                   src={porfolioImg}
                   draggable='false'
                 />
               </div>
-              <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0 w-[calc(100%-40px)] rounded-2xl m-auto p-5 pr-5 sm:pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
+              <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0 w-full md:w-[calc(100%-40px)] rounded-2xl m-auto p-[15px] md:p-5 pr-[30px] md:pr-5 sm:pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
                 <h3 className='portfolio-title font-Sora text-2xl sm:text-3xl font-bold text-white'>
                   Deloitte
                 </h3>
                 <p className='font-Sora font-light text-white md:pt-4'>
                   Project was about precision and information.
                 </p>
-                <span className='text-2xl md:text-3xl tracking-custom2 absolute top-8 sm:top-1/2 right-[25px] md:right-4 lg:right-[25px] sm:-translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
+                <span className='text-2xl md:text-3xl tracking-custom2 absolute top-1/2 right-[15px] md:right-4 lg:right-[25px] -translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
                   <HiArrowUpRight />
                 </span>
                 <button
@@ -264,21 +264,21 @@ const Portfolio = () => {
                 ></button>
               </div>
             </div>
-            <div className='portfolio-item uxui group bg-BodyBg2-0 mb-[4%] px-5 lg:px-9 pt-5 lg:pt-9 rounded-[10px] w-[98%] md:w-[48%]'>
+            <div className='portfolio-item uxui group bg-BodyBg3-0 mb-[4%] px-[15px] md:px-5 lg:px-9 pt-5 lg:pt-9 rounded-[10px] w-[98%] md:w-[48%]'>
               <div className='image-box text-center'>
                 <img
                   src={porfolioImg2}
                   draggable='false'
                 />
               </div>
-              <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0 w-[calc(100%-40px)] rounded-2xl m-auto p-5 pr-5 sm:pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
+              <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0 w-full md:w-[calc(100%-40px)] rounded-2xl m-auto p-[15px] md:p-5 pr-[30px] md:pr-5 sm:pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
                 <h3 className='portfolio-title font-Sora text-2xl sm:text-3xl font-bold text-white'>
-                  Deloitte
+                  New Age
                 </h3>
                 <p className='font-Sora font-light text-white md:pt-4'>
                   Project was about precision and information.
                 </p>
-                <span className='text-2xl md:text-3xl tracking-custom2 absolute top-8 sm:top-1/2 right-[25px] md:right-4 lg:right-[25px] sm:-translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
+                <span className='text-2xl md:text-3xl tracking-custom2 absolute top-1/2 right-[15px] md:right-4 lg:right-[25px] -translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
                   <HiArrowUpRight />
                 </span>
                 <button
@@ -287,21 +287,21 @@ const Portfolio = () => {
                 ></button>
               </div>
             </div>
-            <div className='portfolio-item mobile-app group bg-BodyBg2-0 mb-[4%] px-5 lg:px-9 pt-5 lg:pt-9 rounded-[10px] w-[98%] md:w-[48%]'>
+            <div className='portfolio-item mobile-app group bg-BodyBg3-0 mb-[4%] px-[15px] md:px-5 lg:px-9 pt-5 lg:pt-9 rounded-[10px] w-[98%] md:w-[48%]'>
               <div className='image-box text-center'>
                 <img
                   src={porfolioImg3}
                   draggable='false'
                 />
               </div>
-              <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0 w-[calc(100%-40px)] rounded-2xl m-auto p-5 pr-5 sm:pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
+              <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0 w-full md:w-[calc(100%-40px)] rounded-2xl m-auto p-[15px] md:p-5 pr-[30px] md:pr-5 sm:pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
                 <h3 className='portfolio-title font-Sora text-2xl sm:text-3xl font-bold text-white'>
-                  Deloitte
+                  Sebastian
                 </h3>
                 <p className='font-Sora font-light text-white md:pt-4'>
                   Project was about precision and information.
                 </p>
-                <span className='text-2xl md:text-3xl tracking-custom2 absolute top-8 sm:top-1/2 right-[25px] md:right-4 lg:right-[25px] sm:-translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
+                <span className='text-2xl md:text-3xl tracking-custom2 absolute top-1/2 right-[15px] md:right-4 lg:right-[25px] -translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
                   <HiArrowUpRight />
                 </span>
                 <button
@@ -310,21 +310,21 @@ const Portfolio = () => {
                 ></button>
               </div>
             </div>
-            <div className='portfolio-item branding group bg-BodyBg2-0 mb-[4%] px-5 lg:px-9 pt-5 lg:pt-9 rounded-[10px] w-[98%] md:w-[48%]'>
+            <div className='portfolio-item branding group bg-BodyBg3-0 mb-[4%] px-[15px] md:px-5 lg:px-9 pt-5 lg:pt-9 rounded-[10px] w-[98%] md:w-[48%]'>
               <div className='image-box text-center'>
                 <img
                   src={porfolioImg4}
                   draggable='false'
                 />
               </div>
-              <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0 w-[calc(100%-40px)] rounded-2xl m-auto p-5 pr-5 sm:pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
+              <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0 w-full md:w-[calc(100%-40px)] rounded-2xl m-auto p-[15px] md:p-5 pr-[30px] md:pr-5 sm:pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
                 <h3 className='portfolio-title font-Sora text-2xl sm:text-3xl font-bold text-white'>
-                  Deloitte
+                  Mocknix
                 </h3>
                 <p className='font-Sora font-light text-white md:pt-4'>
                   Project was about precision and information.
                 </p>
-                <span className='text-2xl md:text-3xl tracking-custom2 absolute top-8 sm:top-1/2 right-[25px] md:right-4 lg:right-[25px] sm:-translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
+                <span className='text-2xl md:text-3xl tracking-custom2 absolute top-1/2 right-[15px] md:right-4 lg:right-[25px] -translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
                   <HiArrowUpRight />
                 </span>
                 <button
