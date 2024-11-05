@@ -59,12 +59,12 @@ const FooterLight = () => {
               </Link>
             </li>
           </ul>
-          <p className='font-Sora font-light inline-block text-sm md:text-base sm:flex gap-1 items-center justify-center text-PrimaryColor-0'>
+          <p className='font-Sora font-light inline-block text-sm md:text-base sm:flex gap-1 items-center justify-center text-TextGrey2-0'>
             <span>&copy;</span> <span ref={yearRef}></span> All rights reserved
             by{' '}
             <Link
               to={'/'}
-              className='font-medium'
+              className='font-medium text-white'
             >
               ThemeJunction
             </Link>

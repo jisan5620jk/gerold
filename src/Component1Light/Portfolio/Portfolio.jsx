@@ -183,9 +183,9 @@ const Portfolio = () => {
   };
   return (
     <>
-      <div className='portfolio-filter light text-center bg-white pt-[60px] pb-[30px] md:pt-20 md:pb-[60px] lg:pt-28 lg:pb-20'>
+      <div className='portfolio-filter light text-center bg-white pt-[60px] pb-[30px] md:pt-20 md:pb-[60px] lg:pt-[100px] xl:pt-[120px] lg:pb-[70px] xl:pb-20'>
         <div className='text-center mx-3 md:mx-0 mb-10 md:mb-[50px]'>
-          <h1 className='font-Sora text-[30px] md:text-[35px] lg:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-Secondarycolor-0 from-30% bg-clip-text text-transparent'>
+          <h1 className='font-Sora text-[30px] md:text-[35px] lg:text-[40px] xl:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-Secondarycolor-0 from-30% bg-clip-text text-transparent'>
             My Recent Works
           </h1>
           <p className='font-Sora text-TextLight-0 mt-2 mx-auto max-w-[640px] w-full'>
@@ -224,21 +224,21 @@ const Portfolio = () => {
           <div className='portfolio-box text-center pt-10 md:pt-[50px] bg-contain bg-no-repeat bg-center relative z-10 before:absolute before:top-1/2 before:left-1/2 before:w-[35%] before:h-[35%] before:-z-10 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:bg-PrimaryColor-0 before:bg-gradient-to-r before:to-PrimaryColor-0 before:from-Secondarycolor-0 before:blur-[150px] before:opacity-40'>
             <div className='portfolio-sizer w-[98%] md:w-[48%]'></div>
             <div className='gutter-sizer w-[4%]'></div>
-            <div className='portfolio-item branding group bg-BodyBg3-0 mb-[4%] px-[15px] md:px-[15px] lg:px-9 pt-5 lg:pt-9 rounded-[10px] w-[98%] md:w-[48%]'>
+            <div className='portfolio-item branding group bg-BodyBg3-0 mb-[4%] px-[15px] lg:px-9 pt-5 lg:pt-9 rounded-[10px] w-[98%] md:w-[48%]'>
               <div className='image-box text-center'>
                 <img
                   src={porfolioImg}
                   draggable='false'
                 />
               </div>
-              <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0 w-full md:w-[calc(100%-30px)] lg:w-[calc(100%-40px)] rounded-2xl m-auto p-[15px] md:p-[15px] lg:p-5 md:pr-9 lg:pr-[30px] sm:pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
+              <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0 w-[calc(100%-20px)] lg:w-[calc(100%-40px)] rounded-2xl m-auto p-[15px] md:p-[15px] lg:p-5 md:pr-9 lg:pr-[50px] sm:pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
                 <h3 className='portfolio-title font-Sora text-2xl md:text-3xl font-bold text-white'>
                   Deloitte
                 </h3>
                 <p className='font-Sora font-light text-white lg:pt-4'>
                   Project was about precision and information.
                 </p>
-                <span className='text-2xl lg:text-3xl tracking-custom2 absolute top-1/2 right-[15px] md:right-4 lg:right-[25px] -translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
+                <span className='text-xl md:text-2xl lg:text-3xl tracking-custom2 absolute top-1/2 right-[10px] md:right-4 lg:right-[25px] -translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
                   <HiArrowUpRight />
                 </span>
                 <button
@@ -254,14 +254,14 @@ const Portfolio = () => {
                   draggable='false'
                 />
               </div>
-              <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0 w-full md:w-[calc(100%-30px)] lg:w-[calc(100%-40px)] rounded-2xl m-auto p-[15px] md:p-[15px] lg:p-5 md:pr-9 lg:pr-[30px] sm:pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
+              <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0  w-[calc(100%-30px)] lg:w-[calc(100%-40px) rounded-2xl m-auto p-[15px] md:p-[15px] lg:p-5 md:pr-9 lg:pr-[50px] sm:pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
                 <h3 className='portfolio-title font-Sora text-2xl md:text-3xl font-bold text-white'>
                   New Age
                 </h3>
                 <p className='font-Sora font-light text-white lg:pt-4'>
                   Project was about precision and information.
                 </p>
-                <span className='text-2xl lg:text-3xl tracking-custom2 absolute top-1/2 right-[15px] md:right-4 lg:right-[25px] -translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
+                <span className='text-xl md:text-2xl lg:text-3xl tracking-custom2 absolute top-1/2 right-[10px] md:right-4 lg:right-[25px] -translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
                   <HiArrowUpRight />
                 </span>
                 <button
@@ -270,21 +270,21 @@ const Portfolio = () => {
                 ></button>
               </div>
             </div>
-            <div className='portfolio-item mobile-app group bg-BodyBg3-0 mb-[4%] px-[15px] md:px-[15px] lg:px-9 pt-5 lg:pt-9 rounded-[10px] w-[98%] md:w-[48%]'>
+            <div className='portfolio-item mobile-app group bg-BodyBg3-0 mb-[4%] px-[15px] lg:px-9 pt-5 lg:pt-9 rounded-[10px] w-[98%] md:w-[48%]'>
               <div className='image-box text-center'>
                 <img
                   src={porfolioImg3}
                   draggable='false'
                 />
               </div>
-              <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0 w-full md:w-[calc(100%-30px)] lg:w-[calc(100%-40px)] rounded-2xl m-auto p-[15px] md:p-[15px] lg:p-5 md:pr-9 lg:pr-[30px] sm:pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
+              <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0  w-[calc(100%-30px)] lg:w-[calc(100%-40px) rounded-2xl m-auto p-[15px] md:p-[15px] lg:p-5 md:pr-9 lg:pr-[50px] sm:pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
                 <h3 className='portfolio-title font-Sora text-2xl md:text-3xl font-bold text-white'>
                   Sebastian
                 </h3>
                 <p className='font-Sora font-light text-white lg:pt-4'>
                   Project was about precision and information.
                 </p>
-                <span className='text-2xl lg:text-3xl tracking-custom2 absolute top-1/2 right-[15px] md:right-4 lg:right-[25px] -translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
+                <span className='text-xl md:text-2xl lg:text-3xl tracking-custom2 absolute top-1/2 right-[10px] md:right-4 lg:right-[25px] -translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
                   <HiArrowUpRight />
                 </span>
                 <button
@@ -293,21 +293,21 @@ const Portfolio = () => {
                 ></button>
               </div>
             </div>
-            <div className='portfolio-item branding group bg-BodyBg3-0 mb-[4%] px-[15px] md:px-[15px] lg:px-9 pt-5 lg:pt-9 rounded-[10px] w-[98%] md:w-[48%]'>
+            <div className='portfolio-item branding group bg-BodyBg3-0 mb-[4%] px-[15px] lg:px-9 pt-5 lg:pt-9 rounded-[10px] w-[98%] md:w-[48%]'>
               <div className='image-box text-center'>
                 <img
                   src={porfolioImg4}
                   draggable='false'
                 />
               </div>
-              <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0 w-full md:w-[calc(100%-30px)] lg:w-[calc(100%-40px)] rounded-2xl m-auto p-[15px] md:p-[15px] lg:p-5 md:pr-9 lg:pr-[30px] sm:pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
+              <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0  w-[calc(100%-30px)] lg:w-[calc(100%-40px) rounded-2xl m-auto p-[15px] md:p-[15px] lg:p-5 md:pr-9 lg:pr-[50px] sm:pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
                 <h3 className='portfolio-title font-Sora text-2xl md:text-3xl font-bold text-white'>
                   Mocknix
                 </h3>
                 <p className='font-Sora font-light text-white lg:pt-4'>
                   Project was about precision and information.
                 </p>
-                <span className='text-2xl lg:text-3xl tracking-custom2 absolute top-1/2 right-[15px] md:right-4 lg:right-[25px] -translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
+                <span className='text-xl md:text-2xl lg:text-3xl tracking-custom2 absolute top-1/2 right-[10px] md:right-4 lg:right-[25px] -translate-y-1/2 text-white transition-all duration-500 group-hover:rotate-[360deg] group-hover:-translate-y-1/2'>
                   <HiArrowUpRight />
                 </span>
                 <button

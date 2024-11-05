@@ -14,8 +14,8 @@ import blogPost from '/images/blog/post-thumb-1.jpg';
 import blogPost2 from '/images/blog/post-thumb-2.jpg';
 import blogPost3 from '/images/blog/post-thumb-3.jpg';
 import { PiPlayCircleLight, PiQuotes } from 'react-icons/pi';
-import FsLightbox from "fslightbox-react";
-import { useState } from "react";
+import FsLightbox from 'fslightbox-react';
+import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import BlogNavigation from './BlogNavigation';
@@ -37,7 +37,7 @@ const BlogInner = () => {
         breadCrumbIcon={<FaArrowRightLong />}
         breadCrumbLink={'Blog'}
       />
-      <section className='py-28 bg-BodyBlack-0'>
+      <section className='py-[120px]bg-BodyBlack-0'>
         <div className='Container'>
           <div className='grid grid-cols-2 lg:grid-cols-3 gap-6'>
             <div className='col-span-2'>

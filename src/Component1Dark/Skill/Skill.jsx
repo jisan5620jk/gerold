@@ -8,11 +8,11 @@ import icon6 from '/images/icons/js.svg';
 
 const Skill = () => {
   return (
-    <section className=' bg-BodyBg-0 py-[60px] md:py-20 lg:pt-[106px] lg:pb-[120px] relative'>
+    <section className=' bg-BodyBg-0 py-[60px] md:py-20 lg:pt-[96px] xl:pt-[106px] lg:pb-[100px] xl:pb-[120px] relative'>
       <div className='Container'>
         <div className='text-center'>
           <h1
-            className='font-Sora text-[30px] md:text-[35px] lg:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-white from-25% bg-clip-text text-transparent'
+            className='font-Sora text-[30px] md:text-[35px] lg:text-[40px] xl:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-white from-25% bg-clip-text text-transparent'
             data-aos='fade-up'
             data-aos-duration='1000'
           >

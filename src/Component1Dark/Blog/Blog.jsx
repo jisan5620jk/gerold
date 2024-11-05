@@ -5,13 +5,12 @@ import blogThumb3 from '/images/blog/3.jpg';
 import BlogCard from './BlogCard';
 
 const Blog = () => {
-
   return (
-    <section className='py-[60px] md:py-20 lg:py-28 bg-BodyBg-0'>
+    <section className='py-[60px] md:py-20 lg:py-[100px] xl:py-[120px] bg-BodyBg-0'>
       <div className='Container'>
         <div className='text-center'>
           <h1
-            className='font-Sora text-[30px] md:text-[35px] lg:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-white from-30% bg-clip-text text-transparent'
+            className='font-Sora text-[30px] md:text-[35px] lg:text-[40px] xl:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-white from-30% bg-clip-text text-transparent'
             data-aos='fade-up'
             data-aos-duration='1000'
           >

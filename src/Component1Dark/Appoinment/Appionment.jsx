@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Appoinment = () => {
   return (
-    <section className='bg-BodyBg2-0 py-[60px] md:py-20 lg:py-28 relative z-10 overflow-hidden'>
+    <section className='bg-BodyBg2-0 py-[60px] md:py-20 lg:py-[100px] xl:py-[120px] relative z-10 overflow-hidden'>
       <div className='Container'>
         <div className='grid grid-cols-1 md:grid-cols-12 lg:grid-cols-2 items-center gap-[22px] md:gap-0 lg:gap-[22px] relative z-10'>
           <div
@@ -55,7 +55,7 @@ const Appoinment = () => {
           </div>
           <div className='md:col-span-7 lg:col-span-1 md:mr-[20px] lg:mr-0 px-4 md:px-5 lg:px-6 xl:px-10 pt-9 pb-7 md:py-7 lg:pt-[38px] lg:pb-10 bg-BodyBg3-0 rounded-2xl mt-6 lg:mt-0'>
             <h1
-              className='font-Sora text-[30px] sm:text-[34px] md:leading-[40px] lg:text-[38px] lg:leading-[58px] xl:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'
+              className='font-Sora text-[30px] sm:text-[34px] md:leading-[40px] lg:text-[40px] lg:leading-[50px] xl:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'
               data-aos='fade-up-right'
               data-aos-duration='1000'
             >

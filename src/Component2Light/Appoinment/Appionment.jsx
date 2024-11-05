@@ -1,10 +1,15 @@
-import { FaDribbble, FaGithub, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
-import { PiArrowRightBold } from "react-icons/pi";
-import { Link } from "react-router-dom";
+import {
+  FaDribbble,
+  FaGithub,
+  FaLinkedinIn,
+  FaXTwitter,
+} from 'react-icons/fa6';
+import { PiArrowRightBold } from 'react-icons/pi';
+import { Link } from 'react-router-dom';
 
 const Appoinment = () => {
   return (
-    <section className='bg-white py-[60px] md:py-20 lg:py-28 relative z-10 overflow-hidden'>
+    <section className='bg-white py-[60px] md:py-20 lg:py-[120px]relative z-10 overflow-hidden'>
       <div className='Container'>
         <div className='flex flex-wrap lg:flex-nowrap lg:justify-between items-center gap-[45px] border p-6 sm:p-9 md:p-[50px] border-BorderGrey2-0 bg-BodyBgLight-0 rounded-2xl relative z-10'>
           <div

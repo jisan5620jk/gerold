@@ -33,7 +33,7 @@ const BlogDetails = () => {
         breadCrumbIcon={<FaArrowRightLong />}
         breadCrumbLink={'Blog Detials'}
       />
-      <section className='py-28 bg-BodyBlack2-0'>
+      <section className='py-[120px]bg-BodyBlack2-0'>
         <div className='Container'>
           <div className='grid grid-cols-2 lg:grid-cols-3 gap-6'>
             <div className='col-span-2'>

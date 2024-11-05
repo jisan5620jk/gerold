@@ -38,7 +38,7 @@ const BlogInnerLight = () => {
         breadCrumbIcon={<FaArrowRightLong />}
         breadCrumbLink={'Blog'}
       />
-      <section className='py-28 bg-white'>
+      <section className='py-[120px]bg-white'>
         <div className='Container'>
           <div className='grid grid-cols-2 lg:grid-cols-3 gap-6'>
             <div className='col-span-2'>

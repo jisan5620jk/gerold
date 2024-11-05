@@ -4,11 +4,11 @@ import icon2 from '/images/resume/resume-icon2.png';
 
 const Resume = () => {
   return (
-    <section className='bg-BodyBgLight-0 py-[60px] md:py-20 lg:pt-[114px] lg:pb-[120px] relative'>
+    <section className='bg-BodyBgLight-0 py-[60px] md:py-20 lg:pt-[94px] xl:pt-[114px] lg:pb-[100px] xl:pb-[120px] relative'>
       <div className='Container'>
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-y-[30px] gap-x-[30px] xl:gap-x-[120px] items-center'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-y-[56px] gap-x-[30px] xl:gap-x-[120px] items-center'>
           <div>
-            <h1 className='font-Sora text-[30px] sm:text-[34px] md:text-[36px] lg:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-Secondarycolor-0 bg-clip-text text-transparent flex items-center gap-5'>
+            <h1 className='font-Sora text-[30px] sm:text-[34px] md:text-[36px] lg:text-[40px] xl:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-Secondarycolor-0 bg-clip-text text-transparent flex items-center gap-5'>
               <img
                 src={icon}
                 draggable='false'
@@ -60,7 +60,7 @@ const Resume = () => {
             </div>
           </div>
           <div>
-            <h1 className='font-Sora text-[30px] sm:text-[34px] md:text-[36px] lg:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-Secondarycolor-0 bg-clip-text text-transparent flex items-center gap-5'>
+            <h1 className='font-Sora text-[30px] sm:text-[34px] md:text-[36px] lg:text-[40px] xl:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-Secondarycolor-0 bg-clip-text text-transparent flex items-center gap-5'>
               <img
                 src={icon2}
                 draggable='false'

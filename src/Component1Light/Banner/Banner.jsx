@@ -11,7 +11,7 @@ import { BsDownload } from 'react-icons/bs';
 
 const Banner = () => {
   return (
-    <section className='bg-white relative z-10 overflow-hidden pt-[130px] lg:pt-[180px] xl:pt-[204px] pb-[57px]'>
+    <section className='bg-white relative z-10 overflow-hidden pt-[130px] lg:pt-[145px] xl:pt-[180px] pb-10'>
       <span className='absolute -z-10 -top-[10%] -right-[5%] w-[322px] h-[308px] rounded-full bg-gradient-to-r to-PrimaryColor-0 from-transparent blur-[150px]'></span>
       <div className='Container'>
         <div className='relative z-10'>
@@ -22,10 +22,10 @@ const Banner = () => {
           </div>
           <div className='grid grid-cols-1 md:grid-cols-2 md:items-center'>
             <div>
-              <h3 className='font-Sora text-[22px] md:text-[25px] lg:text-4xl font-bold text-Secondarycolor-0 pb-[17px] md:mb-4 lg:mb-[6px]'>
+              <h3 className='font-Sora text-[22px] md:text-[25px] lg:text-4xl font-bold text-Secondarycolor-0 pb-[17px] md:mb-4 lg:mb-[6px] xl:mb-4'>
                 I am Gerold
               </h3>
-              <h1 className='font-Sora text-[35px] leading-[42px] md:text-[38px] md:leading-[45px] lg:text-[50px] lg:leading-[62px] xl:text-[62px] xl:leading-[75px] 2xl:text-[65px] 2xl:leading-[78px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-Secondarycolor-0 bg-clip-text text-transparent -mt-4'>
+              <h1 className='font-Sora text-[35px] leading-[42px] md:text-[38px] md:leading-[45px] lg:text-[50px] lg:leading-[60px] xl:text-[60px] xl:leading-[72px] 2xl:text-[65px] 2xl:leading-[78px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-Secondarycolor-0 bg-clip-text text-transparent -mt-[17px] md:-mt-[33px] lg:-mt-4'>
                 Web Developer + <br /> UX Designer
               </h1>
               <div className='flex justify-center relative mt-8 lg:mt-0 md:hidden'>
@@ -36,7 +36,7 @@ const Banner = () => {
                   className='w-[80%] md:w-[inherit] lg:w-10/12 xl:w-[inherit] sm:max-w-[inherit] border-2 border-Secondarycolor-0 rounded-[38px] rotate-[5deg] transition-all duration-500 hover:rotate-0 hover:border-PrimaryColor-0'
                 />
               </div>
-              <p className='font-Sora text-xl sm:text-2xl lg:text-[21px] xl:text-2xl font-light sm:leading-[30px] text-TextLight-0 max-w-[550px] w-full  pt-8 md:pt-[15px] pb-6 md:pb-[30px] lg:pb-[50px]'>
+              <p className='font-Sora text-xl font-light leading-[30px] text-TextLight-0 max-w-[550px] w-full pt-8 md:pt-[15px] pb-6 md:pb-[30px] lg:pb-[50px]'>
                 I break down complex user experinece problems to create
                 integritiy focussed solutions that connect billions of people
               </p>
@@ -90,8 +90,8 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7 xl:gap-20 pt-16 xl:pt-[124px]'>
-          <div className='flex flex-col sm:flex-row sm:items-center gap-3'>
+        <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7 xl:gap-20 pt-16 2xl:pt-[124px]'>
+          <div className='flex flex-col justify-center mx-auto lg:mx-0 lg:justify-start sm:flex-row sm:items-center gap-3'>
             <div>
               <CountUp
                 start={-11}
@@ -105,7 +105,7 @@ const Banner = () => {
               Experience
             </p>
           </div>
-          <div className='flex flex-col sm:flex-row sm:items-center gap-3'>
+          <div className='flex flex-col justify-center mx-auto lg:mx-0 lg:justify-start sm:flex-row sm:items-center gap-3'>
             <div>
               <CountUp
                 start={-11}
@@ -119,7 +119,7 @@ const Banner = () => {
               Completed
             </p>
           </div>
-          <div className='flex flex-col sm:flex-row sm:items-center gap-3'>
+          <div className='flex flex-col justify-center mx-auto lg:mx-0 lg:justify-start sm:flex-row sm:items-center gap-3'>
             <div>
               <CountUp
                 start={-11}
@@ -134,7 +134,7 @@ const Banner = () => {
               Clients
             </p>
           </div>
-          <div className='flex flex-col sm:flex-row sm:items-center gap-3'>
+          <div className='flex flex-col justify-center mx-auto lg:mx-0 lg:justify-start sm:flex-row sm:items-center gap-3'>
             <div>
               <CountUp
                 start={-11}

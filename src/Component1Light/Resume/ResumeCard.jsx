@@ -7,14 +7,14 @@ const ResumeCard = ({
 }) => {
   return (
     <div className='bg-white py-5 rounded-[20px] px-4 sm:px-[30px] md:px-4 lg:px-[30px] group relative z-10 overflow-hidden before:absolute before:left-0 before:top-0 before:bg-gradient-to-l before:to-PrimaryColor-0 before:-z-10 before:from-Secondarycolor-0 before:[transition:opacity_0.5s_linear] before:w-full before:h-full before:opacity-0 hover:before:opacity-100'>
-      <h6 className='font-Sora font-bold text-xl text-PrimaryColor-0 capitalize transition-all duration-500 group-hover:text-white'>
-        {resumeSubTilte}
+      <h6 className='font-Sora font-bold text-[15px] lg:text-xl text-PrimaryColor-0 capitalize transition-all duration-500 group-hover:text-white'>
+       {resumeDesc}
       </h6>
-      <h4 className='font-Sora font-bold text-base sm:text-xl md:text-[19px] lg:text-[25px] text-Secondarycolor-0 mt-[6px] md:mt-[10px] md:mb-[9px] transition-all duration-500 group-hover:text-white uppercase'>
+      <h4 className='font-Sora font-bold text-base sm:text-lg md:text-[19px] lg:text-[25px] text-Secondarycolor-0 mt-[6px] md:mt-[10px] md:mb-[9px] transition-all duration-500 group-hover:text-white uppercase'>
         {resumeTitle}
       </h4>
       <p className='font-Sora text-TextLight-0 transition-all duration-500 group-hover:text-white'>
-        {resumeDesc}
+         {resumeSubTilte}
       </p>
     </div>
   );

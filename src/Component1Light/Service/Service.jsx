@@ -142,11 +142,11 @@ const Service = () => {
 
   return (
     <>
-      <section className='service-light bg-BodyBgLight-0 py-[60px] md:py-20 lg:py-[120px] relative'>
+      <section className='service-light bg-BodyBgLight-0 py-[60px] md:py-20 lg:py-[100px] xl:py-[120px] relative'>
         <div className='Container'>
           <div className='text-center'>
             <h1
-              className='font-Sora text-[30px] md:text-[35px] lg:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-Secondarycolor-0 from-35% bg-clip-text text-transparent'
+              className='font-Sora text-[30px] md:text-[35px] lg:text-[40px] xl:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-Secondarycolor-0 from-35% bg-clip-text text-transparent'
               data-aos='fade-up'
               data-aos-duration='1000'
             >

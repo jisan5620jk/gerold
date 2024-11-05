@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 
 const Appoinment = () => {
   return (
-    <section className='bg-BodyBgLight-0 py-[60px] md:py-20 lg:py-28 relative z-10 overflow-hidden'>
+    <section className='bg-BodyBgLight-0 py-[60px] md:py-20 lg:py-[100px] xl:py-[120px] relative z-10 overflow-hidden'>
       <div className='Container'>
-        <div className='grid grid-cols-1 md:grid-cols-12 lg:grid-cols-2 items-center gap-[22px] relative z-10'>
+        <div className='grid grid-cols-1 md:grid-cols-12 lg:grid-cols-2 items-center gap-[22px] md:gap-0 lg:gap-[22px] relative z-10'>
           <div className='relative z-10 lg:pl-28 md:hidden mb-1'>
             <div className='flex items-start gap-[25px] md:gap-[14px] lg:gap-[25px] mb-[40px]'>
               <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-white flex items-center justify-center'>
@@ -41,7 +41,7 @@ const Appoinment = () => {
                 </Link>
               </div>
             </div>
-            <div className='flex items-start gap-[26px]'>
+            <div className='flex items-start gap-[25px] md:gap-[14px] lg:gap-[25px]'>
               <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-white flex items-center justify-center'>
                 <IoLocationOutline size={'22'} />
               </div>
@@ -56,10 +56,10 @@ const Appoinment = () => {
             </div>
           </div>
           <div className='md:col-span-7 lg:col-span-1 md:mr-[20px] lg:mr-0 px-4 sm:px-10 md:px-5 lg:px-6 xl:px-10 pt-9 pb-7 md:py-7 lg:pt-9 lg:pb-10 bg-white rounded-2xl mt-6 lg:mt-0'>
-            <h1 className='font-Sora text-[30px] sm:text-[34px] md:leading-[40px] lg:text-[38px] xl:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-Secondarycolor-0 bg-clip-text text-transparent'>
+            <h1 className='font-Sora text-[30px] sm:text-[34px] md:leading-[40px] lg:text-[40px] lg:leading-[50px] xl:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-Secondarycolor-0 bg-clip-text text-transparent'>
               Let’s work together!
             </h1>
-            <p className='font-Sora text-TextLight-0 pt-2'>
+            <p className='font-Sora text-TextLight-0 pt-3'>
               I design and code beautifully simple things and i love what i do.
               Just simple like that!
             </p>
@@ -163,7 +163,7 @@ const Appoinment = () => {
                 </Link>
               </div>
             </div>
-            <div className='flex items-start gap-[26px]'>
+            <div className='flex items-start gap-[25px] md:gap-[14px] lg:gap-[25px]'>
               <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-white flex items-center justify-center'>
                 <IoLocationOutline size={'22'} />
               </div>
