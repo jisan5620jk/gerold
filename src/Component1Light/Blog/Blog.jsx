@@ -11,9 +11,8 @@ const Blog = () => {
       <div className='Container'>
         <div className='text-center'>
           <h1
-            className='font-Sora text-[30px] md:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-Secondarycolor-0 from-30% bg-clip-text text-transparent'
+            className='font-Sora text-[30px] md:text-[35px] lg:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-Secondarycolor-0 from-30% bg-clip-text text-transparent'
             data-aos='fade-up'
-            data-aos-delay='300'
             data-aos-duration='1000'
           >
             Recent Blogs
@@ -21,17 +20,15 @@ const Blog = () => {
           <p
             className='font-Sora text-TextLight-0 mt-2 mx-auto max-w-[640px] w-full'
             data-aos='fade-up'
-            data-aos-delay='400'
             data-aos-duration='1000'
           >
             We put your ideas and thus your wishes in the form of a unique web
             project that inspires you and you customers.
           </p>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-10 lg:gap-5 xl:gap-7 2xl:gap-10 mt-10 md:mt-[48px]'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-6 lg:gap-5 xl:gap-7 2xl:gap-10 mt-10 md:mt-[48px]'>
           <div
             data-aos='fade-up'
-            data-aos-delay='300'
             data-aos-duration='1000'
           >
             <BlogCard

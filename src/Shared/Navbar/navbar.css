@@ -232,7 +232,7 @@ nav.main-menu-content > ul {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   nav.main-menu-content > ul {
-    gap: 10px;
+    gap: 16px;
     margin-right: 0;
   }
 }

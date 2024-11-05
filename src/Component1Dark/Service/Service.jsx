@@ -146,7 +146,7 @@ const Service = () => {
         <div className='Container'>
           <div className='text-center'>
             <h1
-              className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-white from-35% bg-clip-text text-transparent'
+              className='font-Sora text-[30px] md:text-[35px] lg:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-white from-35% bg-clip-text text-transparent'
               data-aos='fade-up'
               data-aos-duration='1000'
             >

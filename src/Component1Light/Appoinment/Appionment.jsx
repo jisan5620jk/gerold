@@ -7,9 +7,9 @@ const Appoinment = () => {
   return (
     <section className='bg-BodyBgLight-0 py-[60px] md:py-20 lg:py-28 relative z-10 overflow-hidden'>
       <div className='Container'>
-        <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-[22px] relative z-10'>
+        <div className='grid grid-cols-1 md:grid-cols-12 lg:grid-cols-2 items-center gap-[22px] relative z-10'>
           <div className='relative z-10 lg:pl-28 md:hidden mb-1'>
-            <div className='flex items-start gap-[25px] mb-[40px]'>
+            <div className='flex items-start gap-[25px] md:gap-[14px] lg:gap-[25px] mb-[40px]'>
               <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-white flex items-center justify-center'>
                 <FiPhoneCall size={'22'} />
               </div>
@@ -19,13 +19,13 @@ const Appoinment = () => {
                 </h6>
                 <Link
                   to={'/'}
-                  className='font-Sora font-medium text-base sm:text-xl text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
+                  className='font-Sora font-medium text-lg lg:text-xl text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
                 >
                   +01 123 654 8096
                 </Link>
               </div>
             </div>
-            <div className='flex items-start gap-[25px] mb-[40px]'>
+            <div className='flex items-start gap-[25px] md:gap-[14px] lg:gap-[25px] mb-[40px]'>
               <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-white flex items-center justify-center'>
                 <FaRegEnvelope size={'22'} />
               </div>
@@ -35,7 +35,7 @@ const Appoinment = () => {
                 </h6>
                 <Link
                   to={'/'}
-                  className='font-Sora font-medium text-base sm:text-xl text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
+                  className='font-Sora font-medium text-lg lg:text-xl text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
                 >
                   gerolddesign@mail.com
                 </Link>
@@ -49,13 +49,13 @@ const Appoinment = () => {
                 <h6 className='font-Sora text-Secondarycolor-0 pb-[5px]'>
                   Address
                 </h6>
-                <p className='font-Sora font-medium text-base sm:text-xl text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'>
+                <p className='font-Sora font-medium text-lg lg:text-xl text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'>
                   Warne Park Street Pine, <br /> FL 33157, New York
                 </p>
               </div>
             </div>
           </div>
-          <div className='px-4 sm:px-10 md:px-5 lg:px-6 xl:px-10 pt-9 pb-7 md:py-7 lg:pt-9 lg:pb-10 bg-white rounded-2xl mt-6 lg:mt-0'>
+          <div className='md:col-span-7 lg:col-span-1 md:mr-[20px] lg:mr-0 px-4 sm:px-10 md:px-5 lg:px-6 xl:px-10 pt-9 pb-7 md:py-7 lg:pt-9 lg:pb-10 bg-white rounded-2xl mt-6 lg:mt-0'>
             <h1 className='font-Sora text-[30px] sm:text-[34px] md:leading-[40px] lg:text-[38px] xl:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-Secondarycolor-0 bg-clip-text text-transparent'>
               Let’s work together!
             </h1>
@@ -130,8 +130,8 @@ const Appoinment = () => {
               </div>
             </form>
           </div>
-          <div className='relative z-10 lg:pl-28 hidden md:block'>
-            <div className='flex items-start gap-[25px] mb-[40px]'>
+          <div className='md:col-span-5 lg:col-span-1 relative z-10 lg:pl-28 hidden md:block'>
+            <div className='flex items-start gap-[25px] md:gap-[14px] lg:gap-[25px] mb-[40px]'>
               <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-white flex items-center justify-center'>
                 <FiPhoneCall size={'22'} />
               </div>
@@ -141,13 +141,13 @@ const Appoinment = () => {
                 </h6>
                 <Link
                   to={'/'}
-                  className='font-Sora font-medium text-base sm:text-xl text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
+                  className='font-Sora font-medium text-lg lg:text-xl text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
                 >
                   +01 123 654 8096
                 </Link>
               </div>
             </div>
-            <div className='flex items-start gap-[25px] mb-[40px]'>
+            <div className='flex items-start gap-[25px] md:gap-[14px] lg:gap-[25px] mb-[40px]'>
               <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-white flex items-center justify-center'>
                 <FaRegEnvelope size={'22'} />
               </div>
@@ -157,7 +157,7 @@ const Appoinment = () => {
                 </h6>
                 <Link
                   to={'/'}
-                  className='font-Sora font-medium text-base sm:text-xl text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
+                  className='font-Sora font-medium text-lg lg:text-xl text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
                 >
                   gerolddesign@mail.com
                 </Link>
@@ -171,7 +171,7 @@ const Appoinment = () => {
                 <h6 className='font-Sora text-Secondarycolor-0 pb-[5px]'>
                   Address
                 </h6>
-                <p className='font-Sora font-medium text-base sm:text-xl text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'>
+                <p className='font-Sora font-medium text-lg lg:text-xl text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'>
                   Warne Park Street Pine, <br /> FL 33157, New York
                 </p>
               </div>

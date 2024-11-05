@@ -11,7 +11,7 @@ import { BsDownload } from 'react-icons/bs';
 
 const Banner = () => {
   return (
-    <section className='bg-BodyBg-0 relative z-10 overflow-hidden pt-[130px] lg:pt-[203px] pb-[57px]'>
+    <section className='bg-BodyBg-0 relative z-10 overflow-hidden pt-[130px] lg:pt-[170px] xl:pt-[203px] pb-[57px]'>
       <span className='absolute -z-10 -top-[10%] -right-[5%] w-[322px] h-[308px] rounded-full bg-gradient-to-r to-PrimaryColor-0 from-transparent blur-[150px]'></span>
       <div className='Container'>
         <div className='relative z-10'>
@@ -22,10 +22,10 @@ const Banner = () => {
           </div>
           <div className='grid grid-cols-1 md:grid-cols-2 md:items-center'>
             <div>
-              <h3 className='font-Sora text-[22px] md:text-[25px] lg:text-4xl font-bold text-TextColor-0 pb-[17px] md:mb-4'>
+              <h3 className='font-Sora text-[22px] md:text-[25px] lg:text-4xl font-bold text-TextColor-0 pb-[17px] md:mb-4 lg:mb-[6px]'>
                 I am Gerold
               </h3>
-              <h1 className='font-Sora text-[35px] leading-[42px] md:text-[38px] md:leading-[48px] lg:text-[50px] lg:leading-[62px] xl:text-[62px] xl:leading-[75px] 2xl:text-[65px] 2xl:leading-[78px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent -mt-[17px] md:-mt-4'>
+              <h1 className='font-Sora text-[35px] leading-[42px] md:text-[38px] md:leading-[45px] lg:text-[50px] lg:leading-[60px] xl:text-[62px] xl:leading-[75px] 2xl:text-[65px] 2xl:leading-[78px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent -mt-[17px] md:-mt-[33px] lg:-mt-4'>
                 Web Developer + <br /> UX Designer
               </h1>
               <div className='flex justify-center relative mt-8 lg:mt-0 md:hidden'>
@@ -36,7 +36,7 @@ const Banner = () => {
                   className='w-[80%] md:w-[inherit] lg:w-10/12 xl:w-[inherit] sm:max-w-[inherit] border-2 border-Secondarycolor-0 rounded-[38px] rotate-[5deg] transition-all duration-500 hover:rotate-0 hover:border-PrimaryColor-0'
                 />
               </div>
-              <p className='font-Sora text-xl font-light sm:leading-[30px] text-TextColor-0 max-w-[550px] w-full pt-8 md:pt-[15px] pb-6 lg:pb-[50px]'>
+              <p className='font-Sora text-xl font-light sm:leading-[30px] text-TextColor-0 max-w-[550px] w-full pt-8 md:pt-[15px] pb-6 md:pb-[30px] lg:pb-[50px]'>
                 I break down complex user experinece problems to create
                 integritiy focussed solutions that connect billions of people
               </p>
@@ -85,19 +85,19 @@ const Banner = () => {
               <img
                 src={bannerThumb}
                 draggable='false'
-                className='w-11/12 lg:w-11/12 xl:w-[inherit] sm:max-w-[inherit] md:max-w-full lg:max-w-[inherit] border-2 border-Secondarycolor-0 rounded-[38px] rotate-[5deg] transition-all duration-500 hover:rotate-0 hover:border-PrimaryColor-0'
+                className='w-full lg:w-11/12 xl:w-[inherit] sm:max-w-[inherit] md:max-w-full lg:max-w-[inherit] border-2 border-Secondarycolor-0 rounded-[38px] rotate-[5deg] transition-all duration-500 hover:rotate-0 hover:border-PrimaryColor-0'
               />
             </div>
           </div>
         </div>
-        <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7 xl:gap-20 pt-16 md:pt-[124px]'>
+        <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7 md:gap-0 xl:gap-20 pt-16 xl:pt-[124px]'>
           <div className='flex flex-col justify-center mx-auto lg:mx-0 lg:justify-start sm:flex-row sm:items-center gap-3'>
             <div>
               <CountUp
                 start={-11}
                 end={'14'}
                 suffix={''}
-                className='font-Sora text-[45px] md:text-[64px] text-TextColor-0 font-bold'
+                className='font-Sora text-[45px] md:text-[55px] xl:text-[64px] text-TextColor-0 font-bold'
               />
             </div>
             <p className='font-Sora text-TextColor-0 -mt-2'>
@@ -111,7 +111,7 @@ const Banner = () => {
                 start={-11}
                 end={'50'}
                 suffix={'+'}
-                className='font-Sora text-[45px] md:text-[64px] text-TextColor-0 font-bold'
+                className='font-Sorafont-Sora text-[45px] md:text-[55px] xl:text-[64px] text-TextColor-0 font-bold'
               />
             </div>
             <p className='font-Sora text-TextColor-0 -mt-2'>
@@ -125,8 +125,8 @@ const Banner = () => {
                 start={-11}
                 prefix='1.'
                 end={'5'}
-                suffix='k'
-                className='font-Sora text-[45px] md:text-[64px] text-TextColor-0 font-bold'
+                suffix='K'
+                className='font-Sorafont-Sora text-[45px] md:text-[55px] xl:text-[64px] text-TextColor-0 font-bold'
               />
             </div>
             <p className='font-Sora text-TextColor-0 -mt-2'>
@@ -140,7 +140,7 @@ const Banner = () => {
                 start={-11}
                 end={'14'}
                 suffix={''}
-                className='font-Sora text-[45px] md:text-[64px] text-TextColor-0 font-bold'
+                className='font-Sorafont-Sora text-[45px] md:text-[55px] xl:text-[64px] text-TextColor-0 font-bold'
               />
             </div>
             <p className='font-Sora text-TextColor-0 -mt-2'>
