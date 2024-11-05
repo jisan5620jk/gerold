@@ -9,7 +9,7 @@ const Appoinment = () => {
       <div className='Container'>
         <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-[22px] relative z-10'>
           <div
-            className='relative z-10 lg:pl-28 md:hidden'
+            className='relative z-10 lg:pl-28 md:hidden mb-1'
             data-aos='fade-up-left'
             data-aos-duration='1000'
           >
@@ -53,9 +53,9 @@ const Appoinment = () => {
               </div>
             </div>
           </div>
-          <div className='px-4 sm:px-10 md:px-5 lg:px-6 xl:px-10 pt-9 pb-10 md:py-7 lg:pt-[38px] lg:pb-10 bg-BodyBg3-0 rounded-2xl mt-6 lg:mt-0'>
+          <div className='px-4 md:px-5 lg:px-6 xl:px-10 pt-9 pb-7 md:py-7 lg:pt-[38px] lg:pb-10 bg-BodyBg3-0 rounded-2xl mt-6 lg:mt-0'>
             <h1
-              className='font-Sora text-[25px] sm:text-[34px] md:leading-[40px] lg:text-[38px] lg:leading-[58px] xl:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'
+              className='font-Sora text-[30px] sm:text-[34px] md:leading-[40px] lg:text-[38px] lg:leading-[58px] xl:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'
               data-aos='fade-up-right'
               data-aos-duration='1000'
             >

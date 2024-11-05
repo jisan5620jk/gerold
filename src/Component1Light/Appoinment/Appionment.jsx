@@ -8,7 +8,7 @@ const Appoinment = () => {
     <section className='bg-BodyBgLight-0 py-[60px] md:py-20 lg:py-28 relative z-10 overflow-hidden'>
       <div className='Container'>
         <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-[22px] relative z-10'>
-          <div className='relative z-10 lg:pl-28 md:hidden'>
+          <div className='relative z-10 lg:pl-28 md:hidden mb-1'>
             <div className='flex items-start gap-[25px] mb-[40px]'>
               <div className='size-[50px] rounded-full bg-[linear-gradient(161deg,_#2a1454_0%,_#8750f7_100%)] text-white flex items-center justify-center'>
                 <FiPhoneCall size={'22'} />
@@ -55,8 +55,8 @@ const Appoinment = () => {
               </div>
             </div>
           </div>
-          <div className='px-4 sm:px-10 md:px-5 lg:px-6 xl:px-10 pt-9 pb-10 md:py-7 lg:pt-9 lg:pb-10 bg-white rounded-2xl mt-6 lg:mt-0'>
-            <h1 className='font-Sora text-[25px] sm:text-[34px] md:leading-[40px] lg:text-[38px] xl:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-Secondarycolor-0 bg-clip-text text-transparent'>
+          <div className='px-4 sm:px-10 md:px-5 lg:px-6 xl:px-10 pt-9 pb-7 md:py-7 lg:pt-9 lg:pb-10 bg-white rounded-2xl mt-6 lg:mt-0'>
+            <h1 className='font-Sora text-[30px] sm:text-[34px] md:leading-[40px] lg:text-[38px] xl:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-Secondarycolor-0 bg-clip-text text-transparent'>
               Let’s work together!
             </h1>
             <p className='font-Sora text-TextLight-0 pt-2'>

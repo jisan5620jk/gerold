@@ -186,7 +186,7 @@ const Portfolio = () => {
       <div className='portfolio-filter text-center bg-BodyBg-0 pt-[60px] pb-[30px] md:pt-20 md:pb-[60px] lg:pt-28 lg:pb-20'>
         <div className='text-center mx-3 md:mx-0 mb-10 md:mb-[50px]'>
           <h1
-            className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-white from-30% bg-clip-text text-transparent'
+            className='font-Sora text-[27px] md:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-white from-30% bg-clip-text text-transparent'
             data-aos='fade-up'
             data-aos-duration='1000'
           >
@@ -210,25 +210,25 @@ const Portfolio = () => {
           >
             <button
               data-filter='*'
-              className='active px-[10px] py-6px md:py-2 md:px-3 sm:px-[25px] rounded-full relative z-10 font-Sora text-sm md:text-[15px] text-white bg-transparent capitalize tracking-custom2'
+              className='active px-[10px] md:py-2 md:px-[25px] rounded-full relative z-10 font-Sora text-sm md:text-[15px] text-white bg-transparent capitalize tracking-custom2'
             >
               All
             </button>
             <button
               data-filter='.uxui'
-              className='px-[10px] py-6px md:py-2 md:px-3 sm:px-[25px] rounded-full relative z-10 font-Sora text-sm md:text-[15px] text-white bg-transparent capitalize tracking-custom2'
+              className='px-[10px] md:py-2 md:px-[25px] rounded-full relative z-10 font-Sora text-sm md:text-[15px] text-white bg-transparent capitalize tracking-custom2'
             >
               UX/UI
             </button>
             <button
               data-filter='.branding'
-              className='px-[10px] py-6px md:py-2 md:px-3 sm:px-[25px] rounded-full relative z-10 font-Sora text-sm md:text-[15px] text-white bg-transparent capitalize tracking-custom2'
+              className='px-[10px] md:py-2 md:px-[25px] rounded-full relative z-10 font-Sora text-sm md:text-[15px] text-white bg-transparent capitalize tracking-custom2'
             >
               Branding
             </button>
             <button
               data-filter='.mobile-app'
-              className='px-[10px] py-6px md:py-2 md:px-3 sm:px-[25px] rounded-full relative z-10 font-Sora text-sm md:text-[15px] text-white bg-transparent capitalize tracking-custom2'
+              className='px-[10px] md:py-2 md:px-[25px] rounded-full relative z-10 font-Sora text-sm md:text-[15px] text-white bg-transparent capitalize tracking-custom2'
             >
               Apps
             </button>
@@ -249,7 +249,7 @@ const Portfolio = () => {
                 />
               </div>
               <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0 w-full md:w-[calc(100%-40px)] rounded-2xl m-auto p-[15px] md:p-5 pr-[30px] md:pr-5 sm:pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
-                <h3 className='portfolio-title font-Sora text-2xl sm:text-3xl font-bold text-white'>
+                <h3 className='portfolio-title font-Sora text-2xl md:text-3xl font-bold text-white'>
                   Deloitte
                 </h3>
                 <p className='font-Sora font-light text-white md:pt-4'>
@@ -272,7 +272,7 @@ const Portfolio = () => {
                 />
               </div>
               <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0 w-full md:w-[calc(100%-40px)] rounded-2xl m-auto p-[15px] md:p-5 pr-[30px] md:pr-5 sm:pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
-                <h3 className='portfolio-title font-Sora text-2xl sm:text-3xl font-bold text-white'>
+                <h3 className='portfolio-title font-Sora text-2xl md:text-3xl font-bold text-white'>
                   New Age
                 </h3>
                 <p className='font-Sora font-light text-white md:pt-4'>
@@ -295,7 +295,7 @@ const Portfolio = () => {
                 />
               </div>
               <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0 w-full md:w-[calc(100%-40px)] rounded-2xl m-auto p-[15px] md:p-5 pr-[30px] md:pr-5 sm:pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
-                <h3 className='portfolio-title font-Sora text-2xl sm:text-3xl font-bold text-white'>
+                <h3 className='portfolio-title font-Sora text-2xl md:text-3xl font-bold text-white'>
                   Sebastian
                 </h3>
                 <p className='font-Sora font-light text-white md:pt-4'>
@@ -318,7 +318,7 @@ const Portfolio = () => {
                 />
               </div>
               <div className='content-box text-left absolute bottom-[15px] left-0 right-0 bg-BodyBg2-0 w-full md:w-[calc(100%-40px)] rounded-2xl m-auto p-[15px] md:p-5 pr-[30px] md:pr-5 sm:pr-[50px] opacity-0 transition-all duration-500 translate-y-[15px] bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 group-hover:opacity-100 group-hover:translate-y-0'>
-                <h3 className='portfolio-title font-Sora text-2xl sm:text-3xl font-bold text-white'>
+                <h3 className='portfolio-title font-Sora text-2xl md:text-3xl font-bold text-white'>
                   Mocknix
                 </h3>
                 <p className='font-Sora font-light text-white md:pt-4'>

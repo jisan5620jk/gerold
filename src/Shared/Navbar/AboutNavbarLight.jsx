@@ -171,7 +171,7 @@ const AboutNavbarLight = () => {
                   </li>
                   <li>
                     <a href={'mailto:mail@gerolddesign.com'}>
-                      <button className='hidden sm:block font-Sora font-medium text-[15px] text-white transition-all duration-500 hover:text-PrimaryColor-0 relative bottom-[1px]'>
+                      <button className='hidden md:block font-Sora font-medium text-[15px] text-white transition-all duration-500 hover:text-PrimaryColor-0 relative bottom-[1px]'>
                         mail@gerolddesign.com
                       </button>
                     </a>

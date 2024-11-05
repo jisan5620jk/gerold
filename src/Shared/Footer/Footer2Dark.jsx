@@ -29,7 +29,7 @@ const Footer2Dark = () => {
             <li>
               <Link
                 to={'/about'}
-                className='font-Sora font-bold text-[15px] text-white relative z-10 before:bottom-0 before:right-0 before:absolute before:w-0 before:h-[2px] before:bg-gradient-to-r before:to-Secondarycolor-0 before:from-PrimaryColor-0 hover:before:left-0 hover:w-full'
+                className='font-Sora font-bold text-[15px] text-white relative z-10 before:bottom-0 before:right-0 before:absolute before:w-0 before:h-[2px] before:bg-gradient-to-r before:to-Secondarycolor-0 before:from-PrimaryColor-0 before:transition-all before:duration-300 before:ease-linear hover:before:left-0 hover:before:w-full'
               >
                 About
               </Link>
@@ -37,7 +37,7 @@ const Footer2Dark = () => {
             <li>
               <Link
                 to={'/service'}
-                className='font-Sora font-bold text-[15px] text-white relative z-10 before:bottom-0 before:right-0 before:absolute before:w-0 before:h-[2px] before:bg-gradient-to-r before:to-Secondarycolor-0 before:from-PrimaryColor-0 hover:before:left-0 hover:w-full'
+                className='font-Sora font-bold text-[15px] text-white relative z-10 before:bottom-0 before:right-0 before:absolute before:w-0 before:h-[2px] before:bg-gradient-to-r before:to-Secondarycolor-0 before:from-PrimaryColor-0 before:transition-all before:duration-300 before:ease-linear hover:before:left-0 hover:before:w-full'
               >
                 Services
               </Link>
@@ -45,7 +45,7 @@ const Footer2Dark = () => {
             <li>
               <Link
                 to={'/portfolio'}
-                className='font-Sora font-bold text-[15px] text-white relative z-10 before:bottom-0 before:right-0 before:absolute before:w-0 before:h-[2px] before:bg-gradient-to-r before:to-Secondarycolor-0 before:from-PrimaryColor-0 hover:before:left-0 hover:w-full'
+                className='font-Sora font-bold text-[15px] text-white relative z-10 before:bottom-0 before:right-0 before:absolute before:w-0 before:h-[2px] before:bg-gradient-to-r before:to-Secondarycolor-0 before:from-PrimaryColor-0 before:transition-all before:duration-300 before:ease-linear hover:before:left-0 hover:before:w-full'
               >
                 Portfolios
               </Link>
@@ -53,7 +53,7 @@ const Footer2Dark = () => {
             <li>
               <Link
                 to={'/contact'}
-                className='font-Sora font-bold text-[15px] text-white relative z-10 before:bottom-0 before:right-0 before:absolute before:w-0 before:h-[2px] before:bg-gradient-to-r before:to-Secondarycolor-0 before:from-PrimaryColor-0 hover:before:left-0 hover:w-full'
+                className='font-Sora font-bold text-[15px] text-white relative z-10 before:bottom-0 before:right-0 before:absolute before:w-0 before:h-[2px] before:bg-gradient-to-r before:to-Secondarycolor-0 before:from-PrimaryColor-0 before:transition-all before:duration-300 before:ease-linear hover:before:left-0 hover:before:w-full'
               >
                 Contact
               </Link>

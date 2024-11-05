@@ -25,7 +25,7 @@ const Banner = () => {
               <h3 className='font-Sora text-[22px] md:text-[25px] lg:text-4xl font-bold text-TextColor-0 pb-[17px] md:mb-4'>
                 I am Gerold
               </h3>
-              <h1 className='font-Sora text-[35px] leading-[42px] sm:text-5xl sm:leading-[60px] md:text-[38px] md:leading-[48px] lg:text-[50px] lg:leading-[62px] xl:text-[62px] xl:leading-[75px] 2xl:text-[65px] 2xl:leading-[78px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent -mt-4'>
+              <h1 className='font-Sora text-[35px] leading-[42px] md:text-[38px] md:leading-[48px] lg:text-[50px] lg:leading-[62px] xl:text-[62px] xl:leading-[75px] 2xl:text-[65px] 2xl:leading-[78px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent -mt-[17px] md:-mt-4'>
                 Web Developer + <br /> UX Designer
               </h1>
               <div className='flex justify-center relative mt-8 lg:mt-0 md:hidden'>
@@ -90,14 +90,14 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7 sm:gap-10 xl:gap-20 pt-16 sm:pt-20 md:pt-[124px]'>
+        <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7 xl:gap-20 pt-16 md:pt-[124px]'>
           <div className='flex flex-col justify-center mx-auto lg:mx-0 lg:justify-start sm:flex-row sm:items-center gap-3'>
             <div>
               <CountUp
                 start={-11}
                 end={'14'}
                 suffix={''}
-                className='font-Sora text-[45px] sm:text-6xl md:text-[64px] text-TextColor-0 font-bold'
+                className='font-Sora text-[45px] md:text-[64px] text-TextColor-0 font-bold'
               />
             </div>
             <p className='font-Sora text-TextColor-0 -mt-2'>
@@ -111,7 +111,7 @@ const Banner = () => {
                 start={-11}
                 end={'50'}
                 suffix={'+'}
-                className='font-Sora text-[45px] sm:text-6xl md:text-[64px] text-TextColor-0 font-bold'
+                className='font-Sora text-[45px] md:text-[64px] text-TextColor-0 font-bold'
               />
             </div>
             <p className='font-Sora text-TextColor-0 -mt-2'>
@@ -126,7 +126,7 @@ const Banner = () => {
                 prefix='1.'
                 end={'5'}
                 suffix='k'
-                className='font-Sora text-[45px] sm:text-6xl md:text-[64px] text-TextColor-0 font-bold'
+                className='font-Sora text-[45px] md:text-[64px] text-TextColor-0 font-bold'
               />
             </div>
             <p className='font-Sora text-TextColor-0 -mt-2'>
@@ -140,7 +140,7 @@ const Banner = () => {
                 start={-11}
                 end={'14'}
                 suffix={''}
-                className='font-Sora text-[45px] sm:text-6xl md:text-[64px] text-TextColor-0 font-bold'
+                className='font-Sora text-[45px] md:text-[64px] text-TextColor-0 font-bold'
               />
             </div>
             <p className='font-Sora text-TextColor-0 -mt-2'>

@@ -9,14 +9,14 @@ const Resume = () => {
         <div className='grid grid-cols-1 md:grid-cols-2 gap-y-[30px] gap-x-[30px] xl:gap-x-[120px] items-center'>
           <div>
             <h1
-              className='font-Sora text-[27px] sm:text-[34px] md:text-[36px] lg:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent flex items-center gap-5'
+              className='font-Sora text-[30px] md:text-[36px] lg:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent flex items-center gap-5'
               data-aos='fade-up'
               data-aos-duration='1000'
             >
               <img
                 src={icon}
                 draggable='false'
-                className='w-8 lg:w-[inherit]'
+                className='w-7 lg:w-[inherit]'
               />
               My Experience
             </h1>
@@ -65,14 +65,14 @@ const Resume = () => {
           </div>
           <div>
             <h1
-              className='font-Sora text-[27px] sm:text-[34px] md:text-[36px] lg:text-[45px] font-bold mt-5 md:mt-0 bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent flex items-center gap-5'
+              className='font-Sora text-[30px] md:text-[36px] lg:text-[45px] font-bold mt-5 md:mt-0 bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent flex items-center gap-5'
               data-aos='fade-up'
               data-aos-duration='1000'
             >
               <img
                 src={icon2}
                 draggable='false'
-                className='w-8 lg:w-[inherit]'
+                className='w-7 lg:w-[inherit]'
               />
               My Education
             </h1>
