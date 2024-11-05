@@ -19,7 +19,7 @@ const Banner = () => {
     <section className='bg-BodyBg-0 relative z-10 overflow-hidden pt-[135px]'>
       <span className='absolute -z-10 -top-[10%] -right-[5%] w-[322px] h-[308px] rounded-full bg-gradient-to-r to-PrimaryColor-0 from-transparent blur-[150px]'></span>
       <div className='Container'>
-        <div className='flex flex-col md:flex-row items-center group gap-[60px] md:gap-8 lg:gap-[60px] p-6 sm:p-[30px] border border-Secondarycolor-0 bg-BodyBg3-0 rounded-2xl'>
+        <div className='flex flex-col md:flex-row items-center group gap-[60px] md:gap-[30px] lg:gap-[50px] xl:gap-[60px] px-5 py-[30px] lg:p-[30px] border border-Secondarycolor-0 bg-BodyBg3-0 rounded-2xl'>
           <div className='hidden md:block relative z-10 rounded-[15px] overflow-hidden max-w-[325px] w-full transition-all duration-500 border-2 border-transparent group-hover:border-PrimaryColor-0'>
             <img
               src={bannerThumb}
@@ -27,20 +27,21 @@ const Banner = () => {
             />
           </div>
           <div>
-            <h1 className='font-Sora text-[35px] leading-[42px] md:text-[34px] md:leading-[42px] lg:text-[38px] lg:leading-[52px] xl:text-[52px] xl:leading-[62px] 2xl:text-[58px] 2xl:leading-[70px] font-medium bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
+            <h1 className='font-Sora text-[35px] leading-[42px] md:text-[38px] md:leading-[46px] lg:text-[50px] lg:leading-[60px] xl:text-[52px] xl:leading-[62px] 2xl:text-[58px] 2xl:leading-[69px] font-medium bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
               Hi, I am Web <br /> Developer + UX Designer
             </h1>
-            <div className='md:hidden relative z-10 rounded-xl overflow-hidden max-w-[325px] w-full mx-auto md:mx-0 mt-7 mb-4 transition-all duration-500 border border-transparent group-hover:border-PrimaryColor-0'>
+            <div className='md:hidden relative z-10 flex justify-center items-center rounded-[40px] overflow-hidden max-w-[80%] md:max-w-[325px] w-full mx-auto md:mx-0 mt-7 mb-4 transition-all duration-500 border border-transparent group-hover:border-PrimaryColor-0'>
               <img
                 src={bannerThumb}
                 draggable='false'
+                className='w-full'
               />
             </div>
-            <p className='font-Sora text-TextColor-0 text-lg sm:text-xl sm:leading-[30px] font-light max-w-[530px] w-full pt-[15px]'>
+            <p className='font-Sora text-TextColor-0 text-xl leading-[30px] font-light max-w-[530px] w-full pt-[16px]'>
               I design and code beautifully simple things and i love what i do.
               Just simple like that!
             </p>
-            <div className='flex flex-wrap items-center gap-[25px] mt-7 md:mt-[35px]'>
+            <div className='flex flex-wrap items-center gap-7 mt-5 md:mt-[30px] lg:mt-[35px]'>
               <div className='inline-block'>
                 <Link to={'/'}>
                   <button className='primary-btn2'>
@@ -90,7 +91,7 @@ const Banner = () => {
           </div>
         </div>
         <div className='flex items-center flex-wrap md:justify-between gap-7 md:gap-0 px-6 sm:px-[30px] lg:px-[75px] py-[35px] mt-[35px] border border-Secondarycolor-0 bg-BodyBg3-0 rounded-2xl'>
-          <div>
+          <div className='max-w-[125px] md:max-w-[inherit]'>
             <div className='mb-[22px]'>
               <img
                 src={icon}
@@ -103,12 +104,12 @@ const Banner = () => {
                 start={-11}
                 end={'14'}
                 suffix={'%'}
-                className='font-Sora text-4xl sm:text-6xl md:text-[50px] lg:text-[64px] text-TextColor-0 font-medium'
+                className='font-Sora text-[45px] leading-[45px] lg:text-[64px] text-TextColor-0 font-medium'
               />
             </div>
             <p className='font-Sora text-TextColor-0 mt-2'>Job achievements</p>
           </div>
-          <div>
+          <div className='max-w-[125px] md:max-w-[inherit]'>
             <div className='mb-[22px]'>
               <img
                 src={icon2}
@@ -121,14 +122,14 @@ const Banner = () => {
                 start={-11}
                 end={'50'}
                 suffix={'+'}
-                className='font-Sora text-4xl sm:text-6xl md:text-[50px] lg:text-[64px] text-TextColor-0 font-medium'
+                className='font-Sora text-[45px] leading-[45px] lg:text-[64px] text-TextColor-0 font-medium'
               />
             </div>
             <p className='font-Sora text-TextColor-0 mt-2'>
               Years of Experience
             </p>
           </div>
-          <div>
+          <div className='max-w-[125px] md:max-w-[inherit]'>
             <div className='mb-[22px]'>
               <img
                 src={icon3}
@@ -142,12 +143,12 @@ const Banner = () => {
                 prefix='1.'
                 end={'5'}
                 suffix={'K+'}
-                className='font-Sora text-4xl sm:text-6xl md:text-[50px] lg:text-[64px] text-TextColor-0 font-medium'
+                className='font-Sora text-[45px] leading-[45px] lg:text-[64px] text-TextColor-0 font-medium'
               />
             </div>
             <p className='font-Sora text-TextColor-0 mt-2'>Happy Clients</p>
           </div>
-          <div>
+          <div className='max-w-[125px] md:max-w-[inherit]'>
             <div className='mb-[22px]'>
               <img
                 src={icon4}
@@ -160,7 +161,7 @@ const Banner = () => {
                 start={-11}
                 end={'14'}
                 suffix={'+'}
-                className='font-Sora text-4xl sm:text-6xl md:text-[50px] lg:text-[64px] text-TextColor-0 font-medium'
+                className='font-Sora text-[45px] leading-[45px] lg:text-[64px] text-TextColor-0 font-medium'
               />
             </div>
             <p className='font-Sora text-TextColor-0 mt-2'>Project Completed</p>

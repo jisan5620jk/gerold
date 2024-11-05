@@ -106,7 +106,7 @@ const Project = () => {
         <div className='Container'>
           <div>
             <h1
-              className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] leading-[54px] font-medium bg-gradient-to-r from-PrimaryColor-0 from-10% via-white via-60% md:via-30% to-white to-90% bg-clip-text text-transparent'
+              className='font-Sora text-[30px] md:text-[45px] leading-[54px] font-medium bg-gradient-to-r from-PrimaryColor-0 from-10% via-white via-60% md:via-30% to-white to-90% bg-clip-text text-transparent'
               data-aos='fade-up'
               data-aos-duration='1000'
             >
@@ -114,17 +114,23 @@ const Project = () => {
             </h1>
           </div>
           <div
-            className='flex flex-col md:flex-row items-center gap-[35px] justify-between py-5 pl-5 sm:pl-[35px] pr-5 border border-Secondarycolor-0 bg-BodyBg3-0 rounded-2xl mt-8 md:mt-[50px]'
+            className='flex flex-col lg:flex-row items-center gap-[35px] justify-between py-5 pl-5 lg:pl-[35px] pr-5 border border-Secondarycolor-0 bg-BodyBg3-0 rounded-2xl mt-8 md:mt-[50px]'
             data-aos='fade-up'
-            data-aos-delay='400'
             data-aos-duration='1000'
           >
-            <div className='md:max-w-[380px] w-full'>
+            <div className='lg:hidden h-auto py-[30px] px-[25px] bg-BodyBg4-0 rounded-2xl'>
+              <img
+                src={projectThumb}
+                draggable='false'
+                className='h-full object-cover'
+              />
+            </div>
+            <div className='lg:max-w-[380px] w-full'>
               <h6 className='font-Sora text-PrimaryColor-0'>Social App</h6>
               <div className='mt-4 mb-5'>
                 <button
                   ref={projectPopUpRef}
-                  className='font-Sora font-semibold text-3xl text-white transition-all duration-500 hover:text-PrimaryColor-0'
+                  className='font-Sora font-semibold text-[22px] md:text-3xl text-white transition-all duration-500 hover:text-PrimaryColor-0'
                 >
                   Deloitte
                 </button>
@@ -134,24 +140,24 @@ const Project = () => {
                 design tem helps clients achieve their marketing Trager and
                 branding that appeals to a website
               </p>
-              <ul className='flex items-center flex-wrap gap-2 mt-[50px] mb-[50px]'>
+              <ul className='flex items-center flex-wrap gap-2 my-8 xl:my-[50px]'>
                 <li>
                   <Link to={'#'}>
-                    <button className='font-Sora font- px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden ease-linear duration-500 hover:bg-PrimaryColor-0'>
+                    <button className='font-Sora font-medium px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden ease-linear duration-500 hover:bg-PrimaryColor-0'>
                       Branding
                     </button>
                   </Link>
                 </li>{' '}
                 <li>
                   <Link to={'#'}>
-                    <button className='font-Sora font- px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden ease-linear duration-500 hover:bg-PrimaryColor-0'>
+                    <button className='font-Sora font-medium px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden ease-linear duration-500 hover:bg-PrimaryColor-0'>
                       Graphic Design
                     </button>
                   </Link>
                 </li>{' '}
                 <li>
                   <Link to={'#'}>
-                    <button className='font-Sora font- px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden ease-linear duration-500 hover:bg-PrimaryColor-0'>
+                    <button className='font-Sora font-medium px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden ease-linear duration-500 hover:bg-PrimaryColor-0'>
                       User Stories
                     </button>
                   </Link>
@@ -178,7 +184,7 @@ const Project = () => {
                 </div>
               </div>
             </div>
-            <div className='h-auto py-[30px] px-[25px] bg-BodyBg4-0 rounded-2xl'>
+            <div className='hidden lg:block h-auto py-[30px] px-[25px] bg-BodyBg4-0 rounded-2xl'>
               <img
                 src={projectThumb}
                 draggable='false'
@@ -188,7 +194,7 @@ const Project = () => {
           </div>
           <div className='grid grid-cols-12 items-center lg:items-start xl:items-center gap-6 mt-6'>
             <div
-              className='col-span-12 lg:col-span-7 pt-5 pb-9 pl-5 sm:pl-[35px] pr-5 border border-Secondarycolor-0 bg-BodyBg3-0 rounded-2xl'
+              className='col-span-12 lg:col-span-7 pt-5 pb-[38px] px-5 pr-5 border border-Secondarycolor-0 bg-BodyBg3-0 rounded-2xl'
               data-aos='fade-up'
               data-aos-duration='1000'
             >
@@ -206,7 +212,7 @@ const Project = () => {
                 <div className='mt-[15px] mb-5'>
                   <button
                     ref={projectPopUpRef2}
-                    className='font-Sora font-semibold text-3xl text-white transition-all duration-500 hover:text-PrimaryColor-0'
+                    className='font-Sora font-semibold text-[22px] md:text-3xl text-white transition-all duration-500 hover:text-PrimaryColor-0'
                   >
                     Raze
                   </button>
@@ -217,21 +223,21 @@ const Project = () => {
                 <ul className='flex items-center flex-wrap gap-2 mt-[16px]'>
                   <li>
                     <Link to={'#'}>
-                      <button className='font-Sora font- px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden ease-linear duration-500 hover:bg-PrimaryColor-0'>
+                      <button className='font-Sora font-medium px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden ease-linear duration-500 hover:bg-PrimaryColor-0'>
                         Branding
                       </button>
                     </Link>
                   </li>{' '}
                   <li>
                     <Link to={'#'}>
-                      <button className='font-Sora font- px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden ease-linear duration-500 hover:bg-PrimaryColor-0'>
+                      <button className='font-Sora font-medium px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden ease-linear duration-500 hover:bg-PrimaryColor-0'>
                         Graphic Design
                       </button>
                     </Link>
                   </li>{' '}
                   <li>
                     <Link to={'#'}>
-                      <button className='font-Sora font- px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden ease-linear duration-500 hover:bg-PrimaryColor-0'>
+                      <button className='font-Sora font-medium px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden ease-linear duration-500 hover:bg-PrimaryColor-0'>
                         User Stories
                       </button>
                     </Link>
@@ -240,11 +246,11 @@ const Project = () => {
               </div>
             </div>
             <div
-              className='col-span-12 lg:col-span-5 pt-5 pb-9 pl-5 sm:pl-[35px] pr-5 border border-Secondarycolor-0 bg-BodyBg3-0 rounded-2xl'
+              className='col-span-12 lg:col-span-5 pt-5 pb-9 px-5 border border-Secondarycolor-0 bg-BodyBg3-0 rounded-2xl'
               data-aos='fade-up'
               data-aos-duration='1000'
             >
-              <div className='h-auto lg:h-[344px] xl:h-[346px] pt-[25px] px-[25px] bg-BodyBg4-0 rounded-2xl'>
+              <div className='h-auto lg:h-[344px] xl:h-[344px] pt-[25px] px-[25px] bg-BodyBg4-0 rounded-2xl'>
                 <img
                   src={projectThumb3}
                   draggable='false'
@@ -258,7 +264,7 @@ const Project = () => {
                 <div className='mt-[15px] mb-5'>
                   <button
                     ref={projectPopUpRef3}
-                    className='font-Sora font-semibold text-3xl text-white transition-all duration-500 hover:text-PrimaryColor-0'
+                    className='font-Sora font-semibold text-[22px] md:text-3xl text-white transition-all duration-500 hover:text-PrimaryColor-0'
                   >
                     Quillow
                   </button>
@@ -269,21 +275,21 @@ const Project = () => {
                 <ul className='flex items-center flex-wrap gap-2 mt-[16px]'>
                   <li>
                     <Link to={'#'}>
-                      <button className='font-Sora font- px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden ease-linear duration-500 hover:bg-PrimaryColor-0'>
+                      <button className='font-Sora font-medium px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden ease-linear duration-500 hover:bg-PrimaryColor-0'>
                         Branding
                       </button>
                     </Link>
                   </li>
                   <li>
                     <Link to={'#'}>
-                      <button className='font-Sora font- px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden ease-linear duration-500 hover:bg-PrimaryColor-0'>
+                      <button className='font-Sora font-medium px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden ease-linear duration-500 hover:bg-PrimaryColor-0'>
                         Graphic Design
                       </button>
                     </Link>
                   </li>
                   <li>
                     <Link to={'#'}>
-                      <button className='font-Sora font- px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden ease-linear duration-500 hover:bg-PrimaryColor-0'>
+                      <button className='font-Sora font-medium px-[10px] py-[3px] rounded-full text-white bg-Secondarycolor-0 relative z-10 overflow-hidden ease-linear duration-500 hover:bg-PrimaryColor-0'>
                         User Stories
                       </button>
                     </Link>

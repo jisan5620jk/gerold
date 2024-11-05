@@ -90,7 +90,7 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7 md:gap-0 xl:gap-20 pt-16 2xl:pt-[124px]'>
+        <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7 md:gap-0 xl:gap-20 pt-16 2xl:pt-[104px]'>
           <div className='flex flex-col justify-center mx-auto lg:mx-0 lg:justify-start sm:flex-row sm:items-center gap-3'>
             <div>
               <CountUp

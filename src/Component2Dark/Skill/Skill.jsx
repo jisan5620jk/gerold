@@ -9,11 +9,11 @@ import icon6 from '/images/icons/js.svg';
 
 const Skill = () => {
   return (
-    <section className=' bg-BodyBg-0 py-[60px] md:py-20 lg:pt-[113px] lg:pb-[120px] relative'>
+    <section className=' bg-BodyBg-0 py-[60px] md:py-20 lg:pt-[93px] xl:pt-[113px] lg:pb-[100px] xl:pb-[120px] relative'>
       <div className='Container'>
         <div className='text-center'>
           <h1
-            className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] font-medium bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-white from-25% bg-clip-text text-transparent'
+            className='font-Sora text-[30px] md:text-[35px] lg:text-[40px] xl:text-[45px] font-medium bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-white from-25% bg-clip-text text-transparent'
             data-aos='fade-up'
             data-aos-duration='1000'
           >
@@ -28,7 +28,7 @@ const Skill = () => {
             project that inspires you and you customers.
           </p>
         </div>
-        <div className='relative z-10 mt-[50px] flex gap-5 items-center justify-center flex-wrap'>
+        <div className='relative z-10 mt-10 md:mt-[50px] flex gap-5 items-center justify-center flex-wrap'>
           <div
             data-aos='fade-up'
             data-aos-duration='1000'

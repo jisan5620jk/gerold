@@ -9,11 +9,11 @@ import { Link } from 'react-router-dom';
 
 const Appoinment = () => {
   return (
-    <section className='bg-BodyBg-0 py-[60px] md:py-20 lg:py-[120px]relative z-10 overflow-hidden'>
+    <section className='bg-BodyBg-0 py-[60px] md:py-20 lg:py-[100px] xl:py-[120px] relative z-10 overflow-hidden'>
       <div className='Container'>
-        <div className='flex flex-wrap lg:flex-nowrap lg:justify-between items-center gap-[45px] bg-BodyBg3-0 border p-6 sm:p-9 md:p-[50px] border-Secondarycolor-0 rounded-2xl relative z-10'>
+        <div className='flex flex-wrap lg:flex-nowrap lg:justify-between items-center gap-[45px] bg-BodyBg3-0 border px-5 py-[30px] lg:p-[50px] border-Secondarycolor-0 rounded-2xl relative z-10'>
           <div
-            className='relative z-10 max-w-[400px] lg:hidden'
+            className='relative z-10 lg:max-w-[400px] md:hidden'
             data-aos='fade-up-left'
             data-aos-duration='1000'
           >
@@ -26,7 +26,7 @@ const Appoinment = () => {
               <li>
                 <Link
                   to={'/'}
-                  className='font-Sora text-base sm:text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0 underline underline-offset-4 decoration-1'
+                  className='font-Sora text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0 underline underline-offset-4 decoration-1'
                 >
                   +01 123 654 8096
                 </Link>
@@ -34,13 +34,13 @@ const Appoinment = () => {
               <li>
                 <Link
                   to={'/'}
-                  className='font-Sora text-base sm:text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0 underline underline-offset-4 decoration-1'
+                  className='font-Sora text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0 underline underline-offset-4 decoration-1'
                 >
                   gerolddesign@mail.com
                 </Link>
               </li>
               <li>
-                <p className='font-Sora text-base sm:text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0 underline underline-offset-4 decoration-1'>
+                <p className='font-Sora text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0 underline underline-offset-4 decoration-1'>
                   Warne Park Street Pine, FL <br /> 33157, New York
                 </p>
               </li>
@@ -81,7 +81,7 @@ const Appoinment = () => {
             data-aos-duration='1000'
           >
             <div className='max-w-[600px]'>
-              <h1 className='font-Sora text-[27px] leading-[35px] sm:text-[34px] sm:leading-[44px] md:text-[45px] lg:text-[38px] xl:text-[45px] md:leading-[53px] font-medium bg-gradient-to-r from-PrimaryColor-0 via-white to-white bg-clip-text text-transparent'>
+              <h1 className='font-Sora text-[30px] sm:text-[34px] md:leading-[40px] lg:text-[40px] lg:leading-[50px] xl:text-[45px] font-medium bg-gradient-to-r from-PrimaryColor-0 via-white to-white bg-clip-text text-transparent'>
                 Let’s work <br /> together!
               </h1>
               <p className='font-Sora text-TextColor-0 pt-5'>
@@ -151,7 +151,7 @@ const Appoinment = () => {
             </form>
           </div>
           <div
-            className='relative z-10 max-w-[400px] hidden lg:block'
+            className='relative z-10 lg:max-w-[400px] hidden md:block'
             data-aos='fade-up-left'
             data-aos-duration='1000'
           >
@@ -164,7 +164,7 @@ const Appoinment = () => {
               <li>
                 <Link
                   to={'/'}
-                  className='font-Sora text-base sm:text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0 underline underline-offset-4 decoration-1'
+                  className='font-Sora text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0 underline underline-offset-4 decoration-1'
                 >
                   +01 123 654 8096
                 </Link>
@@ -172,13 +172,13 @@ const Appoinment = () => {
               <li>
                 <Link
                   to={'/'}
-                  className='font-Sora text-base sm:text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0 underline underline-offset-4 decoration-1'
+                  className='font-Sora text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0 underline underline-offset-4 decoration-1'
                 >
                   gerolddesign@mail.com
                 </Link>
               </li>
               <li>
-                <p className='font-Sora text-base sm:text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0 underline underline-offset-4 decoration-1'>
+                <p className='font-Sora text-xl text-white transition-all duration-500 hover:text-PrimaryColor-0 underline underline-offset-4 decoration-1'>
                   Warne Park Street Pine, FL <br /> 33157, New York
                 </p>
               </li>

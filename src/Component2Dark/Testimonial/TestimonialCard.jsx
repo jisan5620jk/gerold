@@ -6,9 +6,9 @@ const TestimonialCard = ({
   testiDesc,
 }) => {
   return (
-    <div className='relative pt-8 sm:pt-[46px] px-6 sm:px-10 md:px-5 lg:px-10 pb-[40px] bg-BodyBg3-0 border border-Secondarycolor-0 rounded-2xl'>
+    <div className='relative pt-8 sm:pt-[46px] px-5 md:px-5 lg:px-9 pb-[30px] md:pb-[40px] bg-BodyBg3-0 border border-Secondarycolor-0 rounded-2xl'>
       <p className='font-Sora text-TextColor-0 leading-[30px] text-xl max-w-[480px] w-full'>{testiDesc}</p>
-      <div className='flex items-center gap-[15px] mt-[50px]'>
+      <div className='flex items-center gap-[15px] mt-8 md:mt-[50px]'>
         <div>
           <img
             src={testiProfile}

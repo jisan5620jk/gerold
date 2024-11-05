@@ -59,7 +59,7 @@ const Footer2Dark = () => {
               </Link>
             </li>
           </ul>
-          <p className='font-Sora font-light inline-block sm:flex gap-1 items-center justify-center text-TextGrey-0'>
+          <p className='font-Sora font-light text-[15px] inline-block sm:flex gap-1 items-center justify-center text-TextGrey-0'>
             <span>&copy;</span> <span ref={yearRef}></span> All rights reserved
             by{' '}
             <Link

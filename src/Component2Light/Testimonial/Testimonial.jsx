@@ -58,14 +58,13 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className='testimonial bg-white pt-[60px] pb-[60px] md:pt-20 md:pb-20 lg:pt-[120px] lg:pb-[130px] relative z-10'>
+    <section className='testimonial bg-white pt-[60px] pb-[60px] md:pt-20 md:pb-20 lg:pt-[100px] xl:pt-[120px] lg:pb-[110px] xl:pb-[130px] relative z-10'>
       <span className='absolute -left-[15%] top-[100px] size-[35%] rounded-full bg-gradient-to-t to-PrimaryColor-0 from-white blur-[150px]'></span>
       <div className='Container'>
         <div>
           <h1
-            className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] leading-[54px] font-medium bg-gradient-to-l to-PrimaryColor-0 via-Secondarycolor-0 from-Secondarycolor-0 bg-clip-text text-transparent'
+            className='font-Sora text-[30px] md:text-[35px] lg:text-[40px] xl:text-[45px] font-medium bg-gradient-to-l to-PrimaryColor-0 via-Secondarycolor-0 from-Secondarycolor-0 bg-clip-text text-transparent'
             data-aos='fade-up'
-            data-aos-delay='300'
             data-aos-duration='1000'
           >
             Clients Testimonials
@@ -74,7 +73,6 @@ const Testimonial = () => {
         <div
           className='mt-8 md:mt-[50px]'
           data-aos='fade-up'
-          data-aos-delay='400'
           data-aos-duration='1000'
         >
           <Swiper

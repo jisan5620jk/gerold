@@ -15,7 +15,7 @@ const Banner = () => {
       <span className='absolute -z-10 -top-[10%] -right-[5%] w-[322px] h-[308px] rounded-full bg-gradient-to-r to-PrimaryColor-0 from-transparent blur-[150px]'></span>
       <div className='Container'>
         <div className='relative z-10'>
-          <div className='absolute -z-10 top-1/2 -translate-x-2/3 -translate-y-2/3 left-1/2 hidden md:block'>
+          <div className='absolute -z-10 top-1/2 -translate-x-2/3 left-1/2 hidden md:block'>
             <h1 className='font-Russo text-[270px] text-transparent text-stroke opacity-15 animate-zoomInOut2'>
               HI
             </h1>
@@ -90,7 +90,7 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7 xl:gap-20 pt-16 2xl:pt-[124px]'>
+        <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7 xl:gap-20 pt-16 2xl:pt-[104px]'>
           <div className='flex flex-col justify-center mx-auto lg:mx-0 lg:justify-start sm:flex-row sm:items-center gap-3'>
             <div>
               <CountUp

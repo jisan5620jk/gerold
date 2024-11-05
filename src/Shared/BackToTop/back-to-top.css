@@ -16,6 +16,13 @@
 	transition: all 200ms linear;
 }
 
+@media screen and (max-width: 767px) {
+	.progress-wrap {
+    right: 20px;
+    bottom: 20px;
+}
+}
+
 .progress-wrap.active-progress {
 	opacity: 1;
 	visibility: visible;
