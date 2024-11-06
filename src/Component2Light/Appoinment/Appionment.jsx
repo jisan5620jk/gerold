@@ -81,7 +81,7 @@ const Appoinment = () => {
             data-aos-duration='1000'
           >
             <div className='max-w-[600px]'>
-              <h1 className='font-Sora text-[30px] sm:text-[34px] md:leading-[40px] lg:text-[40px] lg:leading-[50px] xl:text-[45px] font-medium bg-gradient-to-r from-PrimaryColor-0 via-Secondarycolor-0 to-Secondarycolor-0 bg-clip-text text-transparent'>
+              <h1 className='font-Sora text-[30px] leading-[37px] md:text-[35px] md:leading-[40px] lg:text-[40px] lg:leading-[50px] xl:text-[45px] font-medium bg-gradient-to-r from-PrimaryColor-0 via-Secondarycolor-0 to-Secondarycolor-0 bg-clip-text text-transparent'>
                 Let’s work <br /> together!
               </h1>
               <p className='font-Sora text-TextDark-0 pt-5'>

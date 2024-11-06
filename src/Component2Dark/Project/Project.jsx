@@ -106,7 +106,7 @@ const Project = () => {
         <div className='Container'>
           <div>
             <h1
-              className='font-Sora text-[30px] md:text-[45px] leading-[54px] font-medium bg-gradient-to-r from-PrimaryColor-0 from-10% via-white via-60% md:via-30% to-white to-90% bg-clip-text text-transparent'
+              className='font-Sora text-[30px] md:text-[35px] lg:text-[40px] xl:text-[45px] font-medium bg-gradient-to-r from-PrimaryColor-0 from-10% via-white via-60% md:via-30% to-white to-90% bg-clip-text text-transparent'
               data-aos='fade-up'
               data-aos-duration='1000'
             >

@@ -27,10 +27,10 @@ const Banner = () => {
             />
           </div>
           <div>
-            <h1 className='font-Sora text-[35px] leading-[42px] md:text-[38px] md:leading-[46px] lg:text-[50px] lg:leading-[60px] xl:text-[52px] xl:leading-[62px] 2xl:text-[58px] 2xl:leading-[69px] font-medium bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
+            <h1 className='font-Sora text-[35px] leading-[42px] md:text-[38px] md:leading-[46px] lg:text-[50px] lg:leading-[60px] xl:text-[58px] xl:leading-[70px] 2xl:text-[58px] 2xl:leading-[69px] font-medium bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent'>
               Hi, I am Web <br /> Developer + UX Designer
             </h1>
-            <div className='md:hidden relative z-10 flex justify-center items-center rounded-[40px] overflow-hidden max-w-[80%] md:max-w-[325px] w-full mx-auto md:mx-0 mt-7 mb-4 transition-all duration-500 border border-transparent group-hover:border-PrimaryColor-0'>
+            <div className='md:hidden relative z-10 flex justify-center items-center rounded-[35px] overflow-hidden max-w-[80%] md:max-w-[325px] w-full mx-auto md:mx-0 mt-7 mb-4 transition-all duration-500 border border-transparent group-hover:border-PrimaryColor-0'>
               <img
                 src={bannerThumb}
                 draggable='false'
@@ -104,7 +104,7 @@ const Banner = () => {
                 start={-11}
                 end={'14'}
                 suffix={'%'}
-                className='font-Sora text-[45px] leading-[45px] lg:text-[64px] text-TextColor-0 font-medium'
+                className='font-Sora text-[45px] leading-[45px] 2xl:leading-[60px] lg:text-[64px] text-TextColor-0 font-medium'
               />
             </div>
             <p className='font-Sora text-TextColor-0 mt-2'>Job achievements</p>
@@ -122,7 +122,7 @@ const Banner = () => {
                 start={-11}
                 end={'50'}
                 suffix={'+'}
-                className='font-Sora text-[45px] leading-[45px] lg:text-[64px] text-TextColor-0 font-medium'
+                className='font-Sora text-[45px] leading-[45px] 2xl:leading-[60px] lg:text-[64px] text-TextColor-0 font-medium'
               />
             </div>
             <p className='font-Sora text-TextColor-0 mt-2'>
@@ -143,7 +143,7 @@ const Banner = () => {
                 prefix='1.'
                 end={'5'}
                 suffix={'K+'}
-                className='font-Sora text-[45px] leading-[45px] lg:text-[64px] text-TextColor-0 font-medium'
+                className='font-Sora text-[45px] leading-[45px] 2xl:leading-[60px] lg:text-[64px] text-TextColor-0 font-medium'
               />
             </div>
             <p className='font-Sora text-TextColor-0 mt-2'>Happy Clients</p>
@@ -161,7 +161,7 @@ const Banner = () => {
                 start={-11}
                 end={'14'}
                 suffix={'+'}
-                className='font-Sora text-[45px] leading-[45px] lg:text-[64px] text-TextColor-0 font-medium'
+                className='font-Sora text-[45px] leading-[45px] 2xl:leading-[60px] lg:text-[64px] text-TextColor-0 font-medium'
               />
             </div>
             <p className='font-Sora text-TextColor-0 mt-2'>Project Completed</p>

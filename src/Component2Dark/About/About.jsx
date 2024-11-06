@@ -5,8 +5,8 @@ import aboutImg from '/images/hero/about-1.png';
 const About = () => {
     return (
       <div className='grid grid-cols-12 items-center lg:items-start 2xl:items-center gap-6 mt-[35px]'>
-        <div className='col-span-12 lg:col-span-7 py-[30px] xl:py-10 px-[20px] xl:px-[65px] border border-Secondarycolor-0 bg-BodyBg3-0 rounded-2xl'>
-          <h1 className='font-Sora text-[30px] leading-9 md:text-[35px] lg:text-[40px] xl:text-[45px] md:leading-[38px] lg:leading-[48px] xl:leading-[54px] font-medium bg-gradient-to-l to-PrimaryColor-0 via-white from-white bg-clip-text text-transparent'>
+        <div className='col-span-12 lg:col-span-7 py-[30px] 2xl:py-10 px-[20px] xl:px-10 2xl:px-[65px] border border-Secondarycolor-0 bg-BodyBg3-0 rounded-2xl'>
+          <h1 className='font-Sora text-[30px] leading-[37px] md:text-[35px] lg:text-[40px] xl:text-[45px] md:leading-[38px] lg:leading-[48px] xl:leading-[54px] font-medium bg-gradient-to-l to-PrimaryColor-0 via-white from-white bg-clip-text text-transparent'>
             Achievements in my professional life.
           </h1>
           <p className='font-Sora font-light text-xl !leading-[30px] text-TextColor-0 pt-[21px]'>
@@ -15,7 +15,7 @@ const About = () => {
                 startups, and collaborated with talented people to create
                 digital products for both business and consumer use.`}
           </p>
-          <div className='inline-block mt-14 xl:mt-20'>
+          <div className='inline-block mt-[52px] 2xl:mt-20'>
             <Link to={'/'}>
               <button className='primary-btn2'>
                 Contact Me
@@ -40,11 +40,11 @@ const About = () => {
               {`As a UI designer, I work closely with clients to understand their needs and goals for their software or website.`}
             </p>
           </div>
-          <div className="md:-mt-8 lg:mt-0 xl:-mt-8">
+          <div className='md:-mt-8 lg:mt-0 2xl:-mt-8'>
             <img
               src={aboutImg}
               draggable='false'
-              className="w-full"
+              className='w-full'
             />
           </div>
         </div>

@@ -97,7 +97,7 @@ const Service = () => {
                   />
                 </div>
               </div>
-              <div className='p-6 sm:p-[30px] mt-7'>
+              <div className='p-6 md:p-[30px] mt-3 md:mt-7'>
                 <div>
                   <button
                     className='font-Sora text-white font-medium text-xl md:text-2xl transition-all duration-500 hover:text-PrimaryColor-0'
@@ -129,13 +129,13 @@ const Service = () => {
                   />
                 </div>
               </div>
-              <div className='p-6 sm:p-[30px] mt-7'>
+              <div className='p-6 md:p-[30px] mt-3 md:mt-7'>
                 <div>
                   <button
                     className='font-Sora text-white font-medium text-xl md:text-2xl transition-all duration-500 hover:text-PrimaryColor-0'
                     ref={servicePopUpRef2}
                   >
-                    Website Design
+                    UI / UX Design
                   </button>
                 </div>
                 <p className='font-Sora text-TextColor-0 pt-2 pb-9'>
@@ -161,7 +161,7 @@ const Service = () => {
                   />
                 </div>
               </div>
-              <div className='p-6 sm:p-[30px] mt-7'>
+              <div className='p-6 md:p-[30px] mt-3 md:mt-7'>
                 <div>
                   <button
                     className='font-Sora text-white font-medium text-xl md:text-2xl transition-all duration-500 hover:text-PrimaryColor-0'
@@ -193,7 +193,7 @@ const Service = () => {
                   />
                 </div>
               </div>
-              <div className='p-6 sm:p-[30px] mt-7'>
+              <div className='p-6 md:p-[30px] mt-3 md:mt-7'>
                 <div>
                   <button
                     className='font-Sora text-white font-medium text-xl md:text-2xl transition-all duration-500 hover:text-PrimaryColor-0'
