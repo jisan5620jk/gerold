@@ -190,6 +190,10 @@
   color: #2a1454;
 }
 
+.header-area.light-sticky.is-sticky .menu-bar span {
+    background: #8750f7;
+} 
+
 .header-area.light-sticky.is-sticky .header-main-menu nav ul li .submenu,
 .header-area.light-sticky.is-sticky .header-main-menu nav ul li .submenu li .submenu {
   background-color: #fff;
