@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import footerLogo from '/images/logo/logo-dark.png';
+import footerLogo from '/images/logo/logo.png';
 import { useEffect, useRef } from 'react';
 
 const FooterLight = () => {

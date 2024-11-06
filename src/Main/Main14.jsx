@@ -1,10 +1,10 @@
 import { Outlet } from 'react-router-dom';
 import ScrollToTop from '../Shared/BackToTop/BackToTop';
-import FooterDark from '../Shared/Footer/FooterDark';
 import BlogDetailsNavbarLight from '../Shared/Navbar/BlogDetailsNavbarLight';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import FooterLight from '../Shared/Footer/FooterLight';
 
 const Main14 = () => {
   useEffect(() => {
@@ -21,7 +21,7 @@ const Main14 = () => {
       <div>
         <Outlet />
       </div>
-      <FooterDark />
+      <FooterLight />
     </>
   );
 };

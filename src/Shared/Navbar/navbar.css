@@ -177,6 +177,31 @@
 /* Header Sticky */
 
 
+.header-area.light-sticky.is-sticky {
+  @apply fixed top-0 left-0 z-50 w-full transition-all duration-300 py-[10px] animate-bounceInDown bg-BodyBgLight-0 shadow-shades;
+}
+
+.header-area.light-sticky.is-sticky .header-logo img {
+  filter: brightness(0) saturate(100%) invert(32%) sepia(50%) saturate(4580%) hue-rotate(245deg) brightness(102%) contrast(94%);
+}
+
+.header-area.light-sticky.is-sticky .header-logo button ,
+.header-area.light-sticky.is-sticky nav.main-menu-content > ul > li > a {
+  color: #2a1454;
+}
+
+.header-area.light-sticky.is-sticky .header-main-menu nav ul li .submenu,
+.header-area.light-sticky.is-sticky .header-main-menu nav ul li .submenu li .submenu {
+  background-color: #fff;
+  box-shadow: 0 30px 30px rgba(135, 80, 247, 0.2);
+}
+
+.header-area.light-sticky.is-sticky .header-main-menu nav ul li .submenu li a,
+.header-area.light-sticky.is-sticky .header-main-menu nav ul li .submenu li .submenu li a {
+  color: #2a1454;
+}
+
+
 .header-area.is-sticky {
   @apply fixed top-0 left-0 z-50 w-full transition-all duration-300 py-[10px] animate-bounceInDown bg-BodyBlack2-0 shadow-shades;
 }

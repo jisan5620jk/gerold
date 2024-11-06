@@ -116,7 +116,7 @@ const Service = () => {
               </div>
             </div>
             <div
-              className='rounded-[10px] overflow-hidden border border-BorderGrey2-0 bg-BodyBgLight-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:border before:border-PrimaryColor-0 before:ease-linear before:rounded-[10px] before:opacity-0 before:transition-all before:duration-500 hover:before:opacity-10'
+              className='rounded-[10px] overflow-hidden border border-BorderGrey2-0 bg-BodyBgLight-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:border before:border-PrimaryColor-0 before:ease-linear before:rounded-[10px] before:opacity-0 before:transition-all before:duration-500 hover:before:opacity-100'
               data-aos='fade-up'
               data-aos-duration='1000'
             >
@@ -148,7 +148,7 @@ const Service = () => {
               </div>
             </div>
             <div
-              className='rounded-[10px] overflow-hidden border border-BorderGrey2-0 bg-BodyBgLight-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:border before:border-PrimaryColor-0 before:ease-linear before:rounded-[10px] before:opacity-0 before:transition-all before:duration-500 hover:before:opacity-10'
+              className='rounded-[10px] overflow-hidden border border-BorderGrey2-0 bg-BodyBgLight-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:border before:border-PrimaryColor-0 before:ease-linear before:rounded-[10px] before:opacity-0 before:transition-all before:duration-500 hover:before:opacity-100'
               data-aos='fade-up'
               data-aos-duration='1000'
             >
@@ -180,7 +180,7 @@ const Service = () => {
               </div>
             </div>
             <div
-              className='rounded-[10px] overflow-hidden border border-BorderGrey2-0 bg-BodyBgLight-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:border before:border-PrimaryColor-0 before:ease-linear before:rounded-[10px] before:opacity-0 before:transition-all before:duration-500 hover:before:opacity-10'
+              className='rounded-[10px] overflow-hidden border border-BorderGrey2-0 bg-BodyBgLight-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:border before:border-PrimaryColor-0 before:ease-linear before:rounded-[10px] before:opacity-0 before:transition-all before:duration-500 hover:before:opacity-100'
               data-aos='fade-up'
               data-aos-duration='1000'
             >

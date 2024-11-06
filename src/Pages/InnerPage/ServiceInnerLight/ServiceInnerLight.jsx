@@ -84,7 +84,7 @@ const ServiceInnerLight = () => {
             <h1 className='font-Sora text-[30px] md:text-[35px] lg:text-[40px] xl:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 from-40% via-Secondarycolor-0 via-70% to-Secondarycolor-0 to-40% bg-clip-text text-transparent'>
               Services
             </h1>
-            <h6 className='font-Sora text-TextLight-0 uppercase'>
+            <h6 className='font-Sora text-TextLight-0 uppercase mt-2 md:mt-1'>
               Offerd Services
             </h6>
           </div>
@@ -99,10 +99,10 @@ const ServiceInnerLight = () => {
                   />
                 </div>
               </div>
-              <div className='px-4 md:px-[30px] pt-5 md:pt-7 pb-7 md:pb-9'>
+              <div className='px-4 md:px-[35px] pt-5 md:pt-7 pb-7 md:pb-9'>
                 <div>
                   <button
-                    className='font-Sora text-PrimaryColor-0 font-bold text-[22px] transition-all duration-500 group-hover:text-white'
+                    className='font-Sora text-PrimaryColor-0 font-bold text-xl md:text-[22px] transition-all duration-500 group-hover:text-white'
                     ref={servicePopUpRef}
                   >
                     Web Design
@@ -125,10 +125,10 @@ const ServiceInnerLight = () => {
                   />
                 </div>
               </div>
-              <div className='px-4 md:px-[30px] pt-5 md:pt-7 pb-7 md:pb-9'>
+              <div className='px-4 md:px-[35px] pt-5 md:pt-7 pb-7 md:pb-9'>
                 <div>
                   <button
-                    className='font-Sora text-PrimaryColor-0 font-bold text-[22px] transition-all duration-500 group-hover:text-white'
+                    className='font-Sora text-PrimaryColor-0 font-bold text-xl md:text-[22px] transition-all duration-500 group-hover:text-white'
                     ref={servicePopUpRef3}
                   >
                     Product Design
@@ -155,10 +155,10 @@ const ServiceInnerLight = () => {
                   />
                 </div>
               </div>
-              <div className='px-4 md:px-[30px] pt-5 md:pt-7 pb-7 md:pb-9'>
+              <div className='px-4 md:px-[35px] pt-5 md:pt-7 pb-7 md:pb-9'>
                 <div>
                   <button
-                    className='font-Sora text-PrimaryColor-0 font-bold text-[22px] transition-all duration-500 group-hover:text-white'
+                    className='font-Sora text-PrimaryColor-0 font-bold text-xl md:text-[22px] transition-all duration-500 group-hover:text-white'
                     ref={servicePopUpRef2}
                   >
                     UI UX Design
@@ -185,10 +185,10 @@ const ServiceInnerLight = () => {
                   />
                 </div>
               </div>
-              <div className='px-4 md:px-[30px] pt-5 md:pt-7 pb-7 md:pb-9'>
+              <div className='px-4 md:px-[35px] pt-5 md:pt-7 pb-7 md:pb-9'>
                 <div>
                   <button
-                    className='font-Sora text-PrimaryColor-0 font-bold text-[22px] transition-all duration-500 group-hover:text-white'
+                    className='font-Sora text-PrimaryColor-0 font-bold text-xl md:text-[22px] transition-all duration-500 group-hover:text-white'
                     ref={servicePopUpRef4}
                   >
                     Motion Graphic

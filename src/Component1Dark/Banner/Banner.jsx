@@ -26,7 +26,7 @@ const Banner = () => {
                 I am Gerold
               </h3>
               <h1 className='font-Sora text-[35px] leading-[42px] md:text-[38px] md:leading-[45px] lg:text-[50px] lg:leading-[60px] xl:text-[60px] xl:leading-[72px] 2xl:text-[65px] 2xl:leading-[78px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-white bg-clip-text text-transparent -mt-[17px] md:-mt-[33px] lg:-mt-4'>
-                Web Developer + <br /> UX Designer
+                Next-Level Web <br /> Developer.
               </h1>
               <div className='flex justify-center relative mt-8 lg:mt-0 md:hidden'>
                 <span className='absolute -z-10 -left-[5%] -bottom-[5%] size-[220px] rounded-full bg-gradient-to-r to-PrimaryColor-0 from-transparent blur-[150px]'></span>

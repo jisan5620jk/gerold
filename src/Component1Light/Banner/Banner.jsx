@@ -15,7 +15,7 @@ const Banner = () => {
       <span className='absolute -z-10 -top-[10%] -right-[5%] w-[322px] h-[308px] rounded-full bg-gradient-to-r to-PrimaryColor-0 from-transparent blur-[150px]'></span>
       <div className='Container'>
         <div className='relative z-10'>
-          <div className='absolute -z-10 top-1/2 -translate-x-2/3 left-1/2 hidden md:block'>
+          <div className='absolute -z-10 top-1/2 -translate-x-2/3 -translate-y-2/3 left-1/2 hidden md:block'>
             <h1 className='font-Russo text-[270px] text-transparent text-stroke opacity-15 animate-zoomInOut2'>
               HI
             </h1>
@@ -26,7 +26,7 @@ const Banner = () => {
                 I am Gerold
               </h3>
               <h1 className='font-Sora text-[35px] leading-[42px] md:text-[38px] md:leading-[45px] lg:text-[50px] lg:leading-[60px] xl:text-[60px] xl:leading-[72px] 2xl:text-[65px] 2xl:leading-[78px] font-bold bg-gradient-to-r from-PrimaryColor-0 to-Secondarycolor-0 bg-clip-text text-transparent -mt-[17px] md:-mt-[33px] lg:-mt-4'>
-                Web Developer + <br /> UX Designer
+                Next-Level Web <br /> Developer.
               </h1>
               <div className='flex justify-center relative mt-8 lg:mt-0 md:hidden'>
                 <span className='absolute -z-10 -left-[5%] -bottom-[5%] size-[220px] rounded-full bg-gradient-to-r to-PrimaryColor-0 from-transparent blur-[150px]'></span>
@@ -90,7 +90,7 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7 xl:gap-20 pt-16 2xl:pt-[104px]'>
+        <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7 xl:gap-20 pt-16 2xl:pt-[84px]'>
           <div className='flex flex-col justify-center mx-auto lg:mx-0 lg:justify-start sm:flex-row sm:items-center gap-3'>
             <div>
               <CountUp
