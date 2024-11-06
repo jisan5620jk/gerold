@@ -6,7 +6,7 @@ const Counter = () => {
       <div className='Container'>
         <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7 sm:gap-10 xl:gap-20 py-16 sm:py-20 md:py-[92px]'>
           <div
-            className='flex flex-col sm:flex-row sm:items-center gap-3'
+            className='flex flex-col sm:flex-row items-center justify-center gap-3'
             data-aos='fade-up'
             data-aos-duration='1000'
           >
@@ -15,7 +15,7 @@ const Counter = () => {
                 start={-11}
                 end={'14'}
                 suffix={''}
-                className='font-Sora text-4xl sm:text-6xl md:text-[64px] text-TextColor-0 font-bold'
+                className='font-Sora text-[45px] leading-[45px] 2xl:leading-[60px] lg:text-[64px] text-TextColor-0 font-bold'
               />
             </div>
             <p className='font-Sora text-TextColor-0 -mt-2'>
@@ -24,9 +24,8 @@ const Counter = () => {
             </p>
           </div>
           <div
-            className='flex flex-col sm:flex-row sm:items-center gap-3'
+            className='flex flex-col sm:flex-row items-center justify-center gap-3'
             data-aos='fade-up'
-            data-aos-delay='400'
             data-aos-duration='1000'
           >
             <div>
@@ -34,7 +33,7 @@ const Counter = () => {
                 start={-11}
                 end={'50'}
                 suffix={'+'}
-                className='font-Sora text-4xl sm:text-6xl md:text-[64px] text-TextColor-0 font-bold'
+                className='font-Sora text-[45px] leading-[45px] 2xl:leading-[60px] lg:text-[64px] text-TextColor-0 font-bold'
               />
             </div>
             <p className='font-Sora text-TextColor-0 -mt-2'>
@@ -43,9 +42,8 @@ const Counter = () => {
             </p>
           </div>
           <div
-            className='flex flex-col sm:flex-row sm:items-center gap-3'
+            className='flex flex-col sm:flex-row items-center justify-center gap-3'
             data-aos='fade-up'
-            data-aos-delay='500'
             data-aos-duration='1000'
           >
             <div>
@@ -53,8 +51,8 @@ const Counter = () => {
                 start={-11}
                 prefix='1.'
                 end={'5'}
-                suffix='k+'
-                className='font-Sora text-4xl sm:text-6xl md:text-[64px] text-TextColor-0 font-bold'
+                suffix='k'
+                className='font-Sora text-[45px] leading-[45px] 2xl:leading-[60px] lg:text-[64px] text-TextColor-0 font-bold'
               />
             </div>
             <p className='font-Sora text-TextColor-0 -mt-2'>
@@ -63,9 +61,8 @@ const Counter = () => {
             </p>
           </div>
           <div
-            className='flex flex-col sm:flex-row sm:items-center gap-3'
+            className='flex flex-col sm:flex-row items-center justify-center gap-3'
             data-aos='fade-up'
-            data-aos-delay='600'
             data-aos-duration='1000'
           >
             <div>
@@ -73,7 +70,7 @@ const Counter = () => {
                 start={-11}
                 end={'12'}
                 suffix={''}
-                className='font-Sora text-4xl sm:text-6xl md:text-[64px] text-TextColor-0 font-bold'
+                className='font-Sora text-[45px] leading-[45px] 2xl:leading-[60px] lg:text-[64px] text-TextColor-0 font-bold'
               />
             </div>
             <p className='font-Sora text-TextColor-0 -mt-2'>

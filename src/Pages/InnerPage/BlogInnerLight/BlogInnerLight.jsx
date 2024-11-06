@@ -38,7 +38,7 @@ const BlogInnerLight = () => {
         breadCrumbIcon={<FaArrowRightLong />}
         breadCrumbLink={'Blog'}
       />
-      <section className='py-[120px]bg-white'>
+      <section className='py-[60px] md:py-20 lg:py-[100px] xl:py-[120px] bg-white'>
         <div className='Container'>
           <div className='grid grid-cols-2 lg:grid-cols-3 gap-6'>
             <div className='col-span-2'>
@@ -68,7 +68,7 @@ const BlogInnerLight = () => {
                     </Link>
                   </Link>
                 </div>
-                <div className='p-5 sm:p-[30px]'>
+                <div className='px-[15px] py-[25px] md:p-[30px]'>
                   <div className='flex items-center flex-wrap gap-y-3 gap-x-[25px]'>
                     <Link
                       to={'#'}
@@ -97,7 +97,7 @@ const BlogInnerLight = () => {
                   <div className='inline-block mt-4'>
                     <Link
                       to={'/blog_details'}
-                      className='font-Sora text-PrimaryColor-0 font-bold text-xl leading89 sm:text-2xl sm:leading-8 md:text-3xl md:leading-10 bg-gradient-to-r from-current to-current bg-no-repeat bg-[0_100%] bg-[length:0_1px] transition-all duration-700 ease-linear hover:bg-[length:100%_1px] hover:text-PrimaryColor-0'
+                      className='font-Sora text-PrimaryColor-0 font-bold text-[22px] leading-7 md:text-3xl md:leading-10 bg-gradient-to-r from-current to-current bg-no-repeat bg-[0_100%] bg-[length:0_1px] transition-all duration-700 ease-linear hover:bg-[length:100%_1px] hover:text-PrimaryColor-0'
                     >
                       The Role of Technology in Modern Logistics Management
                     </Link>
@@ -171,7 +171,7 @@ const BlogInnerLight = () => {
                     </span>
                   </div>
                 </div>
-                <div className='p-5 sm:p-[30px]'>
+                <div className='px-[15px] py-[25px] md:p-[30px]'>
                   <div className='flex items-center flex-wrap gap-y-3 gap-x-[25px]'>
                     <Link
                       to={'#'}
@@ -200,7 +200,7 @@ const BlogInnerLight = () => {
                   <div className='inline-block mt-4'>
                     <Link
                       to={'/blog_details'}
-                      className='font-Sora text-PrimaryColor-0  font-bold text-xl leading89 sm:text-2xl sm:leading-8 md:text-3xl md:leading-10 bg-gradient-to-r from-current to-current bg-no-repeat bg-[0_100%] bg-[length:0_1px] transition-all duration-700 ease-linear hover:bg-[length:100%_1px] hover:text-PrimaryColor-0'
+                      className='font-Sora text-PrimaryColor-0  font-bold text-[22px] leading-7 md:text-3xl md:leading-10 bg-gradient-to-r from-current to-current bg-no-repeat bg-[0_100%] bg-[length:0_1px] transition-all duration-700 ease-linear hover:bg-[length:100%_1px] hover:text-PrimaryColor-0'
                     >
                       The Role of Technology in Modern Logistics Management
                     </Link>
@@ -235,7 +235,7 @@ const BlogInnerLight = () => {
                         <img
                           src={blogThumb3}
                           draggable='false'
-                          className='min-h-[250px] h-auto object-cover origin-center transition-all ease-in-out duration-1000 group-hover:scale-110'
+                          className='min-h-[250px] h-auto object-cover origin-center'
                         />
                         <Link
                           to={'/blog_details'}
@@ -252,7 +252,7 @@ const BlogInnerLight = () => {
                         <img
                           src={blogThumb2}
                           draggable='false'
-                          className='min-h-[250px] h-auto object-cover origin-center transition-all ease-in-out duration-1000 group-hover:scale-110'
+                          className='min-h-[250px] h-auto object-cover origin-center'
                         />
                         <Link
                           to={'/blog_details'}
@@ -269,7 +269,7 @@ const BlogInnerLight = () => {
                         <img
                           src={blogThumb4}
                           draggable='false'
-                          className='min-h-[250px] h-auto object-cover origin-center transition-all ease-in-out duration-1000 group-hover:scale-110'
+                          className='min-h-[250px] h-auto object-cover origin-center'
                         />
                         <Link
                           to={'/blog_details'}
@@ -284,7 +284,7 @@ const BlogInnerLight = () => {
                     <BlogNavigation />
                   </Swiper>
                 </div>
-                <div className='p-5 sm:p-[30px]'>
+                <div className='px-[15px] py-[25px] md:p-[30px]'>
                   <div className='flex items-center flex-wrap gap-y-3 gap-x-[25px]'>
                     <Link
                       to={'#'}
@@ -313,7 +313,7 @@ const BlogInnerLight = () => {
                   <div className='inline-block mt-4'>
                     <Link
                       to={'/blog_details'}
-                      className='font-Sora text-PrimaryColor-0 font-bold text-xl leading-8 sm:text-2xl sm:leading-8 md:text-3xl md:leading-10 bg-gradient-to-r from-current to-current bg-no-repeat bg-[0_100%] bg-[length:0_1px] transition-all duration-700 ease-linear hover:bg-[length:100%_1px] hover:text-PrimaryColor-0'
+                      className='font-Sora text-PrimaryColor-0 font-bold text-[22px] leading-7 md:text-3xl md:leading-10 bg-gradient-to-r from-current to-current bg-no-repeat bg-[0_100%] bg-[length:0_1px] transition-all duration-700 ease-linear hover:bg-[length:100%_1px] hover:text-PrimaryColor-0'
                     >
                       The Role of Technology in Modern Logistics Management
                     </Link>
@@ -361,7 +361,7 @@ const BlogInnerLight = () => {
                     </Link>
                   </Link>
                 </div>
-                <div className='p-5 sm:p-[30px]'>
+                <div className='px-[15px] py-[25px] md:p-[30px]'>
                   <div className='flex items-center flex-wrap gap-y-3 gap-x-[25px]'>
                     <Link
                       to={'#'}
@@ -390,7 +390,7 @@ const BlogInnerLight = () => {
                   <div className='inline-block mt-4'>
                     <Link
                       to={'/blog_details'}
-                      className='font-Sora text-PrimaryColor-0 font-bold text-xl leading89 sm:text-2xl sm:leading-8 md:text-3xl md:leading-10 bg-gradient-to-r from-current to-current bg-no-repeat bg-[0_100%] bg-[length:0_1px] transition-all duration-700 ease-linear hover:bg-[length:100%_1px] hover:text-PrimaryColor-0'
+                      className='font-Sora text-PrimaryColor-0 font-bold text-[22px] leading-7 md:text-3xl md:leading-10 bg-gradient-to-r from-current to-current bg-no-repeat bg-[0_100%] bg-[length:0_1px] transition-all duration-700 ease-linear hover:bg-[length:100%_1px] hover:text-PrimaryColor-0'
                     >
                       The Role of Technology in Modern Logistics Management
                     </Link>
@@ -461,7 +461,7 @@ const BlogInnerLight = () => {
                 </ul>
               </div>
             </div>
-            <div className='col-span-2 lg:col-span-1'>
+            <div className='col-span-2 lg:col-span-1 mt-5 lg:mt-0 pt-8 lg:pt-0 border-t border-BorderGrey2-0 lg:border-none'>
               <div
                 className='px-[25px] py-[30px] rounded-lg bg-BodyBgLight-0 mb-[30px]'
                 data-aos='fade-up'
@@ -547,7 +547,7 @@ const BlogInnerLight = () => {
                   Recent post
                 </h5>
                 <div className='space-y-[30px] mt-[25px]'>
-                  <div className='flex flex-col sm:flex-row lg:flex-col xl:flex-row items-start gap-5 group'>
+                  <div className='flex lg:flex-col xl:flex-row items-start gap-5 group'>
                     <Link
                       to={'/blog_details'}
                       className='overflow-hidden'
@@ -574,13 +574,13 @@ const BlogInnerLight = () => {
                       </div>
                       <Link
                         to={'/blog_details'}
-                        className='font-Sora font-medium tracking-wide text-base sm:text-lg leading-6 text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
+                        className='font-Sora font-medium tracking-wide text-lg leading-6 text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
                       >
                         Definition and Principles of JIT Logistics
                       </Link>
                     </div>
                   </div>
-                  <div className='flex flex-col sm:flex-row lg:flex-col xl:flex-row items-start gap-5 group'>
+                  <div className='flex lg:flex-col xl:flex-row items-start gap-5 group'>
                     <Link
                       to={'/blog_details'}
                       className='overflow-hidden'
@@ -607,13 +607,13 @@ const BlogInnerLight = () => {
                       </div>
                       <Link
                         to={'/blog_details'}
-                        className='font-Sora font-medium tracking-wide text-base sm:text-lg leading-6 text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
+                        className='font-Sora font-medium tracking-wide text-lg leading-6 text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
                       >
                         Real-world Examples of Successful JIT Logistics
                       </Link>
                     </div>
                   </div>
-                  <div className='flex flex-col sm:flex-row lg:flex-col xl:flex-row items-start gap-5 group'>
+                  <div className='flex lg:flex-col xl:flex-row items-start gap-5 group'>
                     <Link
                       to={'/blog_details'}
                       className='overflow-hidden'
@@ -640,7 +640,7 @@ const BlogInnerLight = () => {
                       </div>
                       <Link
                         to={'/blog_details'}
-                        className='font-Sora font-medium tracking-wide text-base sm:text-lg leading-6 text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
+                        className='font-Sora font-medium tracking-wide text-lg leading-6 text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
                       >
                         Real-world Examples of Successful JIT Logistics
                       </Link>

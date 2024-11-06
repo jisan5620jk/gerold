@@ -9,12 +9,12 @@ const BreadCrumb = ({
 }) => {
   return (
     <div className='bg-BodyBg-0'>
-      <div className="bg-[url('/images/breadcrumb/breadcrumb-bg.jpg')] bg-no-repeat bg-cover bg-center flex items-center justify-center min-h-[350px] pt-[210px] pb-[100px] relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-BodyBg3-0 before:-z-10 before:bg-opacity-70">
+      <div className="bg-[url('/images/breadcrumb/breadcrumb-bg.jpg')] bg-no-repeat bg-cover bg-center flex items-center justify-center min-h-[250px] md:min-h-[350px] pt-[145px] md:pt-[194px] pb-[60px] md:pb-[100px] relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-BodyBg3-0 before:-z-10 before:bg-opacity-70">
         <div className='Container text-center'>
-          <h1 className='font-Sora font-bold text-2xl sm:text-4xl md:text-[50px] text-white capitalize'>
+          <h1 className='font-Sora font-bold text-[35px] md:text-[50px] text-white capitalize'>
             {breadCrumbTitle}
           </h1>
-          <ul className='flex flex-col sm:flex-row gap-2 sm:gap-[10px] items-center justify-center mt-[24px]'>
+          <ul className='flex gap-[10px] items-center justify-center mt-2 md:mt-0'>
             <li>
               <Link to={'/'}>
                 <button className='font-Sora font-medium text-white transition-all duration-500 hover:text-PrimaryColor-0 capitalize'>
@@ -23,7 +23,7 @@ const BreadCrumb = ({
               </Link>
             </li>
             <li>
-              <div className='text-white hidden sm:block'>{breadCrumbIcon}</div>
+              <div className='text-white'>{breadCrumbIcon}</div>
             </li>
             <li>
               <Link to={url}>

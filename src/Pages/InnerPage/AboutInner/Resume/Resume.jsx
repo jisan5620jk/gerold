@@ -4,20 +4,20 @@ import icon2 from "/images/counter/counter-icon2.png"
 
 const Resume = () => {
   return (
-    <section className='bg-BodyBlack-0 py-[120px]'>
+    <section className='bg-BodyBlack-0 py-[60px] md:py-20 lg:py-[100px] xl:py-[120px]'>
       <div className='Container'>
         <div className='text-center'>
-          <h1 className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 from-50% via-white via-60% to-white to-50% bg-clip-text text-transparent'>
+          <h1 className='font-Sora text-[30px] md:text-[35px] lg:text-[40px] xl:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 from-50% via-white via-60% to-white to-50% bg-clip-text text-transparent'>
             My Resume
           </h1>
         </div>
-        <div className='flex flex-wrap md:flex-nowrap gap-[50px] md:justify-between max-w-[1120px] mx-auto w-full mt-[50px]'>
+        <div className='flex flex-col md:flex-row items-center gap-[50px] justify-between max-w-[1120px] mx-auto w-full mt-8 lg:mt-10 2xl:mt-[50px]'>
           <div>
-            <h4 className='font-Sora font-medium text-[40px] text-white capitalize'>
+            <h4 className='font-Sora font-medium text-[22px] md:text-[30px] lg:text-[40px] text-white capitalize'>
               Education
             </h4>
-            <div className='pl-5 sm:pl-10 md:pl-5 lg:pl-10 relative z-10 before:absolute before:top-5 before:left-[6px] before:w-[1px] before:h-[135%] md:before:h-[125%] lg:before:h-[82%] before:rounded-full before:bg-white before:bg-opacity-10'>
-              <div className='flex gap-5 relative z-10 mt-10 before:absolute before:top-5 before:-left-[20px] sm:before:-left-[46px md:before:-left-[26px] lg:before:-left-[40px] before:size-[13px] before:rounded-full before:bg-white before:bg-opacity-40'>
+            <div className='pl-[26px] md:pl-5 lg:pl-10 relative z-10 before:absolute before:top-5 before:left-[6px] before:w-[1px] before:h-[81%] md:before:h-[125%] lg:before:h-[82%] before:rounded-full before:bg-white before:bg-opacity-10'>
+              <div className='flex gap-5 relative z-10 mt-[30px] md:mt-10 before:absolute before:top-5 before:-left-[26px] md:before:-left-[20px] lg:before:-left-[40px] before:size-[13px] before:rounded-full before:bg-white before:bg-opacity-40'>
                 <div className='size-[57px] rounded-full bg-Secondarycolor-0 flex items-center justify-center'>
                   <img
                     src={icon}
@@ -26,10 +26,10 @@ const Resume = () => {
                   />
                 </div>
                 <div>
-                  <h5 className='font-Sora font-bold text-lg sm:text-xl tracking-wide text-PrimaryColor-0'>
+                  <h5 className='font-Sora font-bold text-base md:text-xl tracking-wide text-PrimaryColor-0'>
                     2023 - 2024
                   </h5>
-                  <h6 className='font-Sora font-extrabold text-lg sm:text-xl !leading-[24px] tracking-wide text-white uppercase pt-[9px]'>
+                  <h6 className='font-Sora font-extrabold text-base md:text-xl !leading-[24px] tracking-wide text-white uppercase pt-[9px]'>
                     Programming <br /> course
                   </h6>
                   <p className='font-Sora font-medium text-TextColor-0 pt-[9px]'>
@@ -37,7 +37,7 @@ const Resume = () => {
                   </p>
                 </div>
               </div>
-              <div className='flex gap-5 relative z-10 mt-9 before:absolute before:top-5 before:-left-[20px] sm:before:-left-[46px md:before:-left-[26px] lg:before:-left-[40px] before:size-[13px] before:rounded-full before:bg-white before:bg-opacity-40'>
+              <div className='flex gap-5 relative z-10 mt-9 before:absolute before:top-5 before:-left-[26px] md:before:-left-[20px] lg:before:-left-[40px] before:size-[13px] before:rounded-full before:bg-white before:bg-opacity-40'>
                 <div className='size-[57px] rounded-full bg-Secondarycolor-0 flex items-center justify-center'>
                   <img
                     src={icon}
@@ -46,10 +46,10 @@ const Resume = () => {
                   />
                 </div>
                 <div>
-                  <h5 className='font-Sora font-bold text-lg sm:text-xl tracking-wide text-PrimaryColor-0'>
+                  <h5 className='font-Sora font-bold text-base md:text-xl tracking-wide text-PrimaryColor-0'>
                     2023 - 2024
                   </h5>
-                  <h6 className='font-Sora font-extrabold text-lg sm:text-xl tracking-wide text-white uppercase pt-[9px]'>
+                  <h6 className='font-Sora font-extrabold text-base md:text-xl tracking-wide text-white uppercase pt-[9px]'>
                     Graphics Design <br /> Course
                   </h6>
                   <p className='font-Sora font-medium text-TextColor-0 pt-[9px]'>
@@ -57,7 +57,7 @@ const Resume = () => {
                   </p>
                 </div>
               </div>
-              <div className='flex gap-5 relative z-10 mt-9 before:absolute before:top-5 before:-left-[20px] sm:before:-left-[46px md:before:-left-[26px] lg:before:-left-[40px] before:size-[13px] before:rounded-full before:bg-white before:bg-opacity-40'>
+              <div className='flex gap-5 relative z-10 mt-9 before:absolute before:top-5 before:-left-[26px] md:before:-left-[20px] lg:before:-left-[40px] before:size-[13px] before:rounded-full before:bg-white before:bg-opacity-40'>
                 <div className='size-[57px] rounded-full bg-Secondarycolor-0 flex items-center justify-center'>
                   <img
                     src={icon}
@@ -66,10 +66,10 @@ const Resume = () => {
                   />
                 </div>
                 <div>
-                  <h5 className='font-Sora font-bold text-lg sm:text-xl tracking-wide text-PrimaryColor-0'>
+                  <h5 className='font-Sora font-bold text-base md:text-xl tracking-wide text-PrimaryColor-0'>
                     2023 - 2024
                   </h5>
-                  <h6 className='font-Sora font-extrabold text-lg sm:text-xl tracking-wide text-white uppercase pt-[9px]'>
+                  <h6 className='font-Sora font-extrabold text-base md:text-xl tracking-wide text-white uppercase pt-[9px]'>
                     Graphics Design <br /> Course
                   </h6>
                   <p className='font-Sora font-medium text-TextColor-0 pt-[9px]'>
@@ -77,7 +77,7 @@ const Resume = () => {
                   </p>
                 </div>
               </div>
-              <div className='flex gap-5 relative z-10 mt-9 before:absolute before:top-5 before:-left-[20px] sm:before:-left-[46px md:before:-left-[26px] lg:before:-left-[40px] before:size-[13px] before:rounded-full before:bg-white before:bg-opacity-40'>
+              <div className='flex gap-5 relative z-10 mt-9 before:absolute before:top-5 before:-left-[26px] md:before:-left-[20px] lg:before:-left-[40px] before:size-[13px] before:rounded-full before:bg-white before:bg-opacity-40'>
                 <div className='size-[57px] rounded-full bg-Secondarycolor-0 flex items-center justify-center'>
                   <img
                     src={icon}
@@ -86,10 +86,10 @@ const Resume = () => {
                   />
                 </div>
                 <div>
-                  <h5 className='font-Sora font-bold text-lg sm:text-xl tracking-wide text-PrimaryColor-0'>
+                  <h5 className='font-Sora font-bold text-base md:text-xl tracking-wide text-PrimaryColor-0'>
                     2023 - 2024
                   </h5>
-                  <h6 className='font-Sora font-extrabold text-lg sm:text-xl tracking-wide text-white uppercase pt-[9px]'>
+                  <h6 className='font-Sora font-extrabold text-base md:text-xl tracking-wide text-white uppercase pt-[9px]'>
                     Graphics Design <br /> Course
                   </h6>
                   <p className='font-Sora font-medium text-TextColor-0 pt-[9px]'>
@@ -98,13 +98,13 @@ const Resume = () => {
                 </div>
               </div>
             </div>
-          </div>{' '}
+          </div>
           <div>
-            <h4 className='font-Sora font-medium text-[40px] text-white capitalize'>
+            <h4 className='font-Sora font-medium text-[22px] md:text-[30px] lg:text-[40px] text-white capitalize'>
               Work Experience
             </h4>
-            <div className='pl-5 sm:pl-10 md:pl-5 lg:pl-10 relative z-10 before:absolute before:top-5 before:left-[6px] before:w-[1px] before:h-[135%] md:before:h-[125%] lg:before:h-[82%] before:rounded-full before:bg-white before:bg-opacity-10'>
-              <div className='flex gap-5 relative z-10 mt-10 before:absolute before:top-5 before:-left-[20px] sm:before:-left-[46px md:before:-left-[26px] lg:before:-left-[40px] before:size-[13px] before:rounded-full before:bg-white before:bg-opacity-40'>
+            <div className='pl-[26px] md:pl-5 lg:pl-10 relative z-10 before:absolute before:top-5 before:left-[6px] before:w-[1px] before:h-[81%] md:before:h-[125%] lg:before:h-[82%] before:rounded-full before:bg-white before:bg-opacity-10'>
+              <div className='flex gap-5 relative z-10 mt-[30px] md:mt-10 before:absolute before:top-5 before:-left-[26px] md:before:-left-[20px] lg:before:-left-[40px] before:size-[13px] before:rounded-full before:bg-white before:bg-opacity-40'>
                 <div className='size-[57px] rounded-full bg-Secondarycolor-0 flex items-center justify-center'>
                   <img
                     src={icon2}
@@ -113,10 +113,10 @@ const Resume = () => {
                   />
                 </div>
                 <div>
-                  <h5 className='font-Sora font-bold text-lg sm:text-xl tracking-wide text-PrimaryColor-0'>
+                  <h5 className='font-Sora font-bold text-base md:text-xl tracking-wide text-PrimaryColor-0'>
                     2023 - 2024
                   </h5>
-                  <h6 className='font-Sora font-extrabold text-lg sm:text-xl !leading-[24px] tracking-wide text-white uppercase pt-[9px]'>
+                  <h6 className='font-Sora font-extrabold text-base md:text-xl !leading-[24px] tracking-wide text-white uppercase pt-[9px]'>
                     Programming <br /> course
                   </h6>
                   <p className='font-Sora font-medium text-TextColor-0 pt-[9px]'>
@@ -124,7 +124,7 @@ const Resume = () => {
                   </p>
                 </div>
               </div>
-              <div className='flex gap-5 relative z-10 mt-9 before:absolute before:top-5 before:-left-[20px] sm:before:-left-[46px md:before:-left-[26px] lg:before:-left-[40px] before:size-[13px] before:rounded-full before:bg-white before:bg-opacity-40'>
+              <div className='flex gap-5 relative z-10 mt-9 before:absolute before:top-5 before:-left-[26px] md:before:-left-[20px] lg:before:-left-[40px] before:size-[13px] before:rounded-full before:bg-white before:bg-opacity-40'>
                 <div className='size-[57px] rounded-full bg-Secondarycolor-0 flex items-center justify-center'>
                   <img
                     src={icon2}
@@ -133,10 +133,10 @@ const Resume = () => {
                   />
                 </div>
                 <div>
-                  <h5 className='font-Sora font-bold text-lg sm:text-xl tracking-wide text-PrimaryColor-0'>
+                  <h5 className='font-Sora font-bold text-base md:text-xl tracking-wide text-PrimaryColor-0'>
                     2023 - 2024
                   </h5>
-                  <h6 className='font-Sora font-extrabold text-lg sm:text-xl tracking-wide text-white uppercase pt-[9px]'>
+                  <h6 className='font-Sora font-extrabold text-base md:text-xl tracking-wide text-white uppercase pt-[9px]'>
                     Graphics Design <br /> Course
                   </h6>
                   <p className='font-Sora font-medium text-TextColor-0 pt-[9px]'>
@@ -144,7 +144,7 @@ const Resume = () => {
                   </p>
                 </div>
               </div>
-              <div className='flex gap-5 relative z-10 mt-9 before:absolute before:top-5 before:-left-[20px] sm:before:-left-[46px md:before:-left-[26px] lg:before:-left-[40px] before:size-[13px] before:rounded-full before:bg-white before:bg-opacity-40'>
+              <div className='flex gap-5 relative z-10 mt-9 before:absolute before:top-5 before:-left-[26px] md:before:-left-[20px] lg:before:-left-[40px] before:size-[13px] before:rounded-full before:bg-white before:bg-opacity-40'>
                 <div className='size-[57px] rounded-full bg-Secondarycolor-0 flex items-center justify-center'>
                   <img
                     src={icon2}
@@ -153,10 +153,10 @@ const Resume = () => {
                   />
                 </div>
                 <div>
-                  <h5 className='font-Sora font-bold text-lg sm:text-xl tracking-wide text-PrimaryColor-0'>
+                  <h5 className='font-Sora font-bold text-base md:text-xl tracking-wide text-PrimaryColor-0'>
                     2023 - 2024
                   </h5>
-                  <h6 className='font-Sora font-extrabold text-lg sm:text-xl tracking-wide text-white uppercase pt-[9px]'>
+                  <h6 className='font-Sora font-extrabold text-base md:text-xl tracking-wide text-white uppercase pt-[9px]'>
                     Graphics Design <br /> Course
                   </h6>
                   <p className='font-Sora font-medium text-TextColor-0 pt-[9px]'>
@@ -164,7 +164,7 @@ const Resume = () => {
                   </p>
                 </div>
               </div>
-              <div className='flex gap-5 relative z-10 mt-9 before:absolute before:top-5 before:-left-[20px] sm:before:-left-[46px md:before:-left-[26px] lg:before:-left-[40px] before:size-[13px] before:rounded-full before:bg-white before:bg-opacity-40'>
+              <div className='flex gap-5 relative z-10 mt-9 before:absolute before:top-5 before:-left-[26px] md:before:-left-[20px] lg:before:-left-[40px] before:size-[13px] before:rounded-full before:bg-white before:bg-opacity-40'>
                 <div className='size-[57px] rounded-full bg-Secondarycolor-0 flex items-center justify-center'>
                   <img
                     src={icon2}
@@ -173,10 +173,10 @@ const Resume = () => {
                   />
                 </div>
                 <div>
-                  <h5 className='font-Sora font-bold text-lg sm:text-xl tracking-wide text-PrimaryColor-0'>
+                  <h5 className='font-Sora font-bold text-base md:text-xl tracking-wide text-PrimaryColor-0'>
                     2023 - 2024
                   </h5>
-                  <h6 className='font-Sora font-extrabold text-lg sm:text-xl tracking-wide text-white uppercase pt-[9px]'>
+                  <h6 className='font-Sora font-extrabold text-base md:text-xl tracking-wide text-white uppercase pt-[9px]'>
                     Graphics Design <br /> Course
                   </h6>
                   <p className='font-Sora font-medium text-TextColor-0 pt-[9px]'>

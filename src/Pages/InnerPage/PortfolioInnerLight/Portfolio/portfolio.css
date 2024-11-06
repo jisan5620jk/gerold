@@ -1,5 +1,5 @@
-.button-group button.active {
-  color: #fff;
+.portfolio-filter.light .button-group button.active {
+  color: white;
 }
 
 .portfolio-box {

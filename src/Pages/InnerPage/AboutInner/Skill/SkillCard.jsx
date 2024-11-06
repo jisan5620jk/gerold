@@ -5,7 +5,7 @@ import CountUp from 'react-countup';
 const SkillCard = ({ skillIcon, skillTitle, skillPercent, skillSuffix }) => {
   return (
     <div className='text-center group'>
-      <div className='bg-BodyBg3-0 pt-10 pb-[26px] rounded-[20px] px-[60px] xl:px-[52px] 2xl:px-[60px] border border-BodyBg3-0 transition-all duration-700 group-hover:border-PrimaryColor-0 relative z-10 overflow-hidden'>
+      <div className='bg-BodyBg3-0 pt-6 md:pt-10 pb-5 md:pb-[26px] rounded-[20px] px-[52px] md:px-[59px] xl:px-[52px] 2xl:px-[59px] border border-BodyBg3-0 transition-all duration-700 group-hover:border-PrimaryColor-0 relative z-10 overflow-hidden'>
         <div className='mb-[25px]'>
           <img
             src={skillIcon}
@@ -20,7 +20,7 @@ const SkillCard = ({ skillIcon, skillTitle, skillPercent, skillSuffix }) => {
           className='font-Sora text-xl text-TextGrey-0 font-extrabold transition-all duration-500 group-hover:text-PrimaryColor-0'
         />
       </div>
-      <h4 className='font-Sora text-PrimaryColor-0 mt-[15px]'>{skillTitle}</h4>
+      <h4 className='font-Sora text-white mt-[15px]'>{skillTitle}</h4>
     </div>
   );
 };

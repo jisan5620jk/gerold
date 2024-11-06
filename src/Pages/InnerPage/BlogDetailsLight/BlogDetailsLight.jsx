@@ -33,7 +33,7 @@ const BlogDetailsLight = () => {
         breadCrumbIcon={<FaArrowRightLong />}
         breadCrumbLink={'Blog Detials'}
       />
-      <section className='py-[120px]bg-white'>
+      <section className='py-[60px] md:py-20 lg:py-[100px] xl:py-[120px] bg-white'>
         <div className='Container'>
           <div className='grid grid-cols-2 lg:grid-cols-3 gap-6'>
             <div className='col-span-2'>
@@ -87,7 +87,7 @@ const BlogDetailsLight = () => {
                 </div>
                 <h3
                   to={'/blog_details'}
-                  className='font-Sora text-PrimaryColor-0 font-bold text-xl leading-8 sm:text-2xl sm:leading-8 md:text-3xl md:leading-10'
+                  className='font-Sora text-PrimaryColor-0 font-bold text-[22px] leading-7 md:text-3xl md:leading-10'
                 >
                   The Role of Technology in Modern Logistics Management
                 </h3>
@@ -127,7 +127,7 @@ const BlogDetailsLight = () => {
                   Silvester Scott
                 </cite>
               </blockquote>
-              <h4 className='font-Sora font-bold text-2xl text-Secondarycolor-0'>
+              <h4 className='font-Sora font-bold text-xl md:text-2xl text-Secondarycolor-0'>
                 The Role of Technology in Modern Logistics Management
               </h4>
               <p className='font-Sora text-TextLight-0 mt-[14px] mb-5'>
@@ -152,7 +152,7 @@ const BlogDetailsLight = () => {
                 management. Discuss how technologies like IoT, AI, and
                 blockchain are reshaping the industry and improving efficiency.
               </p>
-              <h5 className='font-Sora font-bold text-lg text-Secondarycolor-0 mb-3'>
+              <h5 className='font-Sora font-bold text-15px md:text-lg text-Secondarycolor-0 mb-3'>
                 Key Points
               </h5>
               <ul className='space-y-2'>
@@ -192,7 +192,7 @@ const BlogDetailsLight = () => {
                   </span>
                 </li>
               </ul>
-              <h4 className='font-Sora font-bold text-2xl text-Secondarycolor-0 mt-7'>
+              <h4 className='font-Sora font-bold text-xl md:text-2xl text-Secondarycolor-0 mt-7'>
                 Conclusion
               </h4>
               <p className='font-Sora text-TextLight-0 mb-5 mt-[14px]'>
@@ -206,8 +206,8 @@ const BlogDetailsLight = () => {
                 respective topics.
               </p>
               <div className='flex flex-col md:flex-row md:justify-between items-start gap-8 py-[31px] border-y border-BorderGrey2-0'>
-                <div className='flex flex-col sm:flex-row items-start gap-[30px]'>
-                  <h4 className='font-Sora font-bold text-2xl text-Secondarycolor-0'>
+                <div className='flex items-start gap-[30px]'>
+                  <h4 className='font-Sora font-bold text-xl md:text-2xl text-Secondarycolor-0'>
                     Tags:
                   </h4>
                   <ul className='flex flex-wrap items-center gap-[10px]'>
@@ -297,7 +297,7 @@ const BlogDetailsLight = () => {
                 </ul>
               </div>
               <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-8 py-[31px] border-b border-BorderGrey2-0'>
-                <div className='bg-BodyBg3-0 py-[35px] px-5 sm:px-[25px] md:px-5 lg:px-[25px] flex items-start gap-5'>
+                <div className='bg-BodyBg3-0 py-[35px] px-5 lg:px-[25px] flex items-start gap-5'>
                   <Link to={'/blog_details'}>
                     <img
                       src={blogBtnImg}
@@ -315,13 +315,13 @@ const BlogDetailsLight = () => {
                     </h6>
                     <Link
                       to={'/blog_datails'}
-                      className='font-Sora font-bold text-white text-lg md:text-base xl:text-lg leading-6 transition-all duration-500 hover:text-PrimaryColor-0'
+                      className='font-Sora font-bold text-white text-base xl:text-lg leading-6 transition-all duration-500 hover:text-PrimaryColor-0'
                     >
                       Building a Real Estate Website Tips and Ideas
                     </Link>
                   </div>
                 </div>
-                <div className='bg-BodyBg3-0 py-[35px] px-5 sm:px-[25px] md:px-5 lg:px-[25px] flex items-start gap-5'>
+                <div className='bg-BodyBg3-0 py-[35px] px-5 lg:px-[25px] flex items-start gap-5'>
                   <div className='flex-1 text-right'>
                     <h6 className='flex items-center justify-end gap-2 font-Sora text-PrimaryColor-0 uppercase mb-2'>
                       Next{' '}
@@ -332,7 +332,7 @@ const BlogDetailsLight = () => {
                     </h6>
                     <Link
                       to={'/blog_datails'}
-                      className='font-Sora font-bold text-white text-lg md:text-base xl:text-lg leading-6 transition-all duration-500 hover:text-PrimaryColor-0'
+                      className='font-Sora font-bold text-white text-base xl:text-lg leading-6 transition-all duration-500 hover:text-PrimaryColor-0'
                     >
                       Architecture Is Not Based On Concrete And Steel
                     </Link>
@@ -346,7 +346,7 @@ const BlogDetailsLight = () => {
                   </Link>
                 </div>
               </div>
-              <h3 className='font-Sora font-bold text-3xl text-Secondarycolor-0 pb-3 relative before:absolute before:bottom-0 before:left-0 before:bg-PrimaryColor-0 before:h-[2px] before:w-[60px] mb-[30px] mt-[46px]'>
+              <h3 className='font-Sora font-bold text-[22px] md:text-3xl text-Secondarycolor-0 pb-3 relative before:absolute before:bottom-0 before:left-0 before:bg-PrimaryColor-0 before:h-[2px] before:w-[60px] mb-[30px] mt-[46px]'>
                 3 Comments
               </h3>
               <div className='flex flex-col sm:flex-row items-start gap-5 border-b border-BorderGrey2-0 pb-[30px] mb-[30px]'>
@@ -356,7 +356,7 @@ const BlogDetailsLight = () => {
                 <div className='flex-1 -mt-1'>
                   <Link
                     to={'/blog_details'}
-                    className='font-Sora font-bold text-[22px] text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
+                    className='font-Sora font-bold text-lg md:text-[22px] text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
                   >
                     Jane Doe
                   </Link>
@@ -376,14 +376,14 @@ const BlogDetailsLight = () => {
                   </Link>
                 </div>
               </div>
-              <div className='flex flex-col sm:flex-row items-start gap-5 border-b border-BorderGrey2-0 pb-[30px] md:ml-[30px] mb-[30px]'>
+              <div className='flex flex-col sm:flex-row items-start gap-5 border-b border-BorderGrey2-0 pb-[30px] ml-[30px] mb-[30px]'>
                 <div>
                   <img src={userImg2} />
                 </div>
                 <div className='flex-1 -mt-1'>
                   <Link
                     to={'/blog_details'}
-                    className='font-Sora font-bold text-[22px] text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
+                    className='font-Sora font-bold text-lg md:text-[22px] text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
                   >
                     Fred Bloggs
                   </Link>
@@ -405,14 +405,14 @@ const BlogDetailsLight = () => {
                   </Link>
                 </div>
               </div>
-              <div className='flex flex-col sm:flex-row items-start gap-5 border-b border-BorderGrey2-0 pb-[30px] md:ml-[30px] mb-[30px]'>
+              <div className='flex flex-col sm:flex-row items-start gap-5 border-b border-BorderGrey2-0 pb-[30px] ml-[30px] mb-[30px]'>
                 <div>
                   <img src={userImg3} />
                 </div>
                 <div className='flex-1 -mt-1'>
                   <Link
                     to={'/blog_details'}
-                    className='font-Sora font-bold text-[22px] text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
+                    className='font-Sora font-bold text-lg md:text-[22px] text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
                   >
                     Jane Bloggs
                   </Link>
@@ -432,14 +432,14 @@ const BlogDetailsLight = () => {
                   </Link>
                 </div>
               </div>
-              <div className='flex flex-col sm:flex-row items-start gap-5 border-b border-BorBorderGrey2derColor-0 pb-[30px]'>
+              <div className='flex flex-col sm:flex-row items-start gap-5 border-b border-BorderGrey2-0 pb-[30px]'>
                 <div>
                   <img src={userImg4} />
                 </div>
                 <div className='flex-1 -mt-1'>
                   <Link
                     to={'/blog_details'}
-                    className='font-Sora font-bold text-[22px] text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
+                    className='font-Sora font-bold text-lg md:text-[22px] text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
                   >
                     Themedemos
                   </Link>
@@ -462,7 +462,7 @@ const BlogDetailsLight = () => {
                   </Link>
                 </div>
               </div>
-              <h3 className='font-Sora font-bold text-3xl text-Secondarycolor-0 pb-3 relative before:absolute before:bottom-0 before:left-0 before:bg-PrimaryColor-0 before:h-[2px] before:w-[60px] mb-[20px] mt-[50px]'>
+              <h3 className='font-Sora font-bold text-[22px] md:text-3xl text-Secondarycolor-0 pb-3 relative before:absolute before:bottom-0 before:left-0 before:bg-PrimaryColor-0 before:h-[2px] before:w-[60px] mb-[20px] mt-[50px]'>
                 Leave A Reply
               </h3>
               <p className='font-Sora text-TextLight-0'>
@@ -528,7 +528,7 @@ const BlogDetailsLight = () => {
                 </div>
               </form>
             </div>
-            <div className='col-span-2 lg:col-span-1'>
+            <div className='col-span-2 lg:col-span-1 mt-5 lg:mt-0 pt-8 lg:pt-0 border-t border-BorderGrey2-0 lg:border-none'>
               <div
                 className='px-[25px] py-[30px] rounded-lg bg-BodyBgLight-0 mb-[30px]'
                 data-aos='fade-up'
@@ -614,7 +614,7 @@ const BlogDetailsLight = () => {
                   Recent post
                 </h5>
                 <div className='space-y-[30px] mt-[25px]'>
-                  <div className='flex flex-col sm:flex-row lg:flex-col xl:flex-row items-start gap-5 group'>
+                  <div className='flex lg:flex-col xl:flex-row items-start gap-5 group'>
                     <Link
                       to={'/blog_details'}
                       className='overflow-hidden'
@@ -641,13 +641,13 @@ const BlogDetailsLight = () => {
                       </div>
                       <Link
                         to={'/blog_details'}
-                        className='font-Sora font-medium tracking-wide text-base sm:text-lg leading-6 text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
+                        className='font-Sora font-medium tracking-wide text-lg leading-6 text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
                       >
                         Definition and Principles of JIT Logistics
                       </Link>
                     </div>
                   </div>
-                  <div className='flex flex-col sm:flex-row lg:flex-col xl:flex-row items-start gap-5 group'>
+                  <div className='flex lg:flex-col xl:flex-row items-start gap-5 group'>
                     <Link
                       to={'/blog_details'}
                       className='overflow-hidden'
@@ -674,13 +674,13 @@ const BlogDetailsLight = () => {
                       </div>
                       <Link
                         to={'/blog_details'}
-                        className='font-Sora font-medium tracking-wide text-base sm:text-lg leading-6 text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
+                        className='font-Sora font-medium tracking-wide text-lg leading-6 text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
                       >
                         Real-world Examples of Successful JIT Logistics
                       </Link>
                     </div>
                   </div>
-                  <div className='flex flex-col sm:flex-row lg:flex-col xl:flex-row items-start gap-5 group'>
+                  <div className='flex lg:flex-col xl:flex-row items-start gap-5 group'>
                     <Link
                       to={'/blog_details'}
                       className='overflow-hidden'
@@ -707,7 +707,7 @@ const BlogDetailsLight = () => {
                       </div>
                       <Link
                         to={'/blog_details'}
-                        className='font-Sora font-medium tracking-wide text-base sm:text-lg leading-6 text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
+                        className='font-Sora font-medium tracking-wide text-lg leading-6 text-Secondarycolor-0 transition-all duration-500 hover:text-PrimaryColor-0'
                       >
                         Real-world Examples of Successful JIT Logistics
                       </Link>

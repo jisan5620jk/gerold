@@ -8,13 +8,12 @@ import icon6 from '/images/icons/js.svg';
 
 const Skill = () => {
   return (
-    <section className='overflow-hidden bg-BodyBg5-0 pt-[106px] pb-[120px] relative z-10 before:absolute before:top-20 before:right-0 before:bg-gradient-to-r before:to-PrimaryColor-0 before:from-Secondarycolor-0 before:w-[450px] before:h-full before:rounded-full before:blur-[150px] before:-mt-[5%] before:-mr-[5%] before:-z-10'>
+    <section className='overflow-hidden bg-BodyBg5-0 pt-[60px] md:pt-20 lg:pt-[100px] xl:pt-[106px] pb-[60px] md:pb-20 lg:pb-[100px] xl:pb-[120px] relative z-10 before:absolute before:top-20 before:right-0 before:bg-gradient-to-r before:to-PrimaryColor-0 before:from-Secondarycolor-0 before:w-[450px] before:h-full before:rounded-full before:blur-[150px] before:-mt-[5%] before:-mr-[5%] before:-z-10'>
       <div className='Container'>
         <div className='text-center'>
           <h1
-            className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-white from-25% bg-clip-text text-transparent'
+            className='font-Sora text-[30px] md:text-[35px] lg:text-[40px] xl:text-[45px] font-bold bg-gradient-to-l to-PrimaryColor-0 via-PrimaryColor-0 from-white from-25% bg-clip-text text-transparent'
             data-aos='fade-up'
-            data-aos-delay='300'
             data-aos-duration='1000'
           >
             My Skills
@@ -22,17 +21,15 @@ const Skill = () => {
           <h6
             className='font-Sora text-TextColor-0 uppercase'
             data-aos='fade-up'
-            data-aos-delay='400'
             data-aos-duration='1000'
           >
             Offerd Services
           </h6>
         </div>
-        <div className='relative z-10 mt-[50px] flex gap-5 items-center justify-center flex-wrap'>
+        <div className='relative z-10 mt-10 md:mt-[50px] flex gap-5 items-center justify-center flex-wrap'>
           <div
             data-aos='fade-up'
             data-aos-duration='1000'
-            data-aos-delay='300'
           >
             <SkillCard
               skillIcon={icon}
@@ -44,61 +41,56 @@ const Skill = () => {
           <div
             data-aos='fade-up'
             data-aos-duration='1000'
-            data-aos-delay='400'
           >
             <SkillCard
               skillIcon={icon2}
-              skillPercent={92}
+              skillPercent={80}
               skillSuffix={'%'}
-              skillTitle={'Figma'}
+              skillTitle={'Sketch'}
             />
           </div>
           <div
             data-aos='fade-up'
             data-aos-duration='1000'
-            data-aos-delay='500'
           >
             <SkillCard
               skillIcon={icon3}
-              skillPercent={92}
+              skillPercent={85}
               skillSuffix={'%'}
-              skillTitle={'Figma'}
+              skillTitle={'XD'}
             />
           </div>
           <div
             data-aos='fade-up'
             data-aos-duration='1000'
-            data-aos-delay='600'
           >
             <SkillCard
               skillIcon={icon4}
-              skillPercent={92}
+              skillPercent={99}
               skillSuffix={'%'}
-              skillTitle={'Figma'}
+              skillTitle={'WordPess'}
             />
           </div>
           <div
             data-aos='fade-up'
             data-aos-duration='1000'
-            data-aos-delay='700'
           >
             <SkillCard
               skillIcon={icon5}
-              skillPercent={92}
+              skillPercent={89}
               skillSuffix={'%'}
-              skillTitle={'Figma'}
+              skillTitle={'React'}
             />
           </div>
           <div
             data-aos='fade-up'
             data-aos-duration='1000'
-            data-aos-delay='800'
           >
             <SkillCard
               skillIcon={icon6}
-              skillPercent={92}
+              skillPercent={93}
               skillSuffix={'%'}
-              skillTitle={'Figma'}
+              skillTitle={'JavaScript'}
             />
           </div>
         </div>

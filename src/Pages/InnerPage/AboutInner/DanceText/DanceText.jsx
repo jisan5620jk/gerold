@@ -20,11 +20,11 @@ const DanceText = () => {
   }, []);
 
   return (
-    <div className='bg-BodyBlack-0 pt-[60px] md:pt-20 lg:pt-[134px] pb-[60px] md:pb-20 lg:pb-[106px]'>
+    <div className='bg-BodyBlack-0 pt-[60px] md:pt-20 lg:pt-[110px] xl:pt-[134px] pb-[60px] md:pb-20 lg:pb-[86px] xl:pb-[106px]'>
       <div className='Container'>
         <div className='mx-auto max-w-[1080px] w-full'>
           <p
-            className='font-Sora text-TextColor-0 md-mb-[14px]'
+            className='font-Sora text-TextColor-0 mb-2 md:mb-[14px]'
             data-aos='fade-up'
             data-aos-duration='1000'
           >
@@ -38,7 +38,7 @@ const DanceText = () => {
               Let’s&nbsp;have&nbsp;a&nbsp;chat
             </h1>
           </div>
-          <div className='flex md:justify-end md:-mt-2 lg:-mt-6'>
+          <div className='flex md:justify-end mt-2 md:-mt-2 lg:-mt-6'>
             <a
               href='mailto:info@taylor.com'
               className='flex items-center gap-4 font-Sora text-xl md:text-[32px] group text-white pb-[14px] relative z-10 before:absolute before:right-0 before:bottom-0 before:h-[1px] before:w-0 before:bg-white before:transition-all before:duration-500 hover:before:left-0 hover:before:w-full'

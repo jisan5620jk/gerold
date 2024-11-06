@@ -78,17 +78,17 @@ const ServiceInnerLight = () => {
         breadCrumbIcon={<FaArrowRightLong />}
         breadCrumbLink={'Services'}
       />
-      <section className='py-[120px] relative z-10 bg-BodyBgLight-0'>
+      <section className='py-[60px] md:py-20 lg:py-[100px] xl:py-[120px] relative z-10 bg-BodyBgLight-0'>
         <div className='Container'>
           <div className='text-center'>
-            <h1 className='font-Sora text-[27px] sm:text-[34px] md:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 from-40% via-Secondarycolor-0 via-70% to-Secondarycolor-0 to-40% bg-clip-text text-transparent'>
+            <h1 className='font-Sora text-[30px] md:text-[35px] lg:text-[40px] xl:text-[45px] font-bold bg-gradient-to-r from-PrimaryColor-0 from-40% via-Secondarycolor-0 via-70% to-Secondarycolor-0 to-40% bg-clip-text text-transparent'>
               Services
             </h1>
             <h6 className='font-Sora text-TextLight-0 uppercase'>
               Offerd Services
             </h6>
           </div>
-          <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 relative z-10 mt-[50px]'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 relative z-10 mt-10 md:mt-[50px]'>
             <div className='rounded-[10px] bg-BodyBgLight-0 overflow-hidden group border border-BorderGrey2-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:ease-linear before:duration-300 before:opacity-0 hover:before:opacity-100 before:-z-10'>
               <div className='pt-6 px-6 sm:px-[30px]'>
                 <div>
@@ -99,7 +99,7 @@ const ServiceInnerLight = () => {
                   />
                 </div>
               </div>
-              <div className='px-6 sm:px-[30px] pt-7 pb-9'>
+              <div className='px-4 md:px-[30px] pt-5 md:pt-7 pb-7 md:pb-9'>
                 <div>
                   <button
                     className='font-Sora text-PrimaryColor-0 font-bold text-[22px] transition-all duration-500 group-hover:text-white'
@@ -116,7 +116,7 @@ const ServiceInnerLight = () => {
               </div>
             </div>
             <div className='rounded-[10px] bg-BodyBgLight-0 overflow-hidden group border border-BorderGrey2-0 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:ease-linear before:duration-300 before:opacity-0 hover:before:opacity-100 before:-z-10'>
-              <div className='px-6 sm:px-[30px] pt-7'>
+              <div className='px-4 md:px-[30px] pt-5 md:pt-7'>
                 <div>
                   <img
                     src={serviceIcon2}
@@ -125,7 +125,7 @@ const ServiceInnerLight = () => {
                   />
                 </div>
               </div>
-              <div className='p-6 sm:p-[30px]'>
+              <div className='px-4 md:px-[30px] pt-5 md:pt-7 pb-7 md:pb-9'>
                 <div>
                   <button
                     className='font-Sora text-PrimaryColor-0 font-bold text-[22px] transition-all duration-500 group-hover:text-white'
@@ -146,7 +146,7 @@ const ServiceInnerLight = () => {
               data-aos='fade-up'
               data-aos-duration='1000'
             >
-              <div className='px-6 sm:px-[30px] pt-7'>
+              <div className='px-4 md:px-[30px] pt-5 md:pt-7'>
                 <div>
                   <img
                     src={serviceIcon3}
@@ -155,7 +155,7 @@ const ServiceInnerLight = () => {
                   />
                 </div>
               </div>
-              <div className='p-6 sm:p-[30px]'>
+              <div className='px-4 md:px-[30px] pt-5 md:pt-7 pb-7 md:pb-9'>
                 <div>
                   <button
                     className='font-Sora text-PrimaryColor-0 font-bold text-[22px] transition-all duration-500 group-hover:text-white'
@@ -176,7 +176,7 @@ const ServiceInnerLight = () => {
               data-aos='fade-up'
               data-aos-duration='1000'
             >
-              <div className='px-6 sm:px-[30px] pt-7'>
+              <div className='px-4 md:px-[30px] pt-5 md:pt-7'>
                 <div>
                   <img
                     src={serviceIcon4}
@@ -185,7 +185,7 @@ const ServiceInnerLight = () => {
                   />
                 </div>
               </div>
-              <div className='p-6 sm:p-[30px]'>
+              <div className='px-4 md:px-[30px] pt-5 md:pt-7 pb-7 md:pb-9'>
                 <div>
                   <button
                     className='font-Sora text-PrimaryColor-0 font-bold text-[22px] transition-all duration-500 group-hover:text-white'
