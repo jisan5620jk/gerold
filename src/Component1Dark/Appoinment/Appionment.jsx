@@ -1,9 +1,49 @@
-import { FaRegEnvelope } from 'react-icons/fa';
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useEffect, useRef } from 'react';
+import { FaChevronDown, FaRegEnvelope } from 'react-icons/fa';
 import { FiPhoneCall } from 'react-icons/fi';
 import { IoLocationOutline } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
+import './custom-select.css';
 
 const Appoinment = () => {
+  const selectRef = useRef(null);
+  const itemsRef = useRef([]);
+  useEffect(() => {
+    const handleClick = () => {
+      selectRef.current.classList.toggle('select-arrow-active');
+    };
+    const handleItemClick = (item) => {
+      const textElement = selectRef.current.querySelector('.select-text');
+      textElement.innerText = item.innerText;
+      selectRef.current.classList.remove('select-arrow-active');
+    };
+    const handleDocumentClick = (e) => {
+      if (!selectRef.current.contains(e.target)) {
+        selectRef.current.classList.remove('select-arrow-active');
+      }
+    };
+    if (selectRef.current) {
+      selectRef.current.onclick = handleClick;
+    }
+    itemsRef.current.forEach((item) => {
+      if (item) {
+        item.onclick = () => handleItemClick(item);
+      }
+    });
+    document.onclick = handleDocumentClick;
+    return () => {
+      if (selectRef.current) {
+        selectRef.current.onclick = null;
+      }
+      itemsRef.current.forEach((item) => {
+        if (item) {
+          item.onclick = null;
+        }
+      });
+      document.onclick = null;
+    };
+  }, []);
   return (
     <section className='bg-BodyBg2-0 py-[60px] md:py-20 lg:py-[100px] xl:py-[120px] relative z-10 overflow-hidden'>
       <div className='Container'>
@@ -112,16 +152,29 @@ const Appoinment = () => {
                   className='font-Sora text-TextColor-0 bg-BodyBg2-0 placeholder:text-TextGrey-0 border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full transition-all duration-500 ease-linear outline-none focus:border-PrimaryColor-0 focus:outline-none'
                 />
               </div>
-              <select
-                name='select'
-                id='select'
-                className='font-Sora text-TextColor-0 bg-BodyBg2-0 placeholder:text-TextGrey-0 border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full transition-all duration-500 ease-linear outline-none focus:border-PrimaryColor-0 focus:outline-none'
-              >
-                <option value='subject'>Choose Subject</option>
-                <option value='subject2'>Bangla</option>
-                <option value='subject3'>Arabic</option>
-                <option value='subject4'>China</option>
-              </select>
+              <div>
+                <div
+                  ref={selectRef}
+                  className='select-box relative cursor-pointer flex items-center justify-between border bg-BodyBg2-0 border-BorderColor-0 rounded-lg py-2 pl-5 pr-2 h-[52px] w-full transition-all duration-500 ease-linear outline-none focus:border-PrimaryColor-0 focus:outline-none'
+                >
+                  <span className='select-text font-Sora text-TextColor-0'>
+                    Choose Service
+                  </span>
+                  <span className='select-icon text-TextColor-0'>
+                    <FaChevronDown />
+                  </span>
+                </div>
+                <div className='select-options w-[240px]'>
+                  <div ref={(el) => (itemsRef.current[0] = el)}>
+                    Branding Design
+                  </div>
+                  <div ref={(el) => (itemsRef.current[1] = el)}>Web Design</div>
+                  <div ref={(el) => (itemsRef.current[2] = el)}>
+                    UI/UX Design
+                  </div>
+                  <div ref={(el) => (itemsRef.current[3] = el)}>App Design</div>
+                </div>
+              </div>
               <textarea
                 name='message'
                 id='message'
