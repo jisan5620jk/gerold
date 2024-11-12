@@ -5,9 +5,11 @@ import FooterDark from '../Shared/Footer/FooterDark';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from 'lenis';
+import 'lenis/dist/lenis.css';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import HelmetChanger from '../Shared/Helmet/Helmet';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -19,32 +21,23 @@ const Main = () => {
     AOS.refresh();
   }, []);
 
-  useEffect(() => {
-    const lenis = new Lenis({
-      duration: 0.8,
-    });
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
-    gsap.to(window, {
-      duration: 0.8,
-      ease: 'true',
-      scrollTrigger: {
-        trigger: '#bottom',
-        start: 'top bottom',
-        end: 'bottom top',
-        scrub: true,
-      },
-    });
-    return () => {
-      lenis.destroy();
-    };
-  }, []);
+  const lenis = new Lenis();
+
+  lenis.on('scroll', (e) => {
+    console.log(e);
+  });
+
+  lenis.on('scroll', ScrollTrigger.update);
+
+  gsap.ticker.add((time) => {
+    lenis.raf(time * 1000);
+  });
+
+  gsap.ticker.lagSmoothing(0);
 
   return (
     <>
+      <HelmetChanger title={'Main Page'} />
       <NavbarDark />
       <ScrollToTop />
       <div>

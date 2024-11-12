@@ -1,10 +1,15 @@
 import { Outlet } from 'react-router-dom';
 import ScrollToTop from '../Shared/BackToTop/BackToTop';
 import ContactNavbarLight from '../Shared/Navbar/ContactNavbarLight';
+import FooterLight from '../Shared/Footer/FooterLight';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-import FooterLight from '../Shared/Footer/FooterLight';
+import Lenis from 'lenis';
+import 'lenis/dist/lenis.css';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import HelmetChanger from '../Shared/Helmet/Helmet';
 
 const Main16 = () => {
   useEffect(() => {
@@ -14,8 +19,23 @@ const Main16 = () => {
     AOS.refresh();
   }, []);
 
+  const lenis = new Lenis();
+
+  lenis.on('scroll', (e) => {
+    console.log(e);
+  });
+
+  lenis.on('scroll', ScrollTrigger.update);
+
+  gsap.ticker.add((time) => {
+    lenis.raf(time * 1000);
+  });
+
+  gsap.ticker.lagSmoothing(0);
+
   return (
     <>
+      <HelmetChanger title={'Contact Inner Page Light Version'} />
       <ContactNavbarLight />
       <ScrollToTop />
       <div>
