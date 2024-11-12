@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import './back-to-top.css'; // Ensure to import the styles
 import { BsArrowUp } from 'react-icons/bs';
+import { useLocation } from 'react-router-dom';
 
 const BackToTop = () => {
   const [isActive, setIsActive] = useState(false);
@@ -40,26 +41,31 @@ const BackToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div
       className={`progress-wrap ${isActive ? 'active-progress' : ''}`}
       id='scrollUp'
       onClick={handleClick}
     >
-        <span>
-          <BsArrowUp className='!fill-PrimaryColor-0' />
-          </span>
-        <svg
-          className='progress-circle svg-content'
-          width='100%'
-          height='100%'
-          viewBox='-1 -1 102 102'
-        >
-          <path
-            ref={progressRef}
-            d='M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98'
-          />
-        </svg>
+      <span>
+        <BsArrowUp className='!fill-PrimaryColor-0' />
+      </span>
+      <svg
+        className='progress-circle svg-content'
+        width='100%'
+        height='100%'
+        viewBox='-1 -1 102 102'
+      >
+        <path
+          ref={progressRef}
+          d='M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98'
+        />
+      </svg>
     </div>
   );
 };

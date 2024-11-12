@@ -62,7 +62,7 @@ const Appoinment = () => {
               Let’s work together!
             </h1>
             <p
-              className='font-Sora text-TextColor-0 pt-3'
+              className='font-Sora text-TextColor-0 pt-4'
               data-aos='fade-up-right'
               data-aos-duration='1000'
             >
@@ -81,17 +81,17 @@ const Appoinment = () => {
                   type='text'
                   name='first-name'
                   id='first-name'
-                  placeholder='First Name*'
+                  placeholder='First name'
                   required
-                  className='font-Sora text-TextColor-0 bg-BodyBg2-0 placeholder:text-TextColor-0 placeholder:text-opacity-40 border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
+                  className='font-Sora text-TextColor-0 bg-BodyBg2-0 placeholder:text-TextGrey-0 border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full transition-all duration-500 ease-linear outline-none focus:border-PrimaryColor-0 focus:outline-none'
                 />
                 <input
                   type='text'
                   name='last-name'
                   id='last-name'
-                  placeholder='Last Name*'
+                  placeholder='Last name'
                   required
-                  className='font-Sora text-TextColor-0 bg-BodyBg2-0 placeholder:text-TextColor-0 placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
+                  className='font-Sora text-TextColor-0 bg-BodyBg2-0 placeholder:text-TextGrey-0 border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full transition-all duration-500 ease-linear outline-none focus:border-PrimaryColor-0 focus:outline-none'
                 />
               </div>
               <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
@@ -99,23 +99,23 @@ const Appoinment = () => {
                   type='email'
                   name='email'
                   id='email'
-                  placeholder='Enter E-Mail*'
+                  placeholder='Email address'
                   required
-                  className='font-Sora text-TextColor-0 bg-BodyBg2-0 placeholder:text-TextColor-0 placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
+                  className='font-Sora text-TextColor-0 bg-BodyBg2-0 placeholder:text-TextGrey-0 border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full transition-all duration-500 ease-linear outline-none focus:border-PrimaryColor-0 focus:outline-none'
                 />
                 <input
                   type='text'
                   name='number'
                   id='number'
-                  placeholder='Enter Number*'
+                  placeholder='Phone Number'
                   required
-                  className='font-Sora text-TextColor-0 bg-BodyBg2-0 placeholder:text-TextColor-0 placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
+                  className='font-Sora text-TextColor-0 bg-BodyBg2-0 placeholder:text-TextGrey-0 border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full transition-all duration-500 ease-linear outline-none focus:border-PrimaryColor-0 focus:outline-none'
                 />
               </div>
               <select
                 name='select'
                 id='select'
-                className='font-Sora text-TextColor-0 bg-BodyBg2-0 placeholder:text-TextColor-0 placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
+                className='font-Sora text-TextColor-0 bg-BodyBg2-0 placeholder:text-TextGrey-0 border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full transition-all duration-500 ease-linear outline-none focus:border-PrimaryColor-0 focus:outline-none'
               >
                 <option value='subject'>Choose Subject</option>
                 <option value='subject2'>Bangla</option>
@@ -125,8 +125,8 @@ const Appoinment = () => {
               <textarea
                 name='message'
                 id='message'
-                placeholder='Write a short meassage...'
-                className='font-Sora text-TextColor-0 bg-BodyBg2-0 placeholder:text-TextColor-0 placeholder:text-opacity-40 font-light border border-BorderColor-0 rounded-lg py-2 px-5 h-[198px] w-full focus:border-PrimaryColor-0 focus:outline-none resize-none'
+                placeholder='Meassage'
+                className='font-Sora text-TextColor-0 bg-BodyBg2-0 placeholder:text-TextGrey-0 border border-BorderColor-0 rounded-lg py-2 px-5 h-[198px] w-full transition-all duration-500 ease-linear outline-none focus:border-PrimaryColor-0 focus:outline-none resize-none'
               ></textarea>
               <div className='inline-block header-btn'>
                 <button

@@ -20,7 +20,7 @@ const TestimonialCard = ({
       </div>
       <div className="testi-icon flex items-center mt-4">
         <span className="text-4xl text-PrimaryColor-0 -ml-2">{testiIconLeft}</span>
-        <span className="text-4xl text-PrimaryColor-0 -ml-[18px]">{testiIconRight}</span>p0p
+        <span className="text-4xl text-PrimaryColor-0 -ml-[18px]">{testiIconRight}</span>
       </div>
       <p className="font-Sora text-white font-light pt-[18px]">{testiDesc}</p>
       <h5 className='font-Sora font-bold inline-block text-white text-lg mt-6 md:mt-[46px]'>

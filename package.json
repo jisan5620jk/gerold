@@ -10,13 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@studio-freight/lenis": "^1.0.42",
     "aos": "^2.3.4",
     "fslightbox-react": "^1.7.6",
     "gsap": "^3.12.5",
     "imagesloaded": "^4.1.4",
     "isotope-layout": "^3.0.6",
-    "lenis": "^1.1.14",
+    "lenis": "^1.1.16",
     "react": "^18.3.1",
     "react-countup": "^6.5.3",
     "react-dom": "^18.3.1",
@@ -37,6 +36,6 @@
     "globals": "^15.9.0",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.13",
-    "vite": "^5.4.8"
+    "vite": "^5.4.11"
   }
 }
