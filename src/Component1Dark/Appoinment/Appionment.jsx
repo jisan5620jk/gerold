@@ -107,7 +107,7 @@ const Appoinment = () => {
                   type='text'
                   name='number'
                   id='number'
-                  placeholder='Phone Number'
+                  placeholder='Phone number'
                   required
                   className='font-Sora text-TextColor-0 bg-BodyBg2-0 placeholder:text-TextGrey-0 border border-BorderColor-0 rounded-lg py-2 px-5 h-[52px] w-full transition-all duration-500 ease-linear outline-none focus:border-PrimaryColor-0 focus:outline-none'
                 />
