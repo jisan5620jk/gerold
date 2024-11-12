@@ -50,6 +50,7 @@ const Brand = () => {
         <Swiper {...settings}>
           <SwiperSlide>
             <div
+              className='flex items-center justify-center'
               data-aos='fade-up'
               data-aos-duration='1000'
             >
@@ -61,6 +62,7 @@ const Brand = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div
+              className='flex items-center justify-center'
               data-aos='fade-up'
               data-aos-duration='1000'
             >
@@ -72,6 +74,7 @@ const Brand = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div
+              className='flex items-center justify-center'
               data-aos='fade-up'
               data-aos-duration='1000'
             >
@@ -83,6 +86,7 @@ const Brand = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div
+              className='flex items-center justify-center'
               data-aos='fade-up'
               data-aos-duration='1000'
             >
@@ -94,6 +98,7 @@ const Brand = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div
+              className='flex items-center justify-center'
               data-aos='fade-up'
               data-aos-duration='1000'
             >
@@ -105,6 +110,7 @@ const Brand = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div
+              className='flex items-center justify-center'
               data-aos='fade-up'
               data-aos-duration='1000'
             >
@@ -116,6 +122,7 @@ const Brand = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div
+              className='flex items-center justify-center'
               data-aos='fade-up'
               data-aos-duration='1000'
             >

@@ -42,7 +42,6 @@ const Brand = () => {
           <h6
             className='font-Sora text-[12px] font-medium bg-gradient-to-l to-PrimaryColor-0 from-Secondarycolor-0 from-85% bg-clip-text text-transparent uppercase'
             data-aos='fade-up'
-            data-aos-delay='300'
             data-aos-duration='1000'
           >
             Worked With Largest Brands
@@ -51,6 +50,7 @@ const Brand = () => {
         <Swiper {...settings}>
           <SwiperSlide>
             <Link
+              className='flex items-center justify-center'
               to={'/home2_light'}
               data-aos='fade-up'
               data-aos-duration='1000'
@@ -63,6 +63,7 @@ const Brand = () => {
           </SwiperSlide>
           <SwiperSlide>
             <Link
+              className='flex items-center justify-center'
               to={'/home2_light'}
               data-aos='fade-up'
               data-aos-duration='1000'
@@ -75,6 +76,7 @@ const Brand = () => {
           </SwiperSlide>
           <SwiperSlide>
             <Link
+              className='flex items-center justify-center'
               to={'/home2_light'}
               data-aos='fade-up'
               data-aos-duration='1000'
@@ -87,6 +89,7 @@ const Brand = () => {
           </SwiperSlide>
           <SwiperSlide>
             <Link
+              className='flex items-center justify-center'
               to={'/home2_light'}
               data-aos='fade-up'
               data-aos-duration='1000'
@@ -99,6 +102,7 @@ const Brand = () => {
           </SwiperSlide>
           <SwiperSlide>
             <Link
+              className='flex items-center justify-center'
               to={'/home2_light'}
               data-aos='fade-up'
               data-aos-duration='1000'
@@ -111,6 +115,7 @@ const Brand = () => {
           </SwiperSlide>
           <SwiperSlide>
             <Link
+              className='flex items-center justify-center'
               to={'/home2_light'}
               data-aos='fade-up'
               data-aos-duration='1000'
@@ -123,6 +128,7 @@ const Brand = () => {
           </SwiperSlide>
           <SwiperSlide>
             <Link
+              className='flex items-center justify-center'
               to={'/home2_light'}
               data-aos='fade-up'
               data-aos-duration='1000'

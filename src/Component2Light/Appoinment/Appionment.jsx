@@ -98,7 +98,7 @@ const Appoinment = () => {
                 type='text'
                 name='first-name'
                 id='first-name'
-                placeholder='First Name*'
+                placeholder='First name'
                 required
                 className='font-Sora text-TextLight-0 bg-transparent placeholder:text-TextLight-0 placeholder:text-opacity-60 border-b border-BorderGrey3-0 py-[13px] h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
               />
@@ -106,7 +106,7 @@ const Appoinment = () => {
                 type='text'
                 name='last-name'
                 id='last-name'
-                placeholder='Last Name*'
+                placeholder='Last name'
                 required
                 className='font-Sora text-TextLight-0 bg-transparent placeholder:text-TextLight-0 placeholder:text-opacity-60 border-b border-BorderGrey3-0 py-[13px] h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
               />
@@ -114,7 +114,7 @@ const Appoinment = () => {
                 type='email'
                 name='email'
                 id='email'
-                placeholder='Enter E-Mail*'
+                placeholder='Email address'
                 required
                 className='font-Sora text-TextLight-0 bg-transparent placeholder:text-TextLight-0 placeholder:text-opacity-60 border-b border-BorderGrey3-0 py-[13px] h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
               />
@@ -122,14 +122,14 @@ const Appoinment = () => {
                 type='text'
                 name='number'
                 id='number'
-                placeholder='Enter Number*'
+                placeholder='Mobile number'
                 required
                 className='font-Sora text-TextLight-0 bg-transparent placeholder:text-TextLight-0 placeholder:text-opacity-60 border-b border-BorderGrey3-0 py-[13px] h-[52px] w-full focus:border-PrimaryColor-0 focus:outline-none'
               />
               <textarea
                 name='message'
                 id='message'
-                placeholder='Write a short meassage...'
+                placeholder='Meassage'
                 className='font-Sora text-TextLight-0 bg-transparent placeholder:text-TextLight-0 placeholder:text-opacity-60 border-b border-BorderGrey3-0 py-[13px] h-[206px] w-full focus:border-PrimaryColor-0 focus:outline-none resize-none'
               ></textarea>
               <div className='inline-block mt-2'>
