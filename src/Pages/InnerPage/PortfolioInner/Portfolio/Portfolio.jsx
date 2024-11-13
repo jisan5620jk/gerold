@@ -348,7 +348,7 @@ const Portfolio = () => {
             <div>
               <button
                 ref={portfolioCloseBtnRef}
-                className='absolute top-20 right-2 sm:top-[100px] sm:right-6 size-[46px] rounded-full bg-gradient-to-tl to-PrimaryColor-0 to-100% from-BodyBg-0 from-10% flex items-center justify-center text-white text-xl group'
+                className='absolute right-0 top-[100px] md:right-6 size-[46px] rounded-full bg-gradient-to-tl to-PrimaryColor-0 to-100% from-BodyBg-0 from-10% flex items-center justify-center text-white text-xl group'
               >
                 <FaTimes className='transition-all duration-500 group-hover:rotate-180' />
               </button>

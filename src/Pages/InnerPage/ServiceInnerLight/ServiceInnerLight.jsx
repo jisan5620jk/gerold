@@ -216,7 +216,7 @@ const ServiceInnerLight = () => {
             <div>
               <button
                 ref={serviceCloseBtnRef}
-                className='absolute top-[100px] right-6 size-[46px] rounded-full bg-gradient-to-tl to-PrimaryColor-0 to-100% from-BodyBg-0 from-10% flex items-center justify-center text-white text-xl group'
+                className='absolute right-0 top-[100px] md:right-6 size-[46px] rounded-full bg-gradient-to-tl to-PrimaryColor-0 to-100% from-BodyBg-0 from-10% flex items-center justify-center text-white text-xl group'
               >
                 <FaTimes className='transition-all duration-500 group-hover:rotate-180' />
               </button>
