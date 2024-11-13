@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 
 const DanceText = () => {
 useEffect(() => {
-  const target = document.getElementById('anim');
+  const target = document.getElementById('anim2');
   const splitTextToSpans = (targetElement) => {
     if (targetElement) {
       const text = targetElement.textContent;
@@ -32,7 +32,7 @@ useEffect(() => {
           </p>
           <div>
             <h1
-              id='anim'
+              id='anim2'
               className='font-Sora text-[40px] md:text-[82px] lg:text-[110px] xl:text-[128px] font-bold text-PrimaryColor-0'
             >
               Let’s&nbsp;have&nbsp;a&nbsp;chat
