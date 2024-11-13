@@ -337,7 +337,10 @@ const Portfolio = () => {
         </div>
       </div>
       <div>
-        <div className='portfolio-popup-content'>
+        <div
+          className='portfolio-popup-content'
+          data-lenis-prevent
+        >
           <div
             ref={portfolioPopUpContentRef}
             className='portfolio-popup py-[75px]'

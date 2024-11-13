@@ -205,7 +205,10 @@ const ServiceInner = () => {
         </div>
       </section>
       <div>
-        <div className='service-popup-content'>
+        <div
+          className='service-popup-content'
+          data-lenis-prevent
+        >
           <div
             ref={servicePopUpContentRef}
             className='service-popup py-[75px]'

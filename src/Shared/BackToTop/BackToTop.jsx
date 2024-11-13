@@ -6,6 +6,7 @@ import { useLocation } from 'react-router-dom';
 const BackToTop = () => {
   const [isActive, setIsActive] = useState(false);
   const progressRef = useRef(null);
+  const { pathname } = useLocation();
 
   useEffect(() => {
     const progressPath = progressRef.current;
@@ -36,15 +37,14 @@ const BackToTop = () => {
     }
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   const handleClick = (e) => {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-
-  const { pathname } = useLocation();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
 
   return (
     <div

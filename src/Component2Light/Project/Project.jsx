@@ -302,7 +302,10 @@ const Project = () => {
         <span className='absolute -z-10 bottom-0 right-0 -mt-[5%] -mr-[5%] w-[322px] h-[308px] rounded-full bg-gradient-to-r to-PrimaryColor-0 from-transparent blur-[150px]'></span>
       </section>
       <div>
-        <div className='project-popup-content'>
+        <div
+          className='project-popup-content'
+          data-lenis-prevent
+        >
           <div
             ref={projectPopUpContentRef}
             className='project-popup py-[75px]'

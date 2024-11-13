@@ -260,10 +260,10 @@ const BlogDetailsNavbar = () => {
                         </span>
                       </Link>
                       <ul className='submenu'>
-                        <li className='current'>
+                        <li>
                           <Link to={'/blog'}>blog</Link>
                         </li>
-                        <li>
+                        <li className='current'>
                           <Link to={'/blog_details'}>blog details</Link>
                         </li>
                       </ul>
